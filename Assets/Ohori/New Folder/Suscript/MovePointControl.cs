@@ -5,13 +5,13 @@ using UnityEngine;
 public class MovePointControl : MonoBehaviour
 {
     [SerializeField]
-    public EnemyControl enemyControl;
+    public Dr_InvisibleControl Dr_InvisibleControl;
     [SerializeField]
     public MovePointControl movePointControl;
 
     //Dr.Invisible‚ğéŒ¾
     [SerializeField]
-    public GameObject DrInvisible;
+    public GameObject Dr_Invisible;
 
     //MovePoint‚ÌˆÊ’u‚ğ“ü‚ê‚é•Ï”
     [SerializeField]
@@ -56,7 +56,7 @@ public class MovePointControl : MonoBehaviour
         if (pos.z <= -46) { pos.z = -46; }
 
         //ˆÚ“®‚·‚éŒü‚«‚ğ‹‚ß‚é
-        Vector3 move_vec = enemyControl.toPlayer1Distance + enemyControl.toPlayer2Distance + enemyControl.toPlayer3Distance + enemyControl.toPlayer4Distance;
+        Vector3 move_vec = Dr_InvisibleControl.toPlayer1Distance + Dr_InvisibleControl.toPlayer2Distance + Dr_InvisibleControl.toPlayer3Distance + Dr_InvisibleControl.toPlayer4Distance;
         Quaternion q = Quaternion.LookRotation(-move_vec, Vector3.up);
         transform.rotation = Quaternion.Lerp(transform.rotation, q, 3.0f * Time.deltaTime);
     }

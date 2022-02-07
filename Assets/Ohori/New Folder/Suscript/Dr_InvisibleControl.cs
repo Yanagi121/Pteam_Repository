@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyControl : MonoBehaviour
+public class Dr_InvisibleControl : MonoBehaviour
 {
     [SerializeField]
     public MovePointControl movePointControl;
