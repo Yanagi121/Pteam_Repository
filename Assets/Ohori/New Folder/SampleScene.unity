@@ -929,7 +929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos: {x: 0, y: 0, z: 0}
   speed: 8
-  enemy: {fileID: 7369487423458107676}
+  Dr_Invisible: {fileID: 7369487423458107676}
 --- !u!54 &714788696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2379,7 +2379,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7369487423458107676}
     - target: {fileID: 5468563018712072224, guid: d678b07d32c0a2c438b508fbfa7e6f02, type: 3}
+      propertyPath: Dr_Invisible
+      value: 
+      objectReference: {fileID: 7369487423458107676}
+    - target: {fileID: 5468563018712072224, guid: d678b07d32c0a2c438b508fbfa7e6f02, type: 3}
       propertyPath: enemyControl
+      value: 
+      objectReference: {fileID: 1918204225}
+    - target: {fileID: 5468563018712072224, guid: d678b07d32c0a2c438b508fbfa7e6f02, type: 3}
+      propertyPath: Dr_InvisibleControl
       value: 
       objectReference: {fileID: 1918204225}
     - target: {fileID: 5468563018712072235, guid: d678b07d32c0a2c438b508fbfa7e6f02, type: 3}
