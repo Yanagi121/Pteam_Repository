@@ -50,10 +50,10 @@ public class MovePointControl : MonoBehaviour
         if (Player4In == true) { GoToTheFront(); }
 
         //”ÍˆÍŠO‚Éo‚È‚¢‚æ‚¤‚É‚·‚é
-        if (pos.x >= 46) { pos.x = 46; }
-        if (pos.x <= -46) { pos.x = -46; }
-        if (pos.z >= 46) { pos.z = 46; }
-        if (pos.z <= -46) { pos.z = -46; }
+        if (pos.x >= 65) { pos.x = 65; }
+        if (pos.x <= -155) { pos.x = -155; }
+        if (pos.z >= 265) { pos.z = 265; }
+        if (pos.z <= -145) { pos.z = -145; }
 
         //ˆÚ“®‚·‚éŒü‚«‚ð‹‚ß‚é
         Vector3 move_vec = Dr_InvisibleControl.toPlayer1Distance + Dr_InvisibleControl.toPlayer2Distance + Dr_InvisibleControl.toPlayer3Distance + Dr_InvisibleControl.toPlayer4Distance;
