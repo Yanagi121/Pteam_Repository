@@ -15,6 +15,11 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     [SerializeField]
     private TextMeshProUGUI Player = default;
 
+    [SerializeField]
+    private GameObject LobbyUI;//ロビーのUI
+    [SerializeField]
+    private GameObject enterMatchWaitRoomUI;//待機部屋のUI
+
     //[SerializeField]private GameObject EnterMatchWaitroomObj;//シーン遷移後にルームに入った記録を残しておく用　//いったん没
     //private EnterMatchWaitRoom enterMatchWaitRoom;
     public bool enterMatchWaitRoomJudge;
@@ -26,7 +31,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log(localPlayer);//プレイヤー名は保存されている
         PhotonNetwork.NickName = "Player";
         var nameLabel = GetComponent<TextMeshPro>();
-        SceneManager.sceneLoaded += SceneLoaded;// イベントにイベントハンドラーを追加
+        //SceneManager.sceneLoaded += SceneLoaded;// イベントにイベントハンドラーを追加
 
     }
 
@@ -35,42 +40,49 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.JoinLobby();
         enterMatchWaitRoomJudge = false;
+        
     }
 
-    private void Update()
-    {
-        if (enterMatchWaitRoomJudge == true)
-        {
-            PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//本来生成・破壊は望ましくないと思うので、時間があったら表示・非表示設定にしておきたい
-            enterMatchWaitRoomJudge = false;
-        }
-    }
-    void SceneLoaded(Scene nextScene, LoadSceneMode mode)//シーンの切り替わりを検知させてenterMatchWaitRoomJudge = trueにし、プレイヤー名が出るようにする
-    {
-        Debug.Log(nextScene.name);
-        enterMatchWaitRoomJudge = true;
-        Debug.Log(mode);
-    }
+    //private void Update()
+    //{
+    //    if (enterMatchWaitRoomJudge == true)
+    //    {
+    //        PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//本来生成・破壊は望ましくないと思うので、時間があったら表示・非表示設定にしておきたい
+    //        enterMatchWaitRoomJudge = false;
+    //    }
+    //}
+
+    //void SceneLoaded(Scene nextScene, LoadSceneMode mode)//シーンの切り替わりを検知させてenterMatchWaitRoomJudge = trueにし、プレイヤー名が出るようにする
+    //{
+    //    Debug.Log(nextScene.name);
+    //    enterMatchWaitRoomJudge = true;
+    //    Debug.Log(mode);
+    //}
 
     public override void OnJoinedLobby()//検証用
     {
-        //enterMatchWaitRoom.EnterMatchWaitRoomJudge = false;　//いったん没
         Debug.Log("ロビーに参加");
-        // PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);
+        LobbyUI.SetActive(true);
+        enterMatchWaitRoomUI.SetActive(false);
     }
     public override void OnJoinedRoom()//ローカルプレイヤーのみに反応
     {
         Debug.Log("待機ルームに参加");
-        //enterMatchWaitRoom.EnterMatchWaitRoomJudge = true; 　//いったん没 
-        DontDestroyOnLoad(this.gameObject);//後々消すのを忘れないように
-        SceneManager.LoadScene("RoomScene");
+        LobbyUI.SetActive(false);
+        enterMatchWaitRoomUI.SetActive(true);
+        PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//本来生成・破壊は望ましくないと思うので、時間があったら表示・非表示設定にしておきたい
+    }
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        Debug.Log("待機ルームから退出");
+        LobbyUI.SetActive(true);
+        enterMatchWaitRoomUI.SetActive(false);
     }
 
     // ルームの作成が成功した時に呼ばれるコールバック
     public override void OnCreatedRoom()
     {
         Debug.Log("ルーム作成に成功しました");
-
     }
 
     // ルームの作成が失敗した時に呼ばれるコールバック
