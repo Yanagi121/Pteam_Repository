@@ -3,7 +3,7 @@ using Photon.Realtime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(RectTransform))]
 [RequireComponent(typeof(Button))]
@@ -29,11 +29,10 @@ public class RoomListEntry : MonoBehaviour
     private void Start()
     {
         // リスト要素がクリックされたら、対応したルーム名のルームに参加する
-        button.onClick.AddListener(() => PhotonNetwork.JoinRoom(roomName));//  =>...ラムダ式ってやつらしい、マジ分からんて。とりあえず引数の型の記述を省略するらしい
+        button.onClick.AddListener(() => PhotonNetwork.JoinRoom(roomName));//  =>...ラムダ式ってやつらしい とりあえず引数の型の記述を省略するらしい
 
         // button.onClick.AddListener(() => PhotonNetwork.JoinRoom(roomName));
     }
-
     public void Activate(RoomInfo info)
     {
         roomName = info.Name;//Nameなんぞ
