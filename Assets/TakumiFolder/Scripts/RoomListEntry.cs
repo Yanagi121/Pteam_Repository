@@ -33,7 +33,7 @@ public class RoomListEntry : MonoBehaviour
 
         // button.onClick.AddListener(() => PhotonNetwork.JoinRoom(roomName));
     }
-    public void Activate(RoomInfo info)
+    public void Activate(RoomInfo info)//RoomListViewで呼び出される
     {
         roomName = info.Name;//Nameなんぞ
         nameLabel.text = (string)info.CustomProperties["DisplayName"];//CustomPropertiesルームかプレイヤーに設定できるHash値　値変更でコールバックも呼ばれる

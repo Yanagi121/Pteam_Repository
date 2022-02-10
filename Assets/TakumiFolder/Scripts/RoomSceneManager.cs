@@ -7,9 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class RoomSceneManager : MonoBehaviourPunCallbacks
 {
-    private MatchwaitingRoomManager matchwaitingRoomManager;//ルームに参加したときにルームの名前をルーム内で表示させるため、下の変数から受け取る
-    private RoomListView roomListView;//RoomListViewで受け取ったルーム名を、上の変数に受け渡すための変数
-
     [SerializeField]
     private Button BackLobbyButton = default;
     [SerializeField]
@@ -19,6 +16,9 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     private GameObject LobbyUI;//ロビーのUI
     [SerializeField]
     private GameObject enterMatchWaitRoomUI;//待機部屋のUI
+
+    [SerializeField]
+    private Text RoomNum;
 
     //[SerializeField]private GameObject EnterMatchWaitroomObj;//シーン遷移後にルームに入った記録を残しておく用　//いったん没
     //private EnterMatchWaitRoom enterMatchWaitRoom;
@@ -43,14 +43,11 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         
     }
 
-    //private void Update()
-    //{
-    //    if (enterMatchWaitRoomJudge == true)
-    //    {
-    //        PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//本来生成・破壊は望ましくないと思うので、時間があったら表示・非表示設定にしておきたい
-    //        enterMatchWaitRoomJudge = false;
-    //    }
-    //}
+    private void Update()
+    {
+        RoomNum.text = PhotonNetwork.CountOfPlayersInRooms + "/" + PhotonNetwork.CountOfPlayers;
+       // Debug.Log(PhotonNetwork.CountOfRooms);
+    }
 
     //void SceneLoaded(Scene nextScene, LoadSceneMode mode)//シーンの切り替わりを検知させてenterMatchWaitRoomJudge = trueにし、プレイヤー名が出るようにする
     //{
@@ -70,9 +67,11 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("待機ルームに参加");
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
-        PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//本来生成・破壊は望ましくないと思うので、時間があったら表示・非表示設定にしておきたい
+        PhotonNetwork.Instantiate("Avatar", new Vector3(0, (PhotonNetwork.CountOfPlayersInRooms+1) * 100, 0), Quaternion.identity);//本来生成・破壊は望ましくないと思うので、時間があったら表示・非表示設定にしておきたい
+        Debug.Log("ルームに入ってない人"+PhotonNetwork.CountOfPlayersOnMaster);
+        Debug.Log("ルームに入っている人" + PhotonNetwork.CountOfPlayersInRooms);
     }
-    public override void OnPlayerLeftRoom(Player otherPlayer)
+    public override void OnLeftRoom()
     {
         Debug.Log("待機ルームから退出");
         LobbyUI.SetActive(true);
@@ -90,12 +89,6 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     {
         Debug.Log($"ルーム作成に失敗しました: {message}");
     }
-
-    public override void OnLeftRoom()
-    {
-        Debug.Log("ルームから退出しました");
-    }
-
     ////他のプレイヤーが参加した時に呼ばれるコールバック
     //public override void OnPlayerEnteredRoom(Player player)
     //{
