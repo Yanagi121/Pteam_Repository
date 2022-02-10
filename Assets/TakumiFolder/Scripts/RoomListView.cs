@@ -58,8 +58,10 @@ public class RoomListView : MonoBehaviourPunCallbacks
                      },
                  CustomRoomPropertiesForLobby = new[] { "DisplayName", "Message" }
              });
+      //  Debug.Log(PhotonNetwork.PlayerList);
         //PhotonNetwork.JoinOrCreateRoom("Room" + , new RoomOptions(), TypedLobby.Default);
     }
+
     // ルームリストが更新された時に呼ばれるコールバック
     public override void OnRoomListUpdate(List<RoomInfo> roomList)//ルームの中にあるリストのデータを仮引数に入れる
     {
