@@ -113,7 +113,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758310646314490896}
-  m_Material: {fileID: 13400000, guid: 86ebc504717efc348b7e410e6130fb89, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 1758310646785582817}
   - component: {fileID: 1758310646785582816}
   - component: {fileID: 1758310646785582819}
+  - component: {fileID: 3761454358448419669}
   m_Layer: 0
   m_Name: hand
   m_TagString: Untagged
@@ -163,8 +164,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758310646785582821}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.002, y: -0.34, z: 0.61}
-  m_LocalScale: {x: 0.25, y: 0.31, z: 2.04}
+  m_LocalPosition: {x: -0.04, y: -1, z: 1.07}
+  m_LocalScale: {x: 2.32, y: 0.38, z: 3.26}
   m_Children: []
   m_Father: {fileID: 1758310648264588568}
   m_RootOrder: 0
@@ -231,6 +232,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3761454358448419669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758310646785582821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a8919f62d7a84a95cb901f5db79a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlowTime: 1
 --- !u!1 &1758310648264588573
 GameObject:
   m_ObjectHideFlags: 0

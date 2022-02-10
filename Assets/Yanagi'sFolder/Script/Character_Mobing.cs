@@ -11,7 +11,7 @@ public class Character_Mobing : MonoBehaviour
     public float sensitivityX=1, sensitivityY=1,delay=2.0f;//マウスの感度設定標準設定で1
     [SerializeField] float X, Z,fallSpeed,Y;
     private float mouseX,mouseY,cameraX;
-    private bool moveZ, moveX, mouseXbool, mouseYbool, TimeProgress = false;
+    private bool moveZ, moveX, mouseXbool, mouseYbool, TimeProgress = false;//初動delay秒は動けないようにする
     private Transform transCamera;
 
     void Start()
@@ -50,6 +50,10 @@ public class Character_Mobing : MonoBehaviour
         if (mouseY != 0)
         {
             mouseYbool = true;
+        }
+        if (Catch_Doctor.SetTime)
+        {
+            TimeProgress = false;           
         }
 
     }
@@ -95,8 +99,8 @@ public class Character_Mobing : MonoBehaviour
     void OnCollisionStay(Collision collision)
     {
         CollisionGround=true;
-       
             fallSpeed = Y;
+        
 
     }
     void Progress()
