@@ -8,30 +8,32 @@ using UnityEngine.SceneManagement;
 public class RoomSceneManager : MonoBehaviourPunCallbacks
 {
     [SerializeField]
-    private Button BackLobbyButton = default;
-    [SerializeField]
-    private TextMeshProUGUI Player = default;
-
-    [SerializeField]
     private GameObject LobbyUI;//ロビーのUI
     [SerializeField]
     private GameObject enterMatchWaitRoomUI;//待機部屋のUI
 
     [SerializeField]
-    private Text RoomNum;
+    private TextMeshProUGUI RoomNum;
 
-    //[SerializeField]private GameObject EnterMatchWaitroomObj;//シーン遷移後にルームに入った記録を残しておく用　//いったん没
-    //private EnterMatchWaitRoom enterMatchWaitRoom;
+    [SerializeField]
+    private TextMeshProUGUI PlayerName;
+
+    [SerializeField]
+    private TextMeshProUGUI joinedPlayer;
+
+    [SerializeField]
+    GameObject avatarName;
+    AvatarNameDisplay avatarNameDisplay;
+
     public bool enterMatchWaitRoomJudge;
     private void Start()
     {
         // PhotonServerSettingsに設定した内容を使ってマスターサーバーへ接続する
         PhotonNetwork.ConnectUsingSettings();
-        var localPlayer = PhotonNetwork.LocalPlayer;
-        Debug.Log(localPlayer);//プレイヤー名は保存されている
-        PhotonNetwork.NickName = "Player";
-        var nameLabel = GetComponent<TextMeshPro>();
-        //SceneManager.sceneLoaded += SceneLoaded;// イベントにイベントハンドラーを追加
+        avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
+        PhotonNetwork.LocalPlayer.NickName = "Player"+avatarNameDisplay.nameLabel;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
+        
+        Debug.Log("これはニックネーム"+PhotonNetwork.NickName);//プレイヤー名は保存されている
 
     }
 
@@ -43,18 +45,15 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         
     }
 
-    private void Update()
+    public void Update()
     {
         RoomNum.text = PhotonNetwork.CountOfPlayersInRooms + "/" + PhotonNetwork.CountOfPlayers;
-       // Debug.Log(PhotonNetwork.CountOfRooms);
+        // Debug.Log(PhotonNetwork.CountOfRooms);
+        UpdateMemberList();
     }
 
-    //void SceneLoaded(Scene nextScene, LoadSceneMode mode)//シーンの切り替わりを検知させてenterMatchWaitRoomJudge = trueにし、プレイヤー名が出るようにする
-    //{
-    //    Debug.Log(nextScene.name);
-    //    enterMatchWaitRoomJudge = true;
-    //    Debug.Log(mode);
-    //}
+
+
 
     public override void OnJoinedLobby()//検証用
     {
@@ -67,9 +66,25 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("待機ルームに参加");
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
-        PhotonNetwork.Instantiate("Avatar", new Vector3(0, (PhotonNetwork.CountOfPlayersInRooms+1) * 100, 0), Quaternion.identity);//本来生成・破壊は望ましくないと思うので、時間があったら表示・非表示設定にしておきたい
-        Debug.Log("ルームに入ってない人"+PhotonNetwork.CountOfPlayersOnMaster);
-        Debug.Log("ルームに入っている人" + PhotonNetwork.CountOfPlayersInRooms);
+       // PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//他のネットワークオブジェクトがダメだったので可視化されているこれで確認したが駄目だった
+        Debug.Log("これはニックネーム" + PhotonNetwork.NickName);
+        //Debug.Log("ルームに入ってない人"+PhotonNetwork.CountOfPlayersOnMaster);
+        //Debug.Log("ルームに入っている人" + PhotonNetwork.CountOfPlayersInRooms);
+    }
+
+    public void OnPhotonPlayerConnected()
+    {
+       // Debug.Log(player.name + " is joined.");
+        UpdateMemberList();
+    }
+    public void UpdateMemberList()
+    {
+        joinedPlayer.text = "";
+        foreach (var p in PhotonNetwork.PlayerList)
+        {
+            joinedPlayer.text += p.NickName + "\n";
+            //PhotonNetwork.Instantiate("PlayerName", new Vector3(0, 0, 0), Quaternion.identity);
+        }
     }
     public override void OnLeftRoom()
     {
@@ -89,16 +104,4 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     {
         Debug.Log($"ルーム作成に失敗しました: {message}");
     }
-    ////他のプレイヤーが参加した時に呼ばれるコールバック
-    //public override void OnPlayerEnteredRoom(Player player)
-    //{
-    //    Debug.Log(player.NickName + "が参加しました");
-    //}
-
-    ////他のプレイヤーが退出したときに呼ばれるコールバック
-    //public override void OnPlayerLeftRoom(Player player)
-    //{
-    //    Debug.Log(player.NickName + "が退出しました");
-    //}
-
 }
