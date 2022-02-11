@@ -45,7 +45,7 @@ public class RoomListView : MonoBehaviourPunCallbacks
     private void Awake()
     {
         scrollRect = GetComponent<ScrollRect>();
-        
+        PhotonNetwork.AutomaticallySyncScene = true;
     }
     private void Start()
     {
@@ -73,7 +73,8 @@ public class RoomListView : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.IsMessageQueueRunning = false;//チュートリアルの1  PhotonNetwork.IsMessageQueueRunning = true;はプレイヤー画面で行けるか確認
         //DontDestroyOnLoad(RoomSceneManagerOb);
-        SceneManager.LoadScene("RoomScene");//試作
+        PhotonNetwork.LoadLevel("RoomScene");
+        //SceneManager.LoadScene("RoomScene");//試作
     }
 
     private void OnCreateRoomButtonClick()

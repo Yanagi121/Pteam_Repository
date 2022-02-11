@@ -51,9 +51,6 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         UpdateMemberList();
     }
 
-
-
-
     public override void OnJoinedLobby()//検証用
     {
         Debug.Log("ロビーに参加");
