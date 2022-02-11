@@ -25,6 +25,9 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     GameObject avatarName;
     AvatarNameDisplay avatarNameDisplay;
 
+    [SerializeField] 
+    private GameObject GoButton;//マスタークライアント以外はGOボタンが押せない
+
     public bool enterMatchWaitRoomJudge;
   //  private string id;
     private void Start()
@@ -64,8 +67,16 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         enterMatchWaitRoomUI.SetActive(true);
         GameObject player =PhotonNetwork.Instantiate("Player", new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity)as GameObject;
         player.name = "PlayerPrefab";
-
-        Debug.Log("これはUserのid:");
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Debug.Log("自身がマスタークライアントです");
+            GoButton.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("自身がローカルプライヤーです");
+            GoButton.SetActive(false);
+        }
         // PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//他のネットワークオブジェクトがダメだったので可視化されているこれで確認したが駄目だった
         //Debug.Log("ルームに入ってない人"+PhotonNetwork.CountOfPlayersOnMaster);　未解決
         //Debug.Log("ルームに入っている人" + PhotonNetwork.CountOfPlayersInRooms); 未解決

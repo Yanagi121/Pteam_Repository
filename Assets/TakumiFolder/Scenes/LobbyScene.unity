@@ -2904,6 +2904,7 @@ MonoBehaviour:
   PlayerName: {fileID: 646244611}
   joinedPlayer: {fileID: 1489529487}
   avatarName: {fileID: 2112073641260390898, guid: e8e4a51033393734888618be227b5d0b, type: 3}
+  GoButton: {fileID: 1923818635}
   enterMatchWaitRoomJudge: 0
 --- !u!4 &1471893941
 Transform:

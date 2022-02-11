@@ -56,6 +56,7 @@ public class RoomListView : MonoBehaviourPunCallbacks
         GOButton.onClick.AddListener(PlayScene);
     }
 
+
     private void OnRoomNameInputFieldValueChanged(string value)//ƒ‹[ƒ€–¼‚ª1•¶ŽšˆÈã‚È‚¯‚ê‚Îì¬•s‰Â‚Æ‚È‚éH
     {
         CreateRoomButton.interactable = (value.Length > 0);
