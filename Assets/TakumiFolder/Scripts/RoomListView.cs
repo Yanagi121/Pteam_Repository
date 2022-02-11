@@ -34,6 +34,10 @@ public class RoomListView : MonoBehaviourPunCallbacks
     [SerializeField]
     private Button GOButton = default;
 
+    //DontDestroyOnLoad用
+    [SerializeField]
+    private GameObject RoomSceneManagerOb;
+
     private ScrollRect scrollRect;
     private Dictionary<string, RoomListEntry> activeEntries = new Dictionary<string, RoomListEntry>();//Dictionaryクラスの宣言及び初期化　DictionaryクラスはKey（文字）でValu（値の検索が可能）
     private Stack<RoomListEntry> inactiveEntries = new Stack<RoomListEntry>();//データの型を指定して宣言して、インスタンスの生成
@@ -49,13 +53,14 @@ public class RoomListView : MonoBehaviourPunCallbacks
         CreateRoomButton.onClick.AddListener(OnCreateRoomButtonClick);
         PlayerNameInput.onValueChanged.AddListener(PlayerNameInputFieldValueChanged);//名前を入力
         LeftRoomButton.onClick.AddListener(LeftRoom);
+        GOButton.onClick.AddListener(PlayScene);
     }
 
-    private void OnRoomNameInputFieldValueChanged(string value)//ルーム名が1文字以上なければ作成不可となる
+    private void OnRoomNameInputFieldValueChanged(string value)//ルーム名が1文字以上なければ作成不可となる？
     {
         CreateRoomButton.interactable = (value.Length > 0);
     }
-    private void PlayerNameInputFieldValueChanged(string value)//プレイヤー名が1文字以上なければ作成不可
+    private void PlayerNameInputFieldValueChanged(string value)//プレイヤー名が1文字以上なければ作成不可？？
     {
         PlayerNameButton.interactable = (value.Length > 0);
         PhotonNetwork.NickName = value;
@@ -66,7 +71,9 @@ public class RoomListView : MonoBehaviourPunCallbacks
     }
     private void PlayScene()
     {
-        SceneManager.LoadScene("SampleGame");
+        PhotonNetwork.IsMessageQueueRunning = false;//チュートリアルの1  PhotonNetwork.IsMessageQueueRunning = true;はプレイヤー画面で行けるか確認
+        //DontDestroyOnLoad(RoomSceneManagerOb);
+        SceneManager.LoadScene("RoomScene");//試作
     }
 
     private void OnCreateRoomButtonClick()

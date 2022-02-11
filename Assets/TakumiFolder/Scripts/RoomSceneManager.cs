@@ -13,7 +13,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     private GameObject enterMatchWaitRoomUI;//待機部屋のUI
 
     [SerializeField]
-    private TextMeshProUGUI RoomNum;
+    private TextMeshProUGUI RoomNum;//部屋にいる人数の把握　未解決の
 
     [SerializeField]
     private TextMeshProUGUI PlayerName;
@@ -26,14 +26,13 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     AvatarNameDisplay avatarNameDisplay;
 
     public bool enterMatchWaitRoomJudge;
+  //  private string id;
     private void Start()
     {
         // PhotonServerSettingsに設定した内容を使ってマスターサーバーへ接続する
         PhotonNetwork.ConnectUsingSettings();
         avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
-        PhotonNetwork.LocalPlayer.NickName = "Player"+avatarNameDisplay.nameLabel;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
-        
-        Debug.Log("これはニックネーム"+PhotonNetwork.NickName);//プレイヤー名は保存されている
+        PhotonNetwork.LocalPlayer.NickName = "Player"+avatarNameDisplay.nameLabel.text;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
 
     }
 
@@ -66,11 +65,13 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("待機ルームに参加");
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
-       // PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//他のネットワークオブジェクトがダメだったので可視化されているこれで確認したが駄目だった
-        Debug.Log("これはニックネーム" + PhotonNetwork.NickName);
-        //Debug.Log("ルームに入ってない人"+PhotonNetwork.CountOfPlayersOnMaster);
-        //Debug.Log("ルームに入っている人" + PhotonNetwork.CountOfPlayersInRooms);
+        //id = PhotonNetwork.LocalPlayer.UserId;
+        Debug.Log("これはUserのid:");
+         PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//他のネットワークオブジェクトがダメだったので可視化されているこれで確認したが駄目だった
+        //Debug.Log("ルームに入ってない人"+PhotonNetwork.CountOfPlayersOnMaster);　未解決
+        //Debug.Log("ルームに入っている人" + PhotonNetwork.CountOfPlayersInRooms); 未解決
     }
+
 
     public void OnPhotonPlayerConnected()
     {
@@ -105,3 +106,6 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log($"ルーム作成に失敗しました: {message}");
     }
 }
+
+
+
