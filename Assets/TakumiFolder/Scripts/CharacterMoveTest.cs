@@ -94,8 +94,6 @@ public class CharacterMoveTest : MonoBehaviourPunCallbacks
                 rg.MoveRotation(Quaternion.Euler(0.0f, rg.rotation.eulerAngles.y + mouseX * Time.deltaTime * 100.0f, 0.0f));
                 cameraX = Mathf.Clamp(cameraX - mouseY * Time.deltaTime * 100.0f, -40, 40);
                 transCamera.localEulerAngles = new Vector3(cameraX, 0, 0);
-
-
                }
                else
                {
