@@ -6,12 +6,6 @@ public class MovePointControl : MonoBehaviour
 {
     [SerializeField]
     public Dr_InvisibleControl Dr_InvisibleControl;
-    [SerializeField]
-    public MovePointControl movePointControl;
-
-    //Dr.Invisible‚ðéŒ¾
-    [SerializeField]
-    public GameObject Dr_Invisible;
 
     //MovePoint‚ÌˆÊ’u‚ð“ü‚ê‚é•Ï”
     [SerializeField]
@@ -50,10 +44,10 @@ public class MovePointControl : MonoBehaviour
         if (Player4In == true) { GoToTheFront(); }
 
         //”ÍˆÍŠO‚Éo‚È‚¢‚æ‚¤‚É‚·‚é
-        if (pos.x >= 65) { pos.x = 65; }
-        if (pos.x <= -155) { pos.x = -155; }
-        if (pos.z >= 265) { pos.z = 265; }
-        if (pos.z <= -145) { pos.z = -145; }
+        if (pos.x >= 470) { pos.x = 470; }
+        if (pos.x <= 90) { pos.x = 90; }
+        if (pos.z >= 420) { pos.z = 420; }
+        if (pos.z <= 130) { pos.z = 130; }
 
         //ˆÚ“®‚·‚éŒü‚«‚ð‹‚ß‚é
         Vector3 move_vec = Dr_InvisibleControl.toPlayer1Distance + Dr_InvisibleControl.toPlayer2Distance + Dr_InvisibleControl.toPlayer3Distance + Dr_InvisibleControl.toPlayer4Distance;
@@ -65,7 +59,7 @@ public class MovePointControl : MonoBehaviour
     public void GoToTheFront()
     {
         pos += transform.forward * speed * Time.deltaTime;
-        pos.y = 3.0f;
+        pos.y = 10.0f;
         transform.position = pos;
     }
 }

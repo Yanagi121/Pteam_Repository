@@ -22,7 +22,7 @@ public class Player2Control : MonoBehaviour
         Quaternion q = Quaternion.LookRotation(move_vec, Vector3.up);
         transform.rotation = Quaternion.Lerp(transform.rotation, q, 3.0f * Time.deltaTime);
         pos += transform.forward * speed * Time.deltaTime;
-        pos.y = 3.0f;
+        //pos.y = 3.0f;
         transform.position = pos;
     }
 }
