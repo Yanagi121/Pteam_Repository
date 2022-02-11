@@ -19,11 +19,23 @@ public class RoomListView : MonoBehaviourPunCallbacks
     private TMP_InputField MessageInput = default;
 
     [SerializeField]
+    public TMP_InputField PlayerNameInput = default;
+
+    [SerializeField]
     private Button CreateRoomButton = default;
+
+    [SerializeField]
+    private Button PlayerNameButton = default;
+
+    //待機画面UI
+    [SerializeField]
+    private Button LeftRoomButton = default;
+
+    [SerializeField]
+    private Button GOButton = default;
 
     private ScrollRect scrollRect;
     private Dictionary<string, RoomListEntry> activeEntries = new Dictionary<string, RoomListEntry>();//Dictionaryクラスの宣言及び初期化　DictionaryクラスはKey（文字）でValu（値の検索が可能）
-
     private Stack<RoomListEntry> inactiveEntries = new Stack<RoomListEntry>();//データの型を指定して宣言して、インスタンスの生成
 
     private void Awake()
@@ -35,12 +47,26 @@ public class RoomListView : MonoBehaviourPunCallbacks
     {
         RoomNameInput.onValueChanged.AddListener(OnRoomNameInputFieldValueChanged);
         CreateRoomButton.onClick.AddListener(OnCreateRoomButtonClick);
+        PlayerNameInput.onValueChanged.AddListener(PlayerNameInputFieldValueChanged);//名前を入力
+        LeftRoomButton.onClick.AddListener(LeftRoom);
     }
 
     private void OnRoomNameInputFieldValueChanged(string value)//ルーム名が1文字以上なければ作成不可となる
     {
-        
         CreateRoomButton.interactable = (value.Length > 0);
+    }
+    private void PlayerNameInputFieldValueChanged(string value)//プレイヤー名が1文字以上なければ作成不可
+    {
+        PlayerNameButton.interactable = (value.Length > 0);
+        PhotonNetwork.NickName = value;
+    }
+    private void LeftRoom()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
+    private void PlayScene()
+    {
+        SceneManager.LoadScene("SampleGame");
     }
 
     private void OnCreateRoomButtonClick()
