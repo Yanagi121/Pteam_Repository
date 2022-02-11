@@ -5,10 +5,11 @@ using UnityEngine;
 // MonoBehaviourPunCallbacksを継承して、photonViewプロパティを使えるようにする
 public class AvatarNameDisplay : MonoBehaviourPunCallbacks
 {
-    [SerializeField] public string nameLabel;
+    public TextMeshProUGUI nameLabel;
     public void Start()
     {
         // プレイヤー名とプレイヤーIDを表示する
-        nameLabel =""+photonView.OwnerActorNr;
+        nameLabel.text =""+photonView.OwnerActorNr;
+        Debug.Log("ネットワークオブジェクトを用いたUserのid取得:"+nameLabel.text);
     }
 }
