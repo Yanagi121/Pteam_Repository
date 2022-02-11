@@ -33,7 +33,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
         avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
         PhotonNetwork.LocalPlayer.NickName = "Player"+avatarNameDisplay.nameLabel.text;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
-
+        PhotonNetwork.IsMessageQueueRunning = true;
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
@@ -65,13 +65,16 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("待機ルームに参加");
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
-        //id = PhotonNetwork.LocalPlayer.UserId;
+        GameObject player =PhotonNetwork.Instantiate("Player", new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity)as GameObject;
+        player.name = "PlayerPrefab";
+
         Debug.Log("これはUserのid:");
-         PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//他のネットワークオブジェクトがダメだったので可視化されているこれで確認したが駄目だった
+        // PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//他のネットワークオブジェクトがダメだったので可視化されているこれで確認したが駄目だった
         //Debug.Log("ルームに入ってない人"+PhotonNetwork.CountOfPlayersOnMaster);　未解決
         //Debug.Log("ルームに入っている人" + PhotonNetwork.CountOfPlayersInRooms); 未解決
     }
 
+    
 
     public void OnPhotonPlayerConnected()
     {
