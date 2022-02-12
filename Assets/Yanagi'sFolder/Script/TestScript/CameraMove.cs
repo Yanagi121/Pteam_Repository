@@ -9,7 +9,7 @@ public class CameraMove : MonoBehaviour
     [SerializeField] Vector3 newAngle = new Vector3(0, 0, 0);
     [SerializeField] float y_rotate, x_rotate, x_reverce, y_reverce,
         cameraX, mouseX, mouseY, tmpX = 0, tmpY = 0, boolX, boolY, delayMove=0.1f;
-    public float CameraSensitivityX=5, CameraSensitivityY=5;
+    public float CameraSensitivityX=5, CameraSensitivityY=5,GetEscKey=0;
     [SerializeField] Transform transCamera;
     [SerializeField] bool TimeDelay = true;//false‚Ådelay
     [SerializeField] GameObject GamePlayer;
