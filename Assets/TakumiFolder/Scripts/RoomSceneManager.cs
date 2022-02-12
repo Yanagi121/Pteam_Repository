@@ -65,7 +65,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("ë“ã@ÉãÅ[ÉÄÇ…éQâ¡");
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
-        GameObject player =PhotonNetwork.Instantiate("Player", new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity)as GameObject;
+        GameObject player = PhotonNetwork.Instantiate("Player", new Vector3(176, 25, 262), Quaternion.identity) as GameObject;
         player.name = "PlayerPrefab";
         if (PhotonNetwork.IsMasterClient)
         {
