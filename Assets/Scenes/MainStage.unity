@@ -1010,7 +1010,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_Name
-      value: Capsule (1)
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 7978986798426122942, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_RootOrder
@@ -1067,7 +1067,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_Name
-      value: Capsule (3)
+      value: Player4
       objectReference: {fileID: 0}
     - target: {fileID: 7978986798426122942, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_RootOrder
@@ -1349,7 +1349,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_Name
-      value: Capsule
+      value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_TagString
@@ -1744,7 +1744,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_Name
-      value: Capsule (2)
+      value: Player3
       objectReference: {fileID: 0}
     - target: {fileID: 7978986798426122942, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_RootOrder
