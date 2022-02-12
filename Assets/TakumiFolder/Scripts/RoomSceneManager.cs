@@ -65,8 +65,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("待機ルームに参加");
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
-        GameObject player = PhotonNetwork.Instantiate("Player", new Vector3(176, 25, 262), Quaternion.identity) as GameObject;
-        player.name = "PlayerPrefab";
+        GameObject player = PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) as GameObject;
+        player.tag = "PlayerPrefab";//プレイヤーのプレハブのタグ名を統一？　適応がされるか要確認　適応された場合はプレイヤープレハブタグがついたオブ軸とから逃げる操作を実装する
         if (PhotonNetwork.IsMasterClient)
         {
             Debug.Log("自身がマスタークライアントです");
