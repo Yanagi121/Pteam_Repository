@@ -62,9 +62,9 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()//ローカルプレイヤーのみに反応
     {
         Debug.Log("待機ルームに参加");
-      //  LobbyUI.SetActive(false);
-      //  enterMatchWaitRoomUI.SetActive(true);
-        GameObject player = PhotonNetwork.Instantiate("Player", new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+        //  LobbyUI.SetActive(false);
+        //  enterMatchWaitRoomUI.SetActive(true);
+        GameObject player = PhotonNetwork.Instantiate("Player", new Vector3(176, 25, 262), Quaternion.identity) as GameObject;
         player.name = "PlayerPrefab";
 
         Debug.Log("これはUserのid:");
