@@ -10,7 +10,7 @@ public class CollisionJudgement : MonoBehaviour
     //MovwPoint‚ðˆÚ“®‚³‚¹‚é‚©‚ð”»’f‚·‚é”ÍˆÍ‚É“ü‚Á‚½‚©‚Ì”»’è
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player1") { movePointControl.Player1In = true; }
+        if (other.gameObject.name == "Player1") {Debug.Log("Player1In"); movePointControl.Player1In = true; }
         if (other.gameObject.name == "Player2") { movePointControl.Player2In = true; }
         if (other.gameObject.name == "Player3") { movePointControl.Player3In = true; }
         if (other.gameObject.name == "Player4") { movePointControl.Player4In = true; }
