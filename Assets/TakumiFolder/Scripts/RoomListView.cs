@@ -54,16 +54,18 @@ public class RoomListView : MonoBehaviourPunCallbacks
         PlayerNameInput.onValueChanged.AddListener(PlayerNameInputFieldValueChanged);//名前を入力
         LeftRoomButton.onClick.AddListener(LeftRoom);
         GOButton.onClick.AddListener(PlayScene);
+        CreateRoomButton.interactable = false;
     }
 
 
     private void OnRoomNameInputFieldValueChanged(string value)//ルーム名が1文字以上なければ作成不可となる？
     {
         CreateRoomButton.interactable = (value.Length > 0);
+        if (value.Length>0)Debug.Log("一文字以上入力された");
     }
     private void PlayerNameInputFieldValueChanged(string value)//プレイヤー名が1文字以上なければ作成不可？？
     {
-        PlayerNameButton.interactable = (value.Length > 0);
+       // PlayerNameButton.interactable = (value.Length > 0);
         PhotonNetwork.NickName = value;
     }
     private void LeftRoom()
