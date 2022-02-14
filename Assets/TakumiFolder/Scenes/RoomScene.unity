@@ -6130,6 +6130,10 @@ PrefabInstance:
       propertyPath: ObservedComponents.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 129797920802749867, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 383915595778121899, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -6177,6 +6181,10 @@ PrefabInstance:
     - target: {fileID: 1056939209243555468, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
       propertyPath: m_Name
       value: Dr_Invisible (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911323718551513235, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7561171418501377745, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
       propertyPath: TargetObject
