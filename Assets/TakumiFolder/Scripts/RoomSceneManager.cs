@@ -32,6 +32,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     private int PlayerNum;
 
     public bool enterMatchWaitRoomJudge;
+
+
   //  private string id;
     private void Start()
     {
@@ -40,6 +42,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
         PhotonNetwork.LocalPlayer.NickName = "Player"+ Random.Range(1, 1000);//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
         PhotonNetwork.IsMessageQueueRunning = true;
+        CameraMove.transCamera = Camera.main.transform;
+        Debug.Log(CameraMove.transCamera+"を取得しました");
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
