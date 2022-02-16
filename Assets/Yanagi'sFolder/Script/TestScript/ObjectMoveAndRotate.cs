@@ -1,8 +1,9 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectMoveAndRotate : MonoBehaviour
+public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
 {
     [SerializeField] Rigidbody rb;
     [SerializeField] float thrust=0,addforce,GetX,GetZ;
@@ -15,23 +16,31 @@ public class ObjectMoveAndRotate : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        DontDestroyOnLoad(this.gameObject);
+        PlayerCamera = GameObject.Find("Camera1");
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetZ=Input.GetAxis("Horizontal")* addforce;
-        GetX = Input.GetAxis("Vertical")*addforce;
-        
+        if (photonView.IsMine)//photonView.IsMine
+        {
+            GetZ = Input.GetAxis("Horizontal") * addforce;
+            GetX = Input.GetAxis("Vertical") * addforce;
 
-        //CameraVector=PlayerCamera.transform;
-        CameraVectorRotate = PlayerCamera.transform.eulerAngles;
-        PlayerVectorRotate.y= CameraVectorRotate.y;
-        this.gameObject.transform.eulerAngles = new Vector3(0, PlayerVectorRotate.y,0);
+
+            //CameraVector=PlayerCamera.transform;
+            CameraVectorRotate = PlayerCamera.transform.eulerAngles;
+            PlayerVectorRotate.y = CameraVectorRotate.y;
+            this.gameObject.transform.eulerAngles = new Vector3(0, PlayerVectorRotate.y, 0);
+        }
     }
     private void FixedUpdate()
     {
-        rb.AddRelativeForce(Vector3.forward * GetX);
-        rb.AddRelativeForce(Vector3.right * GetZ);
+        if (photonView.IsMine)//photonView.IsMine
+        {
+            rb.AddRelativeForce(Vector3.forward * GetX);
+            rb.AddRelativeForce(Vector3.right * GetZ);
+        }
     }
 }

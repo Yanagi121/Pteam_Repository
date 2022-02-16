@@ -88,7 +88,7 @@ public class Dr_InvisibleControl : MonoBehaviour
     public void setPlayerPos()
     {
         Player1Pos = Player1.transform.position;
-        Debug.Log("player1Pos:" + Player1Pos);
+        //Debug.Log("player1Pos:" + Player1Pos);
         Player2Pos = Player2.transform.position;
         Player3Pos = Player3.transform.position;
         Player4Pos = Player4.transform.position;

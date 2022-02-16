@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TakumiFolder/Scenes/RoomScene.unity
     guid: 68b4fff7907961843a51bcc4f52ba070
+  - enabled: 1
+    path: Assets/TakumiFolder/Scenes/NewRoom.unity
+    guid: 4ede08e5225922b4b877e16582228a80
   m_configObjects: {}
