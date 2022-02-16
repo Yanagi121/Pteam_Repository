@@ -68,15 +68,17 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("待機ルームに参加");
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
-        GameObject player = PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) as GameObject;
+        GameObject player = PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) as GameObject;
+        GameObject camera = PhotonNetwork.Instantiate("MainCamera", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) as GameObject;
         //プレイヤーのプレハブのタグ名を統一？　適応がされるか要確認　適応された場合はプレイヤープレハブタグがついたオブ軸とから逃げる操作を実装する
-        
+
         ///////////////////////////////////////////////////////////絶対修正
         if (PhotonNetwork.IsMasterClient)
         {
             Debug.Log("自身がマスタークライアントです");
             GoButton.SetActive(true);
             player.name = "Player1";
+            camera.name = "Camera1";
         }
         else
         {
