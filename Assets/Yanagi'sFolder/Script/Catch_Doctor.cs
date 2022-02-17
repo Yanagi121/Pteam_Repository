@@ -24,7 +24,7 @@ public class Catch_Doctor : MonoBehaviour
         if (other.gameObject.CompareTag("Dr") && Input.GetMouseButtonDown(0))
         {
             SetTime = true;
-           
+            TimeOver.gameover = true;
         }
     }
     void SetSlowTime()
