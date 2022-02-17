@@ -123,6 +123,120 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &33910891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 33910892}
+  - component: {fileID: 33910893}
+  m_Layer: 0
+  m_Name: LanguageSettings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &33910892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33910891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &33910893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33910891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u8A00\u8A9E\u8A2D\u5B9A"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Language settings
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Opciones de lenguaje
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u8BED\u8A00\u8BBE\u7F6E"
+    Object: {fileID: 0}
+--- !u!1 &105562841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 105562842}
+  - component: {fileID: 105562843}
+  m_Layer: 0
+  m_Name: Skip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &105562842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105562841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &105562843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105562841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30B9\u30AD\u30C3\u30D7"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Skip
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Saltar
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u8DF3\u8FC7"
+    Object: {fileID: 0}
 --- !u!1001 &107662325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -315,7 +429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   translationName: SpaceKeyToExit
   FallbackText: "\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\u3067\u9000\u51FA"
---- !u!1 &199749877
+--- !u!1 &116281077
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,36 +437,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 199749878}
-  - component: {fileID: 199749879}
+  - component: {fileID: 116281078}
+  - component: {fileID: 116281079}
   m_Layer: 0
-  m_Name: DoctorIsAlsoAPlayer
+  m_Name: HighResolution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &199749878
+--- !u!4 &116281078
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 199749877}
+  m_GameObject: {fileID: 116281077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 13
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &199749879
+--- !u!114 &116281079
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 199749877}
+  m_GameObject: {fileID: 116281077}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -361,16 +475,130 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u6E96\u5099\u4E2D\uFF08\u535A\u58EB\u3082\u30D7\u30EC\u30A4\u30E4\u30FC\uFF09"
+    Text: "\u9AD8"
     Object: {fileID: 0}
   - Language: English
-    Text: "In preparation\uFF08Doctor is also a player\uFF09"
+    Text: High
     Object: {fileID: 0}
   - Language: Spanish
-    Text: "En preparaci\xF3n\uFF08El doctor tambi\xE9n es un jugador\uFF09"
+    Text: Alto
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u51C6\u5907\u4E2D\uFF08\u535A\u58EB\u4E5F\u662F\u73A9\u5BB6\uFF09"
+    Text: "\u9AD8\u7684"
+    Object: {fileID: 0}
+--- !u!1 &142948701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142948702}
+  - component: {fileID: 142948703}
+  m_Layer: 0
+  m_Name: BackToRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &142948702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142948701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &142948703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142948701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30EB\u30FC\u30E0\u306B\u623B\u308B"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Back to Room
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "Volver a la habitaci\xF3n"
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u8FD4\u56DE\u623F\u95F4"
+    Object: {fileID: 0}
+--- !u!1 &184335436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184335437}
+  - component: {fileID: 184335438}
+  m_Layer: 0
+  m_Name: Create
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &184335437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184335436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &184335438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184335436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u4F5C\u6210"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Create
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Crear
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u521B\u5EFA"
     Object: {fileID: 0}
 --- !u!1 &204286053
 GameObject:
@@ -453,7 +681,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204286053}
   m_CullTransparentMesh: 1
---- !u!1 &250223337
+--- !u!1 &208574860
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -461,36 +689,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 250223338}
-  - component: {fileID: 250223339}
+  - component: {fileID: 208574861}
+  - component: {fileID: 208574862}
   m_Layer: 0
-  m_Name: MediumResolution
+  m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &250223338
+--- !u!4 &208574861
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250223337}
+  m_GameObject: {fileID: 208574860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 16
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &250223339
+--- !u!114 &208574862
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250223337}
+  m_GameObject: {fileID: 208574860}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -499,18 +727,18 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u4E2D"
+    Text: "\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC"
     Object: {fileID: 0}
   - Language: English
-    Text: Medium
+    Text: Game Over
     Object: {fileID: 0}
   - Language: Spanish
-    Text: Medio
+    Text: Juego terminado
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u4E2D\u7B49\u7684"
+    Text: "\u6E38\u620F\u7ED3\u675F"
     Object: {fileID: 0}
---- !u!1 &358253870
+--- !u!1 &233465958
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -518,8 +746,236 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 358253871}
-  - component: {fileID: 358253872}
+  - component: {fileID: 233465959}
+  - component: {fileID: 233465960}
+  m_Layer: 0
+  m_Name: DoctorIsAlsoAPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233465959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233465958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233465960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233465958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u6E96\u5099\u4E2D\uFF08\u535A\u58EB\u3082\u30D7\u30EC\u30A4\u30E4\u30FC\uFF09"
+    Object: {fileID: 0}
+  - Language: English
+    Text: "In preparation\uFF08Doctor is also a player\uFF09"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "En preparaci\xF3n\uFF08El doctor tambi\xE9n es un jugador\uFF09"
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u51C6\u5907\u4E2D\uFF08\u535A\u58EB\u4E5F\u662F\u73A9\u5BB6\uFF09"
+    Object: {fileID: 0}
+--- !u!1 &348895831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 348895832}
+  - component: {fileID: 348895833}
+  m_Layer: 0
+  m_Name: Ready
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &348895832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348895831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &348895833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348895831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u6E96\u5099\u5B8C\u4E86"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Ready
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Listo
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u51C6\u5907\u597D"
+    Object: {fileID: 0}
+--- !u!1 &377329334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377329335}
+  - component: {fileID: 377329336}
+  m_Layer: 0
+  m_Name: GameClear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &377329335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377329334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377329336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377329334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30B2\u30FC\u30E0\u30AF\u30EA\u30A2"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Game Clear
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Juego claro
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u6E38\u620F\u901A\u5173"
+    Object: {fileID: 0}
+--- !u!1 &535608108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 535608109}
+  - component: {fileID: 535608110}
+  m_Layer: 0
+  m_Name: Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &535608109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535608108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535608110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535608108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u8A2D\u5B9A"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Settings
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Ajustes
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u914D\u7F6E"
+    Object: {fileID: 0}
+--- !u!1 &541594700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541594701}
+  - component: {fileID: 541594702}
   m_Layer: 0
   m_Name: Input
   m_TagString: Untagged
@@ -527,27 +983,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &358253871
+--- !u!4 &541594701
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358253870}
+  m_GameObject: {fileID: 541594700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
+  m_Father: {fileID: 900303836}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &358253872
+--- !u!114 &541594702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358253870}
+  m_GameObject: {fileID: 541594700}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -567,69 +1023,7 @@ MonoBehaviour:
   - Language: Chinese
     Text: "\u8F93\u5165"
     Object: {fileID: 0}
---- !u!1001 &481592503
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1324685501}
-    m_Modifications:
-    - target: {fileID: 765358623864573794, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_Name
-      value: English
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
---- !u!4 &481592504 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
-  m_PrefabInstance: {fileID: 481592503}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &520976007
+--- !u!1 &587689821
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -637,36 +1031,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 520976008}
-  - component: {fileID: 520976009}
+  - component: {fileID: 587689822}
+  - component: {fileID: 587689823}
   m_Layer: 0
-  m_Name: Volume
+  m_Name: Strat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &520976008
+--- !u!4 &587689822
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520976007}
+  m_GameObject: {fileID: 587689821}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 18
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &520976009
+--- !u!114 &587689823
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520976007}
+  m_GameObject: {fileID: 587689821}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -675,16 +1069,16 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u97F3\u91CF"
+    Text: "\u30B9\u30BF\u30FC\u30C8"
     Object: {fileID: 0}
   - Language: English
-    Text: Volume
+    Text: Start
     Object: {fileID: 0}
   - Language: Spanish
-    Text: Volumen
+    Text: Comienzo
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u4F53\u79EF"
+    Text: "\u5F00\u59CB"
     Object: {fileID: 0}
 --- !u!1001 &589598660
 PrefabInstance:
@@ -796,7 +1190,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2427998845580098294, guid: b9531b756baeac245bc27aa7f2a8de7b, type: 3}
   m_PrefabInstance: {fileID: 589598660}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &687907427
+--- !u!1 &629924969
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -804,36 +1198,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 687907428}
-  - component: {fileID: 687907429}
+  - component: {fileID: 629924970}
+  - component: {fileID: 629924971}
   m_Layer: 0
-  m_Name: Create
+  m_Name: EveryoneNeedsToPressReady
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &687907428
+--- !u!4 &629924970
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687907427}
+  m_GameObject: {fileID: 629924969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 22
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &687907429
+--- !u!114 &629924971
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687907427}
+  m_GameObject: {fileID: 629924969}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -842,18 +1236,80 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u4F5C\u6210"
+    Text: "\u8AB0\u3082\u304C\u6E96\u5099\u5B8C\u4E86\u3092\u62BC\u3059\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059"
     Object: {fileID: 0}
   - Language: English
-    Text: Create
+    Text: Everyone needs to press ready
     Object: {fileID: 0}
   - Language: Spanish
-    Text: Crear
+    Text: Todo el mundo necesita presionar listo
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u521B\u5EFA"
+    Text: "\u6BCF\u4E2A\u4EBA\u90FD\u9700\u8981\u505A\u597D\u51C6\u5907"
     Object: {fileID: 0}
---- !u!1 &733970564
+--- !u!1001 &675383146
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 900303836}
+    m_Modifications:
+    - target: {fileID: 765358623864573794, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_Name
+      value: Chinese
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+--- !u!4 &675383147 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
+  m_PrefabInstance: {fileID: 675383146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &729908272
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -861,36 +1317,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 733970565}
-  - component: {fileID: 733970566}
+  - component: {fileID: 729908273}
+  - component: {fileID: 729908274}
   m_Layer: 0
-  m_Name: OperationDescription
+  m_Name: RoomName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &733970565
+--- !u!4 &729908273
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733970564}
+  m_GameObject: {fileID: 729908272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 11
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &733970566
+--- !u!114 &729908274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733970564}
+  m_GameObject: {fileID: 729908272}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -898,17 +1354,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: 0
   entries:
-  - Language: English
-    Text: Operation Description
-    Object: {fileID: 0}
   - Language: Japanese
-    Text: "\u64CD\u4F5C\u8AAC\u660E"
+    Text: "\u30EB\u30FC\u30E0\u540D"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Room name
     Object: {fileID: 0}
   - Language: Spanish
-    Text: "Descripci\xF3n de la operaci\xF3n"
+    Text: "Nombre de la habitaci\xF3n"
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u64CD\u4F5C\u8BF4\u660E"
+    Text: "\u623F\u95F4\u540D\u79F0"
     Object: {fileID: 0}
 --- !u!1 &789200689
 GameObject:
@@ -991,6 +1447,236 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789200689}
   m_CullTransparentMesh: 1
+--- !u!1 &855495200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 855495201}
+  - component: {fileID: 855495202}
+  m_Layer: 0
+  m_Name: PlayMovie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &855495201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855495200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &855495202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855495200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30E0\u30FC\u30D3\u30FC\u518D\u751F"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Play Movie
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "Reproducir pel\xEDcula"
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u64AD\u653E\u7535\u5F71"
+    Object: {fileID: 0}
+--- !u!1 &878345422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 878345423}
+  - component: {fileID: 878345424}
+  m_Layer: 0
+  m_Name: CreateRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &878345423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878345422}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &878345424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878345422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30EB\u30FC\u30E0\u4F5C\u6210"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Create a room
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "Crear una habitaci\xF3n"
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u521B\u5EFA\u623F\u95F4"
+    Object: {fileID: 0}
+--- !u!1 &900303832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900303836}
+  - component: {fileID: 900303835}
+  - component: {fileID: 900303834}
+  - component: {fileID: 900303833}
+  m_Layer: 0
+  m_Name: GameControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &900303833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900303832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLanguage: Japanese
+  detectLanguage: 1
+  defaultLanguage: 
+  saveLoad: 0
+  prefabs: []
+--- !u!114 &900303834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900303832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fca9b25d3b519f46884acb860befab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeType: 0
+--- !u!114 &900303835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900303832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010fccd9875074342a0937a043e3d4e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 0.6
+  bgmVolume: 0.6
+  seVolume: 0.6
+  speakerVolume: 0.6
+--- !u!4 &900303836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900303832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 291.76337, y: 98.194, z: 268.1931}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1678441277}
+  - {fileID: 1695120905}
+  - {fileID: 1099692463}
+  - {fileID: 675383147}
+  - {fileID: 105562842}
+  - {fileID: 587689822}
+  - {fileID: 2008576505}
+  - {fileID: 535608109}
+  - {fileID: 1940737124}
+  - {fileID: 33910892}
+  - {fileID: 1661565750}
+  - {fileID: 1293477315}
+  - {fileID: 1391192378}
+  - {fileID: 233465959}
+  - {fileID: 1653540971}
+  - {fileID: 116281078}
+  - {fileID: 1016018219}
+  - {fileID: 1641225501}
+  - {fileID: 1439214803}
+  - {fileID: 878345423}
+  - {fileID: 2038493005}
+  - {fileID: 541594701}
+  - {fileID: 184335437}
+  - {fileID: 1738480449}
+  - {fileID: 855495201}
+  - {fileID: 208574861}
+  - {fileID: 377329335}
+  - {fileID: 142948702}
+  - {fileID: 1092887546}
+  - {fileID: 729908273}
+  - {fileID: 1092515625}
+  - {fileID: 348895832}
+  - {fileID: 629924970}
+  - {fileID: 1156040674}
+  - {fileID: 1216695339}
+  - {fileID: 2102362394}
+  - {fileID: 1831495154}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &910549659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1338,7 +2024,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &969661249
+--- !u!1 &1016018218
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1346,36 +2032,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 969661250}
-  - component: {fileID: 969661251}
+  - component: {fileID: 1016018219}
+  - component: {fileID: 1016018220}
   m_Layer: 0
-  m_Name: Tutorial
+  m_Name: MediumResolution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &969661250
+--- !u!4 &1016018219
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969661249}
+  m_GameObject: {fileID: 1016018218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 6
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &969661251
+--- !u!114 &1016018220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969661249}
+  m_GameObject: {fileID: 1016018218}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -1384,16 +2070,16 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u30C1\u30E5\u30FC\u30C8\u30EA\u30A2\u30EB"
+    Text: "\u4E2D"
     Object: {fileID: 0}
   - Language: English
-    Text: Tutorial
+    Text: Medium
     Object: {fileID: 0}
   - Language: Spanish
-    Text: Tutorial
+    Text: Medio
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u6559\u7A0B"
+    Text: "\u4E2D\u7B49\u7684"
     Object: {fileID: 0}
 --- !u!1 &1061816010
 GameObject:
@@ -1478,7 +2164,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1150382562
+--- !u!1 &1092515624
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1486,36 +2172,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1150382563}
-  - component: {fileID: 1150382564}
+  - component: {fileID: 1092515625}
+  - component: {fileID: 1092515626}
   m_Layer: 0
-  m_Name: RoomList
+  m_Name: ExitingTheRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1150382563
+--- !u!4 &1092515625
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150382562}
+  m_GameObject: {fileID: 1092515624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 20
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1150382564
+--- !u!114 &1092515626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150382562}
+  m_GameObject: {fileID: 1092515624}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -1524,18 +2210,18 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u30EB\u30FC\u30E0\u4E00\u89A7"
+    Text: "\u9000\u51FA"
     Object: {fileID: 0}
   - Language: English
-    Text: Room List
+    Text: Exiting the room
     Object: {fileID: 0}
   - Language: Spanish
-    Text: Lista de habitaciones
+    Text: "Saliendo de la habitaci\xF3n"
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u623F\u95F4\u6E05\u5355"
+    Text: "\u79BB\u5F00\u623F\u95F4"
     Object: {fileID: 0}
---- !u!1 &1165130980
+--- !u!1 &1092887545
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1543,36 +2229,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1165130981}
-  - component: {fileID: 1165130982}
+  - component: {fileID: 1092887546}
+  - component: {fileID: 1092887547}
   m_Layer: 0
-  m_Name: SpaceKeyToExit
+  m_Name: BackToTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1165130981
+--- !u!4 &1092887546
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165130980}
+  m_GameObject: {fileID: 1092887545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 10
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1165130982
+--- !u!114 &1092887547
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165130980}
+  m_GameObject: {fileID: 1092887545}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -1581,18 +2267,80 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\u3067\u9000\u51FA"
+    Text: "\u30BF\u30A4\u30C8\u30EB\u306B\u623B\u308B"
     Object: {fileID: 0}
   - Language: English
-    Text: Space key to exit
+    Text: Back to Title
     Object: {fileID: 0}
   - Language: Spanish
-    Text: Tecla espaciadora para salir
+    Text: "Volver al t\xEDtulo"
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u7528\u7A7A\u683C\u952E\u9000\u51FA"
+    Text: "\u8FD4\u56DE\u6807\u9898"
     Object: {fileID: 0}
---- !u!1 &1175978939
+--- !u!1001 &1099692462
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 900303836}
+    m_Modifications:
+    - target: {fileID: 765358623864573794, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_Name
+      value: Spanish
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+--- !u!4 &1099692463 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
+  m_PrefabInstance: {fileID: 1099692462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1156040673
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1600,36 +2348,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1175978940}
-  - component: {fileID: 1175978941}
+  - component: {fileID: 1156040674}
+  - component: {fileID: 1156040675}
   m_Layer: 0
-  m_Name: Credits
+  m_Name: Member1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1175978940
+--- !u!4 &1156040674
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175978939}
+  m_GameObject: {fileID: 1156040673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 8
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1175978941
+--- !u!114 &1156040675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175978939}
+  m_GameObject: {fileID: 1156040673}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -1638,18 +2386,18 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u30AF\u30EC\u30B8\u30C3\u30C8"
+    Text: "\u30E1\u30F3\u30D0\u30FC1"
     Object: {fileID: 0}
   - Language: English
-    Text: Credits
+    Text: Member 1
     Object: {fileID: 0}
   - Language: Spanish
-    Text: "Cr\xE9ditos"
+    Text: Miembro 1
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u4FE1\u7528"
+    Text: "\u4F1A\u5458 1"
     Object: {fileID: 0}
---- !u!1 &1255392458
+--- !u!1 &1216695338
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1657,36 +2405,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1255392459}
-  - component: {fileID: 1255392460}
+  - component: {fileID: 1216695339}
+  - component: {fileID: 1216695340}
   m_Layer: 0
-  m_Name: LowResolution
+  m_Name: Member2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1255392459
+--- !u!4 &1216695339
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255392458}
+  m_GameObject: {fileID: 1216695338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 17
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1255392460
+--- !u!114 &1216695340
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255392458}
+  m_GameObject: {fileID: 1216695338}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -1695,18 +2443,18 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u4F4E\u3044"
+    Text: "\u30E1\u30F3\u30D0\u30FC2"
     Object: {fileID: 0}
   - Language: English
-    Text: Low
-    Object: {fileID: 0}
-  - Language: Spanish
-    Text: Bajo
+    Text: Member 2
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u4F4E\u7684"
+    Text: "\u4F1A\u5458 2"
     Object: {fileID: 0}
---- !u!1 &1312174230
+  - Language: Spanish
+    Text: Miembro 2
+    Object: {fileID: 0}
+--- !u!1 &1293477314
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1714,36 +2462,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1312174231}
-  - component: {fileID: 1312174232}
+  - component: {fileID: 1293477315}
+  - component: {fileID: 1293477316}
   m_Layer: 0
-  m_Name: AllParipi
+  m_Name: OperationDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1312174231
+--- !u!4 &1293477315
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312174230}
+  m_GameObject: {fileID: 1293477314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 12
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1312174232
+--- !u!114 &1293477316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312174230}
+  m_GameObject: {fileID: 1293477314}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -1751,234 +2499,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: 0
   entries:
-  - Language: Japanese
-    Text: "\u307F\u3093\u306A\u3067\u3071\u308A\u3074"
-    Object: {fileID: 0}
   - Language: English
-    Text: Everyone,"Outgoing person"
+    Text: Operation Description
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u64CD\u4F5C\u8AAC\u660E"
     Object: {fileID: 0}
   - Language: Spanish
-    Text: Todos, \"Persona extrovertida\"
+    Text: "Descripci\xF3n de la operaci\xF3n"
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u5927\u5BB6\u201C\u5916\u5411\u7684\u4EBA\u201D"
-    Object: {fileID: 0}
---- !u!1 &1321576524
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1321576525}
-  - component: {fileID: 1321576526}
-  m_Layer: 0
-  m_Name: CreateRoom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1321576525
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321576524}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1321576526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321576524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: 0
-  entries:
-  - Language: Japanese
-    Text: "\u30EB\u30FC\u30E0\u4F5C\u6210"
-    Object: {fileID: 0}
-  - Language: English
-    Text: Create a room
-    Object: {fileID: 0}
-  - Language: Spanish
-    Text: "Crear una habitaci\xF3n"
-    Object: {fileID: 0}
-  - Language: Chinese
-    Text: "\u521B\u5EFA\u623F\u95F4"
-    Object: {fileID: 0}
---- !u!1 &1324685497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1324685501}
-  - component: {fileID: 1324685500}
-  - component: {fileID: 1324685499}
-  - component: {fileID: 1324685498}
-  m_Layer: 0
-  m_Name: GameControl
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1324685498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324685497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentLanguage: Japanese
-  detectLanguage: 1
-  defaultLanguage: 
-  saveLoad: 0
-  prefabs: []
---- !u!114 &1324685499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324685497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fca9b25d3b519f46884acb860befab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeType: 0
---- !u!114 &1324685500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324685497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 010fccd9875074342a0937a043e3d4e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volume: 0.6
-  bgmVolume: 0.6
-  seVolume: 0.6
-  speakerVolume: 0.6
---- !u!4 &1324685501
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324685497}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 291.76337, y: 98.194, z: 268.1931}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1665197045}
-  - {fileID: 481592504}
-  - {fileID: 1606704275}
-  - {fileID: 1445947970}
-  - {fileID: 1921894036}
-  - {fileID: 1784289264}
-  - {fileID: 969661250}
-  - {fileID: 1906118636}
-  - {fileID: 1175978940}
-  - {fileID: 1349075266}
-  - {fileID: 1165130981}
-  - {fileID: 733970565}
-  - {fileID: 1312174231}
-  - {fileID: 199749878}
-  - {fileID: 1418261129}
-  - {fileID: 1327162284}
-  - {fileID: 250223338}
-  - {fileID: 1255392459}
-  - {fileID: 520976008}
-  - {fileID: 1321576525}
-  - {fileID: 1150382563}
-  - {fileID: 358253871}
-  - {fileID: 687907428}
-  - {fileID: 1548099827}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1327162283
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1327162284}
-  - component: {fileID: 1327162285}
-  m_Layer: 0
-  m_Name: HighResolution
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1327162284
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327162283}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1327162285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327162283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: 0
-  entries:
-  - Language: Japanese
-    Text: "\u9AD8"
-    Object: {fileID: 0}
-  - Language: English
-    Text: High
-    Object: {fileID: 0}
-  - Language: Spanish
-    Text: Alto
-    Object: {fileID: 0}
-  - Language: Chinese
-    Text: "\u9AD8\u7684"
+    Text: "\u64CD\u4F5C\u8BF4\u660E"
     Object: {fileID: 0}
 --- !u!1 &1333417539
 GameObject:
@@ -2046,7 +2577,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1349075265
+--- !u!1 &1391192377
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2054,36 +2585,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1349075266}
-  - component: {fileID: 1349075267}
+  - component: {fileID: 1391192378}
+  - component: {fileID: 1391192379}
   m_Layer: 0
-  m_Name: LanguageSettings
+  m_Name: AllParipi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1349075266
+--- !u!4 &1391192378
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349075265}
+  m_GameObject: {fileID: 1391192377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 9
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1349075267
+--- !u!114 &1391192379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349075265}
+  m_GameObject: {fileID: 1391192377}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -2092,18 +2623,18 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u8A00\u8A9E\u8A2D\u5B9A"
+    Text: "\u307F\u3093\u306A\u3067\u3071\u308A\u3074"
     Object: {fileID: 0}
   - Language: English
-    Text: Language settings
+    Text: Everyone,"Outgoing person"
     Object: {fileID: 0}
   - Language: Spanish
-    Text: Opciones de lenguaje
+    Text: Todos, \"Persona extrovertida\"
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u8BED\u8A00\u8BBE\u7F6E"
+    Text: "\u5927\u5BB6\u201C\u5916\u5411\u7684\u4EBA\u201D"
     Object: {fileID: 0}
---- !u!1 &1418261128
+--- !u!1 &1439214802
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2111,36 +2642,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1418261129}
-  - component: {fileID: 1418261130}
+  - component: {fileID: 1439214803}
+  - component: {fileID: 1439214804}
   m_Layer: 0
-  m_Name: Resolution
+  m_Name: Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1418261129
+--- !u!4 &1439214803
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1418261128}
+  m_GameObject: {fileID: 1439214802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 14
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1418261130
+--- !u!114 &1439214804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1418261128}
+  m_GameObject: {fileID: 1439214802}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -2149,79 +2680,17 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u89E3\u50CF\u5EA6"
+    Text: "\u97F3\u91CF"
     Object: {fileID: 0}
   - Language: English
-    Text: Resolution
+    Text: Volume
     Object: {fileID: 0}
   - Language: Spanish
-    Text: "Resoluci\xF3n"
+    Text: Volumen
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u89E3\u51B3"
+    Text: "\u4F53\u79EF"
     Object: {fileID: 0}
---- !u!1001 &1445947969
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1324685501}
-    m_Modifications:
-    - target: {fileID: 765358623864573794, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_Name
-      value: Chinese
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
---- !u!4 &1445947970 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: 0b402d229c8451245b63baec8f5eee3a, type: 3}
-  m_PrefabInstance: {fileID: 1445947969}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1518018739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2414,63 +2883,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   translationName: Settings
   FallbackText: "\u8A2D\u5B9A"
---- !u!1 &1548099826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1548099827}
-  - component: {fileID: 1548099828}
-  m_Layer: 0
-  m_Name: ChangePlayerName
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1548099827
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548099826}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1548099828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548099826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: 0
-  entries:
-  - Language: Japanese
-    Text: "\u30D7\u30EC\u30A4\u30E4\u30FC\u540D\u3092\u5909\u66F4\u3059\u308B"
-    Object: {fileID: 0}
-  - Language: English
-    Text: Change player name
-    Object: {fileID: 0}
-  - Language: Spanish
-    Text: Cambiar el nombre del jugador
-    Object: {fileID: 0}
-  - Language: Chinese
-    Text: "\u66F4\u6539\u73A9\u5BB6\u540D\u79F0"
-    Object: {fileID: 0}
 --- !u!1 &1587557377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,74 +2964,183 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587557377}
   m_CullTransparentMesh: 1
---- !u!1001 &1606704274
-PrefabInstance:
+--- !u!1 &1641225500
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1324685501}
-    m_Modifications:
-    - target: {fileID: 765358623864573794, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_Name
-      value: Spanish
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
---- !u!4 &1606704275 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
-  m_PrefabInstance: {fileID: 1606704274}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1665197044
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1641225501}
+  - component: {fileID: 1641225502}
+  m_Layer: 0
+  m_Name: LowResolution
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1641225501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641225500}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1641225502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641225500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u4F4E\u3044"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Low
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Bajo
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u4F4E\u7684"
+    Object: {fileID: 0}
+--- !u!1 &1653540970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1653540971}
+  - component: {fileID: 1653540972}
+  m_Layer: 0
+  m_Name: Resolution
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1653540971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653540970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653540972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653540970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u89E3\u50CF\u5EA6"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Resolution
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "Resoluci\xF3n"
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u89E3\u51B3"
+    Object: {fileID: 0}
+--- !u!1 &1661565749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1661565750}
+  - component: {fileID: 1661565751}
+  m_Layer: 0
+  m_Name: SpaceKeyToExit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1661565750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661565749}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1661565751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661565749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\u3067\u9000\u51FA"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Space key to exit
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Tecla espaciadora para salir
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u7528\u7A7A\u683C\u952E\u9000\u51FA"
+    Object: {fileID: 0}
+--- !u!1001 &1678441276
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1324685501}
+    m_TransformParent: {fileID: 900303836}
     m_Modifications:
     - target: {fileID: 765358623864573794, guid: ec42e2074e930e94992aeb030caf4604, type: 3}
       propertyPath: m_Name
@@ -2671,10 +3192,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec42e2074e930e94992aeb030caf4604, type: 3}
---- !u!4 &1665197045 stripped
+--- !u!4 &1678441277 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: ec42e2074e930e94992aeb030caf4604, type: 3}
-  m_PrefabInstance: {fileID: 1665197044}
+  m_PrefabInstance: {fileID: 1678441276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1695120904
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 900303836}
+    m_Modifications:
+    - target: {fileID: 765358623864573794, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_Name
+      value: English
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+--- !u!4 &1695120905 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: 971ef8207f535194faf411d40b27fb77, type: 3}
+  m_PrefabInstance: {fileID: 1695120904}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1710815514
 PrefabInstance:
@@ -2900,6 +3483,63 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2427998845580098294, guid: b9531b756baeac245bc27aa7f2a8de7b, type: 3}
   m_PrefabInstance: {fileID: 1728671851}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1738480448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1738480449}
+  - component: {fileID: 1738480450}
+  m_Layer: 0
+  m_Name: ChangePlayerName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1738480449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738480448}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738480450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738480448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30D7\u30EC\u30A4\u30E4\u30FC\u540D\u3092\u5909\u66F4\u3059\u308B"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Change player name
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Cambiar el nombre del jugador
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u66F4\u6539\u73A9\u5BB6\u540D\u79F0"
+    Object: {fileID: 0}
 --- !u!1 &1774555700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,63 +3615,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774555700}
   m_CullTransparentMesh: 1
---- !u!1 &1784289263
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1784289264}
-  - component: {fileID: 1784289265}
-  m_Layer: 0
-  m_Name: Strat
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1784289264
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784289263}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1784289265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784289263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: 0
-  entries:
-  - Language: Japanese
-    Text: "\u30B9\u30BF\u30FC\u30C8"
-    Object: {fileID: 0}
-  - Language: English
-    Text: Start
-    Object: {fileID: 0}
-  - Language: Spanish
-    Text: Comienzo
-    Object: {fileID: 0}
-  - Language: Chinese
-    Text: "\u5F00\u59CB"
-    Object: {fileID: 0}
 --- !u!1 &1792153240
 GameObject:
   m_ObjectHideFlags: 0
@@ -3217,7 +3800,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812768961}
   m_CullTransparentMesh: 1
---- !u!1 &1906118635
+--- !u!1 &1831495153
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3225,36 +3808,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1906118636}
-  - component: {fileID: 1906118637}
+  - component: {fileID: 1831495154}
+  - component: {fileID: 1831495155}
   m_Layer: 0
-  m_Name: Settings
+  m_Name: Member4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1906118636
+--- !u!4 &1831495154
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906118635}
+  m_GameObject: {fileID: 1831495153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 7
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1906118637
+--- !u!114 &1831495155
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906118635}
+  m_GameObject: {fileID: 1831495153}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -3263,18 +3846,18 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u8A2D\u5B9A"
+    Text: "\u30E1\u30F3\u30D0\u30FC4"
     Object: {fileID: 0}
   - Language: English
-    Text: Settings
+    Text: Member 4
     Object: {fileID: 0}
   - Language: Spanish
-    Text: Ajustes
+    Text: Miembro 4
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u914D\u7F6E"
+    Text: "\u4F1A\u5458 4"
     Object: {fileID: 0}
---- !u!1 &1921894035
+--- !u!1 &1940737123
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3282,36 +3865,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1921894036}
-  - component: {fileID: 1921894037}
+  - component: {fileID: 1940737124}
+  - component: {fileID: 1940737125}
   m_Layer: 0
-  m_Name: Skip
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1921894036
+--- !u!4 &1940737124
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921894035}
+  m_GameObject: {fileID: 1940737123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1324685501}
-  m_RootOrder: 4
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1921894037
+--- !u!114 &1940737125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921894035}
+  m_GameObject: {fileID: 1940737123}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
@@ -3320,16 +3903,187 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Japanese
-    Text: "\u30B9\u30AD\u30C3\u30D7"
+    Text: "\u30AF\u30EC\u30B8\u30C3\u30C8"
     Object: {fileID: 0}
   - Language: English
-    Text: Skip
+    Text: Credits
     Object: {fileID: 0}
   - Language: Spanish
-    Text: Saltar
+    Text: "Cr\xE9ditos"
     Object: {fileID: 0}
   - Language: Chinese
-    Text: "\u8DF3\u8FC7"
+    Text: "\u4FE1\u7528"
+    Object: {fileID: 0}
+--- !u!1 &2008576504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2008576505}
+  - component: {fileID: 2008576506}
+  m_Layer: 0
+  m_Name: Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2008576505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008576504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2008576506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008576504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30C1\u30E5\u30FC\u30C8\u30EA\u30A2\u30EB"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Tutorial
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Tutorial
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u6559\u7A0B"
+    Object: {fileID: 0}
+--- !u!1 &2038493004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2038493005}
+  - component: {fileID: 2038493006}
+  m_Layer: 0
+  m_Name: RoomList
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2038493005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038493004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2038493006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038493004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30EB\u30FC\u30E0\u4E00\u89A7"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Room List
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Lista de habitaciones
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u623F\u95F4\u6E05\u5355"
+    Object: {fileID: 0}
+--- !u!1 &2102362393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2102362394}
+  - component: {fileID: 2102362395}
+  m_Layer: 0
+  m_Name: Member3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2102362394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102362393}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 900303836}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2102362395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102362393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30E1\u30F3\u30D0\u30FC3"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Member 3
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Miembro 3
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u4F1A\u5458 3"
     Object: {fileID: 0}
 --- !u!1001 &5639420972700698582
 PrefabInstance:
