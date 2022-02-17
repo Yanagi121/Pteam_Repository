@@ -180,6 +180,63 @@ MonoBehaviour:
   - Language: Chinese
     Text: "\u914D\u7F6E"
     Object: {fileID: 0}
+--- !u!1 &67902317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67902318}
+  - component: {fileID: 67902319}
+  m_Layer: 0
+  m_Name: GameOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &67902318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67902317}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 178196794}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &67902319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67902317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Game Over
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Juego terminado
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u6E38\u620F\u7ED3\u675F"
+    Object: {fileID: 0}
 --- !u!1 &70289222
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,6 +727,10 @@ Transform:
   - {fileID: 230600239}
   - {fileID: 259582346}
   - {fileID: 113909957}
+  - {fileID: 67902318}
+  - {fileID: 1677102328}
+  - {fileID: 432553527}
+  - {fileID: 1899500085}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -993,6 +1054,63 @@ MonoBehaviour:
   - GamePlay
   - GameOver
   - GameCrear
+--- !u!1 &432553526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 432553527}
+  - component: {fileID: 432553528}
+  m_Layer: 0
+  m_Name: BackToRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &432553527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432553526}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 178196794}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &432553528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432553526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30EB\u30FC\u30E0\u306B\u623B\u308B"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Back to Room
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "Volver a la habitaci\xF3n"
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u8FD4\u56DE\u623F\u95F4"
+    Object: {fileID: 0}
 --- !u!1 &478840907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,6 +1876,63 @@ MonoBehaviour:
   - Language: Chinese
     Text: "\u4F4E\u7684"
     Object: {fileID: 0}
+--- !u!1 &1677102327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677102328}
+  - component: {fileID: 1677102329}
+  m_Layer: 0
+  m_Name: GameClear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1677102328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677102327}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 178196794}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1677102329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677102327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30B2\u30FC\u30E0\u30AF\u30EA\u30A2"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Game Clear
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Juego claro
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u6E38\u620F\u901A\u5173"
+    Object: {fileID: 0}
 --- !u!1 &1774555700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,6 +2222,63 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: Chinese
     Text: "\u9AD8\u7684"
+    Object: {fileID: 0}
+--- !u!1 &1899500084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1899500085}
+  - component: {fileID: 1899500086}
+  m_Layer: 0
+  m_Name: BackToTitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1899500085
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899500084}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 178196794}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1899500086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899500084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Japanese
+    Text: "\u30BF\u30A4\u30C8\u30EB\u306B\u623B\u308B"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Back to Title
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "Volver al t\xEDtulo"
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u8FD4\u56DE\u6807\u9898"
     Object: {fileID: 0}
 --- !u!1 &1939388220
 GameObject:
