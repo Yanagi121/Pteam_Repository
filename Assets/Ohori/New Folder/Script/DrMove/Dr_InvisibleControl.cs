@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Photon.Pun;
 
 public class Dr_InvisibleControl : MonoBehaviour
 {
@@ -52,6 +53,7 @@ public class Dr_InvisibleControl : MonoBehaviour
         // NavMeshAgentコンポーネントを取得
         m_navMeshAgent = GetComponent<NavMeshAgent>();
         this.m_navMeshAgent.speed = EscapeSpeed;
+        Debug.Log(PhotonNetwork.CountOfPlayersInRooms + 1 + "/" + PhotonNetwork.CountOfPlayers);//ルーム内の人数把握を行い、後のif文で取得するオブジェクトの数を決める
     }
 
     void Update()

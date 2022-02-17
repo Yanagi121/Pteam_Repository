@@ -33,7 +33,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
        // avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
        // PhotonNetwork.LocalPlayer.NickName = "Player" + avatarNameDisplay.nameLabel.text;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
         PhotonNetwork.IsMessageQueueRunning = true;
-        Debug.Log(CameraMove.transCamera + "を取得しました");
+        
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
