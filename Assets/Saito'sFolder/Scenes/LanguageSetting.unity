@@ -332,6 +332,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpainLanguageButton
       objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 614085432}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSpanishButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: translationControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
       propertyPath: m_Text
       value: "Espa\xF1ol"
@@ -343,6 +371,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2974981695640387900, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
   m_PrefabInstance: {fileID: 107662325}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &182048889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2974981695640387901, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+  m_PrefabInstance: {fileID: 1630505602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &182048890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182048889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebafd46d499d68a4dab3641edd9d5602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &211001006
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +597,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnglishLanguageButton
       objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1670009488}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnEnglishButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: translationControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
       propertyPath: m_Text
       value: English
@@ -620,6 +693,23 @@ MonoBehaviour:
   - Language: Chinese
     Text: "\u6559\u7A0B"
     Object: {fileID: 0}
+--- !u!1 &528324139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2974981695640387901, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+  m_PrefabInstance: {fileID: 1898851690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &528324140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528324139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebafd46d499d68a4dab3641edd9d5602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &580913871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -739,6 +829,23 @@ MonoBehaviour:
   - Language: Chinese
     Text: "\u521B\u5EFA\u623F\u95F4"
     Object: {fileID: 0}
+--- !u!1 &614085431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2974981695640387901, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+  m_PrefabInstance: {fileID: 107662325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &614085432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614085431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebafd46d499d68a4dab3641edd9d5602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &640245030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,6 +2045,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChinaLanguageButton
       objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 182048890}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChineseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: translationControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
       propertyPath: m_Text
       value: "\u4E2D\u56FD\u8BED"
@@ -2118,6 +2253,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
   m_PrefabInstance: {fileID: 1666079521}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1670009487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2974981695640387901, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+  m_PrefabInstance: {fileID: 336557216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1670009488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670009487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebafd46d499d68a4dab3641edd9d5602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1701863092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2626,6 +2778,34 @@ PrefabInstance:
     - target: {fileID: 2974981695640387901, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
       propertyPath: m_Name
       value: JapanLanguageButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 528324140}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnJapaneseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: translationControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974981695640387903, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
       propertyPath: m_Text
