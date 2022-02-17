@@ -15,6 +15,7 @@ public class CameraMove : MonoBehaviourPunCallbacks
     [SerializeField] bool TimeDelay = true;//false‚Ådelay
     [SerializeField] GameObject GamePlayer;
     [SerializeField] Vector3 GamePlayerTransform;
+    private string Player;
 
 
     void Start()
@@ -22,9 +23,11 @@ public class CameraMove : MonoBehaviourPunCallbacks
         //newAngle = this.transform.localEulerAngles;
        // lastMousePosition = Input.mousePosition;
         transCamera = this.gameObject.transform;
+        Player = "Player" + photonView.OwnerActorNr;
         Invoke("Progress", delayMove);
         DontDestroyOnLoad(this.gameObject);
-        GamePlayer = GameObject.Find("Player1");
+        GamePlayer = GameObject.Find(Player);
+        Debug.Log(GamePlayer);
     }
 
     void FixedUpdate()
@@ -61,7 +64,7 @@ public class CameraMove : MonoBehaviourPunCallbacks
 
             }
             GamePlayerTransform = GamePlayer.transform.position;
-            transCamera.position = GamePlayerTransform;
+            transCamera.position = GamePlayerTransform+new Vector3(0, 1.5f, 0);
         }
     }
     void Progress()

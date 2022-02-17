@@ -12,12 +12,15 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     //[SerializeField] Transform CameraVector;
     [SerializeField] Vector3 CameraVectorRotate;
     [SerializeField] Vector3 PlayerVectorRotate;
+    private string Camera;
     // Start is called before the first frame update
     void Start()
     {
+        Camera = "Camera" + photonView.OwnerActorNr;
         rb = GetComponent<Rigidbody>();
         DontDestroyOnLoad(this.gameObject);
-        PlayerCamera = GameObject.Find("Camera1");
+        PlayerCamera = GameObject.Find(Camera);
+        Debug.Log(Camera);
     }
 
     // Update is called once per frame
