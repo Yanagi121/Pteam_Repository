@@ -1,9 +1,9 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-//using Photon.Pun;
+//private const int _PLAYER_UPPER_LIMIT = 4;
 
-//private void PlayerProperties ()
+///// <summary>
+///// プレイヤーに番号を与える
+///// </summary>
+//private void PlayerProperties()
 //{
 //    //自分のクライアントの同期オブジェクトにのみ
 //    if (photonView.IsMine)
@@ -13,8 +13,8 @@
 //        //制限人数までの数字のリストを作成
 //        //例) 制限人数 = 4 の場合、{0,1,2,3}
 //        int count = 0;
-//        for (int i = 0; i < 4; i++)
-//        //{
+//        for (int i = 0; i < _PLAYER_UPPER_LIMIT; i++)
+//        {
 //            playerSetableCountList.Add(count);
 //            count++;
 //        }
