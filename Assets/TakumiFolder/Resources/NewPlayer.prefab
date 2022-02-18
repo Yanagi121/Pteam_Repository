@@ -246,7 +246,7 @@ MonoBehaviour:
   MoveBack: 0
   MoveLeft: 0
   MoveRight: 0
-  PlayerCamera: {fileID: 8003721533800753425, guid: d7d825062c3eede4fa061c3309466b79, type: 3}
+  PlayerCamera: {fileID: 0}
   CameraVectorRotate: {x: 0, y: 0, z: 0}
   PlayerVectorRotate: {x: 0, y: 0, z: 0}
 --- !u!114 &-761015613621205115

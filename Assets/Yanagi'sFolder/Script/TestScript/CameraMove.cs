@@ -15,7 +15,7 @@ public class CameraMove : MonoBehaviour
     public static  bool TimeDelay = false;//falseでdelay
     [SerializeField] GameObject GamePlayer;
     [SerializeField] Vector3 GamePlayerTransform;
-    private string Player1;
+    private string Player;
 
 
     void Start()
@@ -32,11 +32,12 @@ public class CameraMove : MonoBehaviour
     {
         transCamera = this.gameObject.transform;
         DontDestroyOnLoad(this.gameObject);
-        if(this.gameObject.name=="Camera1")GamePlayer = GameObject.Find("Player1");
-        else if (this.gameObject.name == "Camera2") GamePlayer = GameObject.Find("Player2");
-        else if (this.gameObject.name == "Camera3") GamePlayer = GameObject.Find("Player3");
-        else if (this.gameObject.name == "Camera4") GamePlayer = GameObject.Find("Player4");
-        else { Debug.Log("エラー"); }
+        GamePlayer = GameObject.Find("Player"+RoomSceneManager.Porder);
+        /*if (this.gameObject.name == "Camera1")*/
+        //else if (this.gameObject.name == "Camera2") GamePlayer = GameObject.Find("Player2");
+        //else if (this.gameObject.name == "Camera3") GamePlayer = GameObject.Find("Player3");
+        //else if (this.gameObject.name == "Camera4") GamePlayer = GameObject.Find("Player4");
+        //else { Debug.Log("エラー"); }
     }
 
     void FixedUpdate()

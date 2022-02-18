@@ -38,22 +38,24 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     [SerializeField] int num2;
 
     [SerializeField] GameObject Camera1;
-    [SerializeField] GameObject Camera2;
-    [SerializeField] GameObject Camera3;
-    [SerializeField] GameObject Camera4;
+    //[SerializeField] GameObject Camera2;
+    //[SerializeField] GameObject Camera3;
+    //[SerializeField] GameObject Camera4;
 
     GameObject player;
 
     string p;
 
     [SerializeField] int p1;
-    [SerializeField] int Porder;//プレイヤーの順番
+    public static  int Porder;//プレイヤーの順番
 
     [SerializeField] List<int> Pnum;
     [SerializeField] bool Pbool;
     [SerializeField] int[] PN = { 0, 0, 0, 0 };
 
     [SerializeField] int RoomNumber;
+
+    public static bool OneTime=true;
 
     //[SerializeField]Photon
 
@@ -66,9 +68,9 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         PhotonNetwork.IsMessageQueueRunning = true;
         CameraMove.transCamera = Camera.main.transform;
         Camera1.SetActive(false);
-        Camera2.SetActive(false);
-        Camera3.SetActive(false);
-        Camera4.SetActive(false);
+        //Camera2.SetActive(false);
+        //Camera3.SetActive(false);
+        //Camera4.SetActive(false);
         Pnum.AddRange(PN);        
 
     }
@@ -106,14 +108,17 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
         //PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
         //PhotonNetwork.Instantiate("MainCamera", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
-         player=PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) ;
+         player=PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), -100, Random.Range(250, 270)), Quaternion.identity) ;
+        //player.name = "Player" + Porder;
+        
+   //// Camera.SetActive(true);
         //  Instantiate(Camera1, new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) ;
         //プレイヤーのプレハブのタグ名を統一？　適応がされるか要確認　適応された場合はプレイヤープレハブタグがついたオブ軸とから逃げる操作を実装する
         Photon.Realtime.Player player2 = PhotonNetwork.LocalPlayer;
-        Debug.Log("PlayerNo" + player2.ActorNumber);
+       // Debug.Log("PlayerNo" + player2.ActorNumber);
         p1 = player2.ActorNumber;
 
-        photonView.RPC(nameof(RoomID), RpcTarget.AllBuffered, Porder);
+        //photonView.RPC(nameof(RoomID), RpcTarget.AllBuffered, Porder);
        // photonView.RPC(nameof(PlayerNameShare), RpcTarget.AllBuffered, player.name);
 
 
@@ -122,14 +127,14 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         ///////////////////////////////////////////////////////////絶対修正
         if (PhotonNetwork.IsMasterClient)
         {
-            Debug.Log("自身がマスタークライアントです");
+           // Debug.Log("自身がマスタークライアントです");
             GoButton.SetActive(true);
            // player.name = "Player1";
            // camera.name = "Camera1";
         }
         else
         {
-            Debug.Log("自身がローカルプライヤーです");
+           // Debug.Log("自身がローカルプライヤーです");
             GoButton.SetActive(false);
            // player.name = "Player2";
         }
@@ -164,7 +169,14 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
             {
                 if (p1 == Pnum[i]) { Porder = i; }//
             }
-        Debug.Log("プレイヤー"+joinedPlayer);
+        if (OneTime)
+        {
+            player.name = "Player" + Porder;
+            OneTime = false;
+            Debug.Log(player.name);
+            Camera1.SetActive(true);
+        }
+        //Debug.Log("プレイヤー"+Porder);
        // Debug.Log(num);
     }
     public override void OnLeftRoom()

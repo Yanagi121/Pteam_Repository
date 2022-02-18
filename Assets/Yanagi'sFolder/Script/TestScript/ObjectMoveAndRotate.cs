@@ -20,17 +20,23 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     {
         rb = GetComponent<Rigidbody>();
         DontDestroyOnLoad(this.gameObject);
-        if (this.gameObject.name == "Player1") PlayerCamera = GameObject.Find("Camera1");
-        else if (this.gameObject.name == "Player2") PlayerCamera = GameObject.Find("Camera2");
-        else if (this.gameObject.name == "Player3") PlayerCamera = GameObject.Find("Camera3");
-        else if (this.gameObject.name == "Player4") PlayerCamera = GameObject.Find("Camera4");
-        else { Debug.Log("エラー"); }
+        
+        //if (this.gameObject.name == "Player1") PlayerCamera = GameObject.Find("Camera1");
+        //else if (this.gameObject.name == "Player2") PlayerCamera = GameObject.Find("Camera2");
+        //else if (this.gameObject.name == "Player3") PlayerCamera = GameObject.Find("Camera3");
+        //else if (this.gameObject.name == "Player4") PlayerCamera = GameObject.Find("Camera4");
+        //else { Debug.Log("エラー"); }
         //Debug.Log("を取得しました");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (RoomSceneManager.OneTime)
+        {
+            PlayerCamera = GameObject.FindGameObjectWithTag("Camera1");
+            
+        }
         if (photonView.IsMine)//photonView.IsMine
         {
             GetZ = Input.GetAxis("Horizontal") * addforce;
