@@ -111,11 +111,9 @@ MonoBehaviour:
   tmpY: 0
   boolX: 0
   boolY: 0
-  delayMove: 0.1
   CameraSensitivityX: 5
   CameraSensitivityY: 5
   GetEscKey: 0
-  TimeDelay: 0
   GamePlayer: {fileID: 6551558479439488503, guid: 92ef3849cc0217c45858a492f8fcf9f7, type: 3}
   GamePlayerTransform: {x: 0, y: 0, z: 0}
 --- !u!114 &-7381652024204373307

@@ -23,15 +23,14 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
 
     //[SerializeField]
     //GameObject avatarName;
-    AvatarNameDisplay avatarNameDisplay;
-
+    [SerializeField] float delayMove = 0.1f;
     public bool enterMatchWaitRoomJudge;
     //  private string id;
     private void Start()
     {
-       
-       // avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
-       // PhotonNetwork.LocalPlayer.NickName = "Player" + avatarNameDisplay.nameLabel.text;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
+        Invoke("Progress", delayMove);
+        // avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
+        // PhotonNetwork.LocalPlayer.NickName = "Player" + avatarNameDisplay.nameLabel.text;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
         PhotonNetwork.IsMessageQueueRunning = true;
         
     }
@@ -50,7 +49,10 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
         // Debug.Log(PhotonNetwork.CountOfRooms);
         //UpdateMemberList();
     }
-
+    void Progress()
+    {
+          CameraMove.TimeDelay = true;
+    }
 
 
 
