@@ -33,7 +33,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
     public bool enterMatchWaitRoomJudge;
 
-    [SerializeField]int num;
+    [SerializeField]int num = 0;
     [SerializeField] int num2;
 
     [SerializeField] GameObject Camera1;
@@ -44,6 +44,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     GameObject player;
 
     string p; 
+
+    //[SerializeField]Photon
 
     //  private string id;
     private void Start()
@@ -73,6 +75,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         RoomNum.text = PhotonNetwork.CountOfPlayersInRooms + "/" + PhotonNetwork.CountOfPlayers;
         // Debug.Log(PhotonNetwork.CountOfRooms);
         UpdateMemberList();
+        num = photonView.OwnerActorNr % 4;
     }
 
     public override void OnJoinedLobby()//検証用
@@ -127,17 +130,18 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     }
     public void UpdateMemberList()
     {
-        num=0;
+        //num = 0;
         joinedPlayer.text = "";
 
         foreach (var p in PhotonNetwork.PlayerList)
         {
             joinedPlayer.text += p.NickName + "\n";
-            num++;
+           // num++;
             //PhotonNetwork.Instantiate("PlayerName", new Vector3(0, 0, 0), Quaternion.identity);
+            Debug.Log(num);
         }
         Debug.Log("プレイヤー"+joinedPlayer);
-        //Debug.Log(num);
+       // Debug.Log(num);
     }
     public override void OnLeftRoom()
     {
@@ -161,9 +165,10 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     [PunRPC]
     private void RoomID(int num)//同期した変数を用いた処理を行う？　同期はこの中でのみ？
     {
+
         switch (num)
         {
-            case 0: player.name= "Player1"; Camera1.SetActive(true); break;
+            case 0: player.name = "Player1"; Camera1.SetActive(true); break;
             case 1: player.name = "Player2"; Camera2.SetActive(true); break;
             case 2: player.name = "Player3"; Camera3.SetActive(true); break;
             case 3: player.name = "Player4"; Camera4.SetActive(true); break;
