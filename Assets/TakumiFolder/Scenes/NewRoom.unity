@@ -1256,7 +1256,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_Name
-      value: Player3
+      value: Player3-1
       objectReference: {fileID: 0}
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_IsActive
@@ -1599,7 +1599,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_Name
-      value: Player4
+      value: Player4-1
       objectReference: {fileID: 0}
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_IsActive
@@ -3054,7 +3054,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_Name
-      value: Player2
+      value: Player2-1
       objectReference: {fileID: 0}
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_IsActive
