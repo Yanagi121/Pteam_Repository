@@ -43,6 +43,7 @@ MonoBehaviour:
   - HitByProjectile
   - RpcSendMessage
   - RoomID
+  - PlayerNameShare
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

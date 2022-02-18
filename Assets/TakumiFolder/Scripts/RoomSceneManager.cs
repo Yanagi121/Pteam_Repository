@@ -43,6 +43,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
     GameObject player;
 
+    string p; 
+
     //  private string id;
     private void Start()
     {
@@ -91,7 +93,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         //  Instantiate(Camera1, new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) ;
         //プレイヤーのプレハブのタグ名を統一？　適応がされるか要確認　適応された場合はプレイヤープレハブタグがついたオブ軸とから逃げる操作を実装する
         photonView.RPC(nameof(RoomID), RpcTarget.AllBuffered, num);
-        
+       // photonView.RPC(nameof(PlayerNameShare), RpcTarget.AllBuffered, player.name);
+
 
         //camera.name = PhotonNetwork.LocalPlayer.NickName+"Camera";
 
@@ -156,17 +159,33 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    private void RoomID(int num)
+    private void RoomID(int num)//同期した変数を用いた処理を行う？　同期はこの中でのみ？
     {
         switch (num)
         {
-            case 0: player.name = "Player1"; Camera1.SetActive(true); break;
+            case 0: player.name= "Player1"; Camera1.SetActive(true); break;
             case 1: player.name = "Player2"; Camera2.SetActive(true); break;
             case 2: player.name = "Player3"; Camera3.SetActive(true); break;
             case 3: player.name = "Player4"; Camera4.SetActive(true); break;
             default: Debug.Log("人数超過・エラー"); break;
         }
     }
+
+
+
+
+    [PunRPC]
+    private void PlayerNameShare(string p) 
+    {
+        switch (p)
+        {
+            case "Player1":break;
+            case "Player2": break;
+            case "Player3": break;
+            case "Player4": break;
+        }
+    }
+
 }
 
 
