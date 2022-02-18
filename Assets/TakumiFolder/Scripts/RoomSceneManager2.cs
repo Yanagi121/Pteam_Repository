@@ -25,6 +25,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
     //GameObject avatarName;
     [SerializeField] float delayMove = 0.1f;
     public bool enterMatchWaitRoomJudge;
+    public static bool CameFind;
     //  private string id;
     private void Start()
     {
@@ -32,7 +33,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
         // avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
         // PhotonNetwork.LocalPlayer.NickName = "Player" + avatarNameDisplay.nameLabel.text;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
         PhotonNetwork.IsMessageQueueRunning = true;
-        
+        Invoke("CameraFind", 0.5f);
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
@@ -118,6 +119,11 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         Debug.Log($"ルーム作成に失敗しました: {message}");
+    }
+
+    private void CameraFind()
+    {
+        CameFind = true;
     }
 }
 
