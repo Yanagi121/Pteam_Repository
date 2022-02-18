@@ -1,39 +1,43 @@
-using Photon.Pun;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraMove : MonoBehaviourPunCallbacks
+public class CameraMove : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] Vector3 lastMousePosition;
     [SerializeField] Vector3 newAngle = new Vector3(0, 0, 0);
     [SerializeField] float y_rotate, x_rotate, x_reverce, y_reverce,
-        cameraX, mouseX, mouseY, tmpX = 0, tmpY = 0, boolX, boolY, delayMove=0.1f;
+        cameraX, mouseX, mouseY, tmpX = 0, tmpY = 0, boolX, boolY;
     public float CameraSensitivityX=5, CameraSensitivityY=5,GetEscKey=0;
     public static  Transform transCamera;
-    [SerializeField] bool TimeDelay = true;//false‚Ådelay
+    public static  bool TimeDelay = false;//false‚Ådelay
     [SerializeField] GameObject GamePlayer;
     [SerializeField] Vector3 GamePlayerTransform;
-    private string Player;
+    private string Player1;
 
 
     void Start()
     {
         //newAngle = this.transform.localEulerAngles;
        // lastMousePosition = Input.mousePosition;
+
+        //  Camera1.name = photonView.Owner.NickName+"Camera";
+       // Player1 = ""+ photonView.OwnerActorNr;
+        
+    }
+
+    private void OnEnable()//SetActive‚ªtrue‚©‚çfalse‚É‚È‚Á‚½‚Æ‚«‚É‹N“®
+    {
         transCamera = this.gameObject.transform;
-        Player = "Player" + photonView.OwnerActorNr;
-        Invoke("Progress", delayMove);
         DontDestroyOnLoad(this.gameObject);
-        GamePlayer = GameObject.Find(Player);
-        Debug.Log(GamePlayer);
+        GamePlayer = GameObject.Find("Player1111");
     }
 
     void FixedUpdate()
     {
-        if (photonView.IsMine)//photonView.IsMine
-        {
+
             if (TimeDelay)
             {
                 /*newAngle.y += (Input.mousePosition.x - lastMousePosition.x) * y_rotate * x_reverce;
@@ -65,13 +69,7 @@ public class CameraMove : MonoBehaviourPunCallbacks
             }
             GamePlayerTransform = GamePlayer.transform.position;
             transCamera.position = GamePlayerTransform+new Vector3(0, 1.5f, 0);
-        }
+        
     }
-    void Progress()
-    {
-        if (photonView.IsMine)//photonView.IsMine
-        {
-            TimeDelay = true;
-        }
-    }
+
 }

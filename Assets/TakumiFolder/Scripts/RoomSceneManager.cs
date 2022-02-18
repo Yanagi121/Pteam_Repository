@@ -23,7 +23,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
     [SerializeField]
     GameObject avatarName;
-    AvatarNameDisplay avatarNameDisplay;
+   
 
     [SerializeField] 
     private GameObject GoButton;//マスタークライアント以外はGOボタンが押せない
@@ -33,17 +33,22 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
     public bool enterMatchWaitRoomJudge;
 
+    [SerializeField]int num;
 
-  //  private string id;
+    [SerializeField] GameObject Camera1;
+    [SerializeField] GameObject Camera2;
+    [SerializeField] GameObject Camera3;
+    [SerializeField] GameObject Camera4;
+
+    //  private string id;
     private void Start()
     {
         // PhotonServerSettingsに設定した内容を使ってマスターサーバーへ接続する
         PhotonNetwork.ConnectUsingSettings();
-        avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
         PhotonNetwork.LocalPlayer.NickName = "Player"+ Random.Range(1, 1000);//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
         PhotonNetwork.IsMessageQueueRunning = true;
         CameraMove.transCamera = Camera.main.transform;
-        Debug.Log(CameraMove.transCamera+"を取得しました");
+        Camera1.SetActive(false);
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
@@ -72,23 +77,37 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("待機ルームに参加");
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
-        GameObject player = PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) as GameObject;
-        GameObject camera = PhotonNetwork.Instantiate("MainCamera", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) as GameObject;
+
+        //PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
+        //PhotonNetwork.Instantiate("MainCamera", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
+         GameObject player=PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) ;
+        //  Instantiate(Camera1, new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) ;
         //プレイヤーのプレハブのタグ名を統一？　適応がされるか要確認　適応された場合はプレイヤープレハブタグがついたオブ軸とから逃げる操作を実装する
+        player.name = "Player1111";//PhotonNetwork.LocalPlayer.NickName;
+        switch (num)
+        {
+            case 0: Camera1.SetActive(true); break;
+            case 1: Camera2.SetActive(true); break;
+            case 2: Camera3.SetActive(true); break;
+            case 3: Camera4.SetActive(true); break;
+            default: Debug.Log("人数超過・エラー");break;
+        }
+            
+        //camera.name = PhotonNetwork.LocalPlayer.NickName+"Camera";
 
         ///////////////////////////////////////////////////////////絶対修正
         if (PhotonNetwork.IsMasterClient)
         {
             Debug.Log("自身がマスタークライアントです");
             GoButton.SetActive(true);
-            player.name = "Player1";
-            camera.name = "Camera1";
+           // player.name = "Player1";
+           // camera.name = "Camera1";
         }
         else
         {
             Debug.Log("自身がローカルプライヤーです");
             GoButton.SetActive(false);
-            player.name = "Player2";
+           // player.name = "Player2";
         }
         /////////////////////////////////////////////////////////////
         // PhotonNetwork.Instantiate("Avatar", new Vector3(0, 0, 0), Quaternion.identity);//他のネットワークオブジェクトがダメだったので可視化されているこれで確認したが駄目だった
@@ -105,12 +124,17 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     }
     public void UpdateMemberList()
     {
+        num=0;
         joinedPlayer.text = "";
+
         foreach (var p in PhotonNetwork.PlayerList)
         {
             joinedPlayer.text += p.NickName + "\n";
+            num++;
             //PhotonNetwork.Instantiate("PlayerName", new Vector3(0, 0, 0), Quaternion.identity);
         }
+        Debug.Log("プレイヤー"+joinedPlayer);
+        //Debug.Log(num);
     }
     public override void OnLeftRoom()
     {
