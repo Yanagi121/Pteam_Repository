@@ -20,8 +20,8 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     {
         rb = GetComponent<Rigidbody>();
         DontDestroyOnLoad(this.gameObject);
-       // Camera = "Camera"+photonView.OwnerActorNr;
-        PlayerCamera = GameObject.Find("Camera1");
+        Camera = "Camera"+photonView.OwnerActorNr;
+        PlayerCamera = GameObject.Find(Camera);
         //Debug.Log("‚ðŽæ“¾‚µ‚Ü‚µ‚½");
     }
 

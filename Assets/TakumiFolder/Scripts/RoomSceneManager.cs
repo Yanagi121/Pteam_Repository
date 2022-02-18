@@ -34,11 +34,14 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     public bool enterMatchWaitRoomJudge;
 
     [SerializeField]int num;
+    [SerializeField] int num2;
 
     [SerializeField] GameObject Camera1;
     [SerializeField] GameObject Camera2;
     [SerializeField] GameObject Camera3;
     [SerializeField] GameObject Camera4;
+
+    GameObject player;
 
     //  private string id;
     private void Start()
@@ -49,6 +52,10 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         PhotonNetwork.IsMessageQueueRunning = true;
         CameraMove.transCamera = Camera.main.transform;
         Camera1.SetActive(false);
+        Camera2.SetActive(false);
+        Camera3.SetActive(false);
+        Camera4.SetActive(false);
+
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
@@ -80,19 +87,12 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
         //PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
         //PhotonNetwork.Instantiate("MainCamera", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
-         GameObject player=PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) ;
+         player=PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) ;
         //  Instantiate(Camera1, new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) ;
         //プレイヤーのプレハブのタグ名を統一？　適応がされるか要確認　適応された場合はプレイヤープレハブタグがついたオブ軸とから逃げる操作を実装する
-        player.name = "Player1111";//PhotonNetwork.LocalPlayer.NickName;
-        switch (num)
-        {
-            case 0: Camera1.SetActive(true); break;
-            case 1: Camera2.SetActive(true); break;
-            case 2: Camera3.SetActive(true); break;
-            case 3: Camera4.SetActive(true); break;
-            default: Debug.Log("人数超過・エラー");break;
-        }
-            
+        photonView.RPC(nameof(RoomID), RpcTarget.AllBuffered, num);
+        
+
         //camera.name = PhotonNetwork.LocalPlayer.NickName+"Camera";
 
         ///////////////////////////////////////////////////////////絶対修正
@@ -153,6 +153,19 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         Debug.Log($"ルーム作成に失敗しました: {message}");
+    }
+
+    [PunRPC]
+    private void RoomID(int num)
+    {
+        switch (num)
+        {
+            case 0: player.name = "Player1"; Camera1.SetActive(true); break;
+            case 1: player.name = "Player2"; Camera2.SetActive(true); break;
+            case 2: player.name = "Player3"; Camera3.SetActive(true); break;
+            case 3: player.name = "Player4"; Camera4.SetActive(true); break;
+            default: Debug.Log("人数超過・エラー"); break;
+        }
     }
 }
 

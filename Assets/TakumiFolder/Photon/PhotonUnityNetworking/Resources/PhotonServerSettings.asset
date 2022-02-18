@@ -42,6 +42,7 @@ MonoBehaviour:
   - FireProjectile
   - HitByProjectile
   - RpcSendMessage
+  - RoomID
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0
