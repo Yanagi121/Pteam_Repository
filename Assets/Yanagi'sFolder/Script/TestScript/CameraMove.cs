@@ -13,7 +13,7 @@ public class CameraMove : MonoBehaviour
     public float CameraSensitivityX=5, CameraSensitivityY=5,GetEscKey=0;
     public static  Transform transCamera;
     public static  bool TimeDelay = false;//false‚Ådelay
-    [SerializeField] GameObject GamePlayer;
+    public static GameObject GamePlayer;
     [SerializeField] Vector3 GamePlayerTransform;
     private string Player;
 
@@ -32,7 +32,7 @@ public class CameraMove : MonoBehaviour
     {
         transCamera = this.gameObject.transform;
         DontDestroyOnLoad(this.gameObject);
-        GamePlayer = GameObject.Find("Player"+RoomSceneManager.Porder);
+        
         /*if (this.gameObject.name == "Camera1")*/
         //else if (this.gameObject.name == "Camera2") GamePlayer = GameObject.Find("Player2");
         //else if (this.gameObject.name == "Camera3") GamePlayer = GameObject.Find("Player3");

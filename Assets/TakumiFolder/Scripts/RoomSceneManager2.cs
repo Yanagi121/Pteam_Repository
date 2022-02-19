@@ -37,6 +37,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
         Invoke("CameraFind", 0.5f);
         Player = GameObject.Find("Player" + RoomSceneManager.Porder);
         Player.transform.position = new Vector3(167, 17, 197);
+        CameraMove.GamePlayer = GameObject.Find("Player" + RoomSceneManager.Porder);
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
