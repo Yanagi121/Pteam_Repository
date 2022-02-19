@@ -108,7 +108,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
         //PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
         //PhotonNetwork.Instantiate("MainCamera", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
-         player=PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 40, Random.Range(250, 270)), Quaternion.identity) ;
+         player=PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) ;
+
         //player.name = "Player" + Porder;
         
    //// Camera.SetActive(true);
