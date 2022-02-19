@@ -32,7 +32,7 @@ public class CameraMove : MonoBehaviour
     {
         transCamera = this.gameObject.transform;
         DontDestroyOnLoad(this.gameObject);
-        GamePlayer = GameObject.Find("Player"+RoomSceneManager.Porder);
+        GamePlayer = GameObject.Find("Player"+(RoomSceneManager.Porder+1));
         /*if (this.gameObject.name == "Camera1")*/
         //else if (this.gameObject.name == "Camera2") GamePlayer = GameObject.Find("Player2");
         //else if (this.gameObject.name == "Camera3") GamePlayer = GameObject.Find("Player3");
