@@ -168,11 +168,11 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
             }
             for(int i = 0; i < Pnum.Count; i++)
             {
-                if (p1 == Pnum[i]) { Porder = i; }//
+                if (p1 == Pnum[i]) { Porder = i+1; }//
             }
         if (OneTime)
         {
-            player.name = "Player" + (Porder+1);
+            player.name = "Player" + Porder;
             OneTime = false;
             Debug.Log(player.name);
             Camera1.SetActive(true);
@@ -182,6 +182,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     }
     public override void OnLeftRoom()
     {
+        OneTime = true;
         Debug.Log("‘Ò‹@ƒ‹[ƒ€‚©‚ç‘Þo");
         LobbyUI.SetActive(true);
         enterMatchWaitRoomUI.SetActive(false);

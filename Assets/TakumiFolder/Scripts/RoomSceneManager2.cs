@@ -26,6 +26,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
     [SerializeField] float delayMove = 0.1f;
     public bool enterMatchWaitRoomJudge;
     public static bool CameFind;
+    [SerializeField] GameObject Player;
     //  private string id;
     private void Start()
     {
@@ -34,6 +35,8 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
         // PhotonNetwork.LocalPlayer.NickName = "Player" + avatarNameDisplay.nameLabel.text;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
         PhotonNetwork.IsMessageQueueRunning = true;
         Invoke("CameraFind", 0.5f);
+        Player = GameObject.Find("Player" + RoomSceneManager.Porder);
+        Player.transform.position = new Vector3(167, 17, 197);
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
