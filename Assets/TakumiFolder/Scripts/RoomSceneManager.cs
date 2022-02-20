@@ -297,6 +297,10 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("待機ルームから退出");
         LobbyUI.SetActive(true);
         enterMatchWaitRoomUI.SetActive(false);
+        changenum1 = 0;
+        changenum2 = 0;
+        changenum3 = 0;
+        changenum4 = 0;
     }
 
     // ルームの作成が成功した時に呼ばれるコールバック
