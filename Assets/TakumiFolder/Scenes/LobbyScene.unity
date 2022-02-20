@@ -551,7 +551,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1983524550}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2047,7 +2047,6 @@ MonoBehaviour:
   CameraSensitivityX: 5
   CameraSensitivityY: 5
   GetEscKey: 0
-  GamePlayer: {fileID: 0}
   GamePlayerTransform: {x: 0, y: 0, z: 0}
 --- !u!81 &751758634
 AudioListener:
@@ -2689,7 +2688,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1983524550}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2743,7 +2742,6 @@ MonoBehaviour:
   CameraSensitivityX: 5
   CameraSensitivityY: 5
   GetEscKey: 0
-  GamePlayer: {fileID: 0}
   GamePlayerTransform: {x: 0, y: 0, z: 0}
 --- !u!81 &1202815248
 AudioListener:
@@ -2840,6 +2838,7 @@ RectTransform:
   - {fileID: 548911486}
   - {fileID: 1323117411}
   - {fileID: 1923818636}
+  - {fileID: 1489529485}
   m_Father: {fileID: 1983524550}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3376,16 +3375,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489529484}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.08024394, y: 0.08024394, z: 0.08024394}
   m_Children: []
-  m_Father: {fileID: 1983524550}
+  m_Father: {fileID: 1275005050}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 164}
+  m_AnchoredPosition: {x: 0.5617032, y: 13.159988}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1489529486
@@ -4194,7 +4193,6 @@ MonoBehaviour:
   CameraSensitivityX: 5
   CameraSensitivityY: 5
   GetEscKey: 0
-  GamePlayer: {fileID: 0}
   GamePlayerTransform: {x: 0, y: 0, z: 0}
 --- !u!81 &1894425198
 AudioListener:
@@ -4653,7 +4651,6 @@ RectTransform:
   - {fileID: 102286046}
   - {fileID: 1275005050}
   - {fileID: 105069099}
-  - {fileID: 1489529485}
   - {fileID: 104284828}
   - {fileID: 1157816882}
   m_Father: {fileID: 0}

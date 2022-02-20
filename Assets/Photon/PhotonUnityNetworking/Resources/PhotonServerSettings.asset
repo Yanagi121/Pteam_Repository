@@ -39,11 +39,9 @@ MonoBehaviour:
   - DestroySpaceship
   - Fire
   - RespawnSpaceship
-  - FireProjectile
-  - HitByProjectile
-  - RpcSendMessage
+  - RoomPlayerID
   - RoomID
-  - PlayerNameShare
+  - AISATU
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0
