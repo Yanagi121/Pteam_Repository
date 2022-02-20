@@ -248,8 +248,6 @@ namespace Photon.Pun
             }
         }
 
-        //public static string playerName { get; set; }
-
         /// <summary>
         /// Called when "this client" left a room to clean up.
         /// </summary>

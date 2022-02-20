@@ -72,8 +72,13 @@ public class CameraMove : MonoBehaviour
                 transCamera.localEulerAngles = new Vector3(cameraX, x_rotate, 0);
 
             }
+        //修正
+        if (RoomSceneManager2.SceneEnter==true)//ゲームシーンに入る前(カメラを取得する前からカメラをあること前提に動いているのでif追加)
+        {
             GamePlayerTransform = GamePlayer.transform.position;
-            transCamera.position = GamePlayerTransform+new Vector3(0, 1.5f, 0);
+            transCamera.position = GamePlayerTransform + new Vector3(0, 1.5f, 0);
+        }
+            
         
     }
 
