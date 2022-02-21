@@ -35,22 +35,31 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
+        if (Catch_Doctor.SetTime)
+        {
+            TimeProgress = false;
+        }
         if (RoomSceneManager2.CameFind)
         {
             PlayerCamera = GameObject.FindGameObjectWithTag("Camera1");
             RoomSceneManager2.CameFind = false;
         }
-        if (photonView.IsMine)//photonView.IsMine
+        if (Catch_Doctor.SetTime==false)
         {
-            GetZ = Input.GetAxis("Horizontal") * addforce;
-            GetX = Input.GetAxis("Vertical") * addforce;
-            //CameraVector=PlayerCamera.transform;
 
-            //修正　キャラクター・カメラ移動全般をこれで囲うもあり
-            if (RoomSceneManager2.SceneEnter == true)//ゲームシーンに入る前(カメラを取得する前からカメラをあること前提に動いているのでif追加)
+
+            if (photonView.IsMine)//photonView.IsMine
             {
-                CameraVectorRotate = PlayerCamera.transform.eulerAngles;
-                PlayerVectorRotate.y = CameraVectorRotate.y;
+                GetZ = Input.GetAxis("Horizontal") * addforce;
+                GetX = Input.GetAxis("Vertical") * addforce;
+                //CameraVector=PlayerCamera.transform;
+
+                //修正　キャラクター・カメラ移動全般をこれで囲うもあり
+                if (RoomSceneManager2.SceneEnter == true)//ゲームシーンに入る前(カメラを取得する前からカメラをあること前提に動いているのでif追加)
+                {
+                    CameraVectorRotate = PlayerCamera.transform.eulerAngles;
+                    PlayerVectorRotate.y = CameraVectorRotate.y;
+                }
             }
             
             this.gameObject.transform.eulerAngles = new Vector3(0, PlayerVectorRotate.y, 0);
