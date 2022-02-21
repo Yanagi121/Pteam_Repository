@@ -35,10 +35,6 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if (Catch_Doctor.SetTime)
-        {
-            TimeProgress = false;
-        }
         if (RoomSceneManager2.CameFind)
         {
             PlayerCamera = GameObject.FindGameObjectWithTag("Camera1");
@@ -67,11 +63,13 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     }
     private void FixedUpdate()
     {
-        if (photonView.IsMine)//photonView.IsMine
+        if (Catch_Doctor.SetTime == false)
         {
-            rb.AddRelativeForce(Vector3.forward * GetX);
-            rb.AddRelativeForce(Vector3.right * GetZ);
-        }
+                rb.AddRelativeForce(Vector3.forward * GetX);
+                rb.AddRelativeForce(Vector3.right * GetZ);
+            }
+        
+
     }
     //[PunRPC]
     //private void RoomPlayerID(GameObject gameObject)

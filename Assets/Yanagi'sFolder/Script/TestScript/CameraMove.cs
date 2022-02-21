@@ -43,7 +43,9 @@ public class CameraMove : MonoBehaviour
     void FixedUpdate()
     {
 
-            if (TimeDelay)
+       if (TimeDelay)
+       {
+            if (Catch_Doctor.SetTime == false)
             {
                 /*newAngle.y += (Input.mousePosition.x - lastMousePosition.x) * y_rotate * x_reverce;
                 newAngle.x -= (Input.mousePosition.y - lastMousePosition.y) * x_rotate * y_reverce;
@@ -70,8 +72,8 @@ public class CameraMove : MonoBehaviour
 
                 cameraX = Mathf.Clamp(cameraX - mouseY * Time.deltaTime * 100.0f, -40, 40);
                 transCamera.localEulerAngles = new Vector3(cameraX, x_rotate, 0);
-
             }
+       }
         //修正
         if (RoomSceneManager2.SceneEnter==true)//ゲームシーンに入る前(カメラを取得する前からカメラをあること前提に動いているのでif追加)
         {
