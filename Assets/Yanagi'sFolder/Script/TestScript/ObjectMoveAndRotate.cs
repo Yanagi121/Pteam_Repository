@@ -40,7 +40,7 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
             PlayerCamera = GameObject.FindGameObjectWithTag("Camera1");
             RoomSceneManager2.CameFind = false;
         }
-        if (Catch_Doctor.SetTime==false)
+        if (TimeOver.gameover==false&& CameraMove.TimeDelay)
         {
 
 
@@ -51,7 +51,7 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
                 //CameraVector=PlayerCamera.transform;
 
                 //修正　キャラクター・カメラ移動全般をこれで囲うもあり
-                if (RoomSceneManager2.SceneEnter == true)//ゲームシーンに入る前(カメラを取得する前からカメラをあること前提に動いているのでif追加)
+                if (RoomSceneManager2.SceneEnter == true||TimeOver.gameover)//ゲームシーンに入る前(カメラを取得する前からカメラをあること前提に動いているのでif追加)
                 {
                     CameraVectorRotate = PlayerCamera.transform.eulerAngles;
                     PlayerVectorRotate.y = CameraVectorRotate.y;
@@ -59,15 +59,19 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
             }
             
             this.gameObject.transform.eulerAngles = new Vector3(0, PlayerVectorRotate.y, 0);
+        }else
+        {
+            GetX = 0;
+            GetZ = 0;
         }
     }
     private void FixedUpdate()
     {
-        if (Catch_Doctor.SetTime == false)
-        {
+        
+        
                 rb.AddRelativeForce(Vector3.forward * GetX);
                 rb.AddRelativeForce(Vector3.right * GetZ);
-            }
+            
         
 
     }

@@ -45,7 +45,7 @@ public class CameraMove : MonoBehaviour
 
        if (TimeDelay)
        {
-            if (Catch_Doctor.SetTime == false)
+            if (TimeOver.gameover==false)
             {
                 /*newAngle.y += (Input.mousePosition.x - lastMousePosition.x) * y_rotate * x_reverce;
                 newAngle.x -= (Input.mousePosition.y - lastMousePosition.y) * x_rotate * y_reverce;
