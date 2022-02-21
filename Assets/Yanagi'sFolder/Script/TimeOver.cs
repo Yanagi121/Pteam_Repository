@@ -8,7 +8,7 @@ public class TimeOver : MonoBehaviour
     //カウントダウン
     public float countdown = 300.0f;
     public static bool gameover;
-    [SerializeField] bool game;
+    
 
     // Update is called once per frame
     void Update()
