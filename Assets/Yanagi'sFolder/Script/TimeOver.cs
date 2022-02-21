@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class TimeOver : MonoBehaviour
+public class TimeOver : MonoBehaviourPunCallbacks
 {
     // Start is called before the first frame update
     //カウントダウン
     public float countdown = 300.0f;
-    public static bool gameover;
+    public static bool gameover=false;
     
 
     // Update is called once per frame
@@ -18,8 +19,15 @@ public class TimeOver : MonoBehaviour
         else
         {
             countdown = 0;
-            gameover = true;
-            
+            //gameover = true;
+            photonView.RPC(nameof(ChangeGameOver), RpcTarget.All, true);
         }
+    }
+
+
+    [PunRPC]
+    void ChangeGameOver(bool ChangeTrueFalse)
+    {
+        gameover = ChangeTrueFalse;
     }
 }

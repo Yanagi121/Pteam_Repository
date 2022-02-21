@@ -42,6 +42,7 @@ MonoBehaviour:
   - RoomPlayerID
   - RoomID
   - AISATU
+  - ChangeGameOver
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0
