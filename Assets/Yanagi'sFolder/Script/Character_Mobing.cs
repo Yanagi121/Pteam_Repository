@@ -10,9 +10,9 @@ public class Character_Mobing : MonoBehaviour
     private Rigidbody rg;
     public float sensitivityX=1, sensitivityY=1,delay=2.0f;//マウスの感度設定標準設定で1
     [SerializeField] float X, Z,fallSpeed,Y;
-    private float mouseX,mouseY,cameraX;
-    private bool moveZ, moveX, mouseXbool, mouseYbool, TimeProgress = false;//初動delay秒は動けないようにする
-    private Transform transCamera;
+    [SerializeField] float mouseX,mouseY,cameraX;
+    private bool moveZ, moveX, mouseXbool, mouseYbool, TimeProgress = true;//TimeProgress=falseで初動delay秒は動けないようにする
+    [SerializeField] Transform transCamera;
 
     void Start()
     {
