@@ -58,10 +58,7 @@ public class CharacterMoveTest : MonoBehaviourPunCallbacks
             {
                 mouseYbool = true;
             }
-            if (Catch_Doctor.SetTime)
-            {
-                TimeProgress = false;
-            }
+            
         } 
 
     }
