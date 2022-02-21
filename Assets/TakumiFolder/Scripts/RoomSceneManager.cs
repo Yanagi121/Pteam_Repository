@@ -27,7 +27,13 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
 
     [SerializeField]
-    private GameObject GoButton;//マスタークライアント以外はGOボタンが押せない
+    private GameObject GoButton;//マスタークライアントのみGOボタンが押せる
+
+    [SerializeField]
+    private GameObject Readybutton;//マスタークライアント以外はReadyボタンが押せる
+
+    [SerializeField]
+    private GameObject CompletionButton;//準備ボタンが押された際に切り替わる
 
     [SerializeField]
     private int PlayerNum;
@@ -62,7 +68,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     [SerializeField] GameObject OtherPlayerClone2;
     [SerializeField] GameObject OtherPlayerClone3;
     [SerializeField] GameObject OtherPlayerClone4;
-    [SerializeField] int changenum1,changenum2,changenum3,changenum4=0;//プレイヤーのクローンの名前を変えた回数
+    [SerializeField] int changenum1, changenum2, changenum3, changenum4 = 0;//プレイヤーのクローンの名前を変えた回数
 
     //  private string id;
     private void Start()
@@ -105,7 +111,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()//ローカルプレイヤーのみに反応
     {
-       
+
         JoinRoom = true;//メンバーリストの更新時かつルームに入ったときのみOneTimeでプレイヤープレハブに名前を付けて名前の変換を行うため
         Debug.Log("待機ルームに参加");
         LobbyUI.SetActive(false);
@@ -116,7 +122,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         //PhotonNetwork.Instantiate("MainCamera", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
         PlayerClone = PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
 
-        
+
         //OtherPlayerClone = GameObject.Find("NewPlayer(Clone)");
         //player.name = "Player" + Porder;
 
@@ -134,19 +140,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         //camera.name = PhotonNetwork.LocalPlayer.NickName+"Camera";
 
         ///////////////////////////////////////////////////////////　　マスタークライアントが抜けてしまった場合を想定していないため要修正
-        if (PhotonNetwork.IsMasterClient)
-        {
-            // Debug.Log("自身がマスタークライアントです");
-            GoButton.SetActive(true);
-            // player.name = "Player1";
-            // camera.name = "Camera1";
-        }
-        else
-        {
-            // Debug.Log("自身がローカルプライヤーです");
-            GoButton.SetActive(false);
-            // player.name = "Player2";
-        }
+
     }
     public override void OnPlayerEnteredRoom(Player player)//ここで変数の同期が行われる 参加した本人は行われない
     {
@@ -163,7 +157,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         {
             switch (changenum1) //行われるごとに回数が増える
             {
-                case 0:break;//まだクローンがないため
+                case 0: break;//まだクローンがないため
                 case 1:
                     OtherPlayerClone2 = GameObject.Find("NewPlayer(Clone)");
                     OtherPlayerClone2.name = "Player2";//2人目が入ったときに名前のついてないクローンにPlayer2を振り当てる
@@ -180,10 +174,10 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
             changenum1++;
         }//Porder1の同期が完了　自身の同期はまだ
 
-        if(Porder==2)
+        if (Porder == 2)
         {
-            
-            switch (changenum2) //行われるごとに回数が増える
+
+            switch (changenum2) //行われるごとに回数が増える //すでにいるプレイヤー1の取得
             {
                 case 0:
                     OtherPlayerClone1 = GameObject.Find("NewPlayer(Clone)");
@@ -202,7 +196,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         }
         if (Porder == 3)
         {
-            for(int i = 0; i < 2; i++)//すでにいるプレイヤー1,2の取得
+            for (int i = 0; i < 2; i++)//すでにいるプレイヤー1,2の取得
             {
                 switch (changenum3) //行われるごとに回数が増える
                 {
@@ -221,7 +215,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
                 }
                 changenum3++;
             }
-            
+
         }
         if (Porder == 4)//switchやelse if だと片方しか行われないためifにした？？
         {
@@ -274,16 +268,25 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
                 //photonView.RPC(nameof(RoomID), RpcTarget.AllBuffered, PlayerPrefab); 
                 PlayerClone.name = "Player" + Porder;
                 OneTime = false;
-                //Debug.Log("aaaaaa");
+                Debug.Log(num);
                 Camera1.SetActive(true);
                 Debug.Log("Porder:" + Porder);
+
                 OtherPlayerClone1 = GameObject.Find("NewPlayer(Clone)");//自分目線のみでの変更
-                if (Porder == 1)
+                if (PhotonNetwork.IsMasterClient)
                 {
-                  //　 OtherPlayerClone2 = GameObject.Find("NewPlayer(Clone)");
-                  //  OtherPlayerClone2.name = "Player1";
-                    //
+                    Debug.Log("自身がマスタークライアントです");
+                    GoButton.SetActive(true);
+                    //   Readybutton.SetActive(false);
+                    //   CompletionButton.SetActive(false);
                 }
+                else
+                {
+                    Debug.Log("自身がローカルプライヤーです");
+                    GoButton.SetActive(false);
+                    //   Readybutton.SetActive(true);
+                }
+
             }
         }
 

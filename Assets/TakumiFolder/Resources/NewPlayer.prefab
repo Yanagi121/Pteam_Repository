@@ -239,7 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   thrust: 0
-  addforce: 15
+  addforce: 30
   GetX: 0
   GetZ: 0
   Moveforward: 0
