@@ -51,10 +51,7 @@ public class Character_Mobing : MonoBehaviour
         {
             mouseYbool = true;
         }
-        if (Catch_Doctor.SetTime)
-        {
-            TimeProgress = false;           
-        }
+        
 
     }
 
