@@ -8,7 +8,7 @@ public class TimeOver : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     //カウントダウン
     public float countdown = 300.0f;
-    public static bool gameover=false;
+    public static bool gameover;
     
 
     // Update is called once per frame
@@ -19,15 +19,15 @@ public class TimeOver : MonoBehaviourPunCallbacks
         else
         {
             countdown = 0;
-            //gameover = true;
-            photonView.RPC(nameof(ChangeGameOver), RpcTarget.All, true);
+            gameover = true;
+            //photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
         }
     }
 
 
-    [PunRPC]
-    void ChangeGameOver(bool ChangeTrueFalse)
+   /* [PunRPC]
+    void ChangeGameOver()
     {
-        gameover = ChangeTrueFalse;
-    }
+        gameover = true;
+    }*/
 }
