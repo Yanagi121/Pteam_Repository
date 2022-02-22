@@ -109,6 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SlowTime: 1
+  GetTime: []
 --- !u!1 &6551558479439488503
 GameObject:
   m_ObjectHideFlags: 0

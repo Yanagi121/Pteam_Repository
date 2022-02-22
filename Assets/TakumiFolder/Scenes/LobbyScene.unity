@@ -4842,6 +4842,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1923818635}
     - target: {fileID: 2408437689620917531, guid: 7ec8c7065568bab408cc0caf4c9dafe7, type: 3}
+      propertyPath: PlayButton
+      value: 
+      objectReference: {fileID: 1923818635}
+    - target: {fileID: 2408437689620917531, guid: 7ec8c7065568bab408cc0caf4c9dafe7, type: 3}
       propertyPath: PlayerName
       value: 
       objectReference: {fileID: 646244611}
