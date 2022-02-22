@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using Photon.Pun;
 
 public class TimeOver : MonoBehaviourPunCallbacks
 {
     // Start is called before the first frame update
-    //カウントダウン
+    //繧ｫ繧ｦ繝ｳ繝医ム繧ｦ繝ｳ
     public float countdown = 300.0f;
     public static bool gameover;
-    
+    public TextMeshProUGUI TimeText;
 
+    private void Start()
+    {
+       TimeText.text = "0";
+    }
     // Update is called once per frame
     void Update()
     {
@@ -22,7 +27,9 @@ public class TimeOver : MonoBehaviourPunCallbacks
             gameover = true;
             //photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
         }
-        if (Input.GetKeyDown(KeyCode.Q)) photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);//ifの中身を捕まえた時の条件の代わり
+
+        if (Input.GetKeyDown(KeyCode.Q)) photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);//if縺ｮ荳ｭ霄ｫ繧呈黒縺ｾ縺医◆譎ゅ�ｮ譚｡莉ｶ縺ｮ莉｣繧上ｊ
+
     }
 
 
