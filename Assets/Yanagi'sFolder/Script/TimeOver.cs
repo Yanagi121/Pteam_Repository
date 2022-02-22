@@ -10,8 +10,10 @@ public class TimeOver : MonoBehaviourPunCallbacks
     //カウントダウン
     public static float countdown = 300.0f;
     int IntNum;
+    [SerializeField] bool setactiveUI;
     public static bool gameover;
     public TextMeshProUGUI TimeText;
+    [SerializeField] GameObject TimeTextGameObject;
 
     private void Start()
     {
@@ -20,6 +22,15 @@ public class TimeOver : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
+        if (CameraMove.TimeDelay)
+            setactiveUI = true;
+
+        if (setactiveUI == false)
+            TimeTextGameObject.SetActive(false);
+        else
+            TimeTextGameObject.SetActive(true);
+
+
         if (CameraMove.TimeDelay)
         {
             if (countdown > 0)
@@ -33,14 +44,10 @@ public class TimeOver : MonoBehaviourPunCallbacks
         }
         IntNum = (int)countdown;
         TimeText.text = (IntNum / 60).ToString("0") + " : " + (IntNum % 60).ToString("00");
-        if (Input.GetKeyDown(KeyCode.Q)) photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);//ifの中身を捕まえた時の条件の代わり
+       
 
     }
 
 
-    [PunRPC]
-    void ChangeGameOver()
-    {
-        gameover = true;
-    }
+
 }

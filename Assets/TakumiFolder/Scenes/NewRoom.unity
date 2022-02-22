@@ -5822,7 +5822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7978986798426122942, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_RootOrder
@@ -8884,6 +8884,10 @@ PrefabInstance:
       propertyPath: countdown
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 7849801293533808336, guid: c4da716a72e274945a86af550b5d9418, type: 3}
+      propertyPath: TimeTextGameObject
+      value: 
+      objectReference: {fileID: 888934760}
     - target: {fileID: 7849801293533808337, guid: c4da716a72e274945a86af550b5d9418, type: 3}
       propertyPath: SettingsUIObject
       value: 
