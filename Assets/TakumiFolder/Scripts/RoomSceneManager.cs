@@ -22,7 +22,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     GameObject avatarName;
 
     [SerializeField]
-    private GameObject GoButton;//マスタークライアントのみGOボタンが押せる
+    private GameObject PlayButton;//マスタークライアントのみGOボタンが押せる
 
     [SerializeField]
     private GameObject Readybutton;//マスタークライアント以外はReadyボタンが押せる
@@ -264,14 +264,14 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             Debug.Log("自身がマスタークライアントです");
-            GoButton.SetActive(true);
+            PlayButton.SetActive(true);
             //   Readybutton.SetActive(false);
             //   CompletionButton.SetActive(false);
         }
         else
         {
             Debug.Log("自身がローカルプレイヤーです");
-            GoButton.SetActive(false);
+            PlayButton.SetActive(false);
             //   Readybutton.SetActive(true);
         }
     }
