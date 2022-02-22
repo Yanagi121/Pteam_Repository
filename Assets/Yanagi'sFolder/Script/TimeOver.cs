@@ -41,18 +41,18 @@ public class TimeOver : MonoBehaviourPunCallbacks
                 gameover = true;
                 //photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
             }
-            if(Catch_Doctor.BoolCatch_Doctor)photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
+            if (Catch_Doctor.BoolCatch_Doctor) photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
         }
         IntNum = (int)countdown;
         TimeText.text = (IntNum / 60).ToString("0") + " : " + (IntNum % 60).ToString("00");
-
+    }
         [PunRPC]
     void ChangeGameOver()
     {
         CameraMove.TimeDelay = false;
         TimeOver.gameover = true;
     }
-    }
+    
 
 
 
