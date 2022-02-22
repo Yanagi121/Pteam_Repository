@@ -8,7 +8,8 @@ public class TimeOver : MonoBehaviourPunCallbacks
 {
     // Start is called before the first frame update
     //カウントダウン
-    public float countdown = 300.0f;
+    public static float countdown = 300.0f;
+    int IntNum;
     public static bool gameover;
     public TextMeshProUGUI TimeText;
 
@@ -27,7 +28,8 @@ public class TimeOver : MonoBehaviourPunCallbacks
             gameover = true;
             //photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
         }
-
+        IntNum = (int)countdown;
+        TimeText.text = (IntNum / 60).ToString("0") + " : " + (IntNum % 60).ToString("00");
         if (Input.GetKeyDown(KeyCode.Q)) photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);//ifの中身を捕まえた時の条件の代わり
 
     }
