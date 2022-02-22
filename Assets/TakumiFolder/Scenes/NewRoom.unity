@@ -1165,7 +1165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &426582438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4955,6 +4955,10 @@ PrefabInstance:
     - target: {fileID: 7893138526075235377, guid: 70c1461608c3cff499c35369e2f6c972, type: 3}
       propertyPath: m_Name
       value: BoolJudege
+      objectReference: {fileID: 0}
+    - target: {fileID: 7893138526075235377, guid: 70c1461608c3cff499c35369e2f6c972, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7893138526075235381, guid: 70c1461608c3cff499c35369e2f6c972, type: 3}
       propertyPath: m_RootOrder
