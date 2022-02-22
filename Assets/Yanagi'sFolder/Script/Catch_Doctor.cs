@@ -1,8 +1,10 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class Catch_Doctor : MonoBehaviour
+public class Catch_Doctor : MonoBehaviourPunCallbacks
 {
     public float SlowTime=1;
     public static bool CatchDr;
@@ -18,10 +20,16 @@ public class Catch_Doctor : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Dr") && Input.GetMouseButtonDown(0))
         {
-            CameraMove.TimeDelay=false;
-            TimeOver.gameover = true;
+            photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
+            /*CameraMove.TimeDelay=false;
+            TimeOver.gameover = true;*/
             GetTime.Add(TimeOver.countdown);
         }
     }
-   
+    [PunRPC]
+    void ChangeGameOver()
+    {
+        CameraMove.TimeDelay = false;
+        TimeOver.gameover = true;
+    }
 }
