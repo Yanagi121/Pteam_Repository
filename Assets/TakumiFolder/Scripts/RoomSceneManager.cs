@@ -116,31 +116,14 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("待機ルームに参加");
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
+        MasterClientJudge();
         Invoke("CloneNameConversion", 0.5f);//ここはPorderが1以外のときに行われる　最初に部屋を作った人は必ずnullが出てしまう
-        // photonView.RPC(nameof(AISATU), RpcTarget.AllBuffered, "こんにちは");
-        //PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
-        //PhotonNetwork.Instantiate("MainCamera", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
         PlayerClone = PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
-
-
-        //OtherPlayerClone = GameObject.Find("NewPlayer(Clone)");
-        //player.name = "Player" + Porder;
-
         //// Camera.SetActive(true);
         //  Instantiate(Camera1, new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity) ;
         //プレイヤーのプレハブのタグ名を統一？　適応がされるか要確認　適応された場合はプレイヤープレハブタグがついたオブ軸とから逃げる操作を実装する
         Photon.Realtime.Player player2 = PhotonNetwork.LocalPlayer;
-        // Debug.Log("PlayerNo" + player2.ActorNumber);
         p1 = player2.ActorNumber;
-
-
-        // photonView.RPC(nameof(PlayerNameShare), RpcTarget.AllBuffered, player.name);
-
-
-        //camera.name = PhotonNetwork.LocalPlayer.NickName+"Camera";
-
-        ///////////////////////////////////////////////////////////　　マスタークライアントが抜けてしまった場合を想定していないため要修正
-
     }
     public override void OnPlayerEnteredRoom(Player player)//ここで変数の同期が行われる 参加した本人は行われない
     {
@@ -148,7 +131,12 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         // Camera1.SetActive(true);
         // Debug.Log("OnPlayerEnteredRoomのPorder:"+Porder);
         Invoke("CloneNameConversion", 0.5f);//OnPlayerEnteredよりも先にUpdateMemberListが先に行われているため、0.5f遅らせてクローンの取得ができるようにしている
-
+        MasterClientJudge();
+    }
+    // 他プレイヤーが退出した時に呼ばれるコールバック
+    public override void OnPlayerLeftRoom(Player player)
+    {
+        MasterClientJudge();
     }
 
     private void CloneNameConversion()
@@ -271,22 +259,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
                 Debug.Log(num);
                 Camera1.SetActive(true);
                 Debug.Log("Porder:" + Porder);
-
                 OtherPlayerClone1 = GameObject.Find("NewPlayer(Clone)");//自分目線のみでの変更
-                if (PhotonNetwork.IsMasterClient)
-                {
-                    Debug.Log("自身がマスタークライアントです");
-                    GoButton.SetActive(true);
-                    //   Readybutton.SetActive(false);
-                    //   CompletionButton.SetActive(false);
-                }
-                else
-                {
-                    Debug.Log("自身がローカルプライヤーです");
-                    GoButton.SetActive(false);
-                    //   Readybutton.SetActive(true);
-                }
-
+                
             }
         }
 
@@ -304,6 +278,23 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         changenum2 = 0;
         changenum3 = 0;
         changenum4 = 0;
+    }
+
+    private void MasterClientJudge()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Debug.Log("自身がマスタークライアントです");
+            GoButton.SetActive(true);
+            //   Readybutton.SetActive(false);
+            //   CompletionButton.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("自身がローカルプレイヤーです");
+            GoButton.SetActive(false);
+            //   Readybutton.SetActive(true);
+        }
     }
 
     // ルームの作成が成功した時に呼ばれるコールバック
