@@ -252,7 +252,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         OneTime = true;//もう一度行えるようにするため
         Debug.Log("待機ルームから退出");
         LobbyUI.SetActive(true);
-        enterMatchWaitRoomUI.SetActive(false);
+        enterMatchWaitRoomUI.SetActive(false); 
+        //Camera1.SetActive(false);
         changenum1 = 0;
         changenum2 = 0;
         changenum3 = 0;
