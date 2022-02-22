@@ -20,7 +20,7 @@ public class ReturnUIscript : MonoBehaviour
     public void OnClickReturnUIObject()
     {        
         ReturnUIObject.SetActive(false);
-        LockCursor.OnClickEscape = true;
+        LockCursor.OnClickEscape = false;
 
 
     }
