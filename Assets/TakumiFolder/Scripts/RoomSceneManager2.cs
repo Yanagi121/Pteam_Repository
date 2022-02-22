@@ -16,6 +16,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        //Debug.developerConsoleVisible = false;
         Invoke("Progress", delayMove);
         // avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
         // PhotonNetwork.LocalPlayer.NickName = "Player" + avatarNameDisplay.nameLabel.text;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
