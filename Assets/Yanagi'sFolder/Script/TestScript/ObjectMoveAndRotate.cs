@@ -9,7 +9,6 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     [SerializeField] float thrust=0,addforce,GetX,GetZ;
     [SerializeField] bool Moveforward, MoveBack, MoveLeft, MoveRight;
     [SerializeField] GameObject PlayerCamera;
-    //[SerializeField] Transform CameraVector;
     [SerializeField] Vector3 CameraVectorRotate;
     [SerializeField] Vector3 PlayerVectorRotate;
     private string Camera;
@@ -21,15 +20,6 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     {
         rb = GetComponent<Rigidbody>();
         DontDestroyOnLoad(this.gameObject);
-        // PlayerName = this.gameObject.name;
-        // photonView.RPC(nameof(RoomID), RpcTarget.AllBuffered,this.gameObject.name);
-        //if (this.gameObject.name == "Player1") PlayerCamera = GameObject.Find("Camera1");
-        //else if (this.gameObject.name == "Player2") PlayerCamera = GameObject.Find("Camera2");
-        //else if (this.gameObject.name == "Player3") PlayerCamera = GameObject.Find("Camera3");
-        //else if (this.gameObject.name == "Player4") PlayerCamera = GameObject.Find("Camera4");
-        //else { Debug.Log("ÉGÉâÅ["); }
-        //Debug.Log("ÇéÊìæÇµÇ‹ÇµÇΩ");
-        //photonView.RPC(nameof(RoomPlayerID), RpcTarget.AllBuffered, this.gameObject);
     }
 
     // Update is called once per frame
