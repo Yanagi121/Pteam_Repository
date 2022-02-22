@@ -51,5 +51,6 @@ public class TimeOver : MonoBehaviourPunCallbacks
     {
         CameraMove.TimeDelay = false;
         TimeOver.gameover = true;
+        Catch_Doctor.BoolCatch_Doctor = true;
     }
 }
