@@ -22,22 +22,22 @@ public class LockCursor : MonoBehaviour
             /*  Cursor.visible = true;
               Cursor.lockState = CursorLockMode.None;*/
             if (OnClickEscape)
-            {
                 OnClickEscape = false;
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-                SoundSettingsUIObject.SetActive(true);
-               
-            }
             else
-            {
                 OnClickEscape = true;
-               
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-                SoundSettingsUIObject.SetActive(false);
-               
-            }
+        }
+        if(OnClickEscape)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+            SoundSettingsUIObject.SetActive(true);
+        }else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            
+            SoundSettingsUIObject.SetActive(false);
         }
       
     }
