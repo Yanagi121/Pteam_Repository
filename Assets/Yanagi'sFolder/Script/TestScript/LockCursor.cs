@@ -17,7 +17,7 @@ public class LockCursor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)&& Pre_StartCountdown.lockedEscKey)
         {
             /*  Cursor.visible = true;
               Cursor.lockState = CursorLockMode.None;*/
@@ -32,7 +32,8 @@ public class LockCursor : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
 
             SoundSettingsUIObject.SetActive(true);
-        }else
+        }
+        else
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;

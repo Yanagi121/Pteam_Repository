@@ -8,8 +8,10 @@ public class Pre_StartCountdown : MonoBehaviour
     public TextMeshProUGUI PreStartCountdownText;
     public GameObject PreStartTwxtGameObject;
     float a=0,toumei=1;
-    int CountDownInt=5,fontsize=350;//RoomSceneManager2.delayMoveの値を参照する
+    int CountDownInt = 5;//RoomSceneManager2.delayMoveの値を参照する
+    int fontsize=350;
     bool alpha;
+    public static bool lockedEscKey=false;
     Color Alpha;
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,7 @@ public class Pre_StartCountdown : MonoBehaviour
             fontsize = 300;
             CountDownInt = 0;
             alpha = true;
+            lockedEscKey = true;
             a += Time.deltaTime;
         }
         else
