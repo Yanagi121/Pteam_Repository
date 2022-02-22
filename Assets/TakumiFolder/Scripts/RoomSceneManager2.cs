@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RoomSceneManager2 : MonoBehaviourPunCallbacks
 {
-    [SerializeField] float delayMove = 0.1f;
+    [SerializeField] float delayMove=5;//ゲーム開始時の停止時間の指定が可能
+
     public bool enterMatchWaitRoomJudge;
     public static bool CameFind;
     [SerializeField] GameObject Player;
@@ -13,6 +14,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        
         Invoke("Progress", delayMove);
         PhotonNetwork.IsMessageQueueRunning = true;
         ////要確認/// Invoke("CameraFind", 0.0f);//0.5f後に呼び出される必要性　確認 
@@ -26,6 +28,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
             players[i].SetActive(true);
         }
     }
+
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
     public override void OnConnectedToMaster()
