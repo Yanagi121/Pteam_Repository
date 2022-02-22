@@ -11,7 +11,8 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
     [SerializeField] float DelayGameFloat;
     void Start()
     {
-        
+        GameOverCanvasOvject.SetActive(false);
+        GameClearCanvasObject.SetActive(false);
     }
 
     // Update is called once per frame

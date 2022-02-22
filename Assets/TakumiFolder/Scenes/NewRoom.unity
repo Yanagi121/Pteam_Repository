@@ -159,6 +159,20 @@ MonoBehaviour:
   DelayGameBool: 0
   booltmp: 0
   DelayGameFloat: 3
+--- !u!114 &40645584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40645581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24daab167fedcf14abfb4eac3f44322f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameClearScoreText: {fileID: 828059983}
+  GameOverScoreText: {fileID: 1571818452}
 --- !u!1 &58951342
 GameObject:
   m_ObjectHideFlags: 0
@@ -4443,6 +4457,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4746044323676884612, guid: 92d781811a62e2a4f8aacdb596ca974b, type: 3}
   m_PrefabInstance: {fileID: 828059981}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &828059983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1106594742192514127, guid: 92d781811a62e2a4f8aacdb596ca974b, type: 3}
+  m_PrefabInstance: {fileID: 828059981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &857066599
 GameObject:
   m_ObjectHideFlags: 0
@@ -7588,6 +7613,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92d781811a62e2a4f8aacdb596ca974b, type: 3}
+--- !u!114 &1571818452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1106594742192514127, guid: 92d781811a62e2a4f8aacdb596ca974b, type: 3}
+  m_PrefabInstance: {fileID: 1571818451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1580912348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9922,7 +9958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2052640637
 MonoBehaviour:
   m_ObjectHideFlags: 0
