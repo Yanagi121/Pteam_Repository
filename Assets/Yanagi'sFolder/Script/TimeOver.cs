@@ -20,13 +20,16 @@ public class TimeOver : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if (countdown > 0)
-            countdown -= Time.deltaTime;
-        else
+        if (CameraMove.TimeDelay)
         {
-            countdown = 0;
-            gameover = true;
-            //photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
+            if (countdown > 0)
+                countdown -= Time.deltaTime;
+            else
+            {
+                countdown = 0;
+                gameover = true;
+                //photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
+            }
         }
         IntNum = (int)countdown;
         TimeText.text = (IntNum / 60).ToString("0") + " : " + (IntNum % 60).ToString("00");
