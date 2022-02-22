@@ -57,7 +57,6 @@ public class RoomListView : MonoBehaviourPunCallbacks
         CreateRoomButton.interactable = false;
     }
 
-
     private void OnRoomNameInputFieldValueChanged(string value)//ルーム名が1文字以上なければ作成不可となる？
     {
         CreateRoomButton.interactable = (value.Length > 0);
@@ -95,13 +94,12 @@ public class RoomListView : MonoBehaviourPunCallbacks
                      },
                  CustomRoomPropertiesForLobby = new[] { "DisplayName", "Message" }
              });
-      //  Debug.Log(PhotonNetwork.PlayerList);
-        //PhotonNetwork.JoinOrCreateRoom("Room" + , new RoomOptions(), TypedLobby.Default);
     }
 
     // ルームリストが更新された時に呼ばれるコールバック
     public override void OnRoomListUpdate(List<RoomInfo> roomList)//ルームの中にあるリストのデータを仮引数に入れる
     {
+        base.OnRoomListUpdate(roomList);
         foreach (var info in roomList)//var型の変数infoに、roomListの要素を順番に取り出して格納している。roomListの末尾データが出るまで繰り返す
         {
 
@@ -134,5 +132,4 @@ public class RoomListView : MonoBehaviourPunCallbacks
             }
         }
     }
-
 }
