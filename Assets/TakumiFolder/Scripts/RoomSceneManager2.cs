@@ -16,6 +16,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        //Debug.developerConsoleVisible = false;
         Invoke("Progress", delayMove);
         // avatarNameDisplay = avatarName.GetComponent<AvatarNameDisplay>();
         // PhotonNetwork.LocalPlayer.NickName = "Player" + avatarNameDisplay.nameLabel.text;//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
@@ -26,9 +27,10 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
         Player = GameObject.Find("Player" + RoomSceneManager.Porder);//プレイヤーを取得し初期移動
         Player.transform.position = new Vector3(167, 17, 197);
         CameraMove.GamePlayer = GameObject.Find("Player" + RoomSceneManager.Porder);//プレイヤー名のついたオブジェクトをCameraMoveが取得
+        
         for(int i = 0; i < 4; i++)
         {
-            players[i].SetActive(false);
+            players[i].SetActive(true);
         }
     }
 
@@ -57,10 +59,15 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
     {
         Debug.Log("待機ルームに参加");
     }
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        Debug.Log("ルーム内人数:" + (PhotonNetwork.CountOfPlayersInRooms + 1));
+    }
     // 他プレイヤーが退出した時に呼ばれるコールバック
     public override void OnPlayerLeftRoom(Player player)
     {
         Debug.Log(player.NickName + "が退出しました");
+        
         //switch (RoomSceneManager.Porder)
         //{
         //    case 1:players[0].SetActive(true);break;

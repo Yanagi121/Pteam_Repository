@@ -137,6 +137,14 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     public override void OnPlayerLeftRoom(Player player)
     {
         MasterClientJudge();
+        Debug.Log("„‚Ì‡”Ô:" + Porder);
+        switch (Porder)
+        {
+            case 1: changenum1 = 0; break;
+            case 2: changenum2 = 0; break;
+            case 3: changenum3 = 0; break;
+            case 4: changenum4 = 0; break;
+        }
     }
 
     private void CloneNameConversion()
