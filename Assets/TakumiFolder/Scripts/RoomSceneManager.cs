@@ -61,6 +61,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
     [SerializeField] int changenum1, changenum2, changenum3, changenum4 = 0;//プレイヤーのクローンの名前を変えた回数
 
+   // private bool EnterRoomOneTime = false;//一瞬最初に部屋に入ることでリストの更新を行って、シーン遷移後にRoomListの更新が行われるようにする
+
     private void Start()
     {
         // PhotonServerSettingsに設定した内容を使ってマスターサーバーへ接続する
@@ -78,12 +80,19 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.JoinLobby();
         enterMatchWaitRoomJudge = false;
+       // EnterRoomOneTime = true;
     }
 
     public void Update()
     {
         RoomNum.text = PhotonNetwork.CountOfPlayersInRooms + "/" + PhotonNetwork.CountOfPlayers;
         UpdateMemberList();
+        //if (EnterRoomOneTime == true)
+        //{
+        //    PhotonNetwork.JoinRandomOrCreateRoom();
+        //    //PhotonNetwork.LeaveRoom();
+        //    EnterRoomOneTime = false;
+        //}
     }
 
     public override void OnJoinedLobby()//検証用
