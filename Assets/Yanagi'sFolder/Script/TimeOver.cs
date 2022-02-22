@@ -22,12 +22,13 @@ public class TimeOver : MonoBehaviourPunCallbacks
             gameover = true;
             //photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
         }
+        if (Input.GetKeyDown(KeyCode.Q)) photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);//if‚Ì’†g‚ğ•ß‚Ü‚¦‚½‚ÌğŒ‚Ì‘ã‚í‚è
     }
 
 
-   /* [PunRPC]
+    [PunRPC]
     void ChangeGameOver()
     {
         gameover = true;
-    }*/
+    }
 }
