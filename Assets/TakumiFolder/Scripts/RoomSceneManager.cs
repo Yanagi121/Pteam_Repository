@@ -80,7 +80,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.JoinLobby();
         enterMatchWaitRoomJudge = false;
-       // EnterRoomOneTime = true;
+        // EnterRoomOneTime = true;
+        Debug.Log("ê¨å˜ÅI");
     }
 
     public void Update()

@@ -99,7 +99,6 @@ public class RoomListView : MonoBehaviourPunCallbacks
     // ルームリストが更新された時に呼ばれるコールバック
     public override void OnRoomListUpdate(List<RoomInfo> roomList)//ルームの中にあるリストのデータを仮引数に入れる
     {
-        base.OnRoomListUpdate(roomList);
         foreach (var info in roomList)//var型の変数infoに、roomListの要素を順番に取り出して格納している。roomListの末尾データが出るまで繰り返す
         {
 
