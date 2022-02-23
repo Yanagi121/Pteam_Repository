@@ -13,6 +13,7 @@ public class TimeOver : MonoBehaviourPunCallbacks
     [SerializeField] bool setactiveUI;
     public static bool gameover;
     public TextMeshProUGUI TimeText;
+    public GameObject GameOverText;
     [SerializeField] GameObject TimeTextGameObject;
 
     private void Start()
@@ -20,6 +21,7 @@ public class TimeOver : MonoBehaviourPunCallbacks
        countdown = 300.0f;
        TimeText.text = "0";
         gameover = false;
+        GameOverText.SetActive(false);
     }
     // Update is called once per frame
     void Update()
@@ -48,6 +50,8 @@ public class TimeOver : MonoBehaviourPunCallbacks
         }
         IntNum = (int)countdown;
         TimeText.text = (IntNum / 60).ToString("0") + " : " + (IntNum % 60).ToString("00");
+        if (TimeOver.gameover == true)
+            GameOverText.SetActive(true);
     }
         [PunRPC]
     void ChangeGameOver()

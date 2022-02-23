@@ -14,12 +14,18 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     private string Camera;
     private GameObject Camera1;
     public static string PlayerName;
-
+    [SerializeField] bool WaterSound=false,MakeSounds=false, InvokeDelay = true;
+    [SerializeField] int a=0;
+    private AudioSource RiverSound;
+    [SerializeField] AudioClip audioClip1;
+    //[SerializeField] AudioClip audioClip;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         DontDestroyOnLoad(this.gameObject);
+        RiverSound = gameObject.GetComponent<AudioSource>();
+        RiverSound.clip = audioClip1;
     }
 
     // Update is called once per frame
@@ -54,6 +60,18 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
             GetX = 0;
             GetZ = 0;
         }
+        if (WaterSound == true&&InvokeDelay==true&&(GetX>0||GetZ>0))
+        {
+            Invoke("PlaySE", 0.50f);
+            InvokeDelay = false;
+            
+        }
+    }
+    public void PlaySE()
+    {
+        RiverSound.Play();
+        InvokeDelay = true;
+        a++;
     }
     private void FixedUpdate()
     {
@@ -72,4 +90,18 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     //    Debug.Log("Porder:" + RoomSceneManager.Porder);
     //    gameObject.name = "Player" + RoomSceneManager.Porder;
     //}
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("River"))
+        {
+            WaterSound = true;
+        }
+    }
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("River"))
+        {
+            WaterSound = false;
+        }
+    }
 }
