@@ -10,10 +10,13 @@ public class Catch_Doctor : MonoBehaviourPunCallbacks
     public static bool CatchDr;
     public List<float> GetTime;
     public static bool BoolCatch_Doctor;
+
     // Start is called before the first frame update
     void Start()
     {
         BoolCatch_Doctor = false;
+
+        //this.GetComponent<SpriteRenderer>().color += new Color(0, 0, 0, -360);
     }
 
     // Update is called once per frame

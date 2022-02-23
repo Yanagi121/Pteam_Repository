@@ -10,7 +10,7 @@ public class Pre_StartCountdown : MonoBehaviour
     float a=0,toumei=1;
     int CountDownInt = 5;//RoomSceneManager2.delayMove‚Ì’l‚ğQÆ‚·‚é
     int fontsize=350;
-    bool alpha;
+    bool alpha=false;
     public static bool lockedEscKey=false;
     Color Alpha;
     // Start is called before the first frame update

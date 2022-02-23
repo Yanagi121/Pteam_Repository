@@ -8,6 +8,7 @@ TagManager:
   - MovePoint
   - Player1
   - Camera1
+  - River
   layers:
   - Default
   - TransparentFX
