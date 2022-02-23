@@ -6,10 +6,6 @@ public class DontDestroyObjectDestroy : MonoBehaviour
 {
     GameObject Cam1;
     GameObject[] players;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -18,13 +14,18 @@ public class DontDestroyObjectDestroy : MonoBehaviour
             Cam1 = GameObject.Find("Camera1");
             Destroy(Cam1);
         }
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
-            if (GameObject.Find("Player" +(i+1)))
+            if (GameObject.Find("Player" + (i + 1)))
             {
-                Destroy(players[i+1]);
+                players[i] = GameObject.Find("Player" + (i + 1));
+                Destroy(players[i]);
             }
         }
-        
+        //if (GameObject.Find("Player1"))
+        //{   int i= 0;
+        //    players[i ] = GameObject.Find("Player1");
+        //    Destroy(players[i]);
+        //}
     }
 }

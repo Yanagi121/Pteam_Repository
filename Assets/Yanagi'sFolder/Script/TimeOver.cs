@@ -8,7 +8,7 @@ public class TimeOver : MonoBehaviourPunCallbacks
 {
     // Start is called before the first frame update
     //カウントダウン
-    public static float countdown = 300.0f;
+    public static float countdown;
     int IntNum;
     [SerializeField] bool setactiveUI;
     public static bool gameover;
@@ -17,11 +17,14 @@ public class TimeOver : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+       countdown = 300.0f;
        TimeText.text = "0";
+        gameover = false;
     }
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(countdown);
         if (CameraMove.TimeDelay)
             setactiveUI = true;
 

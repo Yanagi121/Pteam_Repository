@@ -13,7 +13,7 @@ public class Catch_Doctor : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-
+        BoolCatch_Doctor = false;
     }
 
     // Update is called once per frame
