@@ -925,6 +925,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u30EB\u30FC\u30E0\u306B\u623B\u308B"
       objectReference: {fileID: 0}
+    - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     - target: {fileID: 2974981697395211861, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.69999695
@@ -2037,6 +2041,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u30BF\u30A4\u30C8\u30EB\u306B\u623B\u308B"
       objectReference: {fileID: 0}
+    - target: {fileID: 5822238732982290256, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     - target: {fileID: 5822238733464696598, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -2289,6 +2297,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u4ECA\u307E\u3067\u306E\u30B9\u30B3\u30A2"
       objectReference: {fileID: 0}
+    - target: {fileID: 1106594742192514127, guid: 92d781811a62e2a4f8aacdb596ca974b, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     - target: {fileID: 1106594742192514127, guid: 92d781811a62e2a4f8aacdb596ca974b, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 140
@@ -3437,6 +3449,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC"
       objectReference: {fileID: 0}
+    - target: {fileID: 1106594742192514127, guid: 92d781811a62e2a4f8aacdb596ca974b, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     - target: {fileID: 1106594742192514127, guid: 92d781811a62e2a4f8aacdb596ca974b, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 140

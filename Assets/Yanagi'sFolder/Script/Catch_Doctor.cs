@@ -29,9 +29,14 @@ public class Catch_Doctor : MonoBehaviourPunCallbacks
             TimeOver.gameover = true;*/
             BoolCatch_Doctor = true;
             GetTime.Add(TimeOver.countdown);
-            RoomSceneManager2.SceneEnter =false;//
-            PhotonNetwork.Disconnect();
+            Invoke("SceneEnterBool", 2f);
+           // PhotonNetwork.Disconnect();
         }
+    }
+
+    void SceneEnterBool()
+    {
+        RoomSceneManager2.SceneEnter = false;
     }
    // [PunRPC]
     /*void ChangeGameOver()

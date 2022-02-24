@@ -110,7 +110,12 @@ public class RoomListView : MonoBehaviourPunCallbacks
                 {
                     // リスト要素を更新する
                     entry.Activate(info);//RoomListEntryのActivateでリスト更新　ついでにこのActivate関数は仮引数があるのにreturnで返さなくていいのが謎すぎ
-                    
+                    if (RoomSceneManager2.SceneEnter == true)//プレイモードに入ったらリストを消す
+                    {
+                        activeEntries.Remove(info.Name);
+                        entry.Deactivate();
+                        inactiveEntries.Push(entry);
+                    }
                 }
                 else
                 {
@@ -119,13 +124,6 @@ public class RoomListView : MonoBehaviourPunCallbacks
                     entry.Deactivate();
                     inactiveEntries.Push(entry);
                 }
-                if (RoomSceneManager2.SceneEnter == true)//プレイモードに入ったらリストを消す
-                {
-                    activeEntries.Remove(info.Name);
-                    entry.Deactivate();
-                    inactiveEntries.Push(entry);
-                }
-
             }
             else if (!info.RemovedFromList)
             {
