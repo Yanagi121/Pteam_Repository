@@ -14,7 +14,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        
+        PhotonNetwork.LeaveLobby();
         Invoke("Progress", delayMove);
         PhotonNetwork.IsMessageQueueRunning = true;
         ////要確認/// Invoke("CameraFind", 0.0f);//0.5f後に呼び出される必要性　確認 
@@ -30,11 +30,12 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
     }
 
 
-    // マスターサーバーへの接続が成功したら、ロビーに参加する
-    public override void OnConnectedToMaster()
-    {
-        PhotonNetwork.JoinLobby();
-    }
+    //// マスターサーバーへの接続が成功したら、ロビーに参加する
+    //public override void OnConnectedToMaster()
+    //{
+    //    PhotonNetwork.JoinLobby();
+    //}
+
 
     void Progress()
     {
@@ -64,6 +65,10 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
     public override void OnLeftRoom()
     {
         Debug.Log("待機ルームから退出");
+    }
+    public override void OnLeftLobby()
+    {
+        Debug.Log("ロビーから退出");
     }
 
     // ルームの作成が成功した時に呼ばれるコールバック

@@ -67,12 +67,13 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     {
         // PhotonServerSettingsに設定した内容を使ってマスターサーバーへ接続する
         PhotonNetwork.ConnectUsingSettings();
-        PhotonNetwork.LocalPlayer.NickName = "Player" + Random.Range(1, 1000);//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
+        PhotonNetwork.LocalPlayer.NickName = "Player" + (Porder+1);//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
         PhotonNetwork.IsMessageQueueRunning = true;
         CameraMove.transCamera = Camera.main.transform;
         Camera1.SetActive(false);
         Pnum.AddRange(PN);
         JoinRoom = false;
+        
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
@@ -101,6 +102,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("ロビーに参加");
         LobbyUI.SetActive(true);
         enterMatchWaitRoomUI.SetActive(false);
+        Debug.Log("AAAAAAAAA" + Porder + "AAAAAAAAA");
     }
 
     public override void OnJoinedRoom()//ローカルプレイヤーのみに反応
@@ -160,7 +162,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
             changenum1++;
         }//Porder1の同期が完了　自身の同期はまだ
 
-        if (Porder == 2)
+        else if (Porder == 2)
         {
             switch (changenum2) //行われるごとに回数が増える //すでにいるプレイヤー1の取得
             {
@@ -179,7 +181,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
             }
             changenum2++;
         }
-        if (Porder == 3)
+        else if (Porder == 3)
         {
             for (int i = 0; i < 2; i++)//すでにいるプレイヤー1,2の取得
             {
@@ -202,7 +204,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
             }
 
         }
-        if (Porder == 4)//switchやelse if だと片方しか行われないためifにした？？
+        else if (Porder == 4)//switchやelse if だと片方しか行われないためifにした？？
         {
             for (int i = 0; i < 3; i++)//すでにいるプレイヤー1,2,3の取得
             {
@@ -225,6 +227,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
                 changenum4++;
             }
         }
+        else { }
     }
 
     public void UpdateMemberList()
@@ -268,6 +271,11 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         changenum2 = 0;
         changenum3 = 0;
         changenum4 = 0;
+    }
+
+    public override void OnLeftLobby()
+    {
+        Debug.Log("ロビーから退出");
     }
 
     private void MasterClientJudge()
