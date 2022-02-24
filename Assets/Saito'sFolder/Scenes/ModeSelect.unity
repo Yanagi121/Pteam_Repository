@@ -479,6 +479,10 @@ PrefabInstance:
       value: "\u307F\u3093\u306A\u3067\u3071\u308A\u3074"
       objectReference: {fileID: 0}
     - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
+    - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 50
       objectReference: {fileID: 0}
@@ -1217,6 +1221,10 @@ PrefabInstance:
       value: "\u8AAC\u660E\n\u30EB\u30FC\u30E0\u6570\n\u30A4\u30E9\u30B9\u30C8 or
         \u52D5\u753B"
       objectReference: {fileID: 0}
+    - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 50
@@ -2099,6 +2107,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u6E96\u5099\u4E2D\uFF08\u535A\u58EB\u3082\u30D7\u30EC\u30A4\u30E4\u30FC\uFF09"
       objectReference: {fileID: 0}
+    - target: {fileID: 5822238732982290256, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     - target: {fileID: 5822238732982290256, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 50

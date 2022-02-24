@@ -8,10 +8,12 @@ public class DestroyButton : MonoBehaviourPunCallbacks
     GameObject Cam1;
     public void OnClick()
     {
-        if (GameObject.Find("Camera1"))//DontDestroy‚ÌƒJƒƒ‰‚ğíœ
+        PhotonNetwork.IsMessageQueueRunning = false;
+        PhotonNetwork.LeaveRoom();
+        if (GameObject.Find("Camera1"))
         {
             Cam1 = GameObject.Find("Camera1");
-            Destroy(Cam1);
+            Cam1.name = "Cam2";//•ÊƒV[ƒ“‚Åíœ‚·‚é
         }
         
     }

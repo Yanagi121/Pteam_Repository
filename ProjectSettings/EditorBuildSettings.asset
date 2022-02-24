@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Saito'sFolder/Scenes/Title.unity
+    guid: cec053a97799b6542bfebe9867a4b012
+  - enabled: 1
     path: Assets/TakumiFolder/Scenes/LobbyScene.unity
     guid: 69f59821e5fe3c740a24e7777d05faf1
   - enabled: 1
@@ -14,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TakumiFolder/Scenes/NewRoom.unity
     guid: 4ede08e5225922b4b877e16582228a80
-  - enabled: 1
-    path: Assets/Saito'sFolder/Scenes/Title.unity
-    guid: cec053a97799b6542bfebe9867a4b012
   - enabled: 1
     path: Assets/Saito'sFolder/Scenes/Tutorial.unity
     guid: ad446a5f70a472c4d8982def2a8b1978

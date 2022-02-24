@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u30E1\u30F3\u30D0\u30FC3\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
 --- !u!224 &107662326 stripped
@@ -356,6 +360,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u6E96\u5099\u5B8C\u4E86"
       objectReference: {fileID: 0}
+    - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     - target: {fileID: 2974981697395211861, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.69999695
@@ -499,6 +507,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u30E1\u30F3\u30D0\u30FC2\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
 --- !u!224 &336557217 stripped
@@ -517,6 +529,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u9000\u51FA"
       objectReference: {fileID: 0}
+    - target: {fileID: 5822238732982290256, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     - target: {fileID: 5822238733464696598, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -927,6 +943,10 @@ PrefabInstance:
       value: "\u30EB\u30FC\u30E0\u3007\u3007"
       objectReference: {fileID: 0}
     - target: {fileID: 1106594742192514127, guid: 92d781811a62e2a4f8aacdb596ca974b, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 4beb055f07aaff244873dec698d0363e, type: 3}
+    - target: {fileID: 1106594742192514127, guid: 92d781811a62e2a4f8aacdb596ca974b, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 70
       objectReference: {fileID: 0}
@@ -1230,6 +1250,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u30E1\u30F3\u30D0\u30FC4\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 2974981697395211860, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a387a16b32f485b45881994c9dec79e7, type: 3}
     - target: {fileID: 2974981697395211861, guid: e8f41ca9857cf92499966de1091ae9f5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.69999695
@@ -1483,7 +1507,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 4beb055f07aaff244873dec698d0363e, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -1625,6 +1649,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u540D\u524D\u5909\u66F4"
       objectReference: {fileID: 0}
+    - target: {fileID: 5822238732982290256, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a7ad7eb92a080d74db9de6e0b16ed010, type: 3}
     - target: {fileID: 5822238733464696680, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
       propertyPath: m_Name
       value: NameChangeButton

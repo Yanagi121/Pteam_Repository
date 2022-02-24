@@ -72,8 +72,8 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         CameraMove.transCamera = Camera.main.transform;
         Camera1.SetActive(false);
         Pnum.AddRange(PN);
-        JoinRoom = false;
-        
+        JoinRoom = false; 
+        Destroy(GameObject.Find("Cam2"));
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
@@ -102,13 +102,14 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("ロビーに参加");
         LobbyUI.SetActive(true);
         enterMatchWaitRoomUI.SetActive(false);
-        Debug.Log("AAAAAAAAA" + Porder + "AAAAAAAAA");
+        
     }
 
     public override void OnJoinedRoom()//ローカルプレイヤーのみに反応
     {
         JoinRoom = true;//メンバーリストの更新時かつルームに入ったときのみOneTimeでプレイヤープレハブに名前を付けて名前の変換を行うため
         Debug.Log("待機ルームに参加");
+        Debug.Log("AAAAAAAAA:" + Porder + ":AAAAAAAAA");
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
         MasterClientJudge();
@@ -141,6 +142,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
     private void CloneNameConversion()
     {
+        Debug.Log("部屋内での割り当てが行われました");
         if (Porder == 1)
         {
             switch (changenum1) //行われるごとに回数が増える
@@ -162,7 +164,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
             changenum1++;
         }//Porder1の同期が完了　自身の同期はまだ
 
-        else if (Porder == 2)
+        if (Porder == 2)
         {
             switch (changenum2) //行われるごとに回数が増える //すでにいるプレイヤー1の取得
             {
@@ -181,7 +183,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
             }
             changenum2++;
         }
-        else if (Porder == 3)
+        if (Porder == 3)
         {
             for (int i = 0; i < 2; i++)//すでにいるプレイヤー1,2の取得
             {
@@ -204,7 +206,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
             }
 
         }
-        else if (Porder == 4)//switchやelse if だと片方しか行われないためifにした？？
+        if (Porder == 4)//switchやelse if だと片方しか行われないためifにした？？
         {
             for (int i = 0; i < 3; i++)//すでにいるプレイヤー1,2,3の取得
             {
@@ -227,7 +229,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
                 changenum4++;
             }
         }
-        else { }
+       
     }
 
     public void UpdateMemberList()
