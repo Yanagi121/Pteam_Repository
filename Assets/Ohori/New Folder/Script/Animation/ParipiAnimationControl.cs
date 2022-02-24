@@ -31,9 +31,15 @@ public class ParipiAnimationControl : MonoBehaviour
     //ParipiAnimationControl‚È‚¢‚ÌrunControl‚ªtrue‚©false‚©‚Ì”»’è‚·‚éƒƒ\ƒbƒh
     public void MoveJudgment()
     {
+        if(Input.GetAxis("Horizontal")!=0) { runControl = true; }
+        else { runControl = false; };
+        if (Input.GetAxis("Vertical") != 0) { runControl = true; }
+        else { runControl = false; };
+        /*
         if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")){ runControl = true;}
         else{runControl = false; }
         if (Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("down") || Input.GetKey("right")) { runControl = true; }
         else { runControl = false; }
+        */
     }
 }
