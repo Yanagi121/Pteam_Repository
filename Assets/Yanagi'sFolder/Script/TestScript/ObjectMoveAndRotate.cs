@@ -19,6 +19,7 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     private AudioSource RiverSound;
     [SerializeField] AudioClip audioClip1;
     //[SerializeField] AudioClip audioClip;
+    private SoundManager soundManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
         DontDestroyOnLoad(this.gameObject);
         RiverSound = gameObject.GetComponent<AudioSource>();
         RiverSound.clip = audioClip1;
+        soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -69,7 +71,8 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     }
     public void PlaySE()
     {
-        RiverSound.Play();
+        //RiverSound.Play();//Inspector内のAudioClip1に入っている曲を再生している
+        soundManager.PlaySeByName("hito_ge_aru_mizu02short");//PlayBgmByNameで直接ファイルを検索して音源を拾っている？
         InvokeDelay = true;
         a++;
     }
