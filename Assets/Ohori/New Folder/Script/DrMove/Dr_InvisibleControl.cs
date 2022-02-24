@@ -12,7 +12,7 @@ public class Dr_InvisibleControl : MonoBehaviour
     [SerializeField]
     private GameObject TargetObject; /// 目標位置
     [SerializeField]
-    private float EscapeSpeed = 8.0f;//逃げる速さ
+    public static float EscapeSpeed = 8.0f;//逃げる速さ
 
     //Playerを宣言
     private GameObject Player1;
@@ -66,6 +66,12 @@ public class Dr_InvisibleControl : MonoBehaviour
 
         // NavMeshが準備できているなら
         if (m_navMeshAgent.pathStatus != NavMeshPathStatus.PathInvalid) { m_navMeshAgent.SetDestination(TargetObject.transform.position); }// NavMeshAgentに目的地をセット
+
+        if (Catch_Doctor.BoolCatch_Doctor == true)
+        {
+            this.m_navMeshAgent.speed = 0f;
+            Debug.Log("検知しました:"+EscapeSpeed);
+        }
     }
 
     //プレイヤーを見つけるメソッド    
