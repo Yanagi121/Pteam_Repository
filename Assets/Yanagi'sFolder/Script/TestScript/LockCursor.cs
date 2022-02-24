@@ -12,6 +12,8 @@ public class LockCursor : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        SoundSettingsUIObject.SetActive(false);
+        OnClickEscape = false;
     }
 
     // Update is called once per frame

@@ -11,6 +11,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
     [SerializeField] GameObject Player;
     public static bool SceneEnter = false; //ゲームシーンに入ったときに呼ばれる関数　
     [SerializeField] GameObject[] players=new GameObject [4];
+   // private  GameObject SoundSettingsUIObject;
 
     private void Start()
     {
@@ -21,9 +22,10 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
         CameraFind();//↓代替
         SceneEnter = true;
         Player = GameObject.Find("Player" + RoomSceneManager.Porder);//プレイヤーを取得し初期移動
-        Player.transform.position = new Vector3(167, 17, 197);
+        Player.transform.position = new Vector3(167 +RoomSceneManager.Porder+1.1f, 17, 197);
         CameraMove.GamePlayer = GameObject.Find("Player" + RoomSceneManager.Porder);//プレイヤー名のついたオブジェクトをCameraMoveが取得
-        for(int i = 0; i < 4; i++)
+        //SoundSettingsUIObject.SetActive(false);
+        for (int i = 0; i < 4; i++)
         {
             players[i].SetActive(true);
         }
