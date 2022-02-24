@@ -114,7 +114,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         enterMatchWaitRoomUI.SetActive(true);
         MasterClientJudge();
         Invoke("CloneNameConversion", 0.5f);//ここはPorderが1以外のときに行われる　最初に部屋を作った人は必ずnullが出てしまう
-        PlayerClone = PhotonNetwork.Instantiate("NewPlayer", new Vector3(Random.Range(160, 180), 30, Random.Range(250, 270)), Quaternion.identity);
+        PlayerClone = PhotonNetwork.Instantiate("NewPlayer", new Vector3( 170, 30, 200), Quaternion.identity);
         //プレイヤーのプレハブのタグ名を統一？　適応がされるか要確認　適応された場合はプレイヤープレハブタグがついたオブ軸とから逃げる操作を実装する
         Photon.Realtime.Player player2 = PhotonNetwork.LocalPlayer;
         p1 = player2.ActorNumber;
