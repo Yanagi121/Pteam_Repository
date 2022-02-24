@@ -18,8 +18,7 @@ public class DontDestroyObjectDestroy : MonoBehaviour
         {
             if (GameObject.Find("Player" + (i + 1)))
             {
-                players[i] = GameObject.Find("Player" + (i + 1));
-                Destroy(players[i]);
+                Destroy(GameObject.Find("Player" + (i + 1)));
             }
         }
         //if (GameObject.Find("Player1"))

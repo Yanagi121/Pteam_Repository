@@ -67,7 +67,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     {
         // PhotonServerSettingsに設定した内容を使ってマスターサーバーへ接続する
         PhotonNetwork.ConnectUsingSettings();
-        PhotonNetwork.LocalPlayer.NickName = "Player" + (Porder+1);//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
+        PhotonNetwork.LocalPlayer.NickName = "Player" + Random.Range(1,1000);//Avatarプレハブ（ネットワークオブジェクト）で作られたプレイヤーの名前を受け取り、Instantiateした際には変更を読み取る
         PhotonNetwork.IsMessageQueueRunning = true;
         CameraMove.transCamera = Camera.main.transform;
         Camera1.SetActive(false);
