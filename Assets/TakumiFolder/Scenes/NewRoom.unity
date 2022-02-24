@@ -3152,6 +3152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ReturnTitleButton
       objectReference: {fileID: 0}
+    - target: {fileID: 5822238733464696680, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5822238733464696681, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6325,6 +6329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ReturnTitleButton
       objectReference: {fileID: 0}
+    - target: {fileID: 5822238733464696680, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5822238733464696681, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7372,7 +7380,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movePointControl: {fileID: 972597237}
   TargetObject: {fileID: 972597238}
-  EscapeSpeed: 8
   Player1Pos: {x: 0, y: 0, z: 0}
   Player2Pos: {x: 0, y: 0, z: 0}
   Player3Pos: {x: 0, y: 0, z: 0}
