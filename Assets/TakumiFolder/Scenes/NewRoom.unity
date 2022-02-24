@@ -5247,7 +5247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 129797920802749867, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 383915595778121899, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
       propertyPath: m_RootOrder
@@ -5303,7 +5303,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 588d7b4201587a84b9a3cc4718f890b7, type: 2}
     - target: {fileID: 5911323718551513235, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7561171418501377745, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
       propertyPath: TargetObject
@@ -5317,6 +5317,10 @@ PrefabInstance:
       propertyPath: movePointControl
       value: 
       objectReference: {fileID: 972597237}
+    - target: {fileID: 8664763176994716621, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e15e225158c10ae4d838ef47bc5fea54, type: 3}
 --- !u!114 &926067497 stripped
