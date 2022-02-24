@@ -8679,6 +8679,7 @@ MonoBehaviour:
   - {fileID: 1519455605}
   - {fileID: 562080010}
   - {fileID: 721333932}
+  SoundSettingsUIObject: {fileID: 730444347}
 --- !u!4 &1675814104
 Transform:
   m_ObjectHideFlags: 0
