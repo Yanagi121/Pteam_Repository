@@ -64,15 +64,15 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
         }
         if (WaterSound == true&&InvokeDelay==true&&(GetX>0||GetZ>0))
         {
-            Invoke("PlaySE", 0.50f);
+            Invoke("PlaySESound", 0.50f);
             InvokeDelay = false;
             
         }
     }
-    public void PlaySE()
+    public void PlaySESound()
     {
         //RiverSound.Play();//Inspector内のAudioClip1に入っている曲を再生している
-        soundManager.PlaySeByName("hito_ge_aru_mizu02short");//PlayBgmByNameで直接ファイルを検索して音源を拾っている？
+        soundManager.PlaySeByName("hito_ge_aru_mizu02");//PlayBgmByNameで直接ファイルを検索して音源を拾っている？
         InvokeDelay = true;
         a++;
     }
