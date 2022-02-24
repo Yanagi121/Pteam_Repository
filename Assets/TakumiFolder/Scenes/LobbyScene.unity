@@ -2578,7 +2578,7 @@ PrefabInstance:
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7798599227822565724, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_text
-      value: "\u30C1\u30FC\u30E0\u540D\u5165\u529B\u6B04"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7798599227822565724, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_Enabled
@@ -4326,6 +4326,10 @@ PrefabInstance:
     - target: {fileID: 7798599226526719607, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798599227822565724, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7798599227822565724, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_fontAsset
