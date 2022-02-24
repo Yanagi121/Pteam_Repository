@@ -26,7 +26,7 @@ public class TimeOver : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(countdown);
+        //Debug.Log(countdown);
         if (CameraMove.TimeDelay)
             setactiveUI = true;
 
