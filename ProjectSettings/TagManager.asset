@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Dr
+  - MovePoint
+  - Player1
+  - Camera1
   layers:
   - Default
   - TransparentFX
