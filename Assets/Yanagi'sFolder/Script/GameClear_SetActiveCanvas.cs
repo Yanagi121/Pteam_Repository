@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class GameClear_SetActiveCanvas : MonoBehaviour
 {
@@ -42,16 +43,17 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
             }
             if ( DelayGameBool)
             {
-                if (Catch_Doctor.BoolCatch_Doctor)
+                if (Catch_Doctor.BoolCatch_Doctor)                
                     GameClearCanvasObject.SetActive(true);
                 else
                     GameOverCanvasOvject.SetActive(true);
-                LockCursor.OnClickEscape = true;
+                    LockCursor.OnClickEscape = true;
             }
         }
     }
     void DelayGame()
     {
         DelayGameBool = true;
+        PhotonNetwork.LoadLevel("Sato_GameClear");//ƒNƒŠƒAŽž‚Ì‚Ý
     }
 }

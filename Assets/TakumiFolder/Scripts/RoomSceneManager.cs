@@ -143,11 +143,11 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     private void CloneNameConversion()
     {
         Debug.Log("部屋内での割り当てが行われました");
-        if (Porder == 1)
+        if (Porder == 1)//プレイヤーが入った際に自分のPorderが1であるとき
         {
             switch (changenum1) //行われるごとに回数が増える
             {
-                case 0: break;//まだクローンがないため
+                case 0: break;//まだクローンがないため何も行わない
                 case 1:
                     OtherPlayerClone2 = GameObject.Find("NewPlayer(Clone)");
                     OtherPlayerClone2.name = "Player2";//2人目が入ったときに名前のついてないクローンにPlayer2を振り当てる
@@ -255,7 +255,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
                 OneTime = false;
                 Debug.Log(num);
                 Camera1.SetActive(true);
-                Debug.Log("Porder:" + Porder);
+                Debug.Log("私のPorder:" + Porder);
                 OtherPlayerClone1 = GameObject.Find("NewPlayer(Clone)");//自分目線のみでの変更
             }
         }

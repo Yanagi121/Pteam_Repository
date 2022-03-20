@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
+
 public class Catch_Doctor : MonoBehaviourPunCallbacks
 {
     public float SlowTime=1;
@@ -37,6 +38,8 @@ public class Catch_Doctor : MonoBehaviourPunCallbacks
     void SceneEnterBool()
     {
         RoomSceneManager2.SceneEnter = false;
+       // PhotonNetwork.LoadLevel("Sato_GameClear");
+       // SceneManager.LoadScene("GameCrear");
     }
    // [PunRPC]
     /*void ChangeGameOver()
