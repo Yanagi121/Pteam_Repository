@@ -20,8 +20,8 @@ public class TimeOver : MonoBehaviourPunCallbacks
     {
        countdown = 300.0f;
        TimeText.text = "0";
-        gameover = false;
-        GameOverText.SetActive(false);
+       gameover = false;
+       GameOverText.SetActive(false);
     }
     // Update is called once per frame
     void Update()
