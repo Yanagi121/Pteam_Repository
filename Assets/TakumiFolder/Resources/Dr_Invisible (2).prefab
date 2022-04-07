@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7561171418501377746}
   - component: {fileID: -5313864367621625383}
   - component: {fileID: 2305744331993677159}
+  - component: {fileID: -6805747266636539574}
   m_Layer: 0
   m_Name: Dr_Invisible (2)
   m_TagString: Dr
@@ -134,7 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movePointControl: {fileID: 0}
   TargetObject: {fileID: 0}
-  EscapeSpeed: 8
   Player1Pos: {x: 0, y: 0, z: 0}
   Player2Pos: {x: 0, y: 0, z: 0}
   Player3Pos: {x: 0, y: 0, z: 0}
@@ -204,6 +204,21 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &-6805747266636539574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056939209243555468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdbea25da7313384a8e2264c5111b49c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaterEffct: {fileID: 1687118924408352, guid: 77c69ec12208c4c4380d15e30b6f8f68, type: 3}
+  inRiver: 0
+  IntervalTime: 0
 --- !u!1 &5847493176895744076
 GameObject:
   m_ObjectHideFlags: 0
