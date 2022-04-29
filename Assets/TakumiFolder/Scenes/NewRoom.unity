@@ -4341,8 +4341,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 811144783}
-  - component: {fileID: 811144782}
-  - component: {fileID: 811144781}
   - component: {fileID: 811144780}
   m_Layer: 0
   m_Name: GameControl
@@ -4368,35 +4366,6 @@ MonoBehaviour:
   defaultLanguage: 
   saveLoad: 0
   prefabs: []
---- !u!114 &811144781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811144779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fca9b25d3b519f46884acb860befab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeType: 0
---- !u!114 &811144782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811144779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 010fccd9875074342a0937a043e3d4e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volume: 0.6
-  bgmVolume: 0.6
-  seVolume: 0.6
-  speakerVolume: 0.6
 --- !u!4 &811144783
 Transform:
   m_ObjectHideFlags: 0
