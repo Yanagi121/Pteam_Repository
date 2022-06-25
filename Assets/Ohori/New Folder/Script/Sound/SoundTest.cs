@@ -9,13 +9,15 @@ public class SoundTest : MonoBehaviour
     void Start()
     {
         soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();
-        soundManager.PlayBgmByName("game_2");
-        Debug.Log("çƒê∂");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Return))
+        {
+            soundManager.PlayBgmByName("game_2");
+            Debug.Log("çƒê∂");
+        }
     }
 }
