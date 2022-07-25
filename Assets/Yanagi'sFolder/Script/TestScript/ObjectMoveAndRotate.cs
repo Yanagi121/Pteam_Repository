@@ -33,10 +33,15 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if (RoomSceneManager2.CameFind)
+        //if (RoomSceneManager2.CameFind)
+        //{
+        //    PlayerCamera = GameObject.FindGameObjectWithTag("Camera1");
+        //    RoomSceneManager2.CameFind = false;
+        //}
+        if (PlayerCamera== null)
         {
-            PlayerCamera = GameObject.FindGameObjectWithTag("Camera1");
-            RoomSceneManager2.CameFind = false;
+            PlayerCamera = GameObject.Find("Camera1");
+            Debug.Log(gameObject+"_Call");
         }
         if (TimeOver.gameover==false&& CameraMove.TimeDelay)
         {
