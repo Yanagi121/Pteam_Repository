@@ -57,7 +57,6 @@ public class RoomListView : MonoBehaviourPunCallbacks
         CreateRoomButton.interactable = false;
     }
 
-
     private void OnRoomNameInputFieldValueChanged(string value)//ルーム名が1文字以上なければ作成不可となる？
     {
         CreateRoomButton.interactable = (value.Length > 0);
@@ -65,7 +64,7 @@ public class RoomListView : MonoBehaviourPunCallbacks
     }
     private void PlayerNameInputFieldValueChanged(string value)//プレイヤー名が1文字以上なければ作成不可？？
     {
-       // PlayerNameButton.interactable = (value.Length > 0);
+        GOButton.interactable = ((value.Length > 0)&&(value.Length<10));
         PhotonNetwork.NickName = value;
     }
     private void LeftRoom()
@@ -95,8 +94,6 @@ public class RoomListView : MonoBehaviourPunCallbacks
                      },
                  CustomRoomPropertiesForLobby = new[] { "DisplayName", "Message" }
              });
-      //  Debug.Log(PhotonNetwork.PlayerList);
-        //PhotonNetwork.JoinOrCreateRoom("Room" + , new RoomOptions(), TypedLobby.Default);
     }
 
     // ルームリストが更新された時に呼ばれるコールバック
@@ -113,6 +110,12 @@ public class RoomListView : MonoBehaviourPunCallbacks
                 {
                     // リスト要素を更新する
                     entry.Activate(info);//RoomListEntryのActivateでリスト更新　ついでにこのActivate関数は仮引数があるのにreturnで返さなくていいのが謎すぎ
+                    if (RoomSceneManager2.SceneEnter == true)//プレイモードに入ったらリストを消す
+                    {
+                        activeEntries.Remove(info.Name);
+                        entry.Deactivate();
+                        inactiveEntries.Push(entry);
+                    }
                 }
                 else
                 {
@@ -134,5 +137,4 @@ public class RoomListView : MonoBehaviourPunCallbacks
             }
         }
     }
-
 }

@@ -3,7 +3,6 @@ using Photon.Realtime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(RectTransform))]
 [RequireComponent(typeof(Button))]
