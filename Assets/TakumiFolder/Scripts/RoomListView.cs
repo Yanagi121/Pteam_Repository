@@ -75,7 +75,7 @@ public class RoomListView : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.IsMessageQueueRunning = false;//チュートリアルの1  PhotonNetwork.IsMessageQueueRunning = true;はプレイヤー画面で行けるか確認
         //DontDestroyOnLoad(RoomSceneManagerOb);
-        PhotonNetwork.LoadLevel("NewRoom");
+        PhotonNetwork.LoadLevel("TestPlayScene");
         //SceneManager.LoadScene("RoomScene");//試作
     }
 

@@ -21,9 +21,9 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
         ////要確認/// Invoke("CameraFind", 0.0f);//0.5f後に呼び出される必要性　確認 
         CameraFind();//↓代替
         SceneEnter = true;
-        Player = GameObject.Find("Player" + RoomSceneManager.Porder);//プレイヤーを取得し初期移動
-        Player.transform.position = new Vector3(167 +RoomSceneManager.Porder+1.1f, 17, 197);
-        CameraMove.GamePlayer = GameObject.Find("Player" + RoomSceneManager.Porder);//プレイヤー名のついたオブジェクトをCameraMoveが取得
+       // Player = GameObject.Find("Player" + RoomSceneManager.Porder);//プレイヤーを取得し初期移動
+       // Player.transform.position = new Vector3(167 +RoomSceneManager.Porder+1.1f, 17, 197);
+        CameraMove.GamePlayer = GameObject.Find("Player" + RoomSceneManager.Porder+"(Clone)");//プレイヤー名のついたオブジェクトをCameraMoveが取得
         //SoundSettingsUIObject.SetActive(false);
         for (int i = 0; i < 4; i++)
         {

@@ -217,7 +217,6 @@ GameObject:
   - component: {fileID: 681249276891091803}
   - component: {fileID: 6852767029002055892}
   - component: {fileID: 3716551997387904287}
-  - component: {fileID: 3716551997387904281}
   - component: {fileID: 3716551997387904282}
   - component: {fileID: 7871211893019496977}
   - component: {fileID: 4936740419679880879}
@@ -323,28 +322,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &3716551997387904281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6185260459573873988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5cedd537382fc409803bd0a7931fb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movePointControl: {fileID: 0}
-  TargetObject: {fileID: 0}
-  Player1Pos: {x: 0, y: 0, z: 0}
-  Player2Pos: {x: 0, y: 0, z: 0}
-  Player3Pos: {x: 0, y: 0, z: 0}
-  Player4Pos: {x: 0, y: 0, z: 0}
-  toPlayer1Distance: {x: 0, y: 0, z: 0}
-  toPlayer2Distance: {x: 0, y: 0, z: 0}
-  toPlayer3Distance: {x: 0, y: 0, z: 0}
-  toPlayer4Distance: {x: 0, y: 0, z: 0}
 --- !u!195 &3716551997387904282
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -526,6 +503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5745413464631285150}
+  - component: {fileID: 994028977565894793}
   m_Layer: 0
   m_Name: 'Dr_Invisible '
   m_TagString: Untagged
@@ -551,6 +529,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &994028977565894793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7299644633553341040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5cedd537382fc409803bd0a7931fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movePointControl: {fileID: 0}
+  TargetObject: {fileID: 0}
+  Player1Pos: {x: 0, y: 0, z: 0}
+  Player2Pos: {x: 0, y: 0, z: 0}
+  Player3Pos: {x: 0, y: 0, z: 0}
+  Player4Pos: {x: 0, y: 0, z: 0}
+  toPlayer1Distance: {x: 0, y: 0, z: 0}
+  toPlayer2Distance: {x: 0, y: 0, z: 0}
+  toPlayer3Distance: {x: 0, y: 0, z: 0}
+  toPlayer4Distance: {x: 0, y: 0, z: 0}
 --- !u!1001 &3423704265810902356
 PrefabInstance:
   m_ObjectHideFlags: 0
