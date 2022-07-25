@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 /// </summary>
  
 //TODO:”Ä—p«‚ª‚È‚¢
+//addliner‚Æ‚©
 public class LoadSceneManager : MonoBehaviour
 {
     [SerializeField]
