@@ -274,7 +274,7 @@ MonoBehaviour:
   GetX: 0
   GetZ: 0
   FallSpeed: 0
-  PlayerSpeed: 1
+  PlayerSpeed: 0.25
   Moveforward: 0
   MoveBack: 0
   MoveLeft: 0
