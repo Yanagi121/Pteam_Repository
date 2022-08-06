@@ -9,6 +9,9 @@ TagManager:
   - Player1
   - Camera1
   - River
+  - Bullet
+  - FxTemporaire
+  - Ground
   layers:
   - Default
   - TransparentFX
