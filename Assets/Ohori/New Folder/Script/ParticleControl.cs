@@ -26,9 +26,9 @@ public class ParticleControl : MonoBehaviour
         {
             if (inRiver){
                 Instantiate(WaterEffct, this.transform.position, Quaternion.Euler(90.0f,0f,0f));
-                soundManager.PlaySeByName("Hito_ge_aru_mizu02short");
+                soundManager.PlaySeByName("hito_ge_aru_mizu02short");
             }//パーティクル用ゲームオブジェクト生成
-            soundManager.StopSe();
+            //soundManager.StopSe();
             Time = 0.0f;
         }
     }
