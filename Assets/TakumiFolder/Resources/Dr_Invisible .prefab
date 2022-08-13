@@ -382,7 +382,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6185260459573873988}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cbe25ec438703734aae897e5dcc4dce7, type: 3}
@@ -482,6 +482,7 @@ GameObject:
   - component: {fileID: 5745413464631285150}
   - component: {fileID: 994028977565894793}
   - component: {fileID: 1126921763107056598}
+  - component: {fileID: 5151957042967438728}
   m_Layer: 0
   m_Name: 'Dr_Invisible '
   m_TagString: Untagged
@@ -551,6 +552,18 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &5151957042967438728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7299644633553341040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604c1183a8ff92f49a584ee76959d1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3423704265810902356
 PrefabInstance:
   m_ObjectHideFlags: 0
