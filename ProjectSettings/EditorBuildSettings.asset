@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Saito'sFolder/Scenes/SoundSetting.unity
     guid: 40cffa7087ec892408a1a3d8bd658a78
   - enabled: 1
+    path: Assets/TakumiFolder/Scenes/TestPlayScene.unity
+    guid: fe0631fc617aa5a4db45b04538c7230f
+  - enabled: 1
     path: Assets/Saito'sFolder/Scenes/SettingOption.unity
     guid: e748c4d64459e3a45ace52afa0093383
   - enabled: 1

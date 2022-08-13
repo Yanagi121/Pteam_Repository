@@ -77,10 +77,10 @@ public class Dr_InvisibleControl : MonoBehaviour
     //プレイヤーを見つけるメソッド    
     public void findPlayer()
     {
-        Player1 = GameObject.Find("Player1");
-        Player2 = GameObject.Find("Player2");
-        Player3 = GameObject.Find("Player3");
-        Player4 = GameObject.Find("Player4");
+        Player1 = GameObject.Find("Player1(Clone)");
+        Player2 = GameObject.Find("Player2(Clone)");
+        Player3 = GameObject.Find("Player3(Clone)");
+        Player4 = GameObject.Find("Player4(Clone)");
     }
 
     //プレイヤーとの距離を初期化するメソッド

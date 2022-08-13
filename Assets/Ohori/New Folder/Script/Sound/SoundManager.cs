@@ -145,7 +145,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
         }
         else
         {
-            Debug.LogError("指定された名前のSEファイルが存在しません。");
+            Debug.LogError("指定された名前のSPEAKERファイルが存在しません。");
             return 0;
         }
     }

@@ -8,10 +8,12 @@ public class ParticleControl : MonoBehaviour
     public bool inRiver;//川に入ったかの判定
     private float Time;//Effectを出すための間隔を計る時間
     public float IntervalTime;//Effectを出す間隔
+    SoundManager soundManager;
 
 
     public void Start()
     {
+        soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();//GameControlのSoundManagerを探してくる
         inRiver = false;//川に入ったかの判定の初期化
         IntervalTime = 0.4f;//Effectを出す間隔の初期化
     }
@@ -22,7 +24,11 @@ public class ParticleControl : MonoBehaviour
 
         if (Time >= IntervalTime)//Effectを出す時間の判定
         {
-            if (inRiver){Instantiate(WaterEffct, this.transform.position, Quaternion.Euler(90.0f,0f,0f)); }//パーティクル用ゲームオブジェクト生成
+            if (inRiver){
+                Instantiate(WaterEffct, this.transform.position, Quaternion.Euler(90.0f,0f,0f));
+                soundManager.PlaySeByName("hito_ge_aru_mizu02short");
+            }//パーティクル用ゲームオブジェクト生成
+            //soundManager.StopSe();
             Time = 0.0f;
         }
     }
