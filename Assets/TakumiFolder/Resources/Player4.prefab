@@ -327,6 +327,8 @@ MonoBehaviour:
   addforce: 30
   GetX: 0
   GetZ: 0
+  FallSpeed: 0
+  PlayerSpeed: 0
   Moveforward: 0
   MoveBack: 0
   MoveLeft: 0
@@ -337,8 +339,10 @@ MonoBehaviour:
   WaterSound: 0
   MakeSounds: 0
   InvokeDelay: 1
+  ColGround: 0
   a: 0
   audioClip1: {fileID: 8300000, guid: c084226c5e15a034b8138779026f47f6, type: 3}
+  localGravity: {x: 0, y: 0, z: 0}
 --- !u!114 &2480531901094155153
 MonoBehaviour:
   m_ObjectHideFlags: 0

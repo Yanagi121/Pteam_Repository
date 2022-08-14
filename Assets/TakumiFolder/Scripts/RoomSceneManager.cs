@@ -122,6 +122,9 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     // 他プレイヤーが退出した時に呼ばれるコールバック
     public override void OnPlayerLeftRoom(Player player)
     {
+        //PhotonNetwork.Destroy(PlayerClone);
+        //if(Porder!=1) Porder--;
+        Invoke(nameof(PlayerNum_Change), 0.5f);
         MasterClientJudge();
         Debug.Log("私の順番:" + Porder);
         //switch (Porder)
@@ -131,6 +134,54 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         //    case 3: changenum3 = 0; break;
         //    case 4: changenum4 = 0; break;
         //}
+    }
+
+    public void PlayerNum_Change()
+    {
+        if (GameObject.Find("Player1(Clone)"))
+        {
+            Debug.Log("Player1があります");
+        }
+        else
+        {
+            Debug.Log("Player1がありません。Porderは" + Porder);
+            switch (Porder)
+            {
+                case 2: Porder = 1; break;
+                case 3: Porder = 2; break;
+                case 4: Porder = 3; break;
+            }
+
+        }
+
+        if (GameObject.Find("Player2(Clone)"))
+        {
+            Debug.Log("Player2があります");
+        }
+        else
+        {
+            Debug.Log("Player2がありません。Porderは" + Porder);
+            switch (Porder)
+            {
+                case 3: Porder = 2; break;
+                case 4: Porder = 3; break;
+            }
+        }
+
+        if (GameObject.Find("Player3(Clone)"))
+        {
+            Debug.Log("Player3があります");
+        }
+        else
+        {
+            Debug.Log("Player3がありません。Porderは" + Porder);
+            if (Porder == 4)
+            {
+                Porder = 3;
+            }
+        }
+        PhotonNetwork.Destroy(PlayerClone);
+        PlayerClone = PhotonNetwork.Instantiate("Player" + Porder.ToString(), new Vector3(170 - Porder * 2.5f, 30, 200), Quaternion.identity);
     }
 
     //private void CloneNameConversion()
@@ -250,7 +301,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
                 Camera1.SetActive(true);
                 Debug.Log("私のPorder:" + Porder);
                 //OtherPlayerClone1 = GameObject.Find("NewPlayer(Clone)");//自分目線のみでの変更
-                PlayerClone = PhotonNetwork.Instantiate("Player" + Porder.ToString(), new Vector3(170 + Porder * 5, 30, 200), Quaternion.identity);
+                PlayerClone = PhotonNetwork.Instantiate("Player" + Porder.ToString(), new Vector3(170 - Porder * 2.5f, 30, 200), Quaternion.identity);
                 // PlayerNAME = PlayerClone.GetComponentInChildren<Text>();
                 //PlayerNAME.text = PhotonNetwork.LocalPlayer.NickName;
             }
