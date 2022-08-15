@@ -9,7 +9,7 @@ public class PlayerSoundControl : MonoBehaviour
     void Start()
     {
         soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();//GameControl‚È‚¢‚ÌSoundManager‚ðŒ©‚Â‚¯‚Ä‚­‚é
-        soundManager.PlayBgmByName("game_2");//BGM‚ð—¬‚·
+        soundManager.PlaySpeakerByName("game_2");//BGM‚ð—¬‚·
     }
 
     // Update is called once per frame
