@@ -6248,6 +6248,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1470385109}
     m_Modifications:
+    - target: {fileID: 681249276891091803, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 994028977565894793, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: TargetObject
       value: 
@@ -6256,6 +6260,10 @@ PrefabInstance:
       propertyPath: movePointControl
       value: 
       objectReference: {fileID: 651321407}
+    - target: {fileID: 2540620842457939973, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3716551997387904281, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: TargetObject
       value: 
