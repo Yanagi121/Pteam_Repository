@@ -25,6 +25,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
        // Player.transform.position = new Vector3(167 +RoomSceneManager.Porder+1.1f, 17, 197);
         CameraMove.GamePlayer = GameObject.Find("Player" + RoomSceneManager.Porder+"(Clone)");//プレイヤー名のついたオブジェクトをCameraMoveが取得
         //SoundSettingsUIObject.SetActive(false);
+        //GameObject canvas = transform.Find("Canvas").gameObject;
         for (int i = 0; i < 4; i++)
         {
             players[i].SetActive(true);
@@ -54,7 +55,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()//ローカルプレイヤーのみに反応
     {
-        Debug.Log("待機ルームに参加");
+        Debug.Log("ルームに参加");
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
