@@ -30,7 +30,7 @@ public class Player_anim : MonoBehaviourPunCallbacks
         Invoke(nameof(PrePos_call), 0.1f);
         if(speed>1) runControl = true;
         else runControl = false;
-        Debug.Log(speed);
+        //Debug.Log(speed);
         //ParipiAnimationControl‚È‚¢‚ÌrunControl‚ªtrue‚©false‚©‚Ì”»’è
         //MoveJudgment();
 

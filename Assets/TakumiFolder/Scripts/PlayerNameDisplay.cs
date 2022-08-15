@@ -20,7 +20,7 @@ public class PlayerNameDisplay : MonoBehaviourPunCallbacks
     void Update()
     {
         playername.text = $"{photonView.Owner.NickName}";
-        Text_oppose.transform.LookAt(GameObject.Find("Camera1").transform.position);
+        if(GameObject.Find("Camera1")) Text_oppose.transform.LookAt(GameObject.Find("Camera1").transform.position);
         //transform.rotation = Quaternion.Euler(0,180,0);
     }
 }

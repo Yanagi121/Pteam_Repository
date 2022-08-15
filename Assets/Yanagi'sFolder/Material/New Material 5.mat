@@ -206,7 +206,7 @@ Material:
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 1
     - _GlossyReflections: 1
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
@@ -223,7 +223,7 @@ Material:
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
-    - _Metallic: 0
+    - _Metallic: 0.2
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _Mode: 2
@@ -285,7 +285,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0, g: 0.6141332, b: 0.8490566, a: 0.39607844}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0, g: 0.6141332, b: 0.8490566, a: 0.9019608}
+    - _Color: {r: 0, g: 0.59898186, b: 0.8509804, a: 0.9019608}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

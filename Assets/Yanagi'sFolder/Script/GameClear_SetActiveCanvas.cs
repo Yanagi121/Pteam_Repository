@@ -43,8 +43,15 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
             }
             if ( DelayGameBool)
             {
-                if (Catch_Doctor.BoolCatch_Doctor)                
+                if (Catch_Doctor.BoolCatch_Doctor)
+                {
                     GameClearCanvasObject.SetActive(true);
+                    if (PhotonNetwork.IsMasterClient)
+                    {
+                        PhotonNetwork.LeaveRoom();
+                    }
+                }                
+                    
                 else
                     GameOverCanvasOvject.SetActive(true);
                     LockCursor.OnClickEscape = true;
@@ -54,6 +61,6 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
     void DelayGame()
     {
         DelayGameBool = true;
-        PhotonNetwork.LoadLevel("Sato_GameClear");//クリア時のみ
+        //PhotonNetwork.LoadLevel("Sato_GameClear");//クリア時のみ
     }
 }
