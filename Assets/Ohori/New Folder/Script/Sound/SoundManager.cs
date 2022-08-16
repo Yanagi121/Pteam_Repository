@@ -22,7 +22,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
     AudioSource bgmAudioSource;
     AudioSource seAudioSource;
-    AudioSource speakerAudioSource;
+    public AudioSource speakerAudioSource;
 
     public float Volume
     {
@@ -89,7 +89,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
         bgmAudioSource = gameObject.AddComponent<AudioSource>();
         seAudioSource = gameObject.AddComponent<AudioSource>();
-        speakerAudioSource = gameObject.AddComponent<AudioSource>();
+        //speakerAudioSource = gameObject.AddComponent<AudioSource>();
 
         bgm = Resources.LoadAll<AudioClip>("Audio/BGM");
         se = Resources.LoadAll<AudioClip>("Audio/SE");
@@ -197,7 +197,10 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
         speakerAudioSource.clip = speaker[index];
         speakerAudioSource.loop = true;
-        speakerAudioSource.spatialBlend = 1;
+        speakerAudioSource.spatialBlend = 1.0f;
+        speakerAudioSource.rolloffMode = AudioRolloffMode.Logarithmic;
+        speakerAudioSource.minDistance = 1;
+        speakerAudioSource.maxDistance = 500;
         speakerAudioSource.volume = SpeakerVolume * Volume;
         speakerAudioSource.Play();
     }
