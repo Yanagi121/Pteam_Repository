@@ -7486,7 +7486,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 681249276891091803, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 746204533137036164, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 994028977565894793, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: TargetObject
@@ -7508,6 +7512,10 @@ PrefabInstance:
       propertyPath: movePointControl
       value: 
       objectReference: {fileID: 651321407}
+    - target: {fileID: 3716551998568173549, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3716551998568173551, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: movePointControl
       value: 
@@ -7567,6 +7575,10 @@ PrefabInstance:
     - target: {fileID: 7299644633553341040, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: m_Name
       value: 'Dr_Invisible '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299644633553341040, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7871211893019496977, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: sceneViewId
@@ -7635,6 +7647,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604c1183a8ff92f49a584ee76959d1b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &691224025 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6786507042436225891, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+  m_PrefabInstance: {fileID: 691224017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &700602503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8624,6 +8641,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7978986798426122942, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
   m_PrefabInstance: {fileID: 773832371}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &787109628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 787109629}
+  - component: {fileID: 787109630}
+  m_Layer: 0
+  m_Name: Fade_OnTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &787109629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787109628}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.0010005236, z: -1.9600067}
+  m_LocalScale: {x: 1.031, y: 1.031, z: 1.031}
+  m_Children: []
+  m_Father: {fileID: 691224025}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &787109630
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787109628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 6.694963
+  m_Center: {x: 0, y: 0.03443575, z: 1.8756375}
 --- !u!1001 &791889993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19299,6 +19360,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.07951849, y: 0.049008477, z: 0.07028074}
   m_Center: {x: -0.004261384, y: 0.022945005, z: -0.0017925074}
+--- !u!1 &1723547708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3716551998568173549, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+  m_PrefabInstance: {fileID: 691224017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1723547714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723547708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd98a95a60bc9844c8f8ddfb89b6a559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Doctor: {fileID: 691224019}
 --- !u!1001 &1726592655
 PrefabInstance:
   m_ObjectHideFlags: 0
