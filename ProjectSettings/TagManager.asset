@@ -12,6 +12,7 @@ TagManager:
   - Bullet
   - FxTemporaire
   - Ground
+  - Doctor_Judge
   layers:
   - Default
   - TransparentFX
