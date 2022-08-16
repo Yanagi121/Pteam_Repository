@@ -6,9 +6,14 @@ public class PlayerSoundControl : MonoBehaviour
 {
     SoundManager soundManager;//サウンドマネージャー
 
-    void Start()
+    private void Awake()
     {
         soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();//GameControlないのSoundManagerを見つけてくる
+        soundManager.speakerAudioSource = gameObject.AddComponent<AudioSource>();
+    }
+
+    void Start()
+    {
         soundManager.PlaySpeakerByName("game_2");//BGMを流す
     }
 
