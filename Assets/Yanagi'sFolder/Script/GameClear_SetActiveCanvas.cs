@@ -10,10 +10,13 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
     public GameObject GameOverCanvasOvject;
     [SerializeField] bool DelayGameBool,booltmp;
     [SerializeField] float DelayGameFloat;
+
+    SoundManager soundManager;
     void Start()
     {
         GameOverCanvasOvject.SetActive(false);
         GameClearCanvasObject.SetActive(false);
+        soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -45,6 +48,7 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
             {
                 if (Catch_Doctor.BoolCatch_Doctor)
                 {
+                    soundManager.StopSe();//SE‚ðŽ~‚ß‚é
                     GameClearCanvasObject.SetActive(true);
                     if (PhotonNetwork.IsMasterClient)
                     {
@@ -53,6 +57,7 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
                 }                
                     
                 else
+                    soundManager.StopSe();//SE‚ðŽ~‚ß‚é
                     GameOverCanvasOvject.SetActive(true);
                     LockCursor.OnClickEscape = true;
             }
