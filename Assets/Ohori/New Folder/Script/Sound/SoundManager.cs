@@ -201,6 +201,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
         speakerAudioSource.rolloffMode = AudioRolloffMode.Logarithmic;
         speakerAudioSource.minDistance = 1;
         speakerAudioSource.maxDistance = 500;
+        speakerAudioSource.dopplerLevel = 0;
         speakerAudioSource.volume = SpeakerVolume * Volume;
         speakerAudioSource.Play();
     }
