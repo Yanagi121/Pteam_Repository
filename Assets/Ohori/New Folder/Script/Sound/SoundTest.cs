@@ -17,7 +17,7 @@ public class SoundTest : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             //soundManager.PlaySeByName("hito_ge_aru_mizu02");
-            soundManager.PlayBgmByName("game_2");
+            soundManager.PlayBgmByName("game_6");
             Debug.Log("çƒê∂");
         }
     }
