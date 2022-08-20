@@ -54,12 +54,13 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
                     {
                         PhotonNetwork.LeaveRoom();
                     }
-                }                
-                    
+                }
                 else
+                {
                     soundManager.StopSe();//SE‚ðŽ~‚ß‚é
                     GameOverCanvasOvject.SetActive(true);
                     LockCursor.OnClickEscape = true;
+                }
             }
         }
     }
