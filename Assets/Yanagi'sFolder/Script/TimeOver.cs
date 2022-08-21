@@ -18,7 +18,7 @@ public class TimeOver : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-       countdown = 300.0f;
+       countdown = 180.0f;
        TimeText.text = "0";
        gameover = false;
        GameOverText.SetActive(false);
