@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 404955169906405299}
   - component: {fileID: 404955169906405324}
   - component: {fileID: 602811765737561087}
+  - component: {fileID: -8933080964294678573}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -438,6 +439,18 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8933080964294678573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404955169906403690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f83d2ac22df9cd41b0a0ab0db096e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &430566491330734823
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +466,7 @@ GameObject:
   - component: {fileID: 8874105652179724127}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: PlayerName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -836,14 +849,14 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: a306708a13b818f4c9276d2c14907f36, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
---- !u!1 &6359789301068601015 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
-  m_PrefabInstance: {fileID: 6089970045864848358}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5983403743687101453 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
+  m_PrefabInstance: {fileID: 6089970045864848358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6359789301068601015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
   m_PrefabInstance: {fileID: 6089970045864848358}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &404955169906404930
