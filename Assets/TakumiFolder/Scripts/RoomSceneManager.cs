@@ -48,7 +48,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
     [SerializeField] int[] PN = { 0, 0, 0, 0 };
 
-    public static bool OneTime = true;
+    public static bool OneTime;
 
     [SerializeField] bool JoinRoom;
     [SerializeField] Text PlayerNAME;
@@ -66,6 +66,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Pnum.AddRange(PN);
         JoinRoom = false;
         Destroy(GameObject.Find("Cam2"));
+        OneTime = true;
     }
 
     // マスターサーバーへの接続が成功したら、ロビーに参加する
@@ -73,7 +74,6 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.JoinLobby();
         enterMatchWaitRoomJudge = false;
-        // EnterRoomOneTime = true;
         Debug.Log("成功！");
     }
 
@@ -81,12 +81,6 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     {
         RoomNum.text = PhotonNetwork.CountOfPlayersInRooms + "/" + PhotonNetwork.CountOfPlayers;
         UpdateMemberList();
-        //if (EnterRoomOneTime == true)
-        //{
-        //    PhotonNetwork.JoinRandomOrCreateRoom();
-        //    //PhotonNetwork.LeaveRoom();
-        //    EnterRoomOneTime = false;
-        //}
     }
 
     public override void OnJoinedLobby()//検証用
@@ -105,10 +99,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         LobbyUI.SetActive(false);
         enterMatchWaitRoomUI.SetActive(true);
         MasterClientJudge();
-
-        // Invoke("CloneNameConversion", 0.5f);//ここはPorderが1以外のときに行われる　最初に部屋を作った人は必ずnullが出てしまう
-        // PlayerClone = PhotonNetwork.Instantiate("NewPlayer", new Vector3( 170, 30, 200), Quaternion.identity);
-        //プレイヤーのプレハブのタグ名を統一？　適応がされるか要確認　適応された場合はプレイヤープレハブタグがついたオブ軸とから逃げる操作を実装する
+        //プレイヤーのプレハブのタグ名を統一　適応がされるか要確認　適応された場合はプレイヤープレハブタグがついたオブ軸とから逃げる操作を実装する
         Photon.Realtime.Player player2 = PhotonNetwork.LocalPlayer;
         p1 = player2.ActorNumber;
     }
@@ -122,18 +113,9 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
     // 他プレイヤーが退出した時に呼ばれるコールバック
     public override void OnPlayerLeftRoom(Player player)
     {
-        //PhotonNetwork.Destroy(PlayerClone);
-        //if(Porder!=1) Porder--;
         Invoke(nameof(PlayerNum_Change), 0.5f);
         MasterClientJudge();
         Debug.Log("私の順番:" + Porder);
-        //switch (Porder)
-        //{
-        //    case 1: changenum1 = 0; break;
-        //    case 2: changenum2 = 0; break;
-        //    case 3: changenum3 = 0; break;
-        //    case 4: changenum4 = 0; break;
-        //}
     }
 
     public void PlayerNum_Change()
@@ -205,15 +187,11 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         {
             if (OneTime)
             {
-                //PlayerClone.name = "Player" + Porder;
                 OneTime = false;
                 Debug.Log(num);
                 Camera1.SetActive(true);
                 Debug.Log("私のPorder:" + Porder);
-                //OtherPlayerClone1 = GameObject.Find("NewPlayer(Clone)");//自分目線のみでの変更
                 PlayerClone = PhotonNetwork.Instantiate("Player" + Porder.ToString(), new Vector3(170 - Porder * 2.5f, 30, 200), Quaternion.identity);
-                // PlayerNAME = PlayerClone.GetComponentInChildren<Text>();
-                //PlayerNAME.text = PhotonNetwork.LocalPlayer.NickName;
             }
         }
     }
@@ -225,7 +203,6 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
         Debug.Log("待機ルームから退出");
         LobbyUI.SetActive(true);
         enterMatchWaitRoomUI.SetActive(false);
-        //Camera1.SetActive(false);
     }
 
     public override void OnLeftLobby()
