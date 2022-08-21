@@ -48,7 +48,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
 
     [SerializeField] int[] PN = { 0, 0, 0, 0 };
 
-    public static bool OneTime;
+    public static bool OneTime=true;
 
     [SerializeField] bool JoinRoom;
     [SerializeField] Text PlayerNAME;
