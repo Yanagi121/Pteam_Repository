@@ -110,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SlowTime: 1
   GetTime: []
+  OnClickButton: 0
 --- !u!1 &404955169906403690
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character_Mobing : MonoBehaviour
+public class Character_Moving : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] float moveSpeed;
