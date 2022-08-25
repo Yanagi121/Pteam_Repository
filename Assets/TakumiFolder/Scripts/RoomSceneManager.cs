@@ -163,7 +163,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
             }
         }
         PhotonNetwork.Destroy(PlayerClone);
-        PlayerClone = PhotonNetwork.Instantiate("Player" + Porder.ToString(), new Vector3(170 - Porder * 2.5f, 30, 200), Quaternion.identity);
+        PlayerClone = PhotonNetwork.Instantiate("Player" + Porder.ToString(), new Vector3(170 - Porder * 4.0f, 30, 200), Quaternion.identity);
     }
 
 
@@ -191,7 +191,7 @@ public class RoomSceneManager : MonoBehaviourPunCallbacks
                 Debug.Log(num);
                 Camera1.SetActive(true);
                 Debug.Log("Ž„‚ÌPorder:" + Porder);
-                PlayerClone = PhotonNetwork.Instantiate("Player" + Porder.ToString(), new Vector3(170 - Porder * 2.5f, 30, 200), Quaternion.identity);
+                PlayerClone = PhotonNetwork.Instantiate("Player" + Porder.ToString(), new Vector3(170 - Porder * 4.0f, 30, 200), Quaternion.identity);
             }
         }
     }

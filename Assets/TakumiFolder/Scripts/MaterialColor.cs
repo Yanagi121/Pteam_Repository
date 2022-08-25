@@ -15,7 +15,7 @@ public class MaterialColor : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "TestPlayScene")
         {
-            //mesh.enabled = false;
+            mesh.enabled = false;
             onetime = false;
 
         }
