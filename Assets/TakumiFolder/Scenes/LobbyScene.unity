@@ -2140,7 +2140,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 518721306}
   m_HandleRect: {fileID: 518721305}
   m_Direction: 3
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -20221,6 +20221,10 @@ PrefabInstance:
     - target: {fileID: 3328192940750760694, guid: 303e4dbfa33ca094794c2bc9bcef205a, type: 3}
       propertyPath: m_HDR
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3328192940750760694, guid: 303e4dbfa33ca094794c2bc9bcef205a, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 303e4dbfa33ca094794c2bc9bcef205a, type: 3}
