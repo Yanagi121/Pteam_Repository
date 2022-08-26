@@ -10,6 +10,9 @@ public class Player_anim : MonoBehaviourPunCallbacks
     [SerializeField]
     public bool runControl;//‘–‚é‚©‚Ç‚¤‚©‚ğŒˆ‚ß‚é•Ï”
 
+    [SerializeField]
+    public bool catchControl;//•ß‚Ü‚¦‚é‚©‚Ç‚¤‚©‚ğŒˆ‚ß‚é•Ï”
+
     [SerializeField] GameObject Player;
     private Rigidbody rb;
 
@@ -22,6 +25,8 @@ public class Player_anim : MonoBehaviourPunCallbacks
 
         //runControl‚Ì‰Šú‰»
         runControl = false;
+        //catchControl‚Ì‰Šú‰»
+        catchControl = false;
     }
 
     void Update()
@@ -33,9 +38,26 @@ public class Player_anim : MonoBehaviourPunCallbacks
         //Debug.Log(speed);
         //ParipiAnimationControl‚È‚¢‚ÌrunControl‚ªtrue‚©false‚©‚Ì”»’è
         //MoveJudgment();
+        if (gameObject.tag!="Dr") {
+            if (Input.GetMouseButtonDown(0))
+            {
+                catchControl = true;
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                Invoke(nameof(catchControlTOFalse), 0.1f);
+            }
+        }
 
         //Animator‚È‚¢‚ÌrunControl‚Ìtrue/false‚Ì”»’è
         animator.SetBool("runControl", runControl);
+        //Animator‚È‚¢‚ÌcatchControl‚Ìtrue/false‚Ì”»’è
+        animator.SetBool("catchControl", catchControl);
+    }
+
+    public void catchControlTOFalse()
+    {
+        catchControl = false;
     }
 
 
