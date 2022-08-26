@@ -963,6 +963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runControl: 0
+  catchControl: 0
   Player: {fileID: 2767461967730744384}
 --- !u!114 &1160520430120281122
 MonoBehaviour:
