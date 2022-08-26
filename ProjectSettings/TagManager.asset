@@ -14,6 +14,7 @@ TagManager:
   - Ground
   - Doctor_Judge
   - PlayerName
+  - PlayerSurface
   layers:
   - Default
   - TransparentFX
