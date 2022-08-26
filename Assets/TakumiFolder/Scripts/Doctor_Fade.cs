@@ -5,17 +5,13 @@ using UnityEngine;
 public class Doctor_Fade : MonoBehaviour
 {
     MeshRenderer mesh;
-    SkinnedMeshRenderer mesh1;
     [SerializeField] GameObject Doctor;
-    [SerializeField] GameObject Wear;
     int i = 0;
     bool Fade_judge;
     void Start()
     {
         mesh = Doctor.GetComponent<MeshRenderer>();
-        mesh1 = Wear.GetComponent<SkinnedMeshRenderer>();
         mesh.material.color = new Color32(255,0,0,0);
-        //mesh1.material.color = new Color32(255, 0, 0, 0);
         //StartCoroutine("Fade");
         Fade_judge = false;
     }
@@ -25,16 +21,14 @@ public class Doctor_Fade : MonoBehaviour
     {
         if (Fade_judge==true)
         {
-            if (i < 125)
+            if (i < 255)
             {
                 mesh.material.color = mesh.material.color + new Color32(0, 0, 0, 1);
-                mesh1.material.color = mesh.material.color + new Color32(0, 0, 0, 1);
                 i++;
             }
-            else if(125<=i&&i<255)
+            else if(255<=i&&i<510)
             {
                 mesh.material.color = mesh.material.color - new Color32(0, 0, 0, 1);
-                mesh1.material.color = mesh.material.color + new Color32(0, 0, 0, 1);
                 i++;
             }
             else
@@ -68,7 +62,7 @@ public class Doctor_Fade : MonoBehaviour
     {
         //yield return null;
         int i = 0;
-        while (i<125)//徐々に見えて
+        while (i<255)//徐々に見えて
         {
             mesh.material.color = mesh.material.color + new Color32(0, 0, 0, 1);
             i++;
@@ -76,7 +70,7 @@ public class Doctor_Fade : MonoBehaviour
             
         }
         i = 0;
-        while (i < 125)//徐々に消える
+        while (i < 255)//徐々に消える
         {
             mesh.material.color = mesh.material.color - new Color32(0, 0, 0, 1);
             i--;
