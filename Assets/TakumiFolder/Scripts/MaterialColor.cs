@@ -4,10 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MaterialColor : MonoBehaviour
 {
+    private bool onetime;
     SkinnedMeshRenderer mesh;
-    private void Start()
+    void Start()
     {
         mesh = GetComponent<SkinnedMeshRenderer>();
-        mesh.enabled = false;
+    }
+
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "TestPlayScene")
+        {
+            mesh.enabled = false;
+            onetime = false;
+
+        }
     }
 }
