@@ -48,7 +48,7 @@ public class Doctor_Fade : MonoBehaviour
     {
         if (Fade_judge==true)
         {
-            if (i < 255)
+            if (i < 125)
             {
                 mesh.material.color = mesh.material.color + new Color32(0, 0, 0, 1);
                 j = 0;
@@ -68,7 +68,7 @@ public class Doctor_Fade : MonoBehaviour
                 }
                 i++;
             }
-            else if(255<=i&&i<510)
+            else if(125<=i&&i<255)
             {
                 mesh.material.color = mesh.material.color - new Color32(0, 0, 0, 1);
                 j = 0;

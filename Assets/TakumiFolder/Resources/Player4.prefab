@@ -1051,14 +1051,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7814435173605202315, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
+      propertyPath: m_TagString
+      value: PlayerSurface
+      objectReference: {fileID: 0}
+    - target: {fileID: -7534055187179490976, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
+      propertyPath: m_TagString
+      value: PlayerSurface
+      objectReference: {fileID: 0}
     - target: {fileID: -6999324499838743677, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 95fcd1c82ebaa4b459589fcad5fe40a2, type: 2}
+    - target: {fileID: -3809361940606490669, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
+      propertyPath: m_TagString
+      value: PlayerSurface
+      objectReference: {fileID: 0}
     - target: {fileID: -1005632527727656460, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e7e8f9b4cb727ee4181fff38aa207a4d, type: 2}
+    - target: {fileID: -541095120215788958, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
+      propertyPath: m_TagString
+      value: PlayerSurface
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
       propertyPath: m_Name
       value: parypeople_1
@@ -1067,10 +1083,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3198533930055470172, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
+      propertyPath: m_TagString
+      value: PlayerSurface
+      objectReference: {fileID: 0}
+    - target: {fileID: 5731201281117276180, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
+      propertyPath: m_TagString
+      value: PlayerSurface
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a306708a13b818f4c9276d2c14907f36, type: 2}
+    - target: {fileID: 6369908507306960216, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
+      propertyPath: m_TagString
+      value: PlayerSurface
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
 --- !u!4 &6560915921826523973 stripped
@@ -1096,6 +1124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runControl: 0
+  catchControl: 0
   Player: {fileID: 2480531901094155597}
 --- !u!114 &885669540818302669
 MonoBehaviour:
