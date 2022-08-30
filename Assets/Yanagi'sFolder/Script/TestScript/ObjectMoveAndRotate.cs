@@ -68,9 +68,10 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
                     CameraVectorRotate = PlayerCamera.transform.eulerAngles;
                     PlayerVectorRotate.y = CameraVectorRotate.y;
                 }
+                this.gameObject.transform.eulerAngles = new Vector3(0, PlayerVectorRotate.y, 0);
             }
             
-            this.gameObject.transform.eulerAngles = new Vector3(0, PlayerVectorRotate.y, 0);
+            
         }else
         {
             GetX = 0;
