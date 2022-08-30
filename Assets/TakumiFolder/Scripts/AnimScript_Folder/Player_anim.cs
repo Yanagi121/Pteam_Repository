@@ -13,7 +13,9 @@ public class Player_anim : MonoBehaviourPunCallbacks
     [SerializeField]
     public bool catchControl;//ïﬂÇ‹Ç¶ÇÈÇ©Ç«Ç§Ç©ÇåàÇﬂÇÈïœêî
 
-    [SerializeField] GameObject Player;
+    [SerializeField] 
+    GameObject Player;
+
     private Rigidbody rb;
 
     float speed;
@@ -46,6 +48,7 @@ public class Player_anim : MonoBehaviourPunCallbacks
             if (Input.GetMouseButtonUp(0))
             {
                 Invoke(nameof(catchControlTOFalse), 0.1f);
+                this.transform.position = Player.transform.position;
             }
         }
 
