@@ -150,7 +150,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
         }
         else
         {
-            Debug.LogError("指定された名前のSPEAKERファイルが存在しません。");
+            //Debug.LogError("指定された名前のSPEAKERファイルが存在しません。");
             return 0;
         }
     }
@@ -203,9 +203,9 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
         speakerAudioSource.clip = speaker[index];
         speakerAudioSource.loop = true;
         speakerAudioSource.spatialBlend = 1.0f;
-        speakerAudioSource.rolloffMode = AudioRolloffMode.Logarithmic;
-        speakerAudioSource.minDistance = 1;
-        speakerAudioSource.maxDistance = 500;
+        speakerAudioSource.rolloffMode = AudioRolloffMode.Linear;
+        speakerAudioSource.minDistance = 0;
+        speakerAudioSource.maxDistance = 150;
         speakerAudioSource.dopplerLevel = 0;
         speakerAudioSource.volume = SpeakerVolume * Volume;
         speakerAudioSource.Play();

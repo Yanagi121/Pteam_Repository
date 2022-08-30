@@ -5,6 +5,7 @@ using UnityEngine;
 public class SoundTest : MonoBehaviour
 {
     SoundManager soundManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class SoundTest : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             //soundManager.PlaySeByName("hito_ge_aru_mizu02");
-            soundManager.PlayBgmByName("game_6");
+            soundManager.PlaySpeakerByName("game_6");
             Debug.Log("çƒê∂");
         }
     }
