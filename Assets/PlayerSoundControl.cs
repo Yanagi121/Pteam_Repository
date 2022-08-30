@@ -9,7 +9,7 @@ public class PlayerSoundControl : MonoBehaviour
     private void Awake()
     {
         soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();//GameControl‚È‚¢‚ÌSoundManager‚ðŒ©‚Â‚¯‚Ä‚­‚é
-        soundManager.speakerAudioSource = gameObject.AddComponent<AudioSource>();
+        soundManager.speakerAudioSource = GetComponent<AudioSource>();
     }
 
     void Start()
