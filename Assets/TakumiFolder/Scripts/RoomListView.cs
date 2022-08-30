@@ -115,6 +115,7 @@ public class RoomListView : MonoBehaviourPunCallbacks
                         activeEntries.Remove(info.Name);
                         entry.Deactivate();
                         inactiveEntries.Push(entry);
+                        Debug.Log("シーンの遷移を確認したため、部屋のリストを削除します");
                     }
                 }
                 else
