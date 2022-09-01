@@ -10,10 +10,13 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
     public GameObject GameOverCanvasOvject;
     [SerializeField] bool DelayGameBool,booltmp;
     [SerializeField] float DelayGameFloat;
+
+    SoundManager soundManager;
     void Start()
     {
         GameOverCanvasOvject.SetActive(false);
         GameClearCanvasObject.SetActive(false);
+        soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -43,17 +46,28 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
             }
             if ( DelayGameBool)
             {
-                if (Catch_Doctor.BoolCatch_Doctor)                
+                if (Catch_Doctor.BoolCatch_Doctor)
+                {
+                    soundManager.StopSe();//SEを止める
                     GameClearCanvasObject.SetActive(true);
+                    if (PhotonNetwork.IsMasterClient)
+                    {
+                        PhotonNetwork.LeaveRoom();
+                    }
+                }
                 else
+                {
+                    soundManager.StopSe();//SEを止める
                     GameOverCanvasOvject.SetActive(true);
                     LockCursor.OnClickEscape = true;
+                    PhotonNetwork.LeaveRoom();
+                }
             }
         }
     }
     void DelayGame()
     {
         DelayGameBool = true;
-        PhotonNetwork.LoadLevel("Sato_GameClear");//クリア時のみ
+        //PhotonNetwork.LoadLevel("Sato_GameClear");//クリア時のみ
     }
 }

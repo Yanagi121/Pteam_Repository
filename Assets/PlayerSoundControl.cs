@@ -6,10 +6,15 @@ public class PlayerSoundControl : MonoBehaviour
 {
     SoundManager soundManager;//サウンドマネージャー
 
-    void Start()
+    private void Awake()
     {
         soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();//GameControlないのSoundManagerを見つけてくる
-        soundManager.PlayBgmByName("game_2");//BGMを流す
+        soundManager.speakerAudioSource = GetComponent<AudioSource>();
+    }
+
+    void Start()
+    {
+        soundManager.PlaySpeakerByName("game_2");//BGMを流す
     }
 
     // Update is called once per frame

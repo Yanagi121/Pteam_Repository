@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using Photon.Pun;
 
-public class Dr_InvisibleControl : MonoBehaviour
+public class Dr_InvisibleControl : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     public MovePointControl movePointControl;
@@ -54,6 +54,12 @@ public class Dr_InvisibleControl : MonoBehaviour
         m_navMeshAgent = GetComponent<NavMeshAgent>();
         this.m_navMeshAgent.speed = EscapeSpeed;
         Debug.Log(PhotonNetwork.CountOfPlayersInRooms + 1 + "/" + PhotonNetwork.CountOfPlayers);//ルーム内の人数把握を行い、後のif文で取得するオブジェクトの数を決める
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            this.transform.position = new Vector3(Random.Range(90.0f, 470.0f), 10.0f, Random.Range(130.0f, 420.0f));
+            TargetObject.transform.position = this.transform.position;
+        }
     }
 
     void Update()

@@ -4,7 +4,7 @@ using UnityEngine;
 public class SoundManager : SingletonMonoBehaviour<SoundManager>
 {
     [SerializeField, Range(0, 1), Tooltip("ƒ}ƒXƒ^‰¹—Ê")]
-    float volume = 0.6f;
+    float volume ;
     [SerializeField, Range(0, 1), Tooltip("BGM‚Ì‰¹—Ê")]
     float bgmVolume = 0.6f;
     [SerializeField, Range(0, 1), Tooltip("SE‚Ì‰¹—Ê")]
@@ -22,7 +22,12 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
     AudioSource bgmAudioSource;
     AudioSource seAudioSource;
-    AudioSource speakerAudioSource;
+    public AudioSource speakerAudioSource;
+
+    public void Start()
+    {
+        volume = 1.0f;
+    }
 
     public float Volume
     {
@@ -197,7 +202,11 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
         speakerAudioSource.clip = speaker[index];
         speakerAudioSource.loop = true;
-        speakerAudioSource.spatialBlend = 1;
+        speakerAudioSource.spatialBlend = 1.0f;
+        speakerAudioSource.rolloffMode = AudioRolloffMode.Custom;
+        speakerAudioSource.minDistance = 0;
+        speakerAudioSource.maxDistance = 130;
+        speakerAudioSource.dopplerLevel = 0;
         speakerAudioSource.volume = SpeakerVolume * Volume;
         speakerAudioSource.Play();
     }
