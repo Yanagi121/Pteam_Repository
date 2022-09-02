@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 2767461967730744161}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Doctor_Judge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
