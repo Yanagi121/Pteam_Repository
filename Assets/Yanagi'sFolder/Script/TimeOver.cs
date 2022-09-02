@@ -16,9 +16,15 @@ public class TimeOver : MonoBehaviourPunCallbacks
     public GameObject GameOverText;
     [SerializeField] GameObject TimeTextGameObject;
 
+    [SerializeField] GameObject Score_gameobject;//オブジェクトの位置でスコアを計算
+    [SerializeField] Vector3 ScoreObj_trans;
+    
+
     private void Start()
     {
-       countdown = 180.0f;
+       countdown = 180f; 
+       ScoreObj_trans = new Vector3(countdown, 0,0);
+       Score_gameobject.transform.position = ScoreObj_trans;
        TimeText.text = "0";
        gameover = false;
        GameOverText.SetActive(false);
@@ -26,6 +32,8 @@ public class TimeOver : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
+        ScoreObj_trans = new Vector3(countdown, 0, 0);
+        Score_gameobject.transform.position = ScoreObj_trans;
         //Debug.Log(countdown);
         if (CameraMove.TimeDelay)
             setactiveUI = true;
