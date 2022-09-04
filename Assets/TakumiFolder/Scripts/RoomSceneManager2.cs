@@ -15,6 +15,8 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        //var roomOptions = new RoomOptions();
+        //roomOptions.IsVisible = false;
         //PhotonNetwork.LeaveLobby();
         Invoke("Progress", delayMove);
         PhotonNetwork.IsMessageQueueRunning = true;
