@@ -43,6 +43,7 @@ public class GameClear_SetActiveCanvas : MonoBehaviour
             {
                 Invoke("DelayGame", DelayGameFloat);
                 booltmp = true;
+                
             }
             if ( DelayGameBool)
             {
