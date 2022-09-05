@@ -37,6 +37,7 @@ public class Catch_Doctor : MonoBehaviourPunCallbacks
             //photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
             /*CameraMove.TimeDelay=false;
             TimeOver.gameover = true;*/
+            //photonView.RPC(nameof(CameraLook), RpcTarget.All);
             BoolCatch_Doctor = true;
             GetTime.Add(TimeOver.countdown);
             Invoke("SceneEnterBool", 2f);
@@ -55,10 +56,16 @@ public class Catch_Doctor : MonoBehaviourPunCallbacks
        // PhotonNetwork.LoadLevel("Sato_GameClear");
        // SceneManager.LoadScene("GameCrear");
     }
-   // [PunRPC]
+    // [PunRPC]
     /*void ChangeGameOver()
     {
         CameraMove.TimeDelay = false;
         TimeOver.gameover = true;
     }*/
+    [PunRPC]
+    void CameraLook()
+    {
+        GameObject.Find("Camera1").transform.LookAt(GameObject.FindWithTag("Dr").transform.position);
+        Debug.Log("•ß‚Ü‚¦‚Ü‚µ‚½2");
+    }
 }

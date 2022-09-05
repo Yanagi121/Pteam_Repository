@@ -45,6 +45,8 @@ MonoBehaviour:
   - ChangeGameOver
   - PlayerNum_Enter
   - PlayerNum_Left
+  - CameraLookr
+  - CameraLook
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

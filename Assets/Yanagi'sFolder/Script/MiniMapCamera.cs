@@ -9,7 +9,7 @@ public class MiniMapCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameCharactor = GameObject.Find("Player1(Clone)");
+        GameCharactor = GameObject.Find("Player"+ DontDestroy_Porder.Porder_handover + "(Clone)");
         Debug.Log("get:"+GameCharactor.transform.position);
     }
 
