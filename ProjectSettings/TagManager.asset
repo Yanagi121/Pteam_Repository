@@ -9,6 +9,12 @@ TagManager:
   - Player1
   - Camera1
   - River
+  - Bullet
+  - FxTemporaire
+  - Ground
+  - Doctor_Judge
+  - PlayerName
+  - PlayerSurface
   layers:
   - Default
   - TransparentFX
@@ -16,7 +22,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - MiniMapLayer
   - 
   - 
   - 

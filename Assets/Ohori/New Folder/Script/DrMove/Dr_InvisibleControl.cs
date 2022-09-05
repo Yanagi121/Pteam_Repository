@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using Photon.Pun;
 
-public class Dr_InvisibleControl : MonoBehaviour
+public class Dr_InvisibleControl : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     public MovePointControl movePointControl;
@@ -54,6 +54,12 @@ public class Dr_InvisibleControl : MonoBehaviour
         m_navMeshAgent = GetComponent<NavMeshAgent>();
         this.m_navMeshAgent.speed = EscapeSpeed;
         Debug.Log(PhotonNetwork.CountOfPlayersInRooms + 1 + "/" + PhotonNetwork.CountOfPlayers);//ルーム内の人数把握を行い、後のif文で取得するオブジェクトの数を決める
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            this.transform.position = new Vector3(Random.Range(90.0f, 470.0f), 10.0f, Random.Range(130.0f, 420.0f));
+            TargetObject.transform.position = this.transform.position;
+        }
     }
 
     void Update()
@@ -77,10 +83,10 @@ public class Dr_InvisibleControl : MonoBehaviour
     //プレイヤーを見つけるメソッド    
     public void findPlayer()
     {
-        Player1 = GameObject.Find("Player1");
-        Player2 = GameObject.Find("Player2");
-        Player3 = GameObject.Find("Player3");
-        Player4 = GameObject.Find("Player4");
+        Player1 = GameObject.Find("Player1(Clone)");
+        Player2 = GameObject.Find("Player2(Clone)");
+        Player3 = GameObject.Find("Player3(Clone)");
+        Player4 = GameObject.Find("Player4(Clone)");
     }
 
     //プレイヤーとの距離を初期化するメソッド

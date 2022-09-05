@@ -75,7 +75,9 @@ public class RoomListView : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.IsMessageQueueRunning = false;//チュートリアルの1  PhotonNetwork.IsMessageQueueRunning = true;はプレイヤー画面で行けるか確認
         //DontDestroyOnLoad(RoomSceneManagerOb);
-        PhotonNetwork.LoadLevel("NewRoom");
+        PhotonNetwork.LoadLevel("TestPlayScene");
+        PhotonNetwork.CurrentRoom.IsVisible = false;
+        PhotonNetwork.CurrentRoom.IsOpen = false;
         //SceneManager.LoadScene("RoomScene");//試作
     }
 
@@ -115,6 +117,8 @@ public class RoomListView : MonoBehaviourPunCallbacks
                         activeEntries.Remove(info.Name);
                         entry.Deactivate();
                         inactiveEntries.Push(entry);
+                        Debug.Log("シーンの遷移を確認したため、部屋のリストを削除します");
+
                     }
                 }
                 else
@@ -135,6 +139,17 @@ public class RoomListView : MonoBehaviourPunCallbacks
                 entry.Activate(info);//リスト更新
                 activeEntries.Add(info.Name, entry);//activeEntriesのリストにinfo.Nameとentryクラスを加えている？？
             }
+        }
+    }
+    private void UpdateRoomOptions()
+    {
+        if (PhotonNetwork.InRoom)
+        {
+            // 公開・非公開
+            PhotonNetwork.CurrentRoom.IsVisible = false;
+
+            // 入室の可否
+            PhotonNetwork.CurrentRoom.IsOpen = false;
         }
     }
 }

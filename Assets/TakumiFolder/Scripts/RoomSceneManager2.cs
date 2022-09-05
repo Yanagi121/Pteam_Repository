@@ -15,16 +15,19 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        //var roomOptions = new RoomOptions();
+        //roomOptions.IsVisible = false;
         //PhotonNetwork.LeaveLobby();
         Invoke("Progress", delayMove);
         PhotonNetwork.IsMessageQueueRunning = true;
         ////要確認/// Invoke("CameraFind", 0.0f);//0.5f後に呼び出される必要性　確認 
         CameraFind();//↓代替
         SceneEnter = true;
-        Player = GameObject.Find("Player" + RoomSceneManager.Porder);//プレイヤーを取得し初期移動
-        Player.transform.position = new Vector3(167 +RoomSceneManager.Porder+1.1f, 17, 197);
-        CameraMove.GamePlayer = GameObject.Find("Player" + RoomSceneManager.Porder);//プレイヤー名のついたオブジェクトをCameraMoveが取得
+       // Player = GameObject.Find("Player" + RoomSceneManager.Porder);//プレイヤーを取得し初期移動
+       // Player.transform.position = new Vector3(167 +RoomSceneManager.Porder+1.1f, 17, 197);
+        CameraMove.GamePlayer = GameObject.Find("Player" + RoomSceneManager.Porder+"(Clone)");//プレイヤー名のついたオブジェクトをCameraMoveが取得
         //SoundSettingsUIObject.SetActive(false);
+        //GameObject canvas = transform.Find("Canvas").gameObject;
         for (int i = 0; i < 4; i++)
         {
             players[i].SetActive(true);
@@ -54,7 +57,7 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()//ローカルプレイヤーのみに反応
     {
-        Debug.Log("待機ルームに参加");
+        Debug.Log("ルームに参加");
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
