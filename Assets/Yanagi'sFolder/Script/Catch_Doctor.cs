@@ -66,5 +66,6 @@ public class Catch_Doctor : MonoBehaviourPunCallbacks
     void CameraLook()
     {
         GameObject.Find("Camera1").transform.LookAt(GameObject.FindWithTag("Dr").transform.position);
+        Debug.Log("•ß‚Ü‚¦‚Ü‚µ‚½2");
     }
 }

@@ -46,6 +46,7 @@ public class TimeOver : MonoBehaviourPunCallbacks
 
         if (CameraMove.TimeDelay)
         {
+            
             if (countdown > 0)
                 countdown -= Time.deltaTime;
             else
@@ -54,8 +55,14 @@ public class TimeOver : MonoBehaviourPunCallbacks
                 gameover = true;
                 //photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
             }
-            if (Catch_Doctor.BoolCatch_Doctor) photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
+            if (Catch_Doctor.BoolCatch_Doctor)
+            {
+                photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
+                GameObject.Find("Camera1").transform.LookAt(Vector3.Lerp(GameObject.Find("Camera1").transform.position, GameObject.Find("Dr_Invisible ").transform.position, 0.01f));
+            }
         }
+        //else GameObject.Find("Camera1").transform.LookAt(Vector3.Lerp(GameObject.Find("Camera1").transform.position, GameObject.Find("Dr_Invisible ").transform.position, 0.05f));
+
         IntNum = (int)countdown;
         TimeText.text = (IntNum / 60).ToString("0") + " : " + (IntNum % 60).ToString("00");
         if (TimeOver.gameover == true)
@@ -67,6 +74,9 @@ public class TimeOver : MonoBehaviourPunCallbacks
         CameraMove.TimeDelay = false;
         TimeOver.gameover = true;
         Catch_Doctor.BoolCatch_Doctor = true;
+        //GameObject.Find("Camera1").transform.rotation= Quaternion.Slerp(GameObject.Find("Camera1").transform.rotation,GameObject.Find("Dr_Invisible ").transform.rotation,20f);
         
+        Debug.Log("捕まえました1");
+
     }
 }
