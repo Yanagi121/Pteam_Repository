@@ -8836,6 +8836,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1470385109}
     m_Modifications:
+    - target: {fileID: 4170828715950121606, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_Name
       value: Player3(Clone)
@@ -8843,6 +8847,10 @@ PrefabInstance:
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7648763091762952126, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7978986798426122942, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_RootOrder
@@ -13052,6 +13060,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1470385109}
     m_Modifications:
+    - target: {fileID: 4170828715950121606, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_Name
       value: Player4(Clone)
@@ -13059,6 +13071,10 @@ PrefabInstance:
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7648763091762952126, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7978986798426122942, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_RootOrder
@@ -13296,6 +13312,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1470385109}
     m_Modifications:
+    - target: {fileID: 4170828715950121606, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_Name
       value: Player2(Clone)
@@ -13303,6 +13323,10 @@ PrefabInstance:
     - target: {fileID: 7296956853220211865, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7648763091762952126, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7978986798426122942, guid: 92cb08fd8aa52a64381d45c579996eba, type: 3}
       propertyPath: m_RootOrder
@@ -15882,7 +15906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -42.553
+      value: -43.1594
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16796,8 +16820,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.07951849, y: 0.049008477, z: 0.07028074}
-  m_Center: {x: -0.004261384, y: 0.022945005, z: -0.0017925074}
+  m_Size: {x: 0.07027438, y: 0.04900848, z: 0.07028074}
+  m_Center: {x: 0.00036063106, y: 0.022945005, z: -0.0017925064}
 --- !u!1 &1422571888
 GameObject:
   m_ObjectHideFlags: 0
@@ -21219,8 +21243,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.07951849, y: 0.049008477, z: 0.07028074}
-  m_Center: {x: -0.004261384, y: 0.022945005, z: -0.0017925074}
+  m_Size: {x: 0.07601035, y: 0.04900848, z: 0.07028074}
+  m_Center: {x: -0.0025073087, y: 0.022945005, z: -0.0017925067}
 --- !u!1001 &1821419194
 PrefabInstance:
   m_ObjectHideFlags: 0
