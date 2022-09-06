@@ -14,7 +14,8 @@ public class PlayerSoundControl : MonoBehaviour
 
     void Start()
     {
-        soundManager.PlaySpeakerByName("game_2");//BGM‚ð—¬‚·
+        soundManager.PlaySpeakerByName("game_6");//BGM‚ð—¬‚·
+        Debug.Log("play_oto");
     }
 
     // Update is called once per frame
