@@ -33,22 +33,26 @@ public class Player_anim : MonoBehaviourPunCallbacks
 
     void Update()
     {
-        speed = ((Player.transform.position - prepos) / Time.deltaTime).magnitude;
-        Invoke(nameof(PrePos_call), 0.1f);
-        if(speed>1) runControl = true;
-        else runControl = false;
+        //speed = ((Player.transform.position - prepos) / Time.deltaTime).magnitude;
+        //Invoke(nameof(PrePos_call), 0.1f);
+        //if(speed>1) runControl = true;
+        //else runControl = false;
         //Debug.Log(speed);
         //ParipiAnimationControlÇ»Ç¢ÇÃrunControlÇ™trueÇ©falseÇ©ÇÃîªíË
         //MoveJudgment();
-        if (gameObject.tag!="Dr") {
-            if (Input.GetMouseButtonDown(0))
+        if (photonView.IsMine)//photonView.IsMine
+        {
+            if (gameObject.tag != "Dr")
             {
-                catchControl = true;
-            }
-            if (Input.GetMouseButtonUp(0))
-            {
-                Invoke(nameof(catchControlTOFalse), 0.1f);
-                this.transform.position = Player.transform.position;
+                if (Input.GetMouseButtonDown(0))
+                {
+                    catchControl = true;
+                }
+                if (Input.GetMouseButtonUp(0))
+                {
+                    Invoke(nameof(catchControlTOFalse), 0.1f);
+                    this.transform.position = Player.transform.position;
+                }
             }
         }
 
@@ -72,18 +76,20 @@ public class Player_anim : MonoBehaviourPunCallbacks
     //ParipiAnimationControlÇ»Ç¢ÇÃrunControlÇ™trueÇ©falseÇ©ÇÃîªíËÇ∑ÇÈÉÅÉ\ÉbÉh
     public void MoveJudgment()
     {
-        
-        
-        //if (Input.GetAxis("Horizontal") != 0) { runControl = true; }
-        //else { runControl = false; };
-        //if (Input.GetAxis("Vertical") != 0) { runControl = true; }
-        //else { runControl = false; };
 
-        /*
-        if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")){ runControl = true;}
-        else{runControl = false; }
-        if (Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("down") || Input.GetKey("right")) { runControl = true; }
-        else { runControl = false; }
-        */
+        if (photonView.IsMine)//photonView.IsMine
+        {
+            if (Input.GetAxis("Horizontal") != 0) { runControl = true; }
+            else { runControl = false; };
+            if (Input.GetAxis("Vertical") != 0) { runControl = true; }
+            else { runControl = false; };
+
+
+            if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")){ runControl = true;}
+            else{runControl = false; }
+            if (Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("down") || Input.GetKey("right")) { runControl = true; }
+            else { runControl = false; }
+            
+        }
     }
 }
