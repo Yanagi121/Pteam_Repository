@@ -7823,7 +7823,7 @@ PrefabInstance:
     - target: {fileID: 7213706170452087944, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: fb59b0ea91488ff4d92ff4faf439f973, type: 2}
+      objectReference: {fileID: 2100000, guid: f331e76e41c69fb46a644c1024cef5a7, type: 2}
     - target: {fileID: 7299644633553341040, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: m_Name
       value: 'Dr_Invisible '
