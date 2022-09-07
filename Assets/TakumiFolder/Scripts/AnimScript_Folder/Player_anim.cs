@@ -40,7 +40,7 @@ public class Player_anim : MonoBehaviourPunCallbacks
          //else runControl = false;
          //Debug.Log(speed);
          //   //ParipiAnimationControl‚È‚¢‚ÌrunControl‚ªtrue‚©false‚©‚Ì”»’è
-         //MoveJudgment();
+         MoveJudgment();
         
         
         if (photonView.IsMine)//photonView.IsMine
@@ -86,12 +86,10 @@ public class Player_anim : MonoBehaviourPunCallbacks
             else { runControl = false; };
             if (Input.GetAxis("Vertical") != 0) { runControl = true; }
             else { runControl = false; };
-
-
-            if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")){ runControl = true;}
-            else{runControl = false; }
-            if (Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("down") || Input.GetKey("right")) { runControl = true; }
-            else { runControl = false; }
+            //if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")){ runControl = true;}
+            //else{runControl = false; }
+            //if (Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("down") || Input.GetKey("right")) { runControl = true; }
+            //else { runControl = false; }
             
         }
     }
