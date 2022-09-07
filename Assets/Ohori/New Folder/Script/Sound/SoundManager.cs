@@ -8,7 +8,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     [SerializeField, Range(0, 1), Tooltip("BGMの音量")]
     float bgmVolume = 0.6f;
     [SerializeField, Range(0, 1), Tooltip("SEの音量")]
-    float seVolume = 0.6f;
+    float seVolume = 0.3f;
     [SerializeField, Range(0, 1), Tooltip("スピーカーの音量")]
     float speakerVolume = 0.6f;
 
