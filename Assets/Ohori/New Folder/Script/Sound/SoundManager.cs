@@ -203,7 +203,6 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
         speakerAudioSource.clip = speaker[index];
         speakerAudioSource.loop = true;
         speakerAudioSource.spatialBlend = 1.0f;
-        speakerAudioSource.rolloffMode = AudioRolloffMode.Custom;
         speakerAudioSource.minDistance = 0;
         speakerAudioSource.maxDistance = 130;
         speakerAudioSource.dopplerLevel = 0;
