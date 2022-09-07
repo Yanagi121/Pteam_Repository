@@ -33,13 +33,16 @@ public class Player_anim : MonoBehaviourPunCallbacks
 
     void Update()
     {
-        //speed = ((Player.transform.position - prepos) / Time.deltaTime).magnitude;
-        //Invoke(nameof(PrePos_call), 0.1f);
-        //if(speed>1) runControl = true;
-        //else runControl = false;
-        //Debug.Log(speed);
-        //ParipiAnimationControl‚È‚¢‚ÌrunControl‚ªtrue‚©false‚©‚Ì”»’è
-        //MoveJudgment();
+        
+         //speed = ((Player.transform.position - prepos) / Time.deltaTime).magnitude;
+         //Invoke(nameof(PrePos_call), 0.1f);
+         //if (speed > 1) runControl = true;
+         //else runControl = false;
+         //Debug.Log(speed);
+         //   //ParipiAnimationControl‚È‚¢‚ÌrunControl‚ªtrue‚©false‚©‚Ì”»’è
+         //MoveJudgment();
+        
+        
         if (photonView.IsMine)//photonView.IsMine
         {
             if (gameObject.tag != "Dr")
