@@ -1450,6 +1450,9 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 2
     Name: catchControl
+  - Type: 4
+    SynchronizeType: 0
+    Name: caught_Dr
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0

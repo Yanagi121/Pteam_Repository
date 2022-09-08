@@ -1252,7 +1252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b63132ad607e39e408daa9e1f0c0b87a, type: 3}
       propertyPath: m_Name
-      value: parypeople_2_3 (1)
+      value: 'parypeople_2_3 '
       objectReference: {fileID: 0}
     - target: {fileID: 1512430044413740424, guid: b63132ad607e39e408daa9e1f0c0b87a, type: 3}
       propertyPath: m_TagString
@@ -1480,6 +1480,9 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 2
     Name: catchControl
+  - Type: 4
+    SynchronizeType: 0
+    Name: caught_Dr
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
