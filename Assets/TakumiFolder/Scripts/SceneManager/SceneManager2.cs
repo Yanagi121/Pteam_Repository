@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 using Photon.Pun;
 
 /// <summary>
-/// ƒV[ƒ“Ø‚è‘Ö‚¦‚ÌƒXƒNƒŠƒvƒg
+/// ã‚·ãƒ¼ãƒ³åˆ‡ã‚Šæ›¿ãˆã®ã‚¹ã‚¯ãƒªãƒ—ãƒˆ
 /// </summary>
 
-//TODO:”Ä—p«‚ª‚È‚¢
+//TODO:æ±ç”¨æ€§ãŒãªã„
 public class SceneManager2 : MonoBehaviourPunCallbacks
 {
     [SerializeField]
