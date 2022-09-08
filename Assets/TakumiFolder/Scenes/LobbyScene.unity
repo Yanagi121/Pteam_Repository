@@ -4848,6 +4848,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 85846942}
     m_Modifications:
+    - target: {fileID: 7798599226526719604, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7798599226526719606, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_Name
       value: 'RoomName_SaitouPrefab '
@@ -9827,6 +9831,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1983524550}
     m_Modifications:
+    - target: {fileID: 7798599226526719604, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798599226526719604, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7798599226526719606, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_Name
       value: PlayerName_SaitouPrefab
@@ -9934,6 +9946,10 @@ PrefabInstance:
     - target: {fileID: 7798599227822565724, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798599227822565724, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7798599227822565724, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_fontAsset
