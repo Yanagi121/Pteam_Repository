@@ -96,7 +96,7 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
                 {
                     GetZ = Input.GetAxis("Horizontal") /* * addforce */;
                     GetX = Input.GetAxis("Vertical") /* * addforce */;
-                    Debug.Log(WallCollisionDetection.col);
+                    //Debug.Log(WallCollisionDetection.col);
                 }
                 //CameraVector=PlayerCamera.transform;
 
