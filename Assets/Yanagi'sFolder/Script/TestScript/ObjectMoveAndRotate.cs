@@ -38,6 +38,29 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
+        switch (WallCollisionDetection.col)
+        {
+            case WallCollisionDetection.ColDirection.FLONT:
+                GetX -=0.05f;
+                if (GetX <= -1f)
+                    GetX = -1f;
+                break;
+            case WallCollisionDetection.ColDirection.LEFT:
+                GetZ += 0.05f;
+                if (GetZ >= 1f)
+                    GetZ = 1f;
+                break;
+            case WallCollisionDetection.ColDirection.BACK:
+                GetX += 0.05f;
+                if (GetX >= 1f)
+                    GetX = 1f;
+                break;
+            case WallCollisionDetection.ColDirection.RIGHT:
+                GetZ -= 0.05f;
+                if (GetZ <= -1f)
+                    GetZ = -1f;
+                break;
+        }
         if (ColGround == false)
         {
             FallSpeed = -0.3f;
@@ -69,7 +92,7 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
 
             if (photonView.IsMine)//photonView.IsMine
             {
-               // if (WallCollisionDetection.col == 0)
+                if (WallCollisionDetection.col == WallCollisionDetection.ColDirection.NONE)
                 {
                     GetZ = Input.GetAxis("Horizontal") /* * addforce */;
                     GetX = Input.GetAxis("Vertical") /* * addforce */;
