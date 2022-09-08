@@ -248,6 +248,10 @@ PrefabInstance:
       value: iwa (10)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -844,6 +848,10 @@ PrefabInstance:
       value: iwa (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1059,6 +1067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1162,6 +1174,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_Name
       value: chair (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
@@ -1568,6 +1584,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
       propertyPath: m_Name
       value: maruta_multi (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -2111,6 +2131,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_Name
       value: chair (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
@@ -2680,6 +2704,10 @@ PrefabInstance:
       value: iwa (16)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -2763,6 +2791,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_Name
       value: chair (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
@@ -3086,6 +3118,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fe1192af4812dbd4fac06e3627490c55, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe1192af4812dbd4fac06e3627490c55, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 5722919998248869405, guid: fe1192af4812dbd4fac06e3627490c55, type: 3}
       propertyPath: m_NavMeshLayer
@@ -3554,6 +3590,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_Name
       value: tent (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -4079,6 +4119,10 @@ PrefabInstance:
       value: BBQ_stove (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f13c91a143ccbf14c9ee85328e3ce74a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f13c91a143ccbf14c9ee85328e3ce74a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -4154,6 +4198,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_Name
       value: iwa (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -4373,6 +4421,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_Name
       value: chair (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
@@ -4847,6 +4899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sign (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 529891f130171444994aaaee18f08a85, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: 529891f130171444994aaaee18f08a85, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -5304,6 +5360,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
       propertyPath: m_Name
       value: maruta_multi (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -7138,6 +7198,10 @@ PrefabInstance:
       value: iwa (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -7482,6 +7546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: maruta_multi (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -7615,6 +7683,10 @@ PrefabInstance:
       value: iwa (11)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -7690,6 +7762,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_Name
       value: iwa (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -8326,6 +8402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -8946,6 +9026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -9307,6 +9391,10 @@ PrefabInstance:
       value: iwa (7)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -9405,6 +9493,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_Name
       value: iwa (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -10073,6 +10165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tent2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb7b678015de5e44094b9b96722d064b, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: bb7b678015de5e44094b9b96722d064b, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -10382,6 +10478,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 65de2718c951b87468c62fe37352af5d, type: 3}
       propertyPath: m_Name
       value: maruta_single
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 65de2718c951b87468c62fe37352af5d, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 65de2718c951b87468c62fe37352af5d, type: 3}
       propertyPath: m_NavMeshLayer
@@ -11448,6 +11548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -11783,6 +11887,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_Name
       value: chair (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
@@ -12885,6 +12993,10 @@ PrefabInstance:
       value: BBQ_stove (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f13c91a143ccbf14c9ee85328e3ce74a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f13c91a143ccbf14c9ee85328e3ce74a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -13040,6 +13152,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_Name
       value: iwa
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -13565,6 +13681,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_Name
       value: chair (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
@@ -14372,6 +14492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -14845,7 +14969,7 @@ GameObject:
   - component: {fileID: 1152015367}
   m_Layer: 0
   m_Name: stage_gene
-  m_TagString: Untagged
+  m_TagString: StageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15710,6 +15834,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -15805,6 +15933,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_Name
       value: iwa (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -17056,7 +17188,7 @@ GameObject:
   - component: {fileID: 1344914180}
   m_Layer: 0
   m_Name: white_Fence
-  m_TagString: Untagged
+  m_TagString: StageObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17186,6 +17318,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_Name
       value: tent (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -17350,6 +17486,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3ec9898e29097f242821e95b2e515be4, type: 3}
       propertyPath: m_Name
       value: saku_white
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ec9898e29097f242821e95b2e515be4, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 6085036178219441596, guid: 3ec9898e29097f242821e95b2e515be4, type: 3}
       propertyPath: m_NavMeshLayer
@@ -17547,6 +17687,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bb7b678015de5e44094b9b96722d064b, type: 3}
       propertyPath: m_Name
       value: tent2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb7b678015de5e44094b9b96722d064b, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: bb7b678015de5e44094b9b96722d064b, type: 3}
       propertyPath: m_NavMeshLayer
@@ -18108,6 +18252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tent (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -18620,6 +18768,10 @@ PrefabInstance:
       value: iwa (9)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -19001,6 +19153,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_Name
       value: iwa (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -19419,6 +19575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tent (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -19534,6 +19694,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_Name
       value: chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
@@ -19955,6 +20119,101 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ec9898e29097f242821e95b2e515be4, type: 3}
   m_PrefabInstance: {fileID: 1528921150}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1538222403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1538222407}
+  - component: {fileID: 1538222406}
+  - component: {fileID: 1538222405}
+  - component: {fileID: 1538222404}
+  m_Layer: 0
+  m_Name: FallDetection
+  m_TagString: FallDetection
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1538222404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538222403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1538222405
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538222403}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1538222406
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538222403}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1538222407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538222403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 228.1, y: -1.26, z: 233}
+  m_LocalScale: {x: 1000, y: 1, z: 1000}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1540968140
 GameObject:
   m_ObjectHideFlags: 0
@@ -20126,6 +20385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -20221,6 +20484,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 65de2718c951b87468c62fe37352af5d, type: 3}
       propertyPath: m_Name
       value: maruta_single (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 65de2718c951b87468c62fe37352af5d, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 65de2718c951b87468c62fe37352af5d, type: 3}
       propertyPath: m_NavMeshLayer
@@ -20453,6 +20720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: maruta_multi (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -20641,6 +20912,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_Name
       value: iwa (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -21141,6 +21416,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 529891f130171444994aaaee18f08a85, type: 3}
       propertyPath: m_Name
       value: sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 529891f130171444994aaaee18f08a85, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: 529891f130171444994aaaee18f08a85, type: 3}
       propertyPath: m_NavMeshLayer
@@ -21858,6 +22137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tent (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -21965,6 +22248,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_Name
       value: tent
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -22622,6 +22909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -23013,6 +23304,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_Name
       value: tent (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -23533,6 +23828,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_Name
       value: tent (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -24198,6 +24497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tent2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb7b678015de5e44094b9b96722d064b, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: bb7b678015de5e44094b9b96722d064b, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -24461,6 +24764,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f13c91a143ccbf14c9ee85328e3ce74a, type: 3}
       propertyPath: m_Name
       value: BBQ_stove
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f13c91a143ccbf14c9ee85328e3ce74a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f13c91a143ccbf14c9ee85328e3ce74a, type: 3}
       propertyPath: m_NavMeshLayer
@@ -25382,6 +25689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: maruta_multi (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -25703,6 +26014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: maruta_multi
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: 3adfca2381f76d24fa41a12c8823134c, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -25834,6 +26149,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_Name
       value: iwa (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -26063,6 +26382,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_Name
       value: iwa (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -26530,6 +26853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tent (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
+      objectReference: {fileID: 0}
     - target: {fileID: 3379836402047742272, guid: 42fad63c39d52754bb46f88de38b7a9a, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -26637,6 +26964,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_Name
       value: iwa (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e98e229d6179e734e9145fb85a0a13d5, type: 3}
       propertyPath: m_NavMeshLayer
@@ -27170,6 +27501,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_Name
       value: chair (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
+      propertyPath: m_TagString
+      value: StageObject
       objectReference: {fileID: 0}
     - target: {fileID: 5723625552210213825, guid: d784f622fbd559a47b39e4ae4b2e9406, type: 3}
       propertyPath: m_IsActive

@@ -23,7 +23,7 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     private SoundManager soundManager;
     [SerializeField] private Vector3 localGravity;
     // Start is called before the first frame update
-   // private CinemachineBrain cinemachineVirtual;
+    // private CinemachineBrain cinemachineVirtual;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -69,9 +69,12 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
 
             if (photonView.IsMine)//photonView.IsMine
             {
-                GetZ = Input.GetAxis("Horizontal") /* * addforce */;
-                GetX = Input.GetAxis("Vertical") /* * addforce */;
-
+               // if (WallCollisionDetection.col == 0)
+                {
+                    GetZ = Input.GetAxis("Horizontal") /* * addforce */;
+                    GetX = Input.GetAxis("Vertical") /* * addforce */;
+                    Debug.Log(WallCollisionDetection.col);
+                }
                 //CameraVector=PlayerCamera.transform;
 
                 //修正　キャラクター・カメラ移動全般をこれで囲うもあり
