@@ -1028,7 +1028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 31.901276, y: -49.99997}
+  m_AnchoredPosition: {x: -37.46576, y: -67.237404}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &93969692
@@ -2107,7 +2107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5822238733464696681, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -30
+      value: -35.66683
       objectReference: {fileID: 0}
     - target: {fileID: 5822238733464696681, guid: c716918a5b8ffd0418ee93a3aab4a3b6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -9105,7 +9105,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 18.7, y: -27.4}
+  m_AnchoredPosition: {x: 18.7, y: -36.364944}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1489529486
@@ -9831,6 +9831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerName_SaitouPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7798599226526719606, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7798599226526719607, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9909,7 +9913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7798599226526719607, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -378.1
+      value: -444.9826
       objectReference: {fileID: 0}
     - target: {fileID: 7798599226526719607, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -11298,11 +11302,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4455300236313520567, guid: 36d85461ff4e66a4b99eccfb8ff1cca1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -486
+      value: -555.84
       objectReference: {fileID: 0}
     - target: {fileID: 4455300236313520567, guid: 36d85461ff4e66a4b99eccfb8ff1cca1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 252
+      value: 258.24
       objectReference: {fileID: 0}
     - target: {fileID: 4455300236313520567, guid: 36d85461ff4e66a4b99eccfb8ff1cca1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
