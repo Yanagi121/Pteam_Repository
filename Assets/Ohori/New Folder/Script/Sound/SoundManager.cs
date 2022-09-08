@@ -8,7 +8,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     [SerializeField, Range(0, 1), Tooltip("BGMの音量")]
     float bgmVolume = 0.6f;
     [SerializeField, Range(0, 1), Tooltip("SEの音量")]
-    float seVolume = 0.6f;
+    float seVolume = 0.3f;
     [SerializeField, Range(0, 1), Tooltip("スピーカーの音量")]
     float speakerVolume = 0.6f;
 
@@ -203,7 +203,6 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
         speakerAudioSource.clip = speaker[index];
         speakerAudioSource.loop = true;
         speakerAudioSource.spatialBlend = 1.0f;
-        speakerAudioSource.rolloffMode = AudioRolloffMode.Custom;
         speakerAudioSource.minDistance = 0;
         speakerAudioSource.maxDistance = 130;
         speakerAudioSource.dopplerLevel = 0;
