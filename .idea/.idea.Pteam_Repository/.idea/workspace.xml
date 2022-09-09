@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a18e7cdf-8605-44a3-a211-3b387058fc44" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/ArrowController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/ArrowController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/ArrowMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/ArrowMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/ArrowRender.renderTexture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/ArrowRender.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/CameraContorlller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/CameraContorlller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/Materials/Like-comment-share-gif-3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/Materials/Like-comment-share-gif-3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/sample.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/sample.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/uploads_files_834452_Arrow.fbm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/uploads_files_834452_Arrow.fbm/Like-comment-share-gif-3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/uploads_files_834452_Arrow.fbm/Like-comment-share-gif-3.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/uploads_files_834452_Arrow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ArrowsPointingEnemy/uploads_files_834452_Arrow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading/BackgroundScroll.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading/BackgroundScroll.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading/Background_bySATBOX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading/Background_bySATBOX.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading/Load1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading/Load1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading/LoadingSceneButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading/LoadingSceneButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading/sample.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/AsyncLoading/sample.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/CharTransformAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/CharTransformAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/OneTextAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/OneTextAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/ReductionAnimationButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/ReductionAnimationButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/ScalingButton1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/ScalingButton1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/SimpleButtonAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/SimpleButtonAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/SimpleReductionAnimationButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/SimpleReductionAnimationButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/TestButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/TestButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/TextAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/TextAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/TextCyberAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/TextCyberAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/TextFadeAnmation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ButtonAnimation/TextFadeAnmation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/EnemyMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/EnemyMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/MiniMapFrame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/MiniMapFrame.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/MiniMapRender.renderTexture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/MiniMapRender.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/MinimapIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/MinimapIcon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/MinimapMask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/MinimapMask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/PlayerMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/PlayerMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/TrackingMapCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/TrackingMapCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/TrackingPlayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/TrackingPlayer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/sample.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/MiniMap/sample.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Credit.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Credit.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/GameCrear.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/GameCrear.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/GameOver.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/LanguageSetting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/LanguageSetting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/MemberWaitScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/MemberWaitScreen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/ModeSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/ModeSelect.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Movie.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Movie.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/ResolutionSetting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/ResolutionSetting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/RoomSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/RoomSelect.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/SettingOption.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/SettingOption.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/SoundSetting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/SoundSetting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Title.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/CatoonSea.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/CatoonSea.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/CatoonSea.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/CatoonSea.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/ShaderSetting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/ShaderSetting/UniversalRenderPipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/ShaderSetting/UniversalRenderPipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/ShaderSetting/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/ShaderSetting/UniversalRenderPipelineAsset_Renderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/UniversalRenderPipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/UniversalRenderPipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/ShaderGrapht/UniversalRenderPipelineAsset_Renderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/LobbyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/LobbyScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/NewRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/NewRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/RoomScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/RoomScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/Sato_GameClear.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/Sato_GameClear.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/TestPlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/TestPlayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scripts/SceneManager/SceneManager2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scripts/SceneManager/SceneManager2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ELzbiIoSUIprifEvS1noBpqg4W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/build\Pteam.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\2022019\Documents\Pteam_Repository\build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a18e7cdf-8605-44a3-a211-3b387058fc44" name="Changes" comment="" />
+      <created>1662389732888</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662389732888</updated>
+      <workItem from="1662389749929" duration="2052000" />
+      <workItem from="1662477292131" duration="594000" />
+      <workItem from="1662626275061" duration="150000" />
+      <workItem from="1662640816046" duration="4872000" />
+      <workItem from="1662646362948" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
