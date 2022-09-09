@@ -17,6 +17,7 @@ TagManager:
   - PlayerSurface
   - wall
   - StageObject
+  - FallDetection
   layers:
   - Default
   - TransparentFX

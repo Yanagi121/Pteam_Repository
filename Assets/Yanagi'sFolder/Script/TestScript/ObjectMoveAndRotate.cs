@@ -2,6 +2,7 @@ using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
 {
@@ -22,18 +23,44 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
     private SoundManager soundManager;
     [SerializeField] private Vector3 localGravity;
     // Start is called before the first frame update
+    // private CinemachineBrain cinemachineVirtual;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         DontDestroyOnLoad(this.gameObject);
         RiverSound = gameObject.GetComponent<AudioSource>();
         RiverSound.clip = audioClip1;
+        //cinemachineVirtual = Camera1.GetComponent<CinemachineBrain>();
+        //cinemachineVirtual.enabled = false;
         //soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        switch (WallCollisionDetection.col)
+        {
+            case WallCollisionDetection.ColDirection.FLONT:
+                GetX -=0.05f;
+                if (GetX <= -1f)
+                    GetX = -1f;
+                break;
+            case WallCollisionDetection.ColDirection.LEFT:
+                GetZ += 0.05f;
+                if (GetZ >= 1f)
+                    GetZ = 1f;
+                break;
+            case WallCollisionDetection.ColDirection.BACK:
+                GetX += 0.05f;
+                if (GetX >= 1f)
+                    GetX = 1f;
+                break;
+            case WallCollisionDetection.ColDirection.RIGHT:
+                GetZ -= 0.05f;
+                if (GetZ <= -1f)
+                    GetZ = -1f;
+                break;
+        }
         if (ColGround == false)
         {
             FallSpeed = -0.3f;
@@ -54,12 +81,23 @@ public class ObjectMoveAndRotate : MonoBehaviourPunCallbacks
         }
         if (TimeOver.gameover==false&& CameraMove.TimeDelay)
         {
-
+            //if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.W))
+            //{
+            //    cinemachineVirtual.enabled = true;
+            //}
+            //else
+            //{
+            //    cinemachineVirtual.enabled = false;
+            //}
 
             if (photonView.IsMine)//photonView.IsMine
             {
-                GetZ = Input.GetAxis("Horizontal") /* * addforce */;
-                GetX = Input.GetAxis("Vertical") /* * addforce */;
+                if (WallCollisionDetection.col == WallCollisionDetection.ColDirection.NONE)
+                {
+                    GetZ = Input.GetAxis("Horizontal") /* * addforce */;
+                    GetX = Input.GetAxis("Vertical") /* * addforce */;
+                    //Debug.Log(WallCollisionDetection.col);
+                }
                 //CameraVector=PlayerCamera.transform;
 
                 //修正　キャラクター・カメラ移動全般をこれで囲うもあり
