@@ -41,7 +41,11 @@ public class Catch_Doctor : MonoBehaviourPunCallbacks
             BoolCatch_Doctor = true;
             GetTime.Add(TimeOver.countdown);
             Invoke("SceneEnterBool", 2f);
-           // PhotonNetwork.Disconnect();
+
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+            // PhotonNetwork.Disconnect();
         }
     }
 

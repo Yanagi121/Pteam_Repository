@@ -53,12 +53,18 @@ public class TimeOver : MonoBehaviourPunCallbacks
             {
                 countdown = 0;
                 gameover = true;
+
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+
                 //photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
             }
             if (Catch_Doctor.BoolCatch_Doctor)
             {
                 photonView.RPC(nameof(ChangeGameOver), RpcTarget.All);
                 GameObject.Find("Camera1").transform.LookAt(Vector3.Lerp(GameObject.Find("Camera1").transform.position, GameObject.Find("Dr_Invisible ").transform.position+new Vector3(0,2,0), 0.01f));
+                //Cursor.visible = true;
+                //Cursor.lockState = CursorLockMode.None;
             }
         }
         //else GameObject.Find("Camera1").transform.LookAt(Vector3.Lerp(GameObject.Find("Camera1").transform.position, GameObject.Find("Dr_Invisible ").transform.position, 0.05f));

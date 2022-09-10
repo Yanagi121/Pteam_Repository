@@ -35,7 +35,7 @@ public class LockCursor : MonoBehaviour
 
             SoundSettingsUIObject.SetActive(true);
         }
-        else
+        else if(OnClickEscape==false&& Catch_Doctor.BoolCatch_Doctor==false&&TimeOver.gameover==false)
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
