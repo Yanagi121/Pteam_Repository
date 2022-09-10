@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Pre_StartCountdown : MonoBehaviour
 {
     public TextMeshProUGUI PreStartCountdownText;
     public GameObject PreStartTwxtGameObject;
-    float a=0,toumei=1;
+    [SerializeField] GameObject SearchDoctor_Obj,Timer_Background_obj, NumericKeypad_obj;
+    [SerializeField] Image SearchDoctor_img;
+    float a = 0, toumei = 1, timerUIhidden = 5f;
     int CountDownInt = 5;//RoomSceneManager2.delayMoveÇÃílÇéQè∆Ç∑ÇÈ
     int fontsize=350;
     bool alpha=false;
@@ -17,7 +20,9 @@ public class Pre_StartCountdown : MonoBehaviour
     void Start()
     {
         //PreStartCountdownText.color = new Color(1, 1, 1, 1);
-
+        SearchDoctor_Obj.SetActive(false);
+        Timer_Background_obj.SetActive(false);
+        NumericKeypad_obj.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,9 +38,15 @@ public class Pre_StartCountdown : MonoBehaviour
         }
        else if (CountDownInt == 0)
         {
-            PreStartCountdownText.text = "Start";
+
+            PreStartCountdownText.text = " ";
             fontsize = 300;
             CountDownInt = 0;
+            SearchDoctor_Obj.SetActive(true);
+            Timer_Background_obj.SetActive(true);
+            NumericKeypad_obj.SetActive(true);
+            fadeInFunc();
+
             alpha = true;
             lockedEscKey = true;
             a += Time.deltaTime;
@@ -58,5 +69,14 @@ public class Pre_StartCountdown : MonoBehaviour
     float easeOutQuart(float x)
     {
         return 1-Mathf.Pow(1-x,4);
+    }
+
+    void fadeInFunc()
+    {
+        timerUIhidden -= Time.deltaTime;
+        SearchDoctor_img.color -= new Color(0, 0, 0, 0.0025f);
+        if (timerUIhidden <= 0)
+            SearchDoctor_Obj.SetActive(false);
+
     }
 }
