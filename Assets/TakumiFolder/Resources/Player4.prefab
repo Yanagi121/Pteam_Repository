@@ -122,7 +122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3a543b7021afb4ca9d79339c1611af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Arrow: {fileID: 0}
 --- !u!1 &1397585406375876597
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +137,7 @@ GameObject:
   - component: {fileID: 6412813418907870603}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: PlayerName
+  m_TagString: Player4Name
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

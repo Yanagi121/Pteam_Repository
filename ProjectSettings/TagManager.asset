@@ -24,6 +24,10 @@ TagManager:
   - ArrowCam4
   - Arrow_col
   - Arrow
+  - Player1Name
+  - Player2Name
+  - Player3Name
+  - Player4Name
   layers:
   - Default
   - TransparentFX
