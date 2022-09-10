@@ -15,6 +15,8 @@ public class Player_anim : MonoBehaviourPunCallbacks
 
     [SerializeField]
     public bool helpControl;//エモート1を決める変数
+    [SerializeField]
+    int emote_num;
 
     [SerializeField] 
     GameObject Player;
@@ -23,6 +25,15 @@ public class Player_anim : MonoBehaviourPunCallbacks
 
     float speed;
     Vector3 prepos;
+
+    public enum State
+    {
+        Idle=0,
+        Help=1,
+        Thanks=2,
+        Laugh = 3,
+        Hoooo = 4
+    }
     void Start()
     {
         // Animatorコンポーネントを取得
@@ -33,6 +44,7 @@ public class Player_anim : MonoBehaviourPunCallbacks
         //catchControlの初期化
         catchControl = false;
         helpControl = false;
+        emote_num = 0;
     }
 
     void Update()
@@ -49,31 +61,38 @@ public class Player_anim : MonoBehaviourPunCallbacks
         
         if (photonView.IsMine)//photonView.IsMine
         {
+            if (Input.GetKeyDown(KeyCode.Z)) animator.SetInteger("e_1", (int)State.Help);
+            if (Input.GetKeyDown(KeyCode.X)) animator.SetInteger("e_1", (int)State.Thanks);
+            if (Input.GetKeyDown(KeyCode.C)) animator.SetInteger("e_1", (int)State.Laugh);
+            if (Input.GetKeyDown(KeyCode.V)) animator.SetInteger("e_1", (int)State.Hoooo);
+            if (Input.GetKeyUp(KeyCode.Z) || Input.GetKeyUp(KeyCode.X) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.V)) animator.SetInteger("e_1", (int)State.Idle);
             if (gameObject.tag != "Dr")
             {
                 if (Input.GetMouseButtonDown(0))
                 {
                     catchControl = true;
+                   
                 }
                 if (Input.GetMouseButtonUp(0))
                 {
                     Invoke(nameof(catchControlTOFalse), 0.1f);
                     this.transform.position = Player.transform.position;
                 }
-                //if (Input.GetMouseButtonUp(1))
-                //{
-                //    helpControl = true;
-                //    Debug.Log("Anim1");
-                //}
-                //else helpControl = false;
+
+                
+                
             }
+            
         }
 
         //AnimatorないのrunControlのtrue/falseの判定
         animator.SetBool("runControl", runControl);
         //AnimatorないのcatchControlのtrue/falseの判定
         animator.SetBool("catchControl", catchControl);
-        //animator.SetBool("helpConaaatrol", helpControl);
+
+        animator.SetBool("HelpCotrol", helpControl);
+        
+
     }
 
     public void catchControlTOFalse()
