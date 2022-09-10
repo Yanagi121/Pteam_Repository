@@ -1697,6 +1697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runControl: 0
   catchControl: 0
+  helpControl: 0
+  emote_num: 0
   Player: {fileID: 404955169906403690}
 --- !u!114 &6909022839956049647
 MonoBehaviour:
