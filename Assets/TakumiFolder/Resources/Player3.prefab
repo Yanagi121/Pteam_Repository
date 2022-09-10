@@ -1160,6 +1160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runControl: 0
   catchControl: 0
+  helpControl: 0
+  emote_num: 0
   Player: {fileID: 8560946485298563830}
 --- !u!114 &6048061280757478157
 MonoBehaviour:
@@ -1222,6 +1224,15 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 2
     Name: catchControl
+  - Type: 4
+    SynchronizeType: 0
+    Name: caught_Dr
+  - Type: 4
+    SynchronizeType: 0
+    Name: HelpControl
+  - Type: 3
+    SynchronizeType: 2
+    Name: e_1
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
@@ -1595,6 +1606,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runControl: 0
   catchControl: 0
+  helpControl: 0
+  emote_num: 0
   Player: {fileID: 8560946485298563830}
 --- !u!114 &6359357546252839258
 MonoBehaviour:

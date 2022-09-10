@@ -1165,6 +1165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runControl: 0
   catchControl: 0
+  helpControl: 0
+  emote_num: 0
   Player: {fileID: 2767461967730744384}
 --- !u!114 &1160520430120281122
 MonoBehaviour:
@@ -1542,6 +1544,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runControl: 0
   catchControl: 0
+  helpControl: 0
+  emote_num: 0
   Player: {fileID: 2767461967730744384}
 --- !u!114 &2101587706014570372
 MonoBehaviour:
@@ -1607,6 +1611,12 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 0
     Name: caught_Dr
+  - Type: 4
+    SynchronizeType: 0
+    Name: HelpControl
+  - Type: 3
+    SynchronizeType: 2
+    Name: e_1
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0

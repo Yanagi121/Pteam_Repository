@@ -65,7 +65,11 @@ public class Player_anim : MonoBehaviourPunCallbacks
             if (Input.GetKeyDown(KeyCode.X)) animator.SetInteger("e_1", (int)State.Thanks);
             if (Input.GetKeyDown(KeyCode.C)) animator.SetInteger("e_1", (int)State.Laugh);
             if (Input.GetKeyDown(KeyCode.V)) animator.SetInteger("e_1", (int)State.Hoooo);
-            if (Input.GetKeyUp(KeyCode.Z) || Input.GetKeyUp(KeyCode.X) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.V)) animator.SetInteger("e_1", (int)State.Idle);
+            if (Input.GetKeyUp(KeyCode.Z) || Input.GetKeyUp(KeyCode.X) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.V))
+            {
+                animator.SetInteger("e_1", (int)State.Idle);
+                this.transform.position = Player.transform.position;
+            }
             if (gameObject.tag != "Dr")
             {
                 if (Input.GetMouseButtonDown(0))

@@ -1724,6 +1724,12 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 0
     Name: caught_Dr
+  - Type: 4
+    SynchronizeType: 0
+    Name: HelpControl
+  - Type: 3
+    SynchronizeType: 2
+    Name: e_1
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
