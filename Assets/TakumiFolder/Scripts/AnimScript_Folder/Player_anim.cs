@@ -13,6 +13,9 @@ public class Player_anim : MonoBehaviourPunCallbacks
     [SerializeField]
     public bool catchControl;//•ß‚Ü‚¦‚é‚©‚Ç‚¤‚©‚ğŒˆ‚ß‚é•Ï”
 
+    [SerializeField]
+    public bool helpControl;//ƒGƒ‚[ƒg1‚ğŒˆ‚ß‚é•Ï”
+
     [SerializeField] 
     GameObject Player;
 
@@ -29,6 +32,7 @@ public class Player_anim : MonoBehaviourPunCallbacks
         runControl = false;
         //catchControl‚Ì‰Šú‰»
         catchControl = false;
+        helpControl = false;
     }
 
     void Update()
@@ -56,6 +60,12 @@ public class Player_anim : MonoBehaviourPunCallbacks
                     Invoke(nameof(catchControlTOFalse), 0.1f);
                     this.transform.position = Player.transform.position;
                 }
+                //if (Input.GetMouseButtonUp(1))
+                //{
+                //    helpControl = true;
+                //    Debug.Log("Anim1");
+                //}
+                //else helpControl = false;
             }
         }
 
@@ -63,6 +73,7 @@ public class Player_anim : MonoBehaviourPunCallbacks
         animator.SetBool("runControl", runControl);
         //Animator‚È‚¢‚ÌcatchControl‚Ìtrue/false‚Ì”»’è
         animator.SetBool("catchControl", catchControl);
+        //animator.SetBool("helpConaaatrol", helpControl);
     }
 
     public void catchControlTOFalse()
@@ -86,6 +97,7 @@ public class Player_anim : MonoBehaviourPunCallbacks
             else { runControl = false; };
             if (Input.GetAxis("Vertical") != 0) { runControl = true; }
             else { runControl = false; };
+            
             //if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")){ runControl = true;}
             //else{runControl = false; }
             //if (Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("down") || Input.GetKey("right")) { runControl = true; }

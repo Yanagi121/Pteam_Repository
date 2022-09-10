@@ -13,7 +13,7 @@ public class BGM_Control : MonoBehaviour
     void Start()
     {
         soundManager = GameObject.Find("GameControl").GetComponent<SoundManager>();//GameControl‚ÌSoundManager‚ð’T‚µ‚Ä‚­‚é
-        soundManager.PlayBgmByName("game_6");
+        soundManager.PlayBgmByName("Game7");
         BGM = true;
     }
 
