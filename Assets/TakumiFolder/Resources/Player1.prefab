@@ -1311,6 +1311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fallDetectionOBJ
       objectReference: {fileID: 0}
+    - target: {fileID: 8819949262863076911, guid: 14331a240e065bc43b8b2a7f0eac53c7, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404955169906403690}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14331a240e065bc43b8b2a7f0eac53c7, type: 3}
 --- !u!4 &1293672737151670946 stripped
