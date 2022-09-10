@@ -21,7 +21,10 @@ public class Result_PlayerName : MonoBehaviour
 
         for (int i = 0; i < 4; i++)
         {
-            result_players[i].text = playername[i].text;
+            if (GameObject.FindWithTag("Player" + (i + 1) + "Name"))
+            {
+                result_players[i].text = playername[i].text;
+            }
             Debug.Log(result_players[i].text.ToString());
         }
         
