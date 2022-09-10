@@ -1016,7 +1016,7 @@ GameObject:
   - component: {fileID: 4212192259347786789}
   m_Layer: 9
   m_Name: ArrorCamera
-  m_TagString: Untagged
+  m_TagString: ArrowCam1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1029,7 +1029,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2563092384018810480}
   m_LocalRotation: {x: 0.36920837, y: -0, z: -0, w: 0.9293467}
-  m_LocalPosition: {x: 0, y: 9.430876, z: -5.505718}
+  m_LocalPosition: {x: 0, y: -46, z: -22}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 404955169906403562}
@@ -1060,7 +1060,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 53
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1119,12 +1119,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2563092384018810480}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f3a543b7021afb4ca9d79339c1611af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Arrow: {fileID: 0}
 --- !u!1 &7300432964607530280
 GameObject:
   m_ObjectHideFlags: 0

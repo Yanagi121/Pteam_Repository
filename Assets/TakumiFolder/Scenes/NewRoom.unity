@@ -142,6 +142,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreStartCountdownText: {fileID: 407658249}
   PreStartTwxtGameObject: {fileID: 407658247}
+  SearchDoctor_Obj: {fileID: 0}
+  Timer_Background_obj: {fileID: 0}
+  NumericKeypad_obj: {fileID: 0}
+  SearchDoctor_img: {fileID: 0}
 --- !u!114 &40645583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5440,7 +5444,7 @@ PrefabInstance:
     - target: {fileID: 7383427333905936330, guid: dd7f7f6a59e57f44687b27f391a35594, type: 3}
       propertyPath: Dr_InvisibleControl
       value: 
-      objectReference: {fileID: 7561171418183812601}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd7f7f6a59e57f44687b27f391a35594, type: 3}
 --- !u!114 &972597237 stripped
@@ -11287,17 +11291,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
---- !u!114 &7561171418183812601 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3716551997387904281, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
-  m_PrefabInstance: {fileID: 6592554079568646368}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1056939208957386148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5cedd537382fc409803bd0a7931fb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7849801293714389592
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -18,6 +18,12 @@ TagManager:
   - wall
   - StageObject
   - FallDetection
+  - ArrowCam1
+  - ArrowCam2
+  - ArrowCam3
+  - ArrowCam4
+  - Arrow_col
+  - Arrow
   layers:
   - Default
   - TransparentFX
