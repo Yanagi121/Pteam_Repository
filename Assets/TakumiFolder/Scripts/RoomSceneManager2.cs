@@ -9,15 +9,13 @@ public class RoomSceneManager2 : MonoBehaviourPunCallbacks
     public bool enterMatchWaitRoomJudge;
     public static bool CameFind;
     [SerializeField] GameObject Player;
-    public static bool SceneEnter = false; //ゲームシーンに入ったときに呼ばれる関数　
+    public static bool SceneEnter; //ゲームシーンに入ったときに呼ばれる関数　
     [SerializeField] GameObject[] players=new GameObject [4];
    // private  GameObject SoundSettingsUIObject;
 
     private void Start()
     {
-        //var roomOptions = new RoomOptions();
-        //roomOptions.IsVisible = false;
-        //PhotonNetwork.LeaveLobby();
+        SceneEnter = false;
         Invoke("Progress", delayMove);
         PhotonNetwork.IsMessageQueueRunning = true;
         ////要確認/// Invoke("CameraFind", 0.0f);//0.5f後に呼び出される必要性　確認 
