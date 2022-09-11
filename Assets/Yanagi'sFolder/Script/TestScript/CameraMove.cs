@@ -13,7 +13,7 @@ public class CameraMove : MonoBehaviour
         cameraX, mouseX, mouseY, tmpX = 0, tmpY = 0, boolX, boolY;
     public float CameraSensitivityX=5, CameraSensitivityY=5,GetEscKey=0;
     public static  Transform transCamera;
-    public static  bool TimeDelay = false;//false‚Ådelay
+    public static bool TimeDelay;//false‚Ådelay
     public static GameObject GamePlayer;
     [SerializeField] Vector3 GamePlayerTransform;
     private string Player;
@@ -21,12 +21,13 @@ public class CameraMove : MonoBehaviour
 
     void Start()
     {
-        //newAngle = this.transform.localEulerAngles;
-       // lastMousePosition = Input.mousePosition;
+        TimeDelay = false;
+                          //newAngle = this.transform.localEulerAngles;
+                          // lastMousePosition = Input.mousePosition;
 
         //  Camera1.name = photonView.Owner.NickName+"Camera";
-       // Player1 = ""+ photonView.OwnerActorNr;
-        
+        // Player1 = ""+ photonView.OwnerActorNr;
+
     }
 
     private void OnEnable()//SetActive‚ªtrue‚©‚çfalse‚É‚È‚Á‚½‚Æ‚«‚É‹N“®

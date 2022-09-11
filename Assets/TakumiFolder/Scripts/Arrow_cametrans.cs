@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
-public class Arrow_cametrans : MonoBehaviour
+public class Arrow_cametrans : MonoBehaviourPunCallbacks
 {
     //[SerializeField] GameObject Arrow;
     bool onetime;
@@ -16,21 +17,24 @@ public class Arrow_cametrans : MonoBehaviour
    
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "LobbyScene")
+        if (photonView.IsMine)
         {
-            if (onetime == true)
-            {
-                switch (DontDestroy_Porder.Porder_handover)
+            //if (SceneManager.GetActiveScene().name == "LobbyScene")
+            //{
+                if (onetime == true)
                 {
-                    case 1: GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
-                    case 2: GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
-                    case 3: GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
-                    case 4: GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
-                    default: Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
+                    GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(false);
+                    GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(false);
+                    GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(false);
+                    GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(false);
+                    if (this.gameObject.name == "Player1") GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(true);
+                    if (this.gameObject.name == "Player2") GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(true);
+                    if (this.gameObject.name == "Player3") GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(true);
+                    if (this.gameObject.name == "Player4") GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(true);
+                    //Debug.Log("<color=red>" + "updateÇÃì«Ç›çûÇ›" + "</color>");
+                    onetime = false;
                 }
-                //Debug.Log("<color=red>" + "updateÇÃì«Ç›çûÇ›" + "</color>");
-                onetime = false;
-            }
+            //}
         }
         
     }
