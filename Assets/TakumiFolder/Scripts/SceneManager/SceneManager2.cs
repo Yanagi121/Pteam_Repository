@@ -28,6 +28,7 @@ public class SceneManager2 : MonoBehaviourPunCallbacks
     //"MemberWaitScreen",
     "SoundSetting",
     "NewRoom",
+    "LoadScene"
     //"GameOver",
     //"GameCrear"
     };
