@@ -21,19 +21,40 @@ public class Arrow_cametrans : MonoBehaviourPunCallbacks
         {
             //if (SceneManager.GetActiveScene().name == "LobbyScene")
             //{
-                if (onetime == true)
+               if (onetime == true)
+               {
+                if (this.gameObject.name == "Player1") 
+                {
+                    GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(true);
+                    GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(false);
+                    GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(false);
+                    GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(false);
+                };
+                if (this.gameObject.name == "Player2")
+                {
+                    GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(false);
+                    GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(true);
+                    GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(false);
+                    GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(false);
+                };
+                if (this.gameObject.name == "Player3")
+                {
+                    GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(false);
+                    GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(false);
+                    GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(true);
+                    GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(false);
+                };
+                if (this.gameObject.name == "Player4")
                 {
                     GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(false);
                     GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(false);
                     GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(false);
-                    GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(false);
-                    if (this.gameObject.name == "Player1") GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(true);
-                    if (this.gameObject.name == "Player2") GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(true);
-                    if (this.gameObject.name == "Player3") GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(true);
-                    if (this.gameObject.name == "Player4") GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(true);
+                    GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(true);
+                };
+                
                     //Debug.Log("<color=red>" + "updateÇÃì«Ç›çûÇ›" + "</color>");
                     onetime = false;
-                }
+               }
             //}
         }
         
