@@ -1491,6 +1491,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
+      propertyPath: m_TagString
+      value: Player1-1
+      objectReference: {fileID: 0}
     - target: {fileID: 3198533930055470172, guid: eb9c0295c5164aa40a8aee7913297b19, type: 3}
       propertyPath: m_TagString
       value: PlayerSurface

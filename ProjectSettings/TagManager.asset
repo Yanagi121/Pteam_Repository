@@ -28,6 +28,11 @@ TagManager:
   - Player2Name
   - Player3Name
   - Player4Name
+  - Player2
+  - Player3
+  - Player4
+  - FadePanel
+  - Player1-1
   layers:
   - Default
   - TransparentFX

@@ -20,6 +20,10 @@ public class Dr_InvisibleControl : MonoBehaviourPunCallbacks
     private GameObject Player3;
     private GameObject Player4;
 
+    [SerializeField] GameObject tmpPlayer2;
+    [SerializeField] GameObject tmpPlayer3;
+    [SerializeField] GameObject tmpPlayer4;
+
     //Playerの位置を入れる変数
     [SerializeField]
     public Vector3 Player1Pos;
@@ -83,10 +87,24 @@ public class Dr_InvisibleControl : MonoBehaviourPunCallbacks
     //プレイヤーを見つけるメソッド    
     public void findPlayer()
     {
-        Player1 = GameObject.Find("Player1(Clone)");
-        Player2 = GameObject.Find("Player2(Clone)");
-        Player3 = GameObject.Find("Player3(Clone)");
-        Player4 = GameObject.Find("Player4(Clone)");
+        if (GameObject.FindWithTag("Player1-1"))
+            Player1 = GameObject.FindWithTag("Player1-1");
+
+        if (GameObject.FindWithTag("Player2"))
+            Player2 = GameObject.FindWithTag("Player2");
+        else
+            Player2 = tmpPlayer2;
+
+        if (GameObject.FindWithTag("Player3"))
+            Player3 = GameObject.FindWithTag("Player3");
+        else
+            Player3 = tmpPlayer3;
+
+        if (GameObject.FindWithTag("Player4"))
+            Player4 = GameObject.FindWithTag("Player4");
+        else
+            Player4 = tmpPlayer4;
+
     }
 
     //プレイヤーとの距離を初期化するメソッド
