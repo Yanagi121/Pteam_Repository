@@ -14,10 +14,10 @@ public class FallDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MoveRestXmin.x = 85;
-        MoveRestXmax.x = 458;
-        MoveRestZmax.z = 422;
-        MoveRestZmin.z = 110;
+        MoveRestXmin.x = 84;
+        MoveRestXmax.x = 460;
+        MoveRestZmax.z = 424;
+        MoveRestZmin.z = 108;
         
     }
 
@@ -27,14 +27,14 @@ public class FallDetection : MonoBehaviour
         if (player.transform.position.x <= MoveRestXmin.x|| player.transform.position.x>=MoveRestXmax.x
             || player.transform.position.z>=MoveRestZmax.z|| player.transform.position.z<=MoveRestZmin.z)
         {
-            Fade_Panel();
+            ResetPosPlayer();
         }
     }
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("FallDetection"))
         {
-            Fade_Panel();
+            ResetPosPlayer();
         }
 
     }
