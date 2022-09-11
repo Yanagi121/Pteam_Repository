@@ -16,7 +16,7 @@ public class Titlemanager : MonoBehaviour
 
     async UniTask waitTest(CancellationToken token)  
     {
-        await UniTask.Delay(TimeSpan.FromSeconds(5f),cancellationToken: token);  
+        await UniTask.Delay(TimeSpan.FromSeconds(2.5f),cancellationToken: token);  
         panel.gameObject.SetActive(false);
         
         

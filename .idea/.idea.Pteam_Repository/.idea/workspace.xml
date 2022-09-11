@@ -5,7 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Option.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Option.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/OptionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/OptionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Titlemanager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Titlemanager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,7 @@
       <workItem from="1662853412097" duration="3918000" />
       <workItem from="1662887943379" duration="856000" />
       <workItem from="1662902457122" duration="1090000" />
-      <workItem from="1662918441950" duration="3087000" />
+      <workItem from="1662918441950" duration="5280000" />
     </task>
     <servers />
   </component>
