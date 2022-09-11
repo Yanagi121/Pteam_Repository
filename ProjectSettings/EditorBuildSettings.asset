@@ -83,4 +83,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Saito'sFolder/Gimick/AsyncLoading/sample.unity
     guid: 815a0bd2f6e62da4abecd399ff40b11e
+  - enabled: 1
+    path: Assets/TakumiFolder/Scenes/LoadScene.unity
+    guid: 073b29b17864de441a5aa957a50bb89e
   m_configObjects: {}

@@ -9,8 +9,14 @@ public class Arrow_cametrans : MonoBehaviour
     bool onetime;
     void Start()
     {
-        onetime = true;
-       // Debug.Log("<color=red>" + "startÇÃì«Ç›çûÇ›" + "</color>");
+        switch (DontDestroy_Porder.Porder_handover)
+        {
+            case 1: GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
+            case 2: GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
+            case 3: GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
+            case 4: GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
+            default: Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
+        }
     }
 
    
@@ -18,14 +24,7 @@ public class Arrow_cametrans : MonoBehaviour
     {
         if (onetime == true)
         {
-            switch (DontDestroy_Porder.Porder_handover)
-            {
-                case 1: GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
-                case 2: GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
-                case 3: GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
-                case 4: GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(true); if_Cam(DontDestroy_Porder.Porder_handover); Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
-                default: Debug.Log("<color=red>" + DontDestroy_Porder.Porder_handover + "</color>"); break;
-            }
+            
             //Debug.Log("<color=red>" + "updateÇÃì«Ç›çûÇ›" + "</color>");
             onetime = false;
         }
