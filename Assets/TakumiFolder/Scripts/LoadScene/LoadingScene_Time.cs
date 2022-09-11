@@ -18,7 +18,7 @@ public class LoadingScene_Time : MonoBehaviourPunCallbacks
     void Update()
     {
         count += Time.deltaTime;
-        if (count > 10)
+        if (count > 4)
         {
             SceneManager.LoadScene("LobbyScene");
         }
