@@ -1048,6 +1048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parypeople_3_2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 748a02d7046160643aa8f38ebff6dfa0, type: 3}
+      propertyPath: m_TagString
+      value: Player3
+      objectReference: {fileID: 0}
     - target: {fileID: 3478619837985881294, guid: 748a02d7046160643aa8f38ebff6dfa0, type: 3}
       propertyPath: m_TagString
       value: PlayerSurface

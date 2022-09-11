@@ -1053,6 +1053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: woman0603
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 30ea531fd6c992041a98874f9636e91a, type: 3}
+      propertyPath: m_TagString
+      value: Player4
+      objectReference: {fileID: 0}
     - target: {fileID: 3198533930055470172, guid: 30ea531fd6c992041a98874f9636e91a, type: 3}
       propertyPath: m_TagString
       value: PlayerSurface
@@ -1630,6 +1634,15 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 0
     Name: catchControl
+  - Type: 4
+    SynchronizeType: 0
+    Name: caught_Dr
+  - Type: 4
+    SynchronizeType: 0
+    Name: HelpControl
+  - Type: 3
+    SynchronizeType: 0
+    Name: e_1
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2509917829924020327}
   - component: {fileID: 217955338985773600}
   - component: {fileID: 6534819287755343459}
+  - component: {fileID: 815416048309029880}
   - component: {fileID: 5977667916710075942}
   m_Layer: 0
   m_Name: Sphere
@@ -82,6 +83,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &815416048309029880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746204533137036164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c22ce4f8665794ab4a1fb121644400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoctorParent: {fileID: 0}
 --- !u!135 &5977667916710075942
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -107,6 +121,7 @@ GameObject:
   - component: {fileID: 3716551998568173538}
   - component: {fileID: 3716551998568173537}
   - component: {fileID: 3716551998568173536}
+  - component: {fileID: 6978059082742862454}
   - component: {fileID: 3716551998568173551}
   m_Layer: 0
   m_Name: Sphere (1)
@@ -191,6 +206,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6978059082742862454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3716551998568173549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c22ce4f8665794ab4a1fb121644400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoctorParent: {fileID: 0}
 --- !u!114 &3716551998568173551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,6 +551,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movePointControl: {fileID: 0}
   TargetObject: {fileID: 0}
+  tmpPlayer2: {fileID: 0}
+  tmpPlayer3: {fileID: 0}
+  tmpPlayer4: {fileID: 0}
   Player1Pos: {x: 0, y: 0, z: 0}
   Player2Pos: {x: 0, y: 0, z: 0}
   Player3Pos: {x: 0, y: 0, z: 0}
