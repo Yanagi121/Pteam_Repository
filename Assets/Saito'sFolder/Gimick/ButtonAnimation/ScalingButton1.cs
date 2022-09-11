@@ -8,54 +8,49 @@ using UniRx.Triggers;
 using UniRx;
 using UnityEngine.Events;
 
-
-public class ScalingButton1 : MonoBehaviour
+namespace Saito
 {
-    
-        private Tweener tweener = null;
-        private Vector3 baseScale;
+    public class ScalingButton1 : MonoBehaviour
+    {
 
-        private void Awake()
-        {
-            baseScale = this.transform.localScale;
-        }
+        private Tweener tweener = null;
+        //private Vector3 baseScale;
+
+        //private void Awake()
+        //{
+        //  baseScale = this.transform.localScale;
+        //}
 
         void Start()
         {
             this.gameObject.AddComponent<ObservablePointerDownTrigger>()
-                .OnPointerDownAsObservable().Subscribe(_ =>
-                    {
-                        OnButtonDown();
-                    },
+                .OnPointerDownAsObservable().Subscribe(_ => { OnButtonDown(); },
                     ex => Debug.LogError(ex)
                 ).AddTo(this.gameObject);
 
             this.gameObject.AddComponent<ObservablePointerUpTrigger>()
-                .OnPointerUpAsObservable().Subscribe(_ =>
-                    {
-                       OnButtonUp();
-                    },
+                .OnPointerUpAsObservable().Subscribe(_ => { OnButtonUp(); },
                     ex => Debug.LogError(ex)
                 ).AddTo(this.gameObject);
         }
-        
-        
+
+
         #region Buttonで実行したい共通処理
-        
+
         private void OnButtonDown()
         {
-            if (tweener!=null)
+            if (tweener != null)
             {
                 tweener.Kill();
                 Debug.Log(tweener);
                 tweener = null;
-                transform.localScale=Vector3.one;
+                transform.localScale = Vector3.one;
             }
 
             tweener = transform.DOScale(
                 Vector3.one * 1.1f,
                 duration: 0.2f
-            ).SetEase(Ease.OutExpo).Play();
+            ).SetEase(Ease.OutExpo).Play().SetLink(this.gameObject);
 
             // Down時の共通処理
             Debug.Log("Button Push");
@@ -72,14 +67,15 @@ public class ScalingButton1 : MonoBehaviour
             }
 
             tweener = transform.DOPunchScale(
-                    Vector3.one*-0.1f, 
+                    Vector3.one * -0.1f,
                     duration: 0.2f
                 )
-                .SetEase(Ease.InOutCubic).Play();
+                .SetEase(Ease.InOutCubic).Play().SetLink(this.gameObject);
 
             // Up時の共通処理
             Debug.Log("Button Release");
         }
-    
+
         #endregion
+    }
 }
