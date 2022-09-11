@@ -4,36 +4,39 @@ using UnityEditor.Build.Reporting;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 
-public class PreBuildDirector : IPreprocessBuildWithReport
+namespace Saito
 {
-    public int callbackOrder => 1;
-
-    public void OnPreprocessBuild(BuildReport report)
+    public class PreBuildDirector : IPreprocessBuildWithReport
     {
-      Debug.Log("ビルド前処理");
-    
-        //ビルドするシーンをすべて取得
-        var scenes = EditorBuildSettings.scenes;
-        
-        foreach (var scene in scenes)
+        public int callbackOrder => 1;
+
+        public void OnPreprocessBuild(BuildReport report)
         {
-            //シーンを開く
-            EditorSceneManager.OpenScene(scene.path);
+            Debug.Log("ビルド前処理");
 
-            //処理を行う
-            var sceneTransitions = GameObject.FindObjectsOfType<SceneTransition>();
-            foreach (var _sceneTransition in sceneTransitions)
+            //ビルドするシーンをすべて取得
+            var scenes = EditorBuildSettings.scenes;
+
+            foreach (var scene in scenes)
             {
-                _sceneTransition.SetDestSceneName();
-                
-                /*プレハブのインスタンスだったら以下の処理も必要
-                PrefabUtility.RecordPrefabInstancePropertyModifications(sample);
-                */
-            }
+                //シーンを開く
+                EditorSceneManager.OpenScene(scene.path);
 
-            //シーンのセーブ
-            EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
-            EditorSceneManager.SaveOpenScenes();
+                //処理を行う
+                var sceneTransitions = GameObject.FindObjectsOfType<SceneTransition>();
+                foreach (var _sceneTransition in sceneTransitions)
+                {
+                    _sceneTransition.SetDestSceneName();
+
+                    /*プレハブのインスタンスだったら以下の処理も必要
+                    PrefabUtility.RecordPrefabInstancePropertyModifications(sample);
+                    */
+                }
+
+                //シーンのセーブ
+                EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
+                EditorSceneManager.SaveOpenScenes();
+            }
         }
     }
 }
