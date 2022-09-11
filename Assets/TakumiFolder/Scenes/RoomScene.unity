@@ -3026,6 +3026,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movePointControl: {fileID: 5468563019561946236}
   TargetObject: {fileID: 5468563019561946231}
+  tmpPlayer2: {fileID: 0}
+  tmpPlayer3: {fileID: 0}
+  tmpPlayer4: {fileID: 0}
   Player1Pos: {x: 0, y: 0, z: 0}
   Player2Pos: {x: 0, y: 0, z: 0}
   Player3Pos: {x: 0, y: 0, z: 0}
