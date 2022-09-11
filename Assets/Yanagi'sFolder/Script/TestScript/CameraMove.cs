@@ -31,6 +31,7 @@ public class CameraMove : MonoBehaviour
 
     private void OnEnable()//SetActiveがtrueからfalseになったときに起動
     {
+
         transCamera = this.gameObject.transform;
         DontDestroyOnLoad(this.gameObject);
         
@@ -82,9 +83,12 @@ public class CameraMove : MonoBehaviour
         //修正
         if (RoomSceneManager2.SceneEnter==true)//ゲームシーンに入る前(カメラを取得する前からカメラをあること前提に動いているのでif追加)
         {
-            GamePlayer = GameObject.Find("Player" + RoomSceneManager.Porder + "(Clone)");
-            GamePlayerTransform = GamePlayer.transform.position;//エラー1
-            transCamera.position = GamePlayerTransform + new Vector3(0, 2.25f, 0);
+            if (SceneManager.GetActiveScene().name == "TestPlayScene")
+            {
+                GamePlayer = GameObject.Find("Player" + RoomSceneManager.Porder + "(Clone)");
+                GamePlayerTransform = GamePlayer.transform.position;//エラー1
+                transCamera.position = GamePlayerTransform + new Vector3(0, 2.25f, 0);
+            }
         }
             
         
