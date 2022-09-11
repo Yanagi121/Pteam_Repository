@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.7302384, g: 0.7889801, b: 0.84985816, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13876,7 +13876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e7403d2cc9fd243a63b0c7e2060d40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 6
+  number: 11
   sceneName:
   - Movie
   - Title
@@ -13888,7 +13888,8 @@ MonoBehaviour:
   - LobbyScene
   - ResolutionSetting
   - SoundSetting
-  - NewRoom
+  - LoadScene
+  - Main
 --- !u!1001 &2000583359
 PrefabInstance:
   m_ObjectHideFlags: 0
