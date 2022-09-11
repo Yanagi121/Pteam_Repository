@@ -29,7 +29,7 @@ public class BGM_Control : MonoBehaviour
         {
             if (BGM==false)
             {
-                soundManager.PlayBgmByName("game_6");
+                soundManager.PlayBgmByName("Game7");
                 BGM = true;
             }
         }

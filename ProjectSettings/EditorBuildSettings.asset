@@ -66,7 +66,7 @@ EditorBuildSettings:
     path: Assets/Saito'sFolder/Scenes/Master/Title.unity
     guid: e6c47e2ca70387a4e9804628f6fdac7e
   - enabled: 0
-    path: Assets/Saito'sFolder/Scenes/Master/Sound.unity
+    path: 
     guid: f7fda069ee1e9b645856bb12992ffb62
   - enabled: 0
     path: Assets/Saito'sFolder/Scenes/Master/Option.unity
@@ -78,6 +78,9 @@ EditorBuildSettings:
     path: Assets/Saito'sFolder/Scenes/Master/HowToPlay.unity
     guid: 92a41a77e014f0a49a343fb84e5b4105
   - enabled: 0
-    path: Assets/Saito'sFolder/Scenes/Master/Credit.unity
+    path: 
     guid: b44e25507377c764582664e4ecd8a146
+  - enabled: 1
+    path: Assets/Saito'sFolder/Gimick/AsyncLoading/sample.unity
+    guid: 815a0bd2f6e62da4abecd399ff40b11e
   m_configObjects: {}
