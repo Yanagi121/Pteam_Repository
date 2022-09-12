@@ -61,11 +61,11 @@ public class Player_anim : MonoBehaviourPunCallbacks
         
         if (photonView.IsMine)//photonView.IsMine
         {
-            if (Input.GetKeyDown(KeyCode.Z)) animator.SetInteger("e_1", (int)State.Help);
-            if (Input.GetKeyDown(KeyCode.X)) animator.SetInteger("e_1", (int)State.Thanks);
-            if (Input.GetKeyDown(KeyCode.C)) animator.SetInteger("e_1", (int)State.Laugh);
-            if (Input.GetKeyDown(KeyCode.V)) animator.SetInteger("e_1", (int)State.Hoooo);
-            if (Input.GetKeyUp(KeyCode.Z) || Input.GetKeyUp(KeyCode.X) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.V))
+            if (Input.GetKeyDown(KeyCode.Q)) animator.SetInteger("e_1", (int)State.Help);
+            if (Input.GetKeyDown(KeyCode.E)) animator.SetInteger("e_1", (int)State.Thanks);
+            if (Input.GetKeyDown(KeyCode.Z)) animator.SetInteger("e_1", (int)State.Laugh);
+            if (Input.GetKeyDown(KeyCode.C)) animator.SetInteger("e_1", (int)State.Hoooo);
+            if (Input.GetKeyUp(KeyCode.Q) || Input.GetKeyUp(KeyCode.E) || Input.GetKeyUp(KeyCode.Z) || Input.GetKeyUp(KeyCode.C))
             {
                 animator.SetInteger("e_1", (int)State.Idle);
                 this.transform.position = Player.transform.position;
