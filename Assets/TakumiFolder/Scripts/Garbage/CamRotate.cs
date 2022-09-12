@@ -15,6 +15,6 @@ public class CamRotate : MonoBehaviour
     void Update()
     {
         R++;
-        transform.localRotation = Quaternion.Euler(-40f, R * 0.05f, 0);
+        transform.localRotation = Quaternion.Euler(-40f, R * 0.25f, 0);
     }
 }
