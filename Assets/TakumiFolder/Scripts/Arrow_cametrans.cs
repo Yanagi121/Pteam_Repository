@@ -11,19 +11,14 @@ public class Arrow_cametrans : MonoBehaviourPunCallbacks
     void Start()
     {
         onetime = true;
-       // Debug.Log("<color=red>" + "startÇÃì«Ç›çûÇ›" + "</color>");
-    }
-
-   
-    void Update()
-    {
+        // Debug.Log("<color=red>" + "startÇÃì«Ç›çûÇ›" + "</color>");
         if (photonView.IsMine)
         {
             //if (SceneManager.GetActiveScene().name == "LobbyScene")
             //{
-               if (onetime == true)
-               {
-                if (this.gameObject.name == "Player1") 
+            if (onetime == true)
+            {
+                if (this.gameObject.name == "Player1")
                 {
                     GameObject.FindGameObjectWithTag("ArrowCam1").SetActive(true);
                     GameObject.FindGameObjectWithTag("ArrowCam2").SetActive(false);
@@ -51,12 +46,18 @@ public class Arrow_cametrans : MonoBehaviourPunCallbacks
                     GameObject.FindGameObjectWithTag("ArrowCam3").SetActive(false);
                     GameObject.FindGameObjectWithTag("ArrowCam4").SetActive(true);
                 };
-                
-                    //Debug.Log("<color=red>" + "updateÇÃì«Ç›çûÇ›" + "</color>");
-                    onetime = false;
-               }
+
+                //Debug.Log("<color=red>" + "updateÇÃì«Ç›çûÇ›" + "</color>");
+                onetime = false;
+            }
             //}
         }
+    }
+
+   
+    void Update()
+    {
+        
         
     }
     void if_Cam(int playernum)//ÉJÉÅÉâÇ™Ç†ÇÈÇ©í≤Ç◊ÅAÇ†Ç¡ÇΩÇÁè¡Ç∑
