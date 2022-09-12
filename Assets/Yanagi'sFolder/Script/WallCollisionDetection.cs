@@ -40,7 +40,7 @@ public class WallCollisionDetection : MonoBehaviour {
             ObjectCol = true;
             col = (ColDirection)ColDirectionNum;
         }
-        if (other.gameObject.tag == "Arrow_col") Arrow.SetActive(false);
+      if (other.gameObject.tag == "Arrow_col") Arrow.SetActive(false);
     
 }
     void OnTriggerExit(Collider other)
@@ -50,6 +50,6 @@ public class WallCollisionDetection : MonoBehaviour {
             ObjectCol = false;
             col = (ColDirection)0;
         }
-        if (other.gameObject.tag == "Arrow_col") Arrow.SetActive(true);
+       if (other.gameObject.tag == "Arrow_col") Arrow.SetActive(true);
     }
 }

@@ -80,8 +80,9 @@ public class TimeOver : MonoBehaviourPunCallbacks
         CameraMove.TimeDelay = false;
         TimeOver.gameover = true;
         Catch_Doctor.BoolCatch_Doctor = true;
+        GameObject.Find("Camera1").transform.LookAt(Vector3.Lerp(GameObject.Find("Camera1").transform.position, GameObject.Find("Dr_Invisible ").transform.position + new Vector3(0, 2, 0), 0.01f));
         //GameObject.Find("Camera1").transform.rotation= Quaternion.Slerp(GameObject.Find("Camera1").transform.rotation,GameObject.Find("Dr_Invisible ").transform.rotation,20f);
-        
+
         Debug.Log("捕まえました1");
 
     }
