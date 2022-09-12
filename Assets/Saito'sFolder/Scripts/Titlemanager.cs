@@ -1,9 +1,11 @@
 using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using UniRx;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Titlemanager : MonoBehaviour
 {
@@ -16,9 +18,8 @@ public class Titlemanager : MonoBehaviour
 
     async UniTask waitTest(CancellationToken token)  
     {
-        await UniTask.Delay(TimeSpan.FromSeconds(2.5f),cancellationToken: token);  
-        panel.gameObject.SetActive(false);
-        
+        await UniTask.Delay(TimeSpan.FromSeconds(2.5f),cancellationToken: token);
+        panel.gameObject.GetComponent<Image>().DOFade(0f,0.5f).SetLink(this.gameObject);
         
           Observable.EveryUpdate()
                     .Where(_ => Input.anyKey)
