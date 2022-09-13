@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a18e7cdf-8605-44a3-a211-3b387058fc44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/ButtonAnimation/ScalingButton1.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/ButtonAnimation/ScalingButton1.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/BgTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/BgTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/アセット 214@3x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/アセット 214@3x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/mplus-1c-black SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/mplus-1c-black SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Resources/Player1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Resources/Player1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/LobbyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/LobbyScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/TestPlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/TestPlayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/2163x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/2163x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/InGame関係/アセット 72@3x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/InGame関係/アセット 72@3x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +90,7 @@
       <workItem from="1662887943379" duration="856000" />
       <workItem from="1662902457122" duration="1090000" />
       <workItem from="1662918441950" duration="6228000" />
+      <workItem from="1663080576447" duration="2199000" />
     </task>
     <servers />
   </component>
