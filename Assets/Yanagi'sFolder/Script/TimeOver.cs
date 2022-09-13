@@ -22,7 +22,7 @@ public class TimeOver : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-       countdown = 180f; 
+       countdown = 180f; //
        ScoreObj_trans = new Vector3(countdown, 0,0);
        Score_gameobject.transform.position = ScoreObj_trans;
        TimeText.text = "0";

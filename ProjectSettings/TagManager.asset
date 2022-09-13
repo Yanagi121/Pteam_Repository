@@ -33,6 +33,7 @@ TagManager:
   - Player4
   - FadePanel
   - Player1-1
+  - Player5
   layers:
   - Default
   - TransparentFX
