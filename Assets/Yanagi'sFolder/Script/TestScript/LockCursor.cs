@@ -28,7 +28,7 @@ public class LockCursor : MonoBehaviour
             else
                 OnClickEscape = true;
         }
-        if(OnClickEscape)
+        if(OnClickEscape )
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -47,6 +47,8 @@ public class LockCursor : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
-      
+        if(Catch_Doctor.BoolCatch_Doctor == false&& TimeOver.gameover)
+            SoundSettingsUIObject.SetActive(false);
+
     }
 }
