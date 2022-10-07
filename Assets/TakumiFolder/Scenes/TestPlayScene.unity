@@ -12024,9 +12024,25 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3716551998568173537, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3716551998568173549, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716551998568173550, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716551998568173550, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716551998568173550, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3716551998568173551, guid: a44577604d3c3464db3106ffb0178ceb, type: 3}
       propertyPath: movePointControl
