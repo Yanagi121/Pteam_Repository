@@ -46,55 +46,78 @@ public class Doctor_Fade : MonoBehaviour
 
     void Update()
     {
-        if (Fade_judge==true)
+        if (Catch_Doctor.BoolCatch_Doctor==false)//”ŽŽm‚ª•ß‚Ü‚Á‚Ä‚¢‚È‚¢‚Æ‚«
         {
-            if (i < 125)
+            if (Fade_judge == true)
             {
-                mesh.material.color = mesh.material.color + new Color32(0, 0, 0, 1);
-                j = 0;
-                while (j < 7)
+                if (i < 125)
                 {
-                    switch (j)
+                    mesh.material.color = mesh.material.color + new Color32(0, 0, 0, 1);
+                    j = 0;
+                    while (j < 7)
                     {
-                        case 0: mesh1[j].material.color += new Color32(192, 0, 0, 1); break;
-                        case 1: mesh1[j].material.color += new Color32(255, 255, 255, 1); break;
-                        case 2: mesh1[j].material.color += new Color32(60, 60, 60, 1); break;
-                        case 3: mesh1[j].material.color += new Color32(60, 60, 60, 1); break;
-                        case 4: mesh1[j].material.color += new Color32(89, 84, 84, 1); break;
-                        case 5: mesh1[j].material.color += new Color32(255, 255, 255, 1); break;
-                        case 6: mesh1[j].material.color += new Color32(255, 255, 255, 1); break;
+                        switch (j)
+                        {
+                            case 0: mesh1[j].material.color += new Color32(192, 0, 0, 1); break;
+                            case 1: mesh1[j].material.color += new Color32(255, 255, 255, 1); break;
+                            case 2: mesh1[j].material.color += new Color32(60, 60, 60, 1); break;
+                            case 3: mesh1[j].material.color += new Color32(60, 60, 60, 1); break;
+                            case 4: mesh1[j].material.color += new Color32(89, 84, 84, 1); break;
+                            case 5: mesh1[j].material.color += new Color32(255, 255, 255, 1); break;
+                            case 6: mesh1[j].material.color += new Color32(255, 255, 255, 1); break;
+                        }
+                        j++;
                     }
-                    j++;
+                    i++;
                 }
-                i++;
-            }
-            else if(125<=i&&i<255)
-            {
-                mesh.material.color = mesh.material.color - new Color32(0, 0, 0, 1);
-                j = 0;
-                while (j < 7)
+                else if (125 <= i && i < 255)
                 {
-                    switch (j)
+                    mesh.material.color = mesh.material.color - new Color32(0, 0, 0, 1);
+                    j = 0;
+                    while (j < 7)
                     {
-                        case 0: mesh1[j].material.color -= new Color32(192, 0, 0, 1); break;
-                        case 1: mesh1[j].material.color -= new Color32(255, 255, 255, 1); break;
-                        case 2: mesh1[j].material.color -= new Color32(60, 60, 60, 1); break;
-                        case 3: mesh1[j].material.color -= new Color32(60, 60, 60, 1); break;
-                        case 4: mesh1[j].material.color -= new Color32(89, 84, 84, 1); break;
-                        case 5: mesh1[j].material.color -= new Color32(255, 255, 255, 1); break;
-                        case 6: mesh1[j].material.color -= new Color32(255, 255, 255, 1); break;
+                        switch (j)
+                        {
+                            case 0: mesh1[j].material.color -= new Color32(192, 0, 0, 1); break;
+                            case 1: mesh1[j].material.color -= new Color32(255, 255, 255, 1); break;
+                            case 2: mesh1[j].material.color -= new Color32(60, 60, 60, 1); break;
+                            case 3: mesh1[j].material.color -= new Color32(60, 60, 60, 1); break;
+                            case 4: mesh1[j].material.color -= new Color32(89, 84, 84, 1); break;
+                            case 5: mesh1[j].material.color -= new Color32(255, 255, 255, 1); break;
+                            case 6: mesh1[j].material.color -= new Color32(255, 255, 255, 1); break;
+                        }
+                        j++;
                     }
-                    j++;
+                    i++;
                 }
-                i++;
+                else
+                {
+                    Fade_judge = false;
+                    i = 0;
+                }
+
             }
-            else
-            {
-                Fade_judge = false;
-                i = 0;
-            }
-            
         }
+        else
+        {
+            j = 0;
+            while (j < 7)
+            {
+                switch (j)
+                {
+                    case 0: mesh1[j].material.color += new Color32(192, 0, 0, 1); break;
+                    case 1: mesh1[j].material.color += new Color32(255, 255, 255, 1); break;
+                    case 2: mesh1[j].material.color += new Color32(60, 60, 60, 1); break;
+                    case 3: mesh1[j].material.color += new Color32(60, 60, 60, 1); break;
+                    case 4: mesh1[j].material.color += new Color32(89, 84, 84, 1); break;
+                    case 5: mesh1[j].material.color += new Color32(255, 255, 255, 1); break;
+                    case 6: mesh1[j].material.color += new Color32(255, 255, 255, 1); break;
+                }
+                j++;
+            }
+        }
+
+        
 
     }
     private void OnTriggerEnter(Collider other)
