@@ -10,9 +10,8 @@ using UnityEngine.Events;
 
 namespace Saito
 {
-    public partial class ScalingButton1 : MonoBehaviour
-    {
-
+    public class ScalingTest02 : MonoBehaviour
+{
         private Tweener tweener = null;
         //private Vector3 baseScale;
 
@@ -29,7 +28,7 @@ namespace Saito
                 ).AddTo(this.gameObject);
 
             this.gameObject.AddComponent<ObservablePointerExitTrigger>()
-                .OnPointerExitAsObservable().Subscribe(_ => { OnButtonExit(); },
+                .OnPointerExitAsObservable().Subscribe(_ => { OnButtonDown();/*;*/ },
                     ex => Debug.LogError(ex)
                 ).AddTo(this.gameObject);
             
@@ -52,7 +51,7 @@ namespace Saito
                 transform.localScale = Vector3.one;
             }
 
-            tweener = transform.DOScale(
+            tweener = transform.DOPunchScale(
                 Vector3.one * 1.1f,
                 duration: 0.2f
             ).SetEase(Ease.OutExpo).Play().SetLink(this.gameObject);
@@ -90,7 +89,7 @@ namespace Saito
                 tweener = null;
                 transform.localScale = Vector3.one;
             }
-            
+            tweener=transform.DOScale(Vector3.one,duration:0.5f) .SetEase(Ease.InOutQuart).Play().SetLink(this.gameObject);
         }
 
         #endregion
