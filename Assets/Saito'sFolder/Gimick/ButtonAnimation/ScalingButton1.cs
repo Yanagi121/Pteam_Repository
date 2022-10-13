@@ -23,13 +23,18 @@ namespace Saito
 
         void Start()
         {
-            this.gameObject.AddComponent<ObservablePointerDownTrigger>()
-                .OnPointerDownAsObservable().Subscribe(_ => { OnButtonDown(); },
+            this.gameObject.AddComponent<ObservablePointerEnterTrigger>()
+                .OnPointerEnterAsObservable().Subscribe(_ => { OnButtonEnter(); },
                     ex => Debug.LogError(ex)
                 ).AddTo(this.gameObject);
 
-            this.gameObject.AddComponent<ObservablePointerUpTrigger>()
-                .OnPointerUpAsObservable().Subscribe(_ => { OnButtonUp(); },
+            this.gameObject.AddComponent<ObservablePointerExitTrigger>()
+                .OnPointerExitAsObservable().Subscribe(_ => { OnButtonExit(); },
+                    ex => Debug.LogError(ex)
+                ).AddTo(this.gameObject);
+            
+            this.gameObject.AddComponent<ObservablePointerDownTrigger>()
+                .OnPointerDownAsObservable().Subscribe(_ => { OnButtonExit(); },
                     ex => Debug.LogError(ex)
                 ).AddTo(this.gameObject);
         }
@@ -37,7 +42,7 @@ namespace Saito
 
         #region Buttonで実行したい共通処理
 
-        private void OnButtonDown()
+        private void OnButtonEnter()
         {
             if (tweener != null)
             {
@@ -56,7 +61,7 @@ namespace Saito
             Debug.Log("Button Push");
         }
 
-        private void OnButtonUp()
+        private void OnButtonExit()
         {
             if (tweener != null)
             {
@@ -74,6 +79,18 @@ namespace Saito
 
             // Up時の共通処理
             Debug.Log("Button Release");
+        }
+
+        private void OnButtonDown()
+        {
+            if (tweener != null)
+            {
+                tweener.Kill();
+                Debug.Log(tweener);
+                tweener = null;
+                transform.localScale = Vector3.one;
+            }
+            
         }
 
         #endregion
