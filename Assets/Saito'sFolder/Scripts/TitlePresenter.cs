@@ -1,6 +1,8 @@
+using System;
 using Cysharp.Threading.Tasks;
 using UniRx;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 
 public class TitlePresenter : MonoBehaviour
@@ -11,9 +13,21 @@ public class TitlePresenter : MonoBehaviour
     {
         _view.PanelFade(this.GetCancellationTokenOnDestroy()).Forget();
         
-        Observable.EveryUpdate()
+        ObservableEvery()
             .Where(_ => Input.anyKey&&_view.Flag)
-            .Subscribe(_ => SceneManager.LoadScene("Saito'sFolder/Scenes/Master/Main"))
+            .Subscribe(_ => SceneTransition())
             .AddTo(this);
     }
+
+        private IObservable<long> ObservableEvery()
+        {
+            return Observable.EveryUpdate();
+        }
+        
+        [SerializeField] private AssetReference _scene;
+        private async void SceneTransition()
+        {
+            await _scene.LoadSceneAsync(LoadSceneMode.Single).Task;
+            _scene.ReleaseAsset();
+        }
 }

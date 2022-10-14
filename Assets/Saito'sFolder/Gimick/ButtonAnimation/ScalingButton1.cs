@@ -44,6 +44,11 @@ namespace Saito
 
         private void OnButtonEnter()
         {
+            if (!this.gameObject.GetComponent<Button>().interactable)
+            {
+                return;
+            }
+
             if (tweener != null)
             {
                 tweener.Kill();
@@ -63,6 +68,11 @@ namespace Saito
 
         private void OnButtonExit()
         {
+            if (!this.gameObject.GetComponent<Button>().interactable)
+            {
+                return;
+            }
+            
             if (tweener != null)
             {
                 tweener.Kill();

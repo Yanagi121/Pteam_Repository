@@ -14,14 +14,14 @@ public class TitleView : MonoBehaviour
     
     private void UpdateActive()
     {
-        _panel.gameObject.SetActive(true);
+        _panel.gameObject.SetActive(false);
         flag = true;
     }
 
     public async UniTask PanelFade(CancellationToken token)
     {
         await UniTask.Delay(TimeSpan.FromSeconds(2.5f), cancellationToken: token);
-        _panel.gameObject.GetComponent<Image>().DOFade(0f, 0.5f).SetLink(this.gameObject)
+        _panel.gameObject.GetComponent<Image>().DOFade(0f, 0.5f).SetEase(Ease.Linear).SetLink(this.gameObject)
             .OnComplete(UpdateActive);
     }
 }
