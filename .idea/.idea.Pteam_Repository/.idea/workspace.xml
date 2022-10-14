@@ -3,13 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="a18e7cdf-8605-44a3-a211-3b387058fc44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/ButtonAnimation/ScalingButton1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/ButtonAnimation/ScalingButton1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/HowToPlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/HowToPlay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/ButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/ButtonView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Title.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/BackgroundScroll.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/BackgroundScroll.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/ButtonView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/ButtonView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/LoadSceneManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/LoadSceneManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/LobbyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/LobbyScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/SceneTransition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/SceneTransition.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Titlemanager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Titlemanager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +39,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuPresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/ButtonView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/AddressableSceneTransitin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/HelpView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/HelpPresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/ButtonAnimation/ScalingTest02.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitleView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../game_client_college_design_9/Assets/2_MVP/2_MVP/Scripts/InGameView.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -98,7 +114,9 @@
       <workItem from="1662902457122" duration="1090000" />
       <workItem from="1662918441950" duration="6228000" />
       <workItem from="1665607379984" duration="4189000" />
-      <workItem from="1665648924604" duration="10033000" />
+      <workItem from="1665648924604" duration="14370000" />
+      <workItem from="1665674773367" duration="5696000" />
+      <workItem from="1665685181198" duration="4527000" />
     </task>
     <servers />
   </component>

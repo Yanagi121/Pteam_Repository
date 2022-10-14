@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Saito'sFolder/Scenes/Master/Title.unity
     guid: e6c47e2ca70387a4e9804628f6fdac7e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Saito'sFolder/Scenes/Master/Option.unity
     guid: 716470828bc73a84e97635264927bf8f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Saito'sFolder/Scenes/Master/Main.unity
     guid: 2e7cc75be477cb4439d46005110e95cf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Saito'sFolder/Scenes/Master/HowToPlay.unity
     guid: 92a41a77e014f0a49a343fb84e5b4105
-  - enabled: 1
+  - enabled: 0
     path: Assets/TakumiFolder/Scenes/LobbyScene.unity
     guid: 69f59821e5fe3c740a24e7777d05faf1
   - enabled: 1

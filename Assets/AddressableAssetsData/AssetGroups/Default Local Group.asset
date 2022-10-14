@@ -21,6 +21,26 @@ MonoBehaviour:
     m_Address: Assets/Saito'sFolder/Scenes/DeployScene/Addressabletest.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: e6c47e2ca70387a4e9804628f6fdac7e
+    m_Address: Assets/Saito'sFolder/Scenes/Master/Title.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 716470828bc73a84e97635264927bf8f
+    m_Address: Assets/Saito'sFolder/Scenes/Master/Option.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2e7cc75be477cb4439d46005110e95cf
+    m_Address: Assets/Saito'sFolder/Scenes/Master/Main.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 69f59821e5fe3c740a24e7777d05faf1
+    m_Address: Assets/TakumiFolder/Scenes/LobbyScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 92a41a77e014f0a49a343fb84e5b4105
+    m_Address: Assets/Saito'sFolder/Scenes/Master/HowToPlay.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c7b5e414cdf991d4e82518ee5cd5f2f5, type: 2}
   m_SchemaSet:

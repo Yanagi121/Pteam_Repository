@@ -359,7 +359,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304789167}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39d856d1b6e802049849017658bfc767, type: 3}
   m_Name: 
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502138460}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39d856d1b6e802049849017658bfc767, type: 3}
   m_Name: 
@@ -846,7 +846,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502138460}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8806d12a7f7c0054c84ea64ca9f1fa34, type: 3}
   m_Name: 
@@ -880,7 +880,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70fa3f60159a38a44a07a39987a80e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 304789169}
+  _inGameButton: {fileID: 304789169}
+  _helpButton: {fileID: 1818049517}
+  _optionButton: {fileID: 1502138462}
 --- !u!4 &1567172903
 Transform:
   m_ObjectHideFlags: 0
@@ -1065,7 +1067,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818049515}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39d856d1b6e802049849017658bfc767, type: 3}
   m_Name: 
@@ -1079,7 +1081,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818049515}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8806d12a7f7c0054c84ea64ca9f1fa34, type: 3}
   m_Name: 
@@ -1114,8 +1116,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _view: {fileID: 1567172902}
-  _scene:
-    m_AssetGUID: 
+  _inGameScene:
+    m_AssetGUID: 69f59821e5fe3c740a24e7777d05faf1
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _optionScene:
+    m_AssetGUID: 716470828bc73a84e97635264927bf8f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _helpScene:
+    m_AssetGUID: 92a41a77e014f0a49a343fb84e5b4105
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
