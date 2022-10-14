@@ -1,15 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
 public class InGameView : MonoBehaviour
 {
-    [SerializeField] private TextMeshPro _text;
+    [SerializeField] private TextMeshProUGUI _text;
     
-    // Start is called before the first frame update
     void Start()
     {
-        
+        _text.DOCounter(0, 100,10)
+            .SetEase(Ease.Linear).SetLink(this.gameObject);
     }
 }
