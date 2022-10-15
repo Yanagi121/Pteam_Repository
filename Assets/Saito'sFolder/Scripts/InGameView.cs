@@ -18,14 +18,24 @@ public class InGameView : MonoBehaviour
     [SerializeField] private Image _startImage;
     [SerializeField] private Image _finishImage;
 
-    private async void Start()
-    {  
-        Initialized();
+    [SerializeField] private Transform _transform;
 
-        await UniTask.Delay(TimeSpan.FromSeconds(3),delayTiming:PlayerLoopTiming.Update,cancellationToken:this.GetCancellationTokenOnDestroy());
-        CountDownAnimation();
+    private bool isFinish=false;
+
+    //sequenceでまとめてアニメーションを操作する
+    private async UniTask Start()
+    {
+        Initialized();
+        CountDownAnimation(3, 1,()=>isFinish=true);
+        await UniTask.WaitUntil(() => isFinish, cancellationToken: this.GetCancellationTokenOnDestroy());
+        _text.text = "";
         
-        SetActive(_finishImage.gameObject,true);
+        SetActive(_startImage.gameObject, true);
+        await UniTask.Delay(TimeSpan.FromSeconds(2f));
+        SetActive(_startImage.gameObject, false);
+
+        _text.transform.position = _transform.position; //移動
+        CountDownAnimation(100, 1, () => SetActive(_finishImage.gameObject, true));
     }
 
     private void Initialized()
@@ -44,10 +54,10 @@ public class InGameView : MonoBehaviour
         obj.SetActive(flag);
     }
 
-    private void CountDownAnimation()
+    private void CountDownAnimation(int value,int end,TweenCallback OnResult=null)
     {
-        _text.DOCounter(100, 0, 10)
-            .SetEase(Ease.Linear).SetDelay(0.5f).SetLink(this.gameObject);
+        _text.DOCounter(value, end, value+1)
+            .SetEase(Ease.Linear).SetLink(this.gameObject).OnComplete(OnResult);
     }
     
     private async void SpriteSet(AssetReferenceSprite asset,Image image)
