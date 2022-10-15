@@ -3533,6 +3533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 1551209369}
+  _image: {fileID: 1638568694}
 --- !u!4 &798230804
 Transform:
   m_ObjectHideFlags: 0
@@ -7623,7 +7624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.34}
+  m_AnchoredPosition: {x: 0, y: -1.14}
   m_SizeDelta: {x: 507, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1638568694

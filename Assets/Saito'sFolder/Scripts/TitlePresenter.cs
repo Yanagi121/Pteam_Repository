@@ -9,12 +9,13 @@ public class TitlePresenter : MonoBehaviour
 {
     [SerializeField] private TitleView _view;
 
-    private void Start()
+    private async void Start()
     {
         try
         {
             _view.PanelFade(this.GetCancellationTokenOnDestroy()).Forget();
-        
+            _view.FadeImageLoop();
+            
             ObservableEvery()
                 .Where(_ => Input.anyKey&&_view.Flag)
                 .Subscribe(_ => SceneTransition())

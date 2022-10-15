@@ -3,90 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a18e7cdf-8605-44a3-a211-3b387058fc44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Font/M+/mplus-1c-regular SDF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/AsyncLoading/Background_bySATBOX.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/AsyncLoading/Background_bySATBOX.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/InGameTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/InGameTestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGamePresener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGamePresener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGameView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGameView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Title.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitlePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitlePresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitleView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitleView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/inGameModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/inGameModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/P_操作説明.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/P_操作説明.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Tilte – 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Tilte – 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/kjhf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/kjhf.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 100@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 100@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 137@3x 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 137@3x 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 143@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 143@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 144@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 144@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 151@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 151@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 156@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 156@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 157@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 157@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 178@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 178@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 190@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 190@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 191@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 191@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 193@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 193@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 194@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 194@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 196@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 196@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 198@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 198@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 1@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 1@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 201@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 201@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 202@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 202@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 203@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 203@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 204@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 204@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 205@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 205@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 206@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 206@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 208@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 208@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 212@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 212@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 214@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 214@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 102.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 102.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 181.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 181.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 183.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 183.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 189.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 189.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 68.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 68.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/グループ 90.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/TestPlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/TestPlayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +117,9 @@
       <workItem from="1665685181198" duration="6367000" />
       <workItem from="1665730448333" duration="580000" />
       <workItem from="1665742613600" duration="18510000" />
+      <workItem from="1665831617762" duration="9000" />
+      <workItem from="1665831672854" duration="598000" />
+      <workItem from="1665839682734" duration="3491000" />
     </task>
     <servers />
   </component>
