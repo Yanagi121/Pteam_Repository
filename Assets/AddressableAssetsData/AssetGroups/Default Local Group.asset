@@ -41,6 +41,26 @@ MonoBehaviour:
     m_Address: Assets/Saito'sFolder/Scenes/Master/HowToPlay.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 655dcff680216ef4e94869f90fef4f5f
+    m_Address: Assets/Saito'sFolder/Sprites/HakasewoSagase.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ui
+  - m_GUID: 65e0cc3b1cc15c34296e255258f466d2
+    m_Address: Assets/Saito'sFolder/Scenes/Master/Redy ....png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ui
+  - m_GUID: 4c9c6d222d2e2c44e8b593e7acd9bf51
+    m_Address: Assets/Saito'sFolder/Scenes/Master/GO!.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ui
+  - m_GUID: d3d9d26c219c6b942b4029fc99213721
+    m_Address: Assets/Saito'sFolder/Sprites/Finish!.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ui
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c7b5e414cdf991d4e82518ee5cd5f2f5, type: 2}
   m_SchemaSet:
