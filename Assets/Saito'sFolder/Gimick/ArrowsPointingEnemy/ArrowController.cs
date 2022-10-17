@@ -21,7 +21,8 @@ public class ArrowController : MonoBehaviour
 
     void Start()
     {
-        switch (DontDestroy_Porder.Porder_handover)
+        switch (//DontDestroy_Porder.Porder_handover
+                1)
         {
             case 1: playerTrans=GameObject.Find("Player1(Clone)").transform; break;
             case 2: playerTrans = GameObject.Find("Player2(Clone)").transform; break;
