@@ -43,7 +43,7 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
         FiveCount += Time.deltaTime;//実用
         if (FiveCount >= 5 )//5秒経過でPatternが次へ進む、５秒を超えたらFiveCountは０になる
         {
-            if(SaveCountTime<5)
+            if(SaveCountTime< Enum.GetNames(typeof(ActionPatterns)).Length)//ActionPatternsの要素数にCountTimeが追い付いたらカウントの増加を実行しない
             SaveCountTime += 1;//Patternのカウントを増加
             Pattern = (ActionPatterns)Enum.ToObject(typeof(ActionPatterns), SaveCountTime);//増加分を適用
             FiveCount = 0;//カウントを0に
