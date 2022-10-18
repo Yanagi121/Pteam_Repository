@@ -99,7 +99,7 @@ namespace MainMenu
         private async void SceneTransition(AssetReference scene)
         {
             var s=await scene.LoadSceneAsync(LoadSceneMode.Single).Task;
-            scene.ReleaseAsset();
+            //scene.ReleaseAsset();
         }
     }
 }

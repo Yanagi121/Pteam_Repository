@@ -1,5 +1,6 @@
 using System;
 using Cysharp.Threading.Tasks;
+using DG.Tweening.Core;
 using UniRx;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -54,6 +55,11 @@ public class TitlePresenter : MonoBehaviour
         private async void SceneTransition()
         {
             await _scene.LoadSceneAsync(LoadSceneMode.Single).Task;
-            _scene.ReleaseAsset();
         }
+
+        void OnDisable() {
+            //_scene?.ReleaseAsset();
+            Debug.Log("OnDisable");
+        }
+    
 }
