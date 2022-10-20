@@ -67,7 +67,7 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
             SetCameraTransform((int)Pattern);//カメラの初期位置、角度、移動速度を設定
             this.transform.position = CameraPos;//ポジションをセット
             this.transform.eulerAngles = CameraRot;//ローテーションをセット
-            SetActiveChair();//椅子の表示非表示（椅子の背面が透明になっているため見た目上必要な処理）
+            SetActiveObject();//オブジェクトの表示非表示（椅子の背面が透明になっているため見た目上必要な処理）
             isOne = false;
         }
         this.transform.position += CameraSpeed;//カメラ移動
@@ -81,7 +81,7 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
         CameraSpeed = new Vector3(ArrayCameraTransform[PatterNnum,2, 0], ArrayCameraTransform[PatterNnum,2, 1], ArrayCameraTransform[PatterNnum,2, 2]);
         LocalCameraSpeed = new Vector3(ArrayCameraTransform[PatterNnum,3, 0], ArrayCameraTransform[PatterNnum,3, 1],ArrayCameraTransform[PatterNnum,3, 2]);
     }
-    void SetActiveChair()//椅子の表示処理
+    void SetActiveObject()//オブジェクトの時間による表示処理
     {
         switch ((int)Pattern)
         {
