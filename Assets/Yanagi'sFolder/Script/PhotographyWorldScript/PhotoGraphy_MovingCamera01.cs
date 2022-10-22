@@ -8,7 +8,7 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
     float  ElapsedTime;
     [SerializeField] float CountTime,SettingTime=5f;
     [SerializeField] GameObject Chair;
-    [SerializeField] GameObject Scene3and4, Scene3and4_1, Scene3and4_2;
+    [SerializeField] GameObject Scene3and4, Scene3and4_1, Scene3and4_2,StandUpDr,GetBcDr;
     [SerializeField] GameObject Scene4_5;
     [SerializeField]GameObject Scene5;
     int SaveCountTime=0;
@@ -39,8 +39,8 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
             { {263.05f,29.35f,113.49f},{-0.981f,370.446f,-1.41f},{0,0,0},{0,0,0 } },
             { {263.05f,29.35f,113.49f},{-0.981f,370.446f,-1.41f},{0,0,0},{0,0,0 } },
             { {191.2f,27f,223.7f},{-22.29f,464.3f,-1.405f },{0,0,0 },{0,0,0 } },
-            { {191.2f,27f,223.7f},{-22.29f,464.3f,-1.405f },{0,0,0 },{0,0,0 } },
-            { {191.2f,27f,223.7f},{-22.29f,464.3f,-1.405f },{0,0,0 },{0,0,0 } }
+            { {264.35f,26.71f,119.09f},{9.9f,-148.12f,0 },{0,0,0 },{0,0,0 } },
+            { {264.2f,28.8f,118f},{9f,-103.28f,0 },{0,0,0 },{0,0,0 } }
         };/*順に（ポジションX座標、Y座標、Z座標　、
         　　　　　ローテーションX座標、Y座標、Z座標　、
             　　　カメラの移動速度X座標、Y座標、Z座標　、
@@ -93,11 +93,13 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
     void SetActiveObject()//オブジェクトの時間による表示処理
     {
         Scene3and4.SetActive(false);
-        Scene4_5.SetActive(false);
+        //Scene4_5.SetActive(false);
         Scene5.SetActive(false);
         Chair.SetActive(false);
         Scene3and4_2.SetActive(false);
         Scene3and4_1.SetActive(false);
+        StandUpDr.SetActive(false);
+        GetBcDr.SetActive(false);
         switch ((int)Pattern)
         {
             case (int)ActionPatterns._3rdElapsed:
@@ -113,6 +115,12 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
                 break;
             case (int)ActionPatterns._6thElapsed:
                 Scene5.SetActive(true);
+                break;
+            case (int)ActionPatterns._7thElapsed:
+                StandUpDr.SetActive(true);
+                break;
+            case (int)ActionPatterns._8thElapsed:
+                GetBcDr.SetActive(true);
                 break;
             default:
                 
