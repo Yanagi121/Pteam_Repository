@@ -8,6 +8,9 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
     float  ElapsedTime;
     [SerializeField] float CountTime,SettingTime=5f;
     [SerializeField] GameObject Chair;
+    [SerializeField] GameObject Scene3and4;
+    [SerializeField] GameObject Scene4_5;
+    [SerializeField]GameObject Scene5;
     int SaveCountTime=0;
     bool isOne=true;
     Vector3 CameraPos,CameraRot,CameraSpeed,LocalCameraSpeed;
@@ -85,10 +88,20 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
     {
         switch ((int)Pattern)
         {
+            case (int)ActionPatterns.ThirdElapsed:
+                Scene3and4.SetActive(true);
+                break;
             case (int)ActionPatterns.FourthElapsed:
+                Scene4_5.SetActive(true);
                 Chair.SetActive(true);
                 break;
+            case (int)ActionPatterns.FifthElapsed:
+                Scene5.SetActive(true);
+                break;
             default:
+                Scene3and4.SetActive(false);
+                Scene4_5.SetActive(false);
+                Scene5.SetActive(false);
                 Chair.SetActive(false);
                 break;
         }
