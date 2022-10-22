@@ -8,7 +8,7 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
     float  ElapsedTime;
     [SerializeField] float CountTime,SettingTime=5f;
     [SerializeField] GameObject Chair;
-    [SerializeField] GameObject Scene3and4;
+    [SerializeField] GameObject Scene3and4, Scene3and4_1, Scene3and4_2;
     [SerializeField] GameObject Scene4_5;
     [SerializeField]GameObject Scene5;
     int SaveCountTime=0;
@@ -19,22 +19,28 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
     // Start is called before the first frame update
     public enum ActionPatterns//状態を管理
     {
-        FirstElapsed,
-        SecondElapsed,
-        ThirdElapsed,
-        FourthElapsed,
-        FifthElapsed,
+        _1stElapsed=0,
+        _2ndElapsed,
+        _3rdElapsed,
+        _4thElapsed,
+        _5thElapsed,
+        _6thElapsed,
+        _7thElapsed,
+        _8thElapsed,
 
     }
     private ActionPatterns Pattern;
     void Start()
     {
         ArrayCameraTransform = new float[,,] { 
-            {{-111.62f , 141.1f , 183.3f }, {20.62f, 90f , 0f }, {0.1f , 0 , 0 } ,{0,0,0 } },
-            {{178.5f, 26.13f,372.41f },{-24.6f,0f,0f },{0.1f,0,0 },{0,0,0 } } ,
-            {{279.78f,26.66f,119.56f },{-7.3f,201.5f,0f },{0,0,0 },{0.025f,0,0} },
-            {{263.05f,29.35f,113.49f},{-0.981f,370.446f,-1.41f},{0,0,0},{0,0,0 } },
-            {{191.2f,27f,223.7f},{-22.29f,464.3f,-1.405f },{0,0,0 },{0,0,0 } }
+            { {-111.62f , 141.1f , 183.3f }, {20.62f, 90f , 0f }, {0.1f , 0 , 0 } ,{0,0,0 } },
+            { {178.5f, 26.13f,372.41f },{-24.6f,0f,0f },{0.05f,0,0 },{0,0,0 } } ,
+            { {279.78f,26.66f,119.56f },{-7.3f,201.5f,0f },{0,0,0 },{0.025f,0,0} },
+            { {263.05f,29.35f,113.49f},{-0.981f,370.446f,-1.41f},{0,0,0},{0,0,0 } },
+            { {263.05f,29.35f,113.49f},{-0.981f,370.446f,-1.41f},{0,0,0},{0,0,0 } },
+            { {191.2f,27f,223.7f},{-22.29f,464.3f,-1.405f },{0,0,0 },{0,0,0 } },
+            { {191.2f,27f,223.7f},{-22.29f,464.3f,-1.405f },{0,0,0 },{0,0,0 } },
+            { {191.2f,27f,223.7f},{-22.29f,464.3f,-1.405f },{0,0,0 },{0,0,0 } }
         };/*順に（ポジションX座標、Y座標、Z座標　、
         　　　　　ローテーションX座標、Y座標、Z座標　、
             　　　カメラの移動速度X座標、Y座標、Z座標　、
@@ -86,23 +92,30 @@ public class PhotoGraphy_MovingCamera01 : MonoBehaviour
     }
     void SetActiveObject()//オブジェクトの時間による表示処理
     {
+        Scene3and4.SetActive(false);
+        Scene4_5.SetActive(false);
+        Scene5.SetActive(false);
+        Chair.SetActive(false);
+        Scene3and4_2.SetActive(false);
+        Scene3and4_1.SetActive(false);
         switch ((int)Pattern)
         {
-            case (int)ActionPatterns.ThirdElapsed:
+            case (int)ActionPatterns._3rdElapsed:
                 Scene3and4.SetActive(true);
                 break;
-            case (int)ActionPatterns.FourthElapsed:
-                Scene4_5.SetActive(true);
+            case (int)ActionPatterns._4thElapsed:
+                Scene3and4.SetActive(true);
+                Scene3and4_1.SetActive(true);
                 Chair.SetActive(true);
                 break;
-            case (int)ActionPatterns.FifthElapsed:
+            case (int)ActionPatterns._5thElapsed:
+                Scene3and4_2.SetActive(true);
+                break;
+            case (int)ActionPatterns._6thElapsed:
                 Scene5.SetActive(true);
                 break;
             default:
-                Scene3and4.SetActive(false);
-                Scene4_5.SetActive(false);
-                Scene5.SetActive(false);
-                Chair.SetActive(false);
+                
                 break;
         }
     }
