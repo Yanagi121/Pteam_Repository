@@ -3,16 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="a18e7cdf-8605-44a3-a211-3b387058fc44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Windows/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Windows/addressables_content_state.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/Common/AddressableSceneTransitin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/Common/AddressableSceneTransitin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Title.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/HelpPresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/HelpPresenter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/HelpView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/HelpView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGamePresener.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGamePresener.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGameView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGameView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/OptionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/OptionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/OptionPresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/OptionPresenter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/OptionView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/OptionView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitleModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitleModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitlePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitlePresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/RoomScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/RoomScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitleView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitleView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/inGameModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/inGameModel.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,26 +39,21 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/HelpView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/ButtonAnimation/ScalingTest02.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/Common/AddressableSceneTransitin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitleView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGameView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../game_client_college_design_9/Assets/2_MVP/2_MVP/Scripts/InGameView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/ButtonAnimation/ImageFadeLoop.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/OptionView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuPresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/HelpPresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitleModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/inGameModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/AssetReference.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.unitask@f48cb4b03e/Runtime/UniTask.Delay.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/MainMenuPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGameView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/ButtonAnimation/ImageFadeLoop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/AssetReference.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/Common/AddressableSceneTransitin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Gimick/ButtonAnimation/ScalingTest02.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/TitleView.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="2ELzbiIoSUIprifEvS1noBpqg4W" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -121,6 +127,8 @@
       <workItem from="1665839682734" duration="11532000" />
       <workItem from="1666025835667" duration="756000" />
       <workItem from="1666114674171" duration="3078000" />
+      <workItem from="1667898068754" duration="836000" />
+      <workItem from="1668082878760" duration="7362000" />
     </task>
     <servers />
   </component>

@@ -1,11 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Saito
+namespace Option.Saito
 {
     public class OptionManager : MonoBehaviour
     {
@@ -22,12 +19,6 @@ namespace Saito
         [SerializeField] private Sprite _soundNotAciveImage;
         [SerializeField] private Sprite _creditAciveImage;
         [SerializeField] private Sprite _creditNotAciveImage;
-
-
-        private void Awake()
-        {
-            
-        }
 
         // Start is called before the first frame update
         void Start()

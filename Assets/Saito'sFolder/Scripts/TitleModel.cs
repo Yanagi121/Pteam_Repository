@@ -1,14 +1,30 @@
 using UniRx;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
-public class TitleModel : MonoBehaviour
+namespace Title.Saito
 {
-    private BoolReactiveProperty _flag = new BoolReactiveProperty(false);
-    public IReactiveProperty<bool> Flag => _flag;
-
-    public void ValueUpdate(bool flag)
+    public class TitleModel : MonoBehaviour
     {
-        _flag.Value = flag;
-    }
+        public bool Flag => _flag;
+        private bool _flag;
+
+        /// <summary>
+        /// 初期化処理
+        /// </summary>
+        public void Initialized()
+        {
+            _flag = false;
+        }
+
+        /// <summary>
+        /// Flagの値を変える(bool)
+        /// </summary>
+        /// <param name="flag"></param>
+        public void ValueUpdate(bool flag)
+        {
+            _flag = flag;
+            Debug.Log("値が書き変わりました");
+        }
+    }  
 }
+
