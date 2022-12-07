@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Commons.Utility
 {
-    public static class MainMenuAnimationUtility
+    public static class HelpAnimationUtility 
     {
         public static Tween FadeInTween(Image panel,Subject<Unit> OnCallBack)
         {

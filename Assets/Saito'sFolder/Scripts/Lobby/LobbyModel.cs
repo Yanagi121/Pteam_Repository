@@ -1,15 +1,15 @@
 using UniRx;
 using UnityEngine;
 
-namespace MainMenu.Saito
+namespace Lobby.Saito
 {
-    public class MainMenuModel
+    public class LobbyModel
     {
         private BoolReactiveProperty _isPushProp;
         public IReactiveProperty<bool> IsPushProp => _isPushProp;
         public bool IsPush => _isPushProp.Value;
         
-        public MainMenuModel()
+        public LobbyModel()
         {
             Debug.Log("コンストラクタ発動");
             _isPushProp = new BoolReactiveProperty(false);

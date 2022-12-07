@@ -3516,7 +3516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _recommendationPanelImage: {fileID: 1551209371}
-  _transitionEffect: {fileID: 1295781160}
+  _transitionImage: {fileID: 1295781160}
   _pushStartImage: {fileID: 1638568694}
 --- !u!4 &798230804
 Transform:
@@ -7281,7 +7281,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3523836802ce5ba488c2cb6b785013a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc1f2360dc2b62245b4175ae09c37b0d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
