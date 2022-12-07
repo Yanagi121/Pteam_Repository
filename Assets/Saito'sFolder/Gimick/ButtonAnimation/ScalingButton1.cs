@@ -1,25 +1,14 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using UniRx.Triggers;
 using UniRx;
-using UnityEngine.Events;
 
 namespace Saito
 {
     public partial class ScalingButton1 : MonoBehaviour
     {
-
         private Tweener tweener = null;
-        //private Vector3 baseScale;
-
-        //private void Awake()
-        //{
-        //  baseScale = this.transform.localScale;
-        //}
 
         void Start()
         {
@@ -60,7 +49,7 @@ namespace Saito
             tweener = transform.DOScale(
                 Vector3.one * 1.1f,
                 duration: 0.2f
-            ).SetEase(Ease.OutExpo).Play().SetLink(this.gameObject);
+            ).SetEase(Ease.OutExpo).SetLink(this.gameObject);
 
             // Down時の共通処理
             Debug.Log("Button Push");
@@ -85,7 +74,7 @@ namespace Saito
                     Vector3.one * -0.1f,
                     duration: 0.2f
                 )
-                .SetEase(Ease.InOutCubic).Play().SetLink(this.gameObject);
+                .SetEase(Ease.InOutCubic).SetLink(this.gameObject);
 
             // Up時の共通処理
             Debug.Log("Button Release");
