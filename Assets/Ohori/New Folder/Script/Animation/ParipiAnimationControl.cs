@@ -7,33 +7,33 @@ public class ParipiAnimationControl : MonoBehaviour
     Animator animator;
 
     [SerializeField]
-    public bool runControl;//‘–‚é‚©‚Ç‚¤‚©‚ğŒˆ‚ß‚é•Ï”
+    public bool runControl;//ï¿½ï¿½ï¿½é‚©ï¿½Ç‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß‚ï¿½Ïï¿½
 
 
     void Start()
     {
-        // AnimatorƒRƒ“ƒ|[ƒlƒ“ƒg‚ğæ“¾
+        // Animatorï¿½Rï¿½ï¿½ï¿½|ï¿½[ï¿½lï¿½ï¿½ï¿½gï¿½ï¿½ï¿½æ“¾
         animator = GetComponent<Animator>();
 
-        //runControl‚Ì‰Šú‰»
+        //runControlï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½
         runControl = false;
     }
 
     void Update()
     {
-        //ParipiAnimationControl‚È‚¢‚ÌrunControl‚ªtrue‚©false‚©‚Ì”»’è
+        //ParipiAnimationControlï¿½È‚ï¿½ï¿½ï¿½runControlï¿½ï¿½trueï¿½ï¿½falseï¿½ï¿½ï¿½Ì”ï¿½ï¿½ï¿½
         MoveJudgment();
 
-        //Animator‚È‚¢‚ÌrunControl‚Ìtrue/false‚Ì”»’è
+        //Animatorï¿½È‚ï¿½ï¿½ï¿½runControlï¿½ï¿½true/falseï¿½Ì”ï¿½ï¿½ï¿½
         animator.SetBool("runControl", runControl);
     }
 
-    //ParipiAnimationControl‚È‚¢‚ÌrunControl‚ªtrue‚©false‚©‚Ì”»’è‚·‚éƒƒ\ƒbƒh
+    //ParipiAnimationControlï¿½È‚ï¿½ï¿½ï¿½runControlï¿½ï¿½trueï¿½ï¿½falseï¿½ï¿½ï¿½Ì”ï¿½ï¿½è‚·ï¿½éƒï¿½\ï¿½bï¿½h
     public void MoveJudgment()
     {
-        if(Input.GetAxis("Horizontal")!=0) { runControl = true; }
+        if(UnityEngine.Input.GetAxis("Horizontal")!=0) { runControl = true; }
         else { runControl = false; };
-        if (Input.GetAxis("Vertical") != 0) { runControl = true; }
+        if (UnityEngine.Input.GetAxis("Vertical") != 0) { runControl = true; }
         else { runControl = false; };
         /*
         if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")){ runControl = true;}
