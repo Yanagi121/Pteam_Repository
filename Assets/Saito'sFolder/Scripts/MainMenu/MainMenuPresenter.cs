@@ -3,7 +3,7 @@ using UniRx;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace Saito.MainMenu
+namespace MainMenu.Saito
 {
     public class MainMenuPresenter : MonoBehaviour
     {
@@ -21,6 +21,7 @@ namespace Saito.MainMenu
             try
             {
                 Initialized();
+                _view.TransitionEffectFadeOut();
                 Bind();
                 SetEvents();
                 SetSubscribe();
@@ -69,7 +70,8 @@ namespace Saito.MainMenu
 
         private void SetEvents()
         {
-            _view.OnCallBack.Subscribe(_ => Commons.Utility.SceneTransition.LoadScene(_scene)).AddTo(this);
+            _view.FadeInCallBack.Subscribe(_ => Commons.Utility.SceneTransition.LoadScene(_scene)).AddTo(this);
+            _view.FadeOutCallBack.Subscribe(_=>_view.Hide()).AddTo(this);
 
             //inGame
             _view.ObservableEnterInGameButton()

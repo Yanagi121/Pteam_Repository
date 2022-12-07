@@ -7,13 +7,23 @@ namespace Commons.Utility
 {
     public static class MainMenuAnimationUtility
     {
-        public static Tween TransitionEffectTween(Image panel,Subject<Unit> OnCallBack)
+        public static Tween FadeInTween(Image panel,Subject<Unit> OnCallBack)
         {
             return panel.DOFade(1.0f, 0.5f)
                 .SetEase(Ease.Linear).OnComplete(() =>
                 {
                     Debug.Log("フェードインが完了しました");
-                    OnCallBack.OnNext(Unit.Default);
+                    OnCallBack?.OnNext(Unit.Default);
+                });
+        }
+        
+        public static Tween FadeOutTween(Image panel,Subject<Unit> OnCallBack)
+        {
+            return panel.DOFade(0.0f, 0.5f)
+                .SetEase(Ease.Linear).OnComplete(() =>
+                {
+                    Debug.Log("フェードインが完了しました");
+                    OnCallBack?.OnNext(Unit.Default);
                 });
         }
         

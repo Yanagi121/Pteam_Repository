@@ -1,15 +1,13 @@
 using System;
-using System.Collections.ObjectModel;
 using Commons.Utility;
 using DG.Tweening;
 using UniRx;
 using UniRx.Triggers;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace Saito.MainMenu
+namespace MainMenu.Saito
 {
     public class MainMenuView : MonoBehaviour
     {
@@ -24,13 +22,16 @@ namespace Saito.MainMenu
         
         [SerializeField] private Image _transitionImage;
         
-        private Subject<Unit> _subject;
-        public IObservable<Unit> OnCallBack => _subject;
+        private Subject<Unit> _fadeInSubject;
+        public IObservable<Unit> FadeInCallBack => _fadeInSubject;
+        
+        private Subject<Unit> _fadeOutSubject;
+        public IObservable<Unit> FadeOutCallBack => _fadeOutSubject;
 
         public void Initialized()
         {
-            _subject = new Subject<Unit>();
-            _transitionImage.gameObject.SetActive(false);
+            _fadeInSubject = new Subject<Unit>();
+            _fadeOutSubject = new Subject<Unit>();
         }
 
         /// <summary>
@@ -134,9 +135,19 @@ namespace Saito.MainMenu
             _transitionImage.gameObject.SetActive(true);
         }
 
+        public void Hide()
+        {
+            _transitionImage.gameObject.SetActive(false);
+        }
+
         public void TransitionEffectFadeIn()
         {
-            MainMenuAnimationUtility.TransitionEffectTween(_transitionImage,_subject).SetLink(this.gameObject);
+            MainMenuAnimationUtility.FadeInTween(_transitionImage,_fadeInSubject).SetLink(this.gameObject);
+        }
+        
+        public void TransitionEffectFadeOut()
+        {
+            MainMenuAnimationUtility.FadeOutTween(_transitionImage,_fadeOutSubject).SetLink(this.gameObject);
         }
         
         private Tweener _tweener;

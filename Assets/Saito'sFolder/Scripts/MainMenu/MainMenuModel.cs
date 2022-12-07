@@ -1,7 +1,7 @@
 using UniRx;
 using UnityEngine;
 
-namespace Saito.MainMenu
+namespace MainMenu.Saito
 {
     public class MainMenuModel
     {
