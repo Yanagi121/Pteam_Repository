@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Presenter{
+}
+class Model{
+}
+class View{
+}
+
+View--u>Presenter
+Model--u>Presenter
+
+@enduml
