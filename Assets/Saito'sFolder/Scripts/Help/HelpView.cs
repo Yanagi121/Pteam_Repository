@@ -22,6 +22,9 @@ namespace Help.Saito
         private Subject<Unit> _fadeOutSubject;
         public IObservable<Unit> FadeOutCallBack => _fadeOutSubject;
 
+        /// <summary>
+        /// 初期化
+        /// </summary>
         public void Initialized()
         {
             _fadeInSubject = new Subject<Unit>();
@@ -48,21 +51,33 @@ namespace Help.Saito
             return _button.OnPointerDownAsObservable();
         }
         
+        /// <summary>
+        /// シーン演出のパネルをアクティブ
+        /// </summary>
         public void Show()
         {
             _transitionImage.gameObject.SetActive(true);
         }
 
+        /// <summary>
+        /// シーン演出のパネルを非アクティブ
+        /// </summary>
         public void Hide()
         {
             _transitionImage.gameObject.SetActive(false);
         }
 
+        /// <summary>
+        /// フェードインのアニメーション
+        /// </summary>
         public void TransitionEffectFadeIn()
         {
             HelpAnimationUtility.FadeInTween(_transitionImage,_fadeInSubject).SetLink(this.gameObject);
         }
         
+        /// <summary>
+        /// フェードアウトのアニメーション
+        /// </summary>
         public void TransitionEffectFadeOut()
         {
             HelpAnimationUtility.FadeOutTween(_transitionImage,_fadeOutSubject).SetLink(this.gameObject);
