@@ -3,7 +3,7 @@ using UnityEngine;
 
 #if UNITY_EDITOR
 using UnityEditor;
-using UnityEditor.Experimental.SceneManagement;
+
 #endif
 
 
@@ -55,8 +55,8 @@ namespace BoneTool.Script.Runtime
             var shouldDraw = true;
 
             //Checking if the current game object is inside of a prefab stage
-            if (PrefabStageUtility.GetCurrentPrefabStage() != null)
-                shouldDraw = PrefabStageUtility.GetPrefabStage(gameObject) == PrefabStageUtility.GetCurrentPrefabStage();
+            if (UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() != null)
+                shouldDraw = UnityEditor.SceneManagement.PrefabStageUtility.GetPrefabStage(gameObject) == UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage();
 
             if (RootNode != null && shouldDraw)
             {
