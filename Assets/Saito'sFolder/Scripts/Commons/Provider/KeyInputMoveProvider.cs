@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace DiInput
+namespace DI
 {
     public class KeyInputMoveProvider : IInputMoveProvider
     {

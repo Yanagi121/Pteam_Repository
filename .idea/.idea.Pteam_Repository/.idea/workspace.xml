@@ -3,32 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="a18e7cdf-8605-44a3-a211-3b387058fc44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Windows/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Windows/addressables_content_state.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/GameCrear.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/GameCrear.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/GameOver.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/GameOver.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/SoundSetting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/SoundSetting.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/HowToPlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/HowToPlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Option.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Option.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Title.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Blocking.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Blocking/Blocking.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Blocking/Blocking.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Blocking/BlockingManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Blocking/BlockingManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Blocking/BlockingView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Blocking/BlockingView.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Const/InGameConst.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Const/InGameConst.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Interface/IInputMoveProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Interface/IInputMoveProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Provider/InputMoveInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Provider/InputMoveInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Provider/KeyInputMoveProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Provider/KeyInputMoveProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/HelpAnimationUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/HelpAnimationUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/InGameAnimationUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/InGameAnimationUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/LobbyAnimationUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/LobbyAnimationUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/OptionAnimationUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/OptionAnimationUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/SceneTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/SceneTransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/TitleAnimationUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Utility/TitleAnimationUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpPresenter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/LobbyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/LobbyScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/RoomScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/RoomScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/Sato_GameClear.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/Sato_GameClear.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/TestPlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/TestPlayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Lobby/LobbyModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Lobby/LobbyModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Lobby/LobbyPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Lobby/LobbyPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Lobby/LobbyView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Lobby/LobbyView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Option/OptionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Option/OptionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Option/OptionModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Option/OptionModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Option/OptionPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Option/OptionPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Option/OptionView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Option/OptionView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Title/TitleModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Title/TitleModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Title/TitlePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Title/TitlePresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Title/TitleView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Title/TitleView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -150,7 +150,8 @@
       <workItem from="1670400609938" duration="20970000" />
       <workItem from="1671005177963" duration="595000" />
       <workItem from="1671010567439" duration="1544000" />
-      <workItem from="1671040371515" duration="1554000" />
+      <workItem from="1671040371515" duration="2025000" />
+      <workItem from="1671105737993" duration="8036000" />
     </task>
     <servers />
   </component>

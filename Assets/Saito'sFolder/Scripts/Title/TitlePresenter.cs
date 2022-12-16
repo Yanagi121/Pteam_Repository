@@ -9,8 +9,13 @@ namespace Title.Saito
 {
     public class TitlePresenter : MonoBehaviour
     {
+        //Model
         private TitleModel _model;
+        
+        //View
         [SerializeField] private TitleView _view;
+      
+        //遷移したいシーン先
         [SerializeField] private AssetReference _scene;
 
         private async void Start()
@@ -18,10 +23,15 @@ namespace Title.Saito
             try
             {
                 Initialized();
+                
                 SetEvent();
+                
                 SetSubscribe();
                 
+                //画像をフェードループする
                 _view.FadeImageLoop();
+                
+                //シーン読み込み時にトランジションアニメーションを再生
                 _view.PanelFadeOut(this.GetCancellationTokenOnDestroy()).Forget();
             }
             catch (NullReferenceException ex)
@@ -49,29 +59,36 @@ namespace Title.Saito
         }
 
         /// <summary>
-        /// 全体の初期化処理
+        /// Initialize
         /// </summary>
         private void Initialized()
         {
             _model = new TitleModel();
-            _view.Initialized();
+            _view.Initialize();
         }
 
+        /// <summary>
+        /// SetEvents
+        /// </summary>
         private void SetEvent()
         {
+            //トランジションアニメーションを再生したらパネルを非アクティブ
             _view.OnCallBack
                 .Subscribe(_=>SceneTransition.LoadScene(_scene)).AddTo(this);
         }
         
+        /// <summary>
+        /// SetSubscribe
+        /// </summary>
         private void SetSubscribe()
         {
-            //model=>view
+            //フラグが立ったらシーン移動
             _model.IsFadeProp
                 .Where(_=>_model.IsFade)
                 .DistinctUntilChanged().Subscribe(_=>_view.TransitionEffectFadeIn())
                 .AddTo(this);
 
-            //view=>model
+            //ボタンがクリックされたらフラグを立てる
             _view.InputKeySpace()
                 .ThrottleFirst(TimeSpan.FromSeconds(2f))
                 .Where(_ => !_model.IsFade)

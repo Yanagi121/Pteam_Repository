@@ -5,8 +5,12 @@ using UnityEngine.UI;
 
 namespace Commons.Utility
 {
+    /// <summary>
+    /// インゲームのアニメーションのUtilityクラス
+    /// </summary>
     public static class InGameAnimationUtility
     {
+        
         public static Tween FadeInTween(RawImage panel,Subject<Unit> OnCallBack)
         {
             return panel.DOFade(1.0f, 1.0f)

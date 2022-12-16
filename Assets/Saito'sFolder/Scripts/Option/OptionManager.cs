@@ -6,23 +6,27 @@ namespace Option.Saito
 {
     public class OptionManager : MonoBehaviour
     {
-        //button
+        //TODO:Modelと連携して実装すべき
+        //TODO:OptionSwitchingViewにクラス名を変更するべき
+        
+        //Button
         [SerializeField] private Button _soundButton;
         [SerializeField] private Button _creditButton;
 
-        //panel
+        //Panel
         [SerializeField] private GameObject _soundpanel;
         [SerializeField] private GameObject _creditpanel;
 
-        //image
+        //Image
         [SerializeField] private Sprite _soundAciveImage;
         [SerializeField] private Sprite _soundNotAciveImage;
         [SerializeField] private Sprite _creditAciveImage;
         [SerializeField] private Sprite _creditNotAciveImage;
 
         // Start is called before the first frame update
-        void Start()
+        public void Initialize()
         {
+            //サウンドボタンを押されたら
             _soundButton.OnClickAsObservable()
                 .Select(_ => _creditpanel.gameObject.activeSelf)
                 .Subscribe(value =>
@@ -36,6 +40,7 @@ namespace Option.Saito
                     _soundpanel.gameObject.SetActive(true);
                 }).AddTo(this);
 
+            //クレジットボタンが押されたら
             _creditButton.OnClickAsObservable()
                 .Select(_ => _soundpanel.gameObject.activeSelf)
                 .Subscribe(value =>

@@ -4,9 +4,15 @@ using UnityEngine.AddressableAssets;
 
 namespace Commons.Utility
 {
+    /// <summary>
+    /// シーン遷移を行うUtilityクラス
+    /// </summary>
     public static class SceneTransition
     {
-        public static async UniTask LoadScene(AssetReference scene,Action CallBack=null)
+        /// <summary>
+        /// シーンを遷移する(Addressable方式)
+        /// </summary>
+        public static async UniTask LoadScene(AssetReference scene,Action CallBack=default)
         {
             await scene.LoadSceneAsync().Task;
             CallBack?.Invoke();
