@@ -1,5 +1,9 @@
 namespace Commons.Const
 {
+    //TODO:インゲームなのに他のシーンでも使われているので、細かく分ける
+    /// <summary>
+    /// インゲームの定数
+    /// </summary>
     public static class InGameConst
     {
         //本来ならインスペクタで調整出来た方が良いかも
@@ -12,6 +16,6 @@ namespace Commons.Const
         /// <summary>
         /// ロゴを拡大・縮小するさいの時間
         /// </summary>
-        public const float LogoAnimationDuration = 3.0f;
+        public const float LogoAnimationDuration = 2.0f;
     }
 }

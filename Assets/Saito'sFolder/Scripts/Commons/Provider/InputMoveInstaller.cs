@@ -1,6 +1,6 @@
 using Zenject;
 
-namespace DiInput
+namespace DI
 {
     public class InputMoveInstaller : MonoInstaller
     {

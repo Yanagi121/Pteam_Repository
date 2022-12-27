@@ -12,40 +12,63 @@ namespace Help.Saito
     public class HelpView : MonoBehaviour
     {
         [SerializeField] private Button _button;
+        /// <summary>
+        /// メインメニューに戻るボタン
+        /// </summary>
         public Button Button => _button;
         
         [SerializeField] private Image _transitionImage;
         
         private Subject<Unit> _fadeInSubject;
+        
+        /// <summary>
+        /// フェードインが終わったときに呼ばれる
+        /// </summary>
         public IObservable<Unit> FadeInCallBack => _fadeInSubject;
 
         private Subject<Unit> _fadeOutSubject;
+        
+        /// <summary>
+        /// フェードアウトが終わったとき呼ばれる
+        /// </summary>
         public IObservable<Unit> FadeOutCallBack => _fadeOutSubject;
 
         /// <summary>
         /// 初期化
         /// </summary>
-        public void Initialized()
+        public void Initialize()
         {
             _fadeInSubject = new Subject<Unit>();
             _fadeOutSubject = new Subject<Unit>();
         }
 
+        /// <summary>
+        ///ボタンクリック時のObservableを返す
+        /// </summary>
         public IObservable<PointerEventData> ObservableClickButton()
         {
             return _button.OnPointerClickAsObservable();
         }
 
+        /// <summary>
+        ///ボタンホバー時のObservableを返す
+        /// </summary>
         public IObservable<PointerEventData> ObservableEnterButton()
         {
             return _button.OnPointerEnterAsObservable();
         }
 
+        /// <summary>
+        /// ボタン逆ホバー時のObservableを返す
+        /// </summary>
         public IObservable<PointerEventData> ObservableExitButton()
         {
             return _button.OnPointerExitAsObservable();
         }
 
+        /// <summary>
+        /// ボタン押し込み時のObservableを返す
+        /// </summary>
         public IObservable<PointerEventData> ObservableDownButton()
         {
             return _button.OnPointerDownAsObservable();
@@ -88,7 +111,6 @@ namespace Help.Saito
         /// <summary>
         /// ホバー時のボタンアニメーション
         /// </summary>
-        /// <param name="_button"></param>
         public void ButtonEnterAnimation(Button _button)
         {
             if (_tweener != null)
@@ -100,15 +122,12 @@ namespace Help.Saito
             }
             
             _tweener=HelpAnimationUtility
-                .ButtonEnterTween(_button).SetLink(_button.gameObject);
-            // Down時の共通処理
-            Debug.Log("Button Push");
+                .ButtonScaleUpTween(_button).SetLink(_button.gameObject);
         }
 
         /// <summary>
         /// ボタンからマウスカーソルが出た時のアニメーション
         /// </summary>
-        /// <param name="_button"></param>
         public void ButtonExitAnimation(Button _button)
         {
             if (_tweener != null)
@@ -120,9 +139,7 @@ namespace Help.Saito
             }
             
             _tweener=HelpAnimationUtility
-                .ButtonExitTween(_button).SetLink(_button.gameObject);
-            // Up時の共通処理
-            Debug.Log("Button Release");
+                .ButtonPunchTween(_button).SetLink(_button.gameObject);
         }
     }
 }

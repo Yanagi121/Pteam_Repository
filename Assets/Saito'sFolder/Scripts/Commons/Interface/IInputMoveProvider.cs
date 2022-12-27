@@ -1,4 +1,4 @@
-namespace DiInput
+namespace DI
 {
     public interface IInputMoveProvider
     {

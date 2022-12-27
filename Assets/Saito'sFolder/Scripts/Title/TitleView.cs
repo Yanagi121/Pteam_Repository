@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using UniRx;
-using UnityEngine.Serialization;
 
 namespace Title.Saito
 {
@@ -17,13 +16,20 @@ namespace Title.Saito
         [SerializeField] private Image _pushStartImage;
 
         private Subject<Unit> _subject;
+        
+        /// <summary>
+        /// フェードインが終わったときに呼ばれる
+        /// </summary>
         public IObservable<Unit> OnCallBack => _subject;
 
-        public void Initialized()
+        public void Initialize()
         {
             _subject = new Subject<Unit>();
         }
 
+        /// <summary>
+        /// 初期化
+        /// </summary>
         public IObservable<Unit> InputKeySpace()
         {
             return InputAsRx.InputAsObservable.GetKey(KeyCode.Space);
@@ -32,13 +38,15 @@ namespace Title.Saito
         /// <summary>
         /// パネルをフェードアウトさせる
         /// </summary>
-        /// <param name="token"></param>
         public async UniTask PanelFadeOut(CancellationToken token, float duration = 2.5f)
         {
             await UniTask.Delay(TimeSpan.FromSeconds(duration), cancellationToken: token);
             TitleAnimationUtility.PanelFadeOutTween(_recommendationPanelImage).SetLink(this.gameObject);
         }
         
+        /// <summary>
+        /// フェードインのアニメーション
+        /// </summary>
         public void TransitionEffectFadeIn()
         {
             TitleAnimationUtility.TransitionEffectTween(_transitionImage,_subject).SetLink(this.gameObject);
