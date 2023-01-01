@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HowToPlay
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: fe7fa650f18ba3e40815b127aedbed8d, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: fae03b711c5c4aa42a1dc6ad4bdea174, type: 3}
+  - {fileID: 21300000, guid: c9fd0c63dbceb5b478cabc70bbe8fd75, type: 3}
+  - {fileID: 21300000, guid: f3ca15d48297bc743a96bc141efa1cf9, type: 3}
+  - {fileID: 21300000, guid: e95205c6ffa42b34ab289af03552c712, type: 3}
+  - {fileID: 21300000, guid: 254f6828145c0ac4295d490e075fd342, type: 3}
+  - {fileID: 21300000, guid: 8e0cc448b0fb0a545bd263d7bdfd4098, type: 3}
+  - {fileID: 21300000, guid: 0930f969e236f8a459758a42e6e5a433, type: 3}
+  - {fileID: 21300000, guid: 9091f75b0d3cc534dbb9920e74819655, type: 3}
+  - {fileID: 21300000, guid: aaa173aca54a20a42ba27e879d6f6e01, type: 3}
+  - {fileID: 21300000, guid: 3137eadc6ba545d40995d797048b6c45, type: 3}
+  - {fileID: 21300000, guid: d970249d66266ee42ba061e2bd969296, type: 3}
+  - {fileID: 21300000, guid: b059dcbdcb0797443a2b778b4361a1f2, type: 3}
+  - {fileID: 21300000, guid: 3d1a590e2746a6d4a8ea42706a84ff71, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "\u535A\u58EB\u304C\u62C5\u3044\u3067\u3044\u308B\u30E9\u30B8\u30AB\u30BB\u304B\u3089\u3001\u30D1\u30EA\u30D4\u304C\u8074\u3044\u3066\u3044\u305D\u3046\u306A\u66F2\u304C\u6D41\u308C\u3066\u3044\u307E\u3059"
+  - "\u30A2\u30BB\u30C3\u30C8 255@4x"
+  - "\u30B0\u30EB\u30FC\u30D7 241"
+  - "\u30B0\u30EB\u30FC\u30D7 238"
+  - aaaa
+  - "\u30B0\u30EB\u30FC\u30D7 240"
+  - "\u30B0\u30EB\u30FC\u30D7 313"
+  - "\u4E0A\u624B\u304F\u30B3\u30DF\u30E5\u30CB\u30B1\u30FC\u30B7\u30E7\u30F3\u3092\u53D6\u308B\u3053\u3068\u3067\u3001\u3088\u308A\u65E9\u3044\u30BF\u30A4\u30E0\u3067\u30AF\u30EA\u30A2\u3067\u304D\u308B"
+  - "\u4ED6\u30D7\u30EC\u30A4\u30E4\u30FC\u3068\u5354\u529B\u3057\u3088\u3046\uFF01"
+  - sss
+  - "\u591A\u89D2\u5F62 3"
+  - "\u97F3\u3092\u983C\u308A\u306B\u535A\u58EB\u3092\u6355\u307E\u3048\u3088\u3046\uFF01"
+  - "\u30B0\u30EB\u30FC\u30D7 227"
+  m_RenderDataMap: {}
+  m_Tag: HowToPlay
+  m_IsVariant: 0
