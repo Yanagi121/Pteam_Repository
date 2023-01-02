@@ -2755,7 +2755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -569, y: 123}
+  m_AnchoredPosition: {x: -560.5, y: 120.9}
   m_SizeDelta: {x: 105, y: 87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &362236114
@@ -3802,6 +3802,10 @@ PrefabInstance:
     - target: {fileID: 2017713697419654394, guid: d9451ae7818dd6d4495441733c9bf74c, type: 3}
       propertyPath: m_Name
       value: SceneTransitionEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 2017713697419654394, guid: d9451ae7818dd6d4495441733c9bf74c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5340563437399487047, guid: d9451ae7818dd6d4495441733c9bf74c, type: 3}
       propertyPath: m_Pivot.x
@@ -5858,7 +5862,7 @@ GameObject:
   - component: {fileID: 801371582}
   - component: {fileID: 801371581}
   m_Layer: 0
-  m_Name: MVP
+  m_Name: LobyMVP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7778,7 +7782,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -446.76923, y: 4}
+  m_AnchoredPosition: {x: -490.2, y: 5.846}
   m_SizeDelta: {x: 244, y: 37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075738674
@@ -11354,11 +11358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7798599226526719607, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -435.9996
+      value: -436
       objectReference: {fileID: 0}
     - target: {fileID: 7798599226526719607, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -66.15384
+      value: -66.154
       objectReference: {fileID: 0}
     - target: {fileID: 7798599226526719607, guid: 6870d48759d416342a961b73cdf14f9a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15770,7 +15774,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -434, y: 244}
+  m_AnchoredPosition: {x: -423, y: 237}
   m_SizeDelta: {x: 380, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2098559203
