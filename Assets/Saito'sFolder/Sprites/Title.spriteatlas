@@ -32,24 +32,23 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: c2cef4b2493957b4ab4041d81d9522bd, type: 3}
-    - {fileID: 2800000, guid: 2291bdad1a2aa1e47ad90f9e0d6602bf, type: 3}
-    - {fileID: 2800000, guid: ab93be43d46c2b842876450622680a3a, type: 3}
-    - {fileID: 2800000, guid: bc1f2360dc2b62245b4175ae09c37b0d, type: 3}
+    - {fileID: 102900000, guid: 84222c3e1c30923468d8da15d9e1d067, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 531a1230f5c741d4fad6f45b9b596b05, type: 3}
   - {fileID: 21300000, guid: bc1f2360dc2b62245b4175ae09c37b0d, type: 3}
   - {fileID: 21300000, guid: c2cef4b2493957b4ab4041d81d9522bd, type: 3}
   - {fileID: 21300000, guid: ab93be43d46c2b842876450622680a3a, type: 3}
   - {fileID: 21300000, guid: 2291bdad1a2aa1e47ad90f9e0d6602bf, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Copyright
   - Recommand
-  - TitleLogo1
+  - TitleLogo
   - PushStart001
-  - Version001
+  - Version
   m_RenderDataMap: {}
   m_Tag: Title
   m_IsVariant: 0

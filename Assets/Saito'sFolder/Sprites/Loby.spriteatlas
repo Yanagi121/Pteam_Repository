@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Loby
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 8fecc351b38e7b84da0a3ad13d661dfa, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a40e3e00acb60cc4c811debc506dc87e, type: 3}
+  - {fileID: 21300000, guid: a48c81116a422c942bed1138a103f7fc, type: 3}
+  - {fileID: 21300000, guid: 72682d2157f2b714885c1479397d9ca1, type: 3}
+  - {fileID: 21300000, guid: f09933316ab678a48bb1dfa396ee0185, type: 3}
+  - {fileID: 21300000, guid: 268723813a110144996ad4dc8c86d0f0, type: 3}
+  - {fileID: 21300000, guid: 8d505c038dc99b24d902f5745714c0f6, type: 3}
+  - {fileID: 21300000, guid: 07ed79e3040a27b498f3f7df40ff2369, type: 3}
+  - {fileID: 21300000, guid: e50667f37fadf8e4ca0358ce8fdbc40e, type: 3}
+  - {fileID: 21300000, guid: 8eb25174b2eda3f4f9d33a048868416c, type: 3}
+  - {fileID: 21300000, guid: 93b26638e4f0d824ebcf4dcd57c9e9eb, type: 3}
+  - {fileID: 21300000, guid: 9555769860c2d634c9fc0292722e4fc4, type: 3}
+  - {fileID: 21300000, guid: 41ddb02992d1dc34f9b7322b87059140, type: 3}
+  - {fileID: 21300000, guid: 22566c2bf9910f94c855086ff8a45983, type: 3}
+  - {fileID: 21300000, guid: 3c5eed5b2845b4b40b77de8c35d2069b, type: 3}
+  - {fileID: 21300000, guid: f9c05bfbf0fcb5040adf5af297f09d8b, type: 3}
+  - {fileID: 21300000, guid: 4b7cd13c29fe00748ab6d468469c70a6, type: 3}
+  - {fileID: 21300000, guid: ebf9fa4dc5153ed4d875682897801de1, type: 3}
+  - {fileID: 21300000, guid: aa4563af70b9c7244b7947370e8323cc, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - RoomCreateButton
+  - Cutline
+  - GamePlayButton
+  - Title06
+  - Handle_02
+  - PlayerFrame02
+  - PlayerFrame03
+  - UpdateButton
+  - Title03
+  - Frame05
+  - MainMenuLogo
+  - InputFrame01
+  - Handle_03
+  - Handle_04
+  - Title05
+  - Frame04
+  - ReturnButton
+  - Title04
+  m_RenderDataMap: {}
+  m_Tag: Loby
+  m_IsVariant: 0

@@ -79,6 +79,10 @@ namespace Help.Saito
                     _view.Show();
                     _view.TransitionEffectFadeIn();
                 }).AddTo(this);
+
+            //
+            _model.PageCurrentNumProp.Subscribe(value =>
+                _view.PanelShow(_model.PageCurrentNum)).AddTo(this);
         }
 
         /// <summary>
@@ -92,14 +96,14 @@ namespace Help.Saito
             _view.FadeOutCallBack.Subscribe(_=>_view.Hide()).AddTo(this);
 
             //ボタンのアニメーションを設定
-            _view.ObservableEnterButton()
-                .Subscribe(_ => _view.ButtonEnterAnimation(_view.Button))
+            _view.ObservableEnterReturnButton()
+                .Subscribe(_ => _view.ButtonEnterAnimation(_view.ReturnButton))
                 .AddTo(this);
-            _view.ObservableExitButton()
-                .Subscribe(_ => _view.ButtonExitAnimation(_view.Button))
+            _view.ObservableExitReturnButton()
+                .Subscribe(_ => _view.ButtonExitAnimation(_view.ReturnButton))
                 .AddTo(this);
-            _view.ObservableDownButton()
-                .Subscribe(_ => _view.ButtonExitAnimation(_view.Button))
+            _view.ObservableDownReturnButton()
+                .Subscribe(_ => _view.ButtonExitAnimation(_view.ReturnButton))
                 .AddTo(this);
         }
 
@@ -109,10 +113,16 @@ namespace Help.Saito
         private void SetSubscribe()
         {
             //ボタンがクリックされたらフラグを立てる
-            _view.ObservableClickButton()
+            _view.ObservableClickReturnButton()
                 .ThrottleFirst(TimeSpan.FromSeconds(2f))
                 .Subscribe(_ => _model.UpdateBool(true))
                 .AddTo(this);
+            
+            _view.ObservableClickNextButton()
+                .Subscribe(_=>_model.UpdatePageNum(_model.PageCurrentNum+1.0f)).AddTo(this);
+            
+            _view.ObservableClickBackButton()
+                .Subscribe(_=>_model.UpdatePageNum(_model.PageCurrentNum-1.0f)).AddTo(this);
         }
     }
 }

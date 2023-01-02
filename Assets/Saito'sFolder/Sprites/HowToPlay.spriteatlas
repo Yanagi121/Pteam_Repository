@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HowToPlay
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: fe7fa650f18ba3e40815b127aedbed8d, type: 3}
+    - {fileID: 2800000, guid: 54f06f64c82a20943bec6efd94e882a0, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 91509910af440754990b01e82d3bb173, type: 3}
+  - {fileID: 21300000, guid: fae03b711c5c4aa42a1dc6ad4bdea174, type: 3}
+  - {fileID: 21300000, guid: c9fd0c63dbceb5b478cabc70bbe8fd75, type: 3}
+  - {fileID: 21300000, guid: 54f06f64c82a20943bec6efd94e882a0, type: 3}
+  - {fileID: 21300000, guid: f3ca15d48297bc743a96bc141efa1cf9, type: 3}
+  - {fileID: 21300000, guid: 2e0b49759c4372b47881ed04339c640e, type: 3}
+  - {fileID: 21300000, guid: e95205c6ffa42b34ab289af03552c712, type: 3}
+  - {fileID: 21300000, guid: 254f6828145c0ac4295d490e075fd342, type: 3}
+  - {fileID: 21300000, guid: 8e0cc448b0fb0a545bd263d7bdfd4098, type: 3}
+  - {fileID: 21300000, guid: 0930f969e236f8a459758a42e6e5a433, type: 3}
+  - {fileID: 21300000, guid: 9091f75b0d3cc534dbb9920e74819655, type: 3}
+  - {fileID: 21300000, guid: aaa173aca54a20a42ba27e879d6f6e01, type: 3}
+  - {fileID: 21300000, guid: 3137eadc6ba545d40995d797048b6c45, type: 3}
+  - {fileID: 21300000, guid: d970249d66266ee42ba061e2bd969296, type: 3}
+  - {fileID: 21300000, guid: b059dcbdcb0797443a2b778b4361a1f2, type: 3}
+  - {fileID: 21300000, guid: 3d1a590e2746a6d4a8ea42706a84ff71, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - HelpBackground
+  - Sentence1
+  - Radio
+  - ReturnButton
+  - NextButton
+  - HelpLogo
+  - "\u30B0\u30EB\u30FC\u30D7 238"
+  - PageNum3
+  - PageNum1
+  - Frame01
+  - Sentence2
+  - Title2
+  - PageNum2
+  - BackButton
+  - Title1
+  - Article3
+  m_RenderDataMap: {}
+  m_Tag: HowToPlay
+  m_IsVariant: 0
