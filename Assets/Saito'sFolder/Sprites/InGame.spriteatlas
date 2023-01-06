@@ -39,33 +39,73 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 2e32f8d0d8e39864a86a6d8f2962f1fc, type: 3}
-  - {fileID: 21300000, guid: 4c9c6d222d2e2c44e8b593e7acd9bf51, type: 3}
-  - {fileID: 21300000, guid: 8c1808b3260151b41874c0099d7a2360, type: 3}
+  - {fileID: 21300000, guid: 9b84ff30e8db4c04e8ec1e59296e7595, type: 3}
+  - {fileID: 21300000, guid: 2dad955062db9824a84f46dfe3ea0b51, type: 3}
+  - {fileID: 21300000, guid: 4ec93e3103b8d0440aa66996e172f80d, type: 3}
+  - {fileID: 21300000, guid: 8966e3b18d15d27478080da5f6b7da78, type: 3}
+  - {fileID: 21300000, guid: 1efdaff1cfcb12342989eb179e26d600, type: 3}
+  - {fileID: 21300000, guid: 9ca38302e4ff47840bb9ad1c1dece226, type: 3}
+  - {fileID: 21300000, guid: de612e226df642b4f8ab4600eea2d9c5, type: 3}
+  - {fileID: 21300000, guid: 7ae88232c3d9fcd48b44eba1becd7bdf, type: 3}
   - {fileID: 21300000, guid: 54f06f64c82a20943bec6efd94e882a0, type: 3}
+  - {fileID: 21300000, guid: cf6957154c9c7ab44bf5735b4c95f635, type: 3}
+  - {fileID: 21300000, guid: 328c98451bee7c442b66647c0e73e15e, type: 3}
+  - {fileID: 21300000, guid: 037e75c51259e854fae0490728a2bef4, type: 3}
+  - {fileID: 21300000, guid: 2eb899060e0909546bfcbefc87324906, type: 3}
   - {fileID: 21300000, guid: e2dc061652a525c4f92c7cf89333f775, type: 3}
   - {fileID: 21300000, guid: 0f791476d046ce74c8f7878cc0c2db11, type: 3}
-  - {fileID: 21300000, guid: 655dcff680216ef4e94869f90fef4f5f, type: 3}
-  - {fileID: 21300000, guid: f788880b13bcd0548aa923e22f8bba27, type: 3}
-  - {fileID: 21300000, guid: 65e0cc3b1cc15c34296e255258f466d2, type: 3}
-  - {fileID: 21300000, guid: d3d9d26c219c6b942b4029fc99213721, type: 3}
-  - {fileID: 21300000, guid: 17dfb69c15f349a4bba83a6260993cc3, type: 3}
+  - {fileID: 21300000, guid: c2c52fb62fd558547bc01d2844e84b4e, type: 3}
+  - {fileID: 21300000, guid: e75de2f62278c8b4cb8dc15d92bbb7ac, type: 3}
+  - {fileID: 21300000, guid: 7fd0def66a2a1734390ca056efb77d10, type: 3}
+  - {fileID: 21300000, guid: 38380027069a11247bebae6320efa32a, type: 3}
+  - {fileID: 21300000, guid: 03f8ea37b9e8af843a83764ea5df400f, type: 3}
+  - {fileID: 21300000, guid: 41449c98847488044be8dd9fb119f595, type: 3}
+  - {fileID: 21300000, guid: 882b2eb9361facd4abb3071a5cfd045b, type: 3}
+  - {fileID: 21300000, guid: 973083f988efbcb468f9fdcc7f2cc34c, type: 3}
+  - {fileID: 21300000, guid: 09299f2a94814b541ade02bce66dc948, type: 3}
+  - {fileID: 21300000, guid: d35b0a7bf0c7923479e91d8d6fdd7d90, type: 3}
   - {fileID: 21300000, guid: 4482424d972c1fc4f832ebde5e49b695, type: 3}
-  - {fileID: 21300000, guid: e4a0a3ceeb293894ea4ea1cf05242314, type: 3}
+  - {fileID: 21300000, guid: 373e5c4de9f70704d9bb4cc54ab2c92c, type: 3}
+  - {fileID: 21300000, guid: b6d6fced4abee894fab2184207702b16, type: 3}
+  - {fileID: 21300000, guid: 5f5230de5ddcce74a9da9554f665fdc3, type: 3}
+  - {fileID: 21300000, guid: 4e35121f384ca3c4fae049eb4348048a, type: 3}
+  - {fileID: 21300000, guid: dac3802f923f43643a871ae20c1f027a, type: 3}
+  - {fileID: 21300000, guid: a4068e9f3d453054c90e07563748f294, type: 3}
+  - {fileID: 21300000, guid: 011dbdbf654b8084a930d48535f81c51, type: 3}
   m_PackedSpriteNamesToIndex:
-  - Time
-  - GO!
-  - asasas 1
+  - Frame10
+  - Start_2
+  - Finish_9
+  - Finish_7
+  - Finish_4
+  - Finish_3
+  - SoundLogo
+  - Finish_2
   - ReturnButton
+  - KeyIcon
+  - Finish_10
+  - Finish_8
+  - Finish02
   - Frame03
   - LogoRadio
-  - HakasewoSagase
-  - "\u30A2\u30BB\u30C3\u30C8 82@3x"
-  - Redy ...
-  - Finish!
-  - Button001
-  - Frame01
-  - Button002x
+  - Target01
+  - Pause
+  - Finish_6
+  - Start_1
+  - Frame12
+  - QuitButton
+  - GO!
+  - ResultBackground
+  - Start_3
+  - ContinueButton
+  - Fram11
+  - Finish_5
+  - SoundButton
+  - Finish_1
+  - Finish01
+  - Frame09
+  - Target02
+  - TeamMember
   m_RenderDataMap: {}
   m_Tag: InGame
   m_IsVariant: 0
