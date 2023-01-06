@@ -1,9 +1,12 @@
 using System;
-using Cysharp.Threading.Tasks;
+using UniRx;
 using UnityEngine;
 
 namespace InGame.Saito
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class InGamePresenter : MonoBehaviour
     {
         [SerializeField] private InGameModel _model;
@@ -16,7 +19,7 @@ namespace InGame.Saito
             {
               Initialized();
               Bind();
-              SetEvent();
+              SetSubscribe();
             }
             catch (NullReferenceException ex)
             {
@@ -50,10 +53,22 @@ namespace InGame.Saito
 
        private void Bind()
        {
+           
        }
 
-       private void SetEvent()
+       private void SetSubscribe()
        {
+           _view.OnClickContinueButton()
+               .Subscribe(_=>_view.HideOption())
+               .AddTo(this);
+           
+           _view.OnClickSoundButton()
+               .Subscribe(_=>_view.UpdateViewSound(true))
+               .AddTo(this);
+           
+           _view.OnClickReturnButton()
+               .Subscribe(_=>_view.UpdateViewSound(false))
+               .AddTo(this);
        }
     }  
 }

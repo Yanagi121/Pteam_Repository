@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 namespace Option.Saito
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class OptionManager : MonoBehaviour
     {
         //TODO:Modelと連携して実装すべき

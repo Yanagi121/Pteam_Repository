@@ -3,213 +3,132 @@
   <component name="ChangeListManager">
     <list default="true" id="a18e7cdf-8605-44a3-a211-3b387058fc44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pteam_Repository/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/HowToPlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/HowToPlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Option.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/Master/Option.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Const/InGameConst.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Const/InGameConst.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Enum/InGameEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Enum/InGameEnum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Commons/Singleton.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Help/HelpView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/BGMLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/BGMLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/BackgroundGelp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/BackgroundGelp.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/BackgroundMainmenu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/BackgroundMainmenu.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/BackgroundSetting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/BackgroundSetting.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Button001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Button001.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Button002x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Button002x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Commons/アセット 100@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Commons/アセット 100@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Commons/グループ 228.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Commons/グループ 228.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Commons/マスクグループ 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Commons/マスクグループ 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Copyright.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Copyright.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/CreditActiveButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/CreditActiveButton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/CreditNotActiveButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/CreditNotActiveButton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Finish!.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Finish!.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Frame01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Frame01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Frame02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Frame02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/GO!.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/GO!.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HakasewoSagase.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HakasewoSagase.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Handle_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Handle_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Handle_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Handle_02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Help01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Help01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HelpButton(Desing).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HelpButton(Desing).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HelpButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HelpButton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HelpLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HelpLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/aaaa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/aaaa.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/sss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/sss.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/アセット 255@4x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/アセット 255@4x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/グループ 227.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/グループ 227.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/グループ 240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/グループ 240.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/グループ 241.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/グループ 241.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/グループ 313.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/グループ 313.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/上手くコミュニケーションを取ることで、より早いタイムでクリアできる.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/上手くコミュニケーションを取ることで、より早いタイムでクリアできる.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/他プレイヤーと協力しよう！.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/他プレイヤーと協力しよう！.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/博士が担いでいるラジカセから、パリピが聴いていそうな曲が流れています.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/博士が担いでいるラジカセから、パリピが聴いていそうな曲が流れています.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/多角形 3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/多角形 3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/音を頼りに博士を捕まえよう！.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/HowToPlay/音を頼りに博士を捕まえよう！.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/LogoRadio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/LogoRadio.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/MainmenuLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/MainmenuLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/MasterSoundLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/MasterSoundLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/NumericKeypad_img.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/NumericKeypad_img.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/OptionButton(Desing).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/OptionButton(Desing).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/OptionButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/OptionButton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/OptionLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/OptionLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/PlayButton(Desing).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/PlayButton(Desing).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/PlayButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/PlayButton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/PressaAnyKey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/PressaAnyKey.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/PushStart001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/PushStart001.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Recommand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Recommand.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Redy ....png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Redy ....png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Result.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/ReturnButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/ReturnButton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/SELogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/SELogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/SliderBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/SliderBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/SliderButtons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/SliderButtons.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Sound(Title).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Sound(Title).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/SoundActiveButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/SoundActiveButton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/SoundNotActiveButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/SoundNotActiveButton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/TeamLogo_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/TeamLogo_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Teamlogo_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Teamlogo_02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Time.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Time.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Title.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Title.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/TitleLogo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/TitleLogo1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Version001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/Version001.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/VoiceLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/VoiceLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/asasas 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/asasas 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/asasas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/asasas.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/creditlogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/creditlogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/handle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/handle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 82@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/アセット 82@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/LobbyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/LobbyScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TestFolder.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/1253x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/1253x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/1533x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/1533x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/1543x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/1543x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/1553x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/1553x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/2df58ca33d723d4c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/tmp_UI/2df58ca33d723d4c.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/4x.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/4x/アセット 1@4x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/4x/アセット 1@4x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/4x/アセット 2@4x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/4x/アセット 2@4x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/4x/アセット 3@4x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/4x/アセット 3@4x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/アセット 1@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/アセット 1@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/アセット 2@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/アセット 2@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/アセット 3@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/アセット 3@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/アセット 4@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/アセット 4@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/アセット 5@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/アセット 5@3x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/ロゴ入りパワポ.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI_IMG/UIまとめ/ロゴ一覧/ロゴ入りパワポ.pptx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1253x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1253x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1263x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1263x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1313x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1313x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1343x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1343x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1353x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1353x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1363x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1363x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1373x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1373x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1383x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/1383x.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/178.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/178.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/MainMenuLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/MainMenuLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/aa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/aa.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/aaa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/aaa.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/cc3327655db1d8ff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/IMG_UI/cc3327655db1d8ff.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/other/img/190.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yanagi'sFolder/other/img/190.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Windows/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Windows/addressables_content_state.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/SettingOption.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/SettingOption.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/UITest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scenes/DeployScene/UITest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGame/InGameModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGame/InGameModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGame/InGamePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGame/InGamePresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGame/InGameView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/InGame/InGameView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Option/OptionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Scripts/Option/OptionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/10.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/1aaa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/1aaa.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/2aaa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/2aaa.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/9.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Button001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Button001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Button002x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Button002x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Finish!.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Finish!.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Finish！.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Finish！.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Frame01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Frame01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/GO! 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/GO! 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/GO!.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/GO!.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/GO!.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/GO!.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/HakasewoSagase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/HakasewoSagase.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 100@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 100@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 105@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 105@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 111@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 111@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 112@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 112@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 34@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 34@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 49@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 49@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 72@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 72@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 78@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 78@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 80@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 80@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 82@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 82@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 91@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット 91@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット200@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/InGame関係/アセット200@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/NumericKeypad_img.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/NumericKeypad_img.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/P_Team - TestPlayScene - PC, Mac &amp; Linux Standalone - Unity 2020.3.26f1 Personal _DX11_ 2022_09_06 16_16_34new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/P_Team - TestPlayScene - PC, Mac &amp; Linux Standalone - Unity 2020.3.26f1 Personal _DX11_ 2022_09_06 16_16_34new.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Redy ....png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Redy ....png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Time.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/Time.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/aaa3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/aaa3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/asasas 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/asasas 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/asasas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/asasas.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/アセット 100@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/アセット 100@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/アセット 273@4x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/アセット 273@4x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/アセット 82@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/アセット 82@3x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 228.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 228.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 273.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 273.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 274.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 274.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 281.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 281.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 292.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 292.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 304.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 304.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 310.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 310.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 311.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 311.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 314.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 314.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 315.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/グループ 315.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/博士を捕まえた！.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/InGame/博士を捕まえた！.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/MainMenu/HelpButton.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/MainMenu/HelpButton.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/MainMenu/OptionButton.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/MainMenu/OptionButton.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/MainMenu/PlayButton.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saito'sFolder/Sprites/MainMenu/PlayButton.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/TestPlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/Scenes/TestPlayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TakumiFolder/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,6 +251,9 @@
       <workItem from="1671040371515" duration="2025000" />
       <workItem from="1671105737993" duration="8036000" />
       <workItem from="1672628642158" duration="13488000" />
+      <workItem from="1672763169485" duration="3459000" />
+      <workItem from="1672946912942" duration="460000" />
+      <workItem from="1672986589036" duration="10034000" />
     </task>
     <servers />
   </component>
